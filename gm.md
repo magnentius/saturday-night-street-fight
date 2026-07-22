@@ -1,6 +1,22 @@
 # Saturday Night Street Fight — Game Master's Guide
 
-This guide provides the Game Master (GM) with setting guidelines, environmental generation tables, and NPC rules to run street-level brawls in a gritty, high-friction urban landscape.
+![Saturday Night Street Fight Game Master's Guide Cover](images/gm_cover_art.png)
+
+This guide provides the Game Master (GM) with setting guidelines, environmental generation tables, encounter building rules, and NPC stat blocks to run street-level brawls in a gritty, high-friction urban landscape.
+
+---
+
+## Table of Contents
+
+1. [The Setting: 1975 Urban Decay](#the-setting-1975-urban-decay)
+2. [Subway Traversal (The Station Crawl)](#subway-traversal-the-station-crawl)
+3. [Block Generation System](#block-generation-system)
+4. [Block Danger Ranks & Encounters](#block-danger-ranks--encounters)
+5. [Encounter Building & Starting Range Matrix](#encounter-building--starting-range-matrix)
+6. [Encounter Disposition (Reaction Roll)](#encounter-disposition-reaction-roll)
+7. [NPC Stats & Threat Tiers](#npc-stats--threat-tiers)
+8. [Group Combat Rules](#group-combat-rules)
+9. [The Saturday Night Soundtrack (1970s Playlist)](#the-saturday-night-soundtrack-1970s-playlist)
 
 ---
 
@@ -16,7 +32,7 @@ The setting is inspired by 1970s New York City—a blighted, financially broken 
 
 Fighters move through the blighted city by riding the subway line. Traveling from neighborhood to neighborhood is a dangerous journey where every stop brings new threats.
 
-### Traversal Loop:
+### Traversal Loop
 1.  **Select Destination**: Players choose their target neighborhood or destination station.
 2.  **Riding the Rails**: The train travels through the underground tunnels. For each station the train passes through or stops at, the GM rolls on the **Subway Station Event Table** below.
 3.  **Explore the Block (Station-Linked Danger)**: When players exit a station to the surface, the GM generates a new block using the **Block Generation System**. The block's **Danger Rank** is directly tied to the type of station they just exited:
@@ -33,11 +49,11 @@ Whenever the train pulls into a station, roll to see what awaits the players on 
 | :--- | :--- | :--- |
 | **1-3** | **Clear Platform** | The station is quiet, populated only by a few nervous commuters. Players can safely exit to the street (generating a new block) or rest to recover minor attribute damage. |
 | **4-5** | **Local Gang Toll** | A group of **Standard Thugs (Tier 2)** guards the turnstiles, demanding a toll or a bribe. Players can pay, fight, or bluff/negotiate past by winning a contested **Cool** check. |
-| **6-7** | **Ambush!** | The platform lights flicker out. A **Mob of Punks (Tier 1)** ambushes from the shadows at Clinch Range. Players must pass a **Cool Check (DC 10)** to keep their nerve; on a failure, the attackers gain **Advantage** on the first round. |
+| **6-7** | **Ambush!** | The platform lights flicker out. A **Mob of Punks (Tier 1)** ambushes from the shadows at **Grapple Range**. Players must pass a **Cool Check (DC 10)** to keep their nerve; on a failure, the attackers gain **Advantage** on the first round. |
 | **8-9** | **Rival Crew Turf** | A rival **Boss (Tier 3)** and their enforcers are waiting on the platform, looking to defend their turf from outsiders. |
 | **10** | **Transit Safe House & Clinic Connection** | A friendly transit worker lets players hide in a breakroom. This station is directly connected to a **City Hospital** (players can immediately roll the **Cool Check [DC 12]** to get admitted for Severe Recovery without exiting to the surface). Restores Cool for 2 XP. |
 
-### 3. Procedural Subway Line Generator
+### Procedural Subway Line Generator
 To map out a transit line between the players' Home Turf and their target destination:
 1.  **Roll Line Length**: Roll **$1\text{d}6 + 2$** to determine the number of intermediate stations on the line.
 2.  **Generate Stations**: For each intermediate station, roll a **$1\text{d}10$** on the table below to determine its layout and routing choices:
@@ -141,9 +157,10 @@ These hazards add mechanical friction to the brawls.
 | **1-3** | **Steam Vent** | Blind spot. Any timing-based action rolled near it has **Disadvantage**. |
 | **4-5** | **Oil Slick / Wet Pavement** | Slippery. Any character moving or dodging must pass a **Footwork Check (DC 8)** or fall **Prone**. |
 | **6-7** | **Broken Streetlight** | Low visibility. All Strike actions suffer a $-1$ penalty to rolls. |
-| **8-9** | **Loose Garbage / Debris** | Footing hazard. Dodge actions lose their $+2$ Outfighting bonus. |
+| **8-9** | **Loose Garbage / Debris** | Footing hazard. Dodge actions lose their $+2$ Outside Spacing bonus. |
 | **10** | **Fire Escape Scaffolding** | Vertical space. Clambering up allows Strikes from above (gaining **Advantage**). |
 
+---
 
 ## Block Danger Ranks & Encounters
 
@@ -174,7 +191,7 @@ Every block in the city has a **Danger Rank** from **1 to 5** that reflects the 
 *   **3: Heavy Hitter**: A single **Tier 2 Thug** carrying an improvised weapon (baseball bat or pipe), adding $+1$ damage to all successful Strikes.
 *   **4: Gang Rush**: A **Mob of Punks (Tier 1)** rushes the players, starting at Striking Range.
 *   **5: Corner Defense**: Two **Tier 2 Thugs** guarding a business entry. They block passage until defeated.
-*   **6: Alleyway Ambush**: A **Mob of Punks (Tier 1)** ambushes the players from the shadows, starting immediately at Clinch Range.
+*   **6: Alleyway Ambush**: A **Mob of Punks (Tier 1)** ambushes the players from the shadows, starting immediately at **Grapple Range**.
 
 ### Danger Rank 4: High Danger / Contested Turf War
 *War zones where rival factions are actively brawling or heavily fortified.*
@@ -191,12 +208,51 @@ Every block in the city has a **Danger Rank** from **1 to 5** that reflects the 
 *   **2: The Elite Guard**: Two **Tier 3 Bosses** (built using full Character Creation rules) patrolling.
 *   **3: Syndicate Patrol**: A **Mob of Punks (Tier 1)** led by an elite **Tier 3 Boss** enforcer.
 *   **4: Style Champion**: A **Tier 3 Boss** who has active style perks and multiple Mastered techniques ($+5$) challenges the players to a 1-on-1 duel.
-*   **5: Death Alley Ambush**: Two **Tier 2 Thugs** and one **Tier 3 Boss** ambush the players immediately at Clinch Range.
+*   **5: Death Alley Ambush**: Two **Tier 2 Thugs** and one **Tier 3 Boss** ambush the players immediately at **Grapple Range**.
 *   **6: The Overlord**: The main Boss of the sector is present with a personal bodyguard of **two Tier 2 Thugs**.
 
 ---
 
-## NPC Stats & Threat Levels
+## Encounter Building & Starting Range Matrix
+
+When building a street encounter or resolving a random event during the Street Crawl, combine the **Threat Tier** with the **Environmental Starting Range Table**:
+
+### 1. Threat Tier & XP Budget
+*   **Tier 1: Punks / Lookouts (Minor Obstacle)**: Groups of 2–6 Punks using **Mob Punk Rules** (1 damage = 1 Punk TKO'd; all defeated at Mob Pool 0). Tuned as minor street hurdles (PC Win Rate ~90%).
+*   **Tier 2: Thugs / Enforcers (Standard Encounter)**: 1–2 seasoned brawlers (Attributes 2–3, 1–2 Trained/Mastered moves). Always individual combatants (PC Win Rate ~60%).
+*   **Tier 3: Syndicate Boss (Climax Encounter)**: 1 Boss built using the full 50 XP budget (Attributes 3, multiple Mastered moves). High-stakes duel (PC Win Rate ~50%).
+
+### 2. Environmental Starting Range Table
+When an encounter begins, determine the starting range based on the location or roll **1d6**:
+
+| d6 Roll | Location & Environment | Starting Range | Tactical Impact |
+| :--- | :--- | :--- | :--- |
+| **1–2** | **Open Ground**: Wide street block, parking lot, or subway platform sightlines. | **Outside Range (Long Range)** | Favors long-range kickers (*Push Kick, High Kick*); punches & throws are out of range. |
+| **3–4** | **Standard Pocket**: Diner booth, alleyway square-up, or bar room floor. | **Striking Range (Medium Range)** | Default face-off distance; punches, kicks, and guards are all active. |
+| **5–6** | **Close Quarters / Ambush**: Crowded subway car, elevator, narrow hallway, or sucker punch. | **Grapple Range (Close Range)** | Favors grapplers (*Clinch, Takedown, Hip Throw*); long strikes cannot be thrown. |
+
+### 3. Tactical Ambush & Stance Cues
+If a party successfully ambushes an enemy (or gets ambushed):
+*   **Range Control**: The ambushing side chooses the initial **Starting Range** (Outside Range, Striking Range, or Grapple Range).
+*   **Free Stance Read**: The ambushing side automatically wins **Phase 1: Reading the Stance**, forcing the surprised defender to reveal their action card color first.
+
+---
+
+## Encounter Disposition (Reaction Roll)
+
+When players encounter a new gang, mob of punks, or street NPC during a Street Crawl (or exiting a subway station), the GM or lead player rolls **$2\text{d}10 + \text{Cool}$** to determine the group's initial reaction, demeanor, and threat level:
+
+| $2\text{d}10 + \text{Cool}$ Total | Initial Disposition | Narrative & Tactical Outcome |
+| :--- | :--- | :--- |
+| **5 or lower** | **Hostile / Ambush** | Immediate attack! Enemies launch a surprise strike or force **Grapple Range**. |
+| **6–10** | **Aggressive / Demand Turf Toll** | Unfriendly. They demand a turf tax (1 XP or item) or provoke a brawl. A failed **Cool Check (DC 12)** triggers combat. |
+| **11–15** | **Wary / Tense Standoff** | Sizing each other up at **Outside Range**. Fights only break out if provoked or if a stance read fails. |
+| **16–19** | **Indifferent / Open to Talk** | Neutral. Willing to share street rumors, give directions, or allow safe passage through their block. |
+| **20+** | **Friendly / Helpful** | Welcoming. Offers access to a **Transit Safe House**, street medical tips, or local backup. |
+
+---
+
+## NPC Stats & Threat Tiers
 
 Not everyone on the streets is a martial arts master. The GM populates blocks with three distinct tiers of opponents.
 
@@ -205,14 +261,14 @@ Street kids, pickpockets, or low-level lookouts. They are physically weak and un
 *   **Attributes**: Footwork 1, Posture 1, Timing 1, Stamina 1.
 *   **Techniques**: Untrained (Rank 0) in all sub-actions.
 *   **Perks**: None.
-*   **Tactics**: They only fight in groups. If one is isolated, they will flee.
+*   **Tactics**: They only fight in groups using **Mob Punk Rules**. If isolated, they flee.
 
 ### 2. Standard Thugs & Soldiers (Tier 2)
 Enforcers, muscle, or standard gang soldiers who know how to swing a bat or throw a punch.
 *   **Attributes**: Footwork 2, Posture 2, Timing 2, Stamina 2.
-*   **Techniques**: Trained (Rank 1, $+2$ bonus) in **two** style-specific moves (e.g., Jab and High Guard).
+*   **Techniques**: Trained (Rank 1, $+3$ bonus) in **two** style-specific moves (e.g., Jab and High Guard).
 *   **Perks**: None.
-*   **Tactics**: Defensive when outnumbered, aggressive when they have the upper hand.
+*   **Tactics**: Always individual combatants. Defensive when outnumbered, aggressive when having the upper hand.
 
 ### 3. Bosses & Leaders (Tier 3)
 Gang leaders, legendary street fighters, or elite enforcers. 
@@ -226,12 +282,16 @@ Gang leaders, legendary street fighters, or elite enforcers.
 
 Use these rules when players are outnumbered or coordinating with allies.
 
-### 1. Mob Rules (Managing Groups of Punks)
-To speed up combat, a group of 3–4 Punks (Tier 1) can be treated as a single **Mob** with a unified stat block:
-*   **Mob Stats**: Footwork 3, Posture 3, Timing 3, Stamina 3.
-*   **Mob Action**: The Mob declares a single collective action type per round (representing a gang rush).
-*   **Degradation**: Every 3 points of total attribute damage dealt to the Mob knocks out one Punk, reducing all of the Mob's attributes by **$-1$** in real-time.
-*   **Defeat**: When the Mob's attributes reach 0, all Punks are defeated or flee.
+### 1. Mob Punk Rules (Exclusive to Tier 1 Gangs)
+
+> [!IMPORTANT]
+> **Exclusive to Tier 1 Punks**: Mob rules apply **only** to Tier 1 Punks (minor street corner lackeys, pickpockets, or lookout groups). **Tier 2 Thugs** and **Tier 3 Bosses** are seasoned brawlers who always act as individual combatants with their own full attribute pools and cannot be grouped into Mobs.
+
+*   **Shared Mob Pool**: A group of Tier 1 Punks acts as a single collective entity called a **Mob**. The Mob has a **Mob Count** equal to the total number of punks in the group (e.g., a Mob of 4 Punks).
+*   **One-Hit TKO**: Every point of attribute damage dealt to the Mob instantly TKOs **1 Punk** from the gang (1 damage = 1 Punk defeated).
+    *   *Example*: A Boxer hits a 4-Punk Mob with a Cross dealing **3 Timing damage**. 3 Punks are immediately knocked out! The Mob Count drops from 4 down to 1.
+*   **Mob Group Bonus**: On its turn, the Mob rolls a single shared action check, adding a **$+1$ bonus per active Punk** remaining in the Mob (up to the standard $+10$ Modifier Cap).
+*   **Total Defeat**: When the Mob Count reaches **0**, all Punks in the Mob are defeated and any survivors scatter.
 
 ### 2. Flanking & Third-Party Intervention
 If a fighter is double-teamed by multiple opponents:

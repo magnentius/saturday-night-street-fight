@@ -265,7 +265,7 @@ def format_character_sheet(name, style_name, attrs, masteries, unspent_xp, arche
     if not masteries:
         sheet.append("*   *None (All sub-actions are Untrained Rank 0)*")
     for move, rank in masteries.items():
-        rank_text = "Trained (Rank 1, +2)" if rank == 1 else "Mastered (Rank 2, +5)"
+        rank_text = "Trained (Rank 1, +3)" if rank == 1 else "Mastered (Rank 2, +5)"
         sheet.append(f"*   **{move.title()}**: {rank_text}")
     sheet.append("")
     

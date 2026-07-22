@@ -59,7 +59,7 @@ class Combatant:
         self.hobbled = 0   # 0 = normal, 1 = Hobbled (-1), 2 = Muay Thai Hobbled (-2)
         self.winded = False # Winded (-1 Stamina)
         
-        # Ranges: "striking" or "clinch"
+        # Ranges: "outside", "striking", or "grapple"
         self.range = "striking"
 
     def is_defeated(self):
@@ -201,10 +201,13 @@ class Combatant:
         rolls = [random.randint(1, 10) for _ in range(num_dice)]
         rolls.sort()
         if keep_highest and num_dice > 2:
-            return sum(rolls[-2:])
+            kept = rolls[-2:]
         elif not keep_highest and num_dice > 2:
-            return sum(rolls[:2])
-        return sum(rolls)
+            kept = rolls[:2]
+        else:
+            kept = rolls
+        is_nat20 = kept.count(10) >= 2
+        return sum(kept), is_nat20
 
     def calculate_check(self, action, subaction, rps_advantage):
         attr_name = "timing"
@@ -225,7 +228,7 @@ class Combatant:
         mastery_rank = self.masteries.get(subaction, 0)
         mastery_bonus = 0
         if mastery_rank == 1:
-            mastery_bonus = 2
+            mastery_bonus = 3
         elif mastery_rank == 2:
             mastery_bonus = 5
             
@@ -239,7 +242,7 @@ class Combatant:
             if num_dice == 2:
                 num_dice = 3
 
-        dice_sum = self.roll_dice(num_dice, keep_highest=keep_highest)
+        dice_sum, is_nat20 = self.roll_dice(num_dice, keep_highest=keep_highest)
         
         flat_mod = attr_val + mastery_bonus
         
@@ -265,8 +268,10 @@ class Combatant:
         if temp_penalty > 0:
             roll_log += f" - {temp_penalty} Status"
         roll_log += f", {adv_text})"
+        if is_nat20:
+            roll_log += f" [NATURAL 20!]"
         
-        return total, roll_log, attr_name
+        return total, roll_log, attr_name, is_nat20
 
 def run_fight(p1, p2, should_write=False):
     global log_lines
@@ -318,8 +323,8 @@ def run_fight(p1, p2, should_write=False):
         p2_read_success = False
         
         if not p1.stunned and not p2.stunned:
-            p1_roll = p1.roll_dice(2) + max(p1.attrs["timing"], p1.attrs["cool"])
-            p2_roll = p2.roll_dice(2) + max(p2.attrs["timing"], p2.attrs["cool"])
+            p1_roll = p1.roll_dice(2)[0] + max(p1.attrs["timing"], p1.attrs["cool"])
+            p2_roll = p2.roll_dice(2)[0] + max(p2.attrs["timing"], p2.attrs["cool"])
             
             if p1_roll > p2_roll:
                 p1_read_success = True
@@ -356,7 +361,7 @@ def run_fight(p1, p2, should_write=False):
         log_print(f"  {p2.name} commits: {p2_color.upper()} ({p2_sub.upper()})")
         log_print("-" * 55)
 
-        # --- PHASE 3: RESOLVE RPS TRIANGLE ---
+        # --- PHASE 3: ADVANTAGE CHECK ---
         p1_advantage = False
         p2_advantage = False
         
@@ -374,8 +379,8 @@ def run_fight(p1, p2, should_write=False):
             p2_advantage = True
 
         # --- PHASE 4: ROLL & RESOLVE ---
-        p1_total, p1_log, p1_attr = p1.calculate_check(p1_color, p1_sub, p1_advantage)
-        p2_total, p2_log, p2_attr = p2.calculate_check(p2_color, p2_sub, p2_advantage)
+        p1_total, p1_log, p1_attr, p1_nat20 = p1.calculate_check(p1_color, p1_sub, p1_advantage)
+        p2_total, p2_log, p2_attr, p2_nat20 = p2.calculate_check(p2_color, p2_sub, p2_advantage)
         
         log_print(f"  {p1.name} rolls: {p1_log}")
         log_print(f"  {p2.name} rolls: {p2_log}")
@@ -389,32 +394,76 @@ def run_fight(p1, p2, should_write=False):
         p1.winded = False
         p2.winded = False
 
+        # Apply Momentum Surge for Nat 20s
+        for ftr, nat in [(p1, p1_nat20), (p2, p2_nat20)]:
+            if nat:
+                log_print(f"   {C_RED}{C_BOLD}*** OVERKILL! {ftr.name} ROLLED A NATURAL 20! ***{C_RESET}")
+                if ftr.attrs["stamina"] < ftr.max_attrs["stamina"]:
+                    ftr.attrs["stamina"] = min(ftr.max_attrs["stamina"], ftr.attrs["stamina"] + 1)
+                    log_print(f"   -> Momentum Surge! {ftr.name} recovered +1 Stamina!")
+                elif ftr.attrs["cool"] < ftr.max_attrs["cool"]:
+                    ftr.attrs["cool"] = min(ftr.max_attrs["cool"], ftr.attrs["cool"] + 1)
+                    log_print(f"   -> Momentum Surge! {ftr.name} recovered +1 Cool!")
+
+        if p1_color == "strike" and p2_color == "strike":
+            log_print(f"\n{C_BOLD}{C_YELLOW}--> STRIKE TRADE! Both fighters throw strikes!{C_RESET}")
+            if p1_total >= p2_total:
+                first, first_sub, first_tot, first_nat, first_key = p1, p1_sub, p1_total, p1_nat20, "p1"
+                second, second_sub, second_tot, second_nat, second_key = p2, p2_sub, p2_total, p2_nat20, "p2"
+            else:
+                first, first_sub, first_tot, first_nat, first_key = p2, p2_sub, p2_total, p2_nat20, "p2"
+                second, second_sub, second_tot, second_nat, second_key = p1, p1_sub, p1_total, p1_nat20, "p1"
+
+            # First strike lands
+            first_dmg = 1 if first_sub in ["jab", "taunt"] else (3 if first_sub in ["uppercut", "high kick", "body kick"] else 2)
+            first_crit = first_nat or ((first_tot - second_tot) >= 5)
+            if first_crit:
+                first_dmg += 1
+                metrics[first_key]["crits"] += 1
+                log_print(f"   {C_RED}{C_BOLD}*** {first.name} LANDS A CRITICAL STRIKE! ***{C_RESET}")
+
+            resolve_hit(first, first_sub, second, first_dmg, first_crit, metrics, first_key, second_key)
+
+            # Check if second fighter was KO'd before their strike lands
+            if second.is_defeated():
+                log_print(f"   -> {second.name} was knocked out before their strike could land!")
+            else:
+                second_dmg = 1 if second_sub in ["jab", "taunt"] else (3 if second_sub in ["uppercut", "high kick", "body kick"] else 2)
+                second_crit = second_nat or ((second_tot - first_tot) >= 5)
+                if second_crit:
+                    second_dmg += 1
+                    metrics[second_key]["crits"] += 1
+                    log_print(f"   {C_RED}{C_BOLD}*** {second.name} LANDS A CRITICAL STRIKE! ***{C_RESET}")
+
+                resolve_hit(second, second_sub, first, second_dmg, second_crit, metrics, second_key, first_key)
+
+            continue
+
         winner, loser = None, None
         w_total, l_total = 0, 0
         w_color, l_color = "", ""
         w_sub, l_sub = "", ""
+        w_nat20 = False
         
-        if p1_total > p2_total:
+        if p1_total > p2_total or p1_nat20:
             winner, loser = p1, p2
             w_total, l_total = p1_total, p2_total
             w_color, l_color = p1_color, p2_color
             w_sub, l_sub = p1_sub, p2_sub
             w_key, l_key = "p1", "p2"
-        elif p2_total > p1_total:
+            w_nat20 = p1_nat20
+        elif p2_total > p1_total or p2_nat20:
             winner, loser = p2, p1
             w_total, l_total = p2_total, p1_total
             w_color, l_color = p2_color, p1_color
             w_sub, l_sub = p2_sub, p1_sub
             w_key, l_key = "p2", "p1"
+            w_nat20 = p2_nat20
         else:
             # TIE! Roll standoff or Clash rules
             metrics["clashes"] += 1
             log_print(f"\n{C_BOLD}{C_YELLOW}--> CLASH RESOLUTION (Tied rolls: {p1_total} vs {p2_total}){C_RESET}")
-            if p1_color == "strike" and p2_color == "strike":
-                log_print("  -> Both strikes hit simultaneously!")
-                resolve_hit(p1, p1_sub, p2, 2, False, metrics, "p1", "p2")
-                resolve_hit(p2, p2_sub, p1, 2, False, metrics, "p2", "p1")
-            elif p1_color == "strike" and p2_color == "block":
+            if p1_color == "strike" and p2_color == "block":
                 log_print(f"  -> {p2.name}'s block holds, but they are STAGGERED next turn.")
                 p2.staggered = True
             elif p2_color == "strike" and p1_color == "block":
@@ -426,11 +475,12 @@ def run_fight(p1, p2, should_write=False):
 
         # Winner-take-all resolution
         margin = w_total - l_total
-        crit = margin >= 5
+        crit = w_nat20 or (margin >= 5)
         log_print(f"\n-> {C_GREEN}{C_BOLD}{winner.name} wins the exchange!{C_RESET} (Margin: {margin})")
         if crit:
             metrics[w_key]["crits"] += 1
-            log_print(f"   {C_RED}{C_BOLD}*** CRITICAL HIT! ***{C_RESET}")
+            if not w_nat20:
+                log_print(f"   {C_RED}{C_BOLD}*** CRITICAL HIT! ***{C_RESET}")
             
         # 1. Resolve Strike
         if w_color == "strike":
@@ -486,8 +536,8 @@ def run_fight(p1, p2, should_write=False):
         elif w_color == "throw":
             if w_sub == "clinch":
                 log_print(f"   {winner.name} locks {loser.name} in a Clinch/Grab.")
-                winner.range = "clinch"
-                loser.range = "clinch"
+                winner.range = "grapple"
+                loser.range = "grapple"
             elif w_sub == "trip":
                 log_print(f"   {winner.name} sweeps {loser.name}'s legs!")
                 loser.prone = True

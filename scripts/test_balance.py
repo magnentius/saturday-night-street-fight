@@ -36,8 +36,8 @@ def simulate_single_fight(p1_data, p2_data):
         p1_read = False
         p2_read = False
         if not p1.stunned and not p2.stunned:
-            p1_roll = p1.roll_dice(2) + max(p1.attrs["timing"], p1.attrs["cool"])
-            p2_roll = p2.roll_dice(2) + max(p2.attrs["timing"], p2.attrs["cool"])
+            p1_roll = p1.roll_dice(2)[0] + max(p1.attrs["timing"], p1.attrs["cool"])
+            p2_roll = p2.roll_dice(2)[0] + max(p2.attrs["timing"], p2.attrs["cool"])
             if p1_roll > p2_roll:
                 p1_read = True
             elif p2_roll > p1_roll:
@@ -68,8 +68,8 @@ def simulate_single_fight(p1_data, p2_data):
         elif p2_col == "block" and p1_col == "strike": p2_adv = True
 
         # Calculate checks
-        p1_tot, _, p1_attr = p1.calculate_check(p1_col, p1_sub, p1_adv)
-        p2_tot, _, p2_attr = p2.calculate_check(p2_col, p2_sub, p2_adv)
+        p1_tot, _, p1_attr, p1_nat = p1.calculate_check(p1_col, p1_sub, p1_adv)
+        p2_tot, _, p2_attr, p2_nat = p2.calculate_check(p2_col, p2_sub, p2_adv)
 
         # Reset temporary states
         p1.staggered = False
@@ -79,31 +79,62 @@ def simulate_single_fight(p1_data, p2_data):
         p1.winded = False
         p2.winded = False
 
-        if p1_tot == p2_tot:
+        # Apply Momentum Surge for Nat 20s
+        for ftr, nat in [(p1, p1_nat), (p2, p2_nat)]:
+            if nat:
+                if ftr.attrs["stamina"] < ftr.max_attrs["stamina"]:
+                    ftr.attrs["stamina"] = min(ftr.max_attrs["stamina"], ftr.attrs["stamina"] + 1)
+                elif ftr.attrs["cool"] < ftr.max_attrs["cool"]:
+                    ftr.attrs["cool"] = min(ftr.max_attrs["cool"], ftr.attrs["cool"] + 1)
+
+        if p1_col == "strike" and p2_col == "strike":
+            if p1_tot >= p2_tot:
+                first, first_sub, first_tot, first_nat = p1, p1_sub, p1_tot, p1_nat
+                second, second_sub, second_tot, second_nat = p2, p2_sub, p2_tot, p2_nat
+            else:
+                first, first_sub, first_tot, first_nat = p2, p2_sub, p2_tot, p2_nat
+                second, second_sub, second_tot, second_nat = p1, p1_sub, p1_tot, p1_nat
+
+            # First strike lands
+            first_dmg = 1 if first_sub in ["jab", "taunt"] else (3 if first_sub in ["uppercut", "high kick", "body kick"] else 2)
+            first_crit = first_nat or ((first_tot - second_tot) >= 5)
+            if first_crit: first_dmg += 1
+
+            sim_resolve_hit(first, first_sub, second, first_dmg, first_crit)
+
+            # Check if second fighter was KO'd before their strike lands
+            if not second.is_defeated():
+                second_dmg = 1 if second_sub in ["jab", "taunt"] else (3 if second_sub in ["uppercut", "high kick", "body kick"] else 2)
+                second_crit = second_nat or ((second_tot - first_tot) >= 5)
+                if second_crit: second_dmg += 1
+
+                sim_resolve_hit(second, second_sub, first, second_dmg, second_crit)
+
+            continue
+
+        if p1_tot == p2_tot and not p1_nat and not p2_nat:
             # Clash
-            if p1_col == "strike" and p2_col == "strike":
-                # Double Hit
-                sim_resolve_hit(p1, p1_sub, p2, 2, False)
-                sim_resolve_hit(p2, p2_sub, p1, 2, False)
-            elif p1_col == "strike" and p2_col == "block":
+            if p1_col == "strike" and p2_col == "block":
                 p2.staggered = True
             elif p2_col == "strike" and p1_col == "block":
                 p1.staggered = True
             continue
 
         # Determine winner
-        if p1_tot > p2_tot:
+        if p1_tot > p2_tot or p1_nat:
             winner, loser = p1, p2
             w_col, l_col = p1_col, p2_col
             w_sub, l_sub = p1_sub, p2_sub
             margin = p1_tot - p2_tot
+            w_nat = p1_nat
         else:
             winner, loser = p2, p1
             w_col, l_col = p2_col, p1_col
             w_sub, l_sub = p2_sub, p1_sub
             margin = p2_tot - p1_tot
+            w_nat = p2_nat
 
-        crit = margin >= 5
+        crit = w_nat or (margin >= 5)
 
         if w_col == "strike":
             dmg = 2
@@ -123,8 +154,8 @@ def simulate_single_fight(p1_data, p2_data):
         elif w_col == "block":
             if w_sub == "parry" and winner.style_name == "Judo" and l_col == "strike":
                 # free throw attempt
-                t_r = winner.roll_dice(2) + winner.attrs["posture"]
-                d_r = loser.roll_dice(2) + loser.attrs["footwork"]
+                t_r = winner.roll_dice(2)[0] + winner.attrs["posture"]
+                d_r = loser.roll_dice(2)[0] + loser.attrs["footwork"]
                 if t_r > d_r:
                     loser.prone = True
                     loser.attrs["posture"] = max(0, loser.attrs["posture"] - 2)

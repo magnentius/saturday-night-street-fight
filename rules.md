@@ -9,7 +9,7 @@
 1. [Fighter Creation](#fighter-creation)
 2. [Attributes & Technique Masteries](#attributes--technique-masteries)
 3. [Martial Arts Styles](#martial-arts-styles)
-4. [Combat Actions Triangle](#combat-actions-triangle)
+4. [Combat Stances & Counter Dynamics](#combat-stances--counter-dynamics)
 5. [Action Types & Sub-Actions](#action-types--sub-actions)
 6. [Attribute Damage & Defeat](#attribute-damage--defeat)
 7. [Mechanics & Resolution](#mechanics--resolution)
@@ -43,7 +43,7 @@ You have **50 Experience Points (XP)** to customize your fighter. Spend them usi
 
 #### B. Purchase Technique Masteries
 You can train in any sub-actions allowed by your chosen style:
-*   **Trained (Rank 1)** ($+2$ bonus): Costs **3 XP** per technique.
+*   **Trained (Rank 1)** ($+3$ bonus): Costs **3 XP** per technique.
 *   **Mastered (Rank 2)** ($+5$ bonus): Costs **6 XP** (requires Rank 1 first, for a total of 9 XP).
 
 ---
@@ -81,7 +81,7 @@ A character's capabilities are defined by five core Attributes and their specifi
 ### Technique Masteries (Skills)
 Characters can train in individual sub-actions (e.g., *Jab*, *Low Kick*, *Parry*, *Hip/Shoulder Throw*):
 *   **Untrained (Rank 0)**: You only add your governing Attribute to your roll.
-*   **Trained (Rank 1)**: You gain a $+2$ bonus to your roll.
+*   **Trained (Rank 1)**: You gain a $+3$ bonus to your roll.
 *   **Mastered (Rank 2)**: You gain a $+5$ bonus to your roll.
 
 ### Attribute Mapping
@@ -167,20 +167,20 @@ Characters can adopt a specific Martial Arts Style, which dictates their availab
     *   *Throws*: None.
 *   **Style Perks**:
     *   **Spinning Kicks**: A High Kick gains a $+2$ bonus if performed immediately following a successful Push Kick (Teep).
-    *   **Outfighting**: Evasion/Dodge actions gain a $+2$ bonus if you are outside of Clinch Range.
+    *   **Outside Spacing**: Evasion/Dodge actions gain a $+2$ bonus if you are at Outside Range.
 
 ---
 
-## Combat Actions Triangle
+## Combat Stances & Counter Dynamics
 
 > *"Be water, my friend. Empty your mind. Be formless, shapeless, like water. You put water into a cup, it becomes the cup."* — Bruce Lee
 
 
-The core combat dynamic follows a rock-paper-scissors-style relationship:
+Fighters adopt one of three tactical combat stances during each exchange: **Assault Stance (Strike / Red)**, **Guard Stance (Block / White)**, or **Grapple Stance (Throw / Black)**. Combat dominance follows a natural counter relationship:
 
-*   **Strike** beats **Throw** ($\text{Strike} > \text{Throw}$): A strike interrupts the grab attempt.
-*   **Block** beats **Strike** ($\text{Block} > \text{Strike}$): A guard absorbs or deflects the blow.
-*   **Throw** beats **Block** ($\text{Throw} > \text{Block}$): A passive defensive guard makes you easy to grapple.
+*   **Assault Stance** beats **Grapple Stance** ($\text{Assault} > \text{Grapple}$): Fast offensive strikes interrupt grappling entries and takedowns before leverage can be established.
+*   **Guard Stance** beats **Assault Stance** ($\text{Guard} > \text{Assault}$): High/low defensive guards deflect or absorb incoming punches and kicks.
+*   **Grapple Stance** beats **Guard Stance** ($\text{Grapple} > \text{Guard}$): A passive defensive stance leaves a fighter vulnerable to sweeps, clinches, and projections.
 
 ---
 
@@ -207,7 +207,7 @@ Strikes aim to inflict damage and interrupt throws.
 *   **Push Kick (Teep)**: Straight thrusting kick. Fast speed, low damage. Pushes the opponent back, resetting combat to neutral range and canceling throw/clinch attempts.
 
 #### C. Special Strikes
-*   **Taunt**: A verbal or physical psychological mock. Takes the place of a **Strike (Red)** in the combat triangle. Governed by the **Cool** attribute. Deals no physical damage, but a successful check inflicts **1 Cool damage** on the target.
+*   **Taunt**: A verbal or physical psychological mock. Takes the place of an **Assault Stance (Strike / Red)** action. Governed by the **Cool** attribute. Deals no physical damage, but a successful check inflicts **1 Cool damage** on the target.
 *   **Dirty Punch**: Heavy overhand punch used to close the distance. Governed by **Posture** (using forward momentum). Deals **Timing** damage. *(Only allowed for Wrestlers).*
 *   **Ground & Pound**: Striking a downed opponent on the canvas. Governed by **Posture** or **Timing**. Deals **Posture** or **Stamina** damage. Can only be selected against **Prone** or **Pinned** targets. *(Allowed for Wrestling and Judo).*
 
@@ -266,7 +266,8 @@ When an attack connects, it deals direct damage to a specific attribute based on
 *   *Note: Successful Throws also knock the target **Prone**.*
 
 #### Success Modifier
-If the attacker wins the clash with a **Critical Success** (succeeding by a margin of 5 or more), the attribute damage is increased by $+1$.
+*   **Critical Success**: If the attacker wins the clash with a margin of 5 or more (Winner Total - Loser Total $\ge 5$), the attribute damage is increased by $+1$.
+*   **The Overkill Rule (Natural 20)**: If a combatant rolls a **Natural 20** (double 10s on their dice roll), their action automatically becomes an **Overkill Critical Hit** ($+1$ attribute damage and secondary critical effects) regardless of scores. In addition, the adrenaline spike grants a **Momentum Surge**: the attacker instantly restores **$+1$ Stamina or Cool** (up to their starting maximum).
 
 ### 3. Mitigation (Blocking & Dodging)
 If a defender successfully blocks or dodges, they subtract their defense rating from the incoming attack's base damage:
@@ -275,6 +276,17 @@ If a defender successfully blocks or dodges, they subtract their defense rating 
 *   **Parry**: If the parry check succeeds, it mitigates 100% of incoming damage and staggers the attacker.
 
 *Example: A combatant is hit by a High Kick (Base 3 Timing damage) while using a High Guard (Mitigates 2). The defender takes 1 Timing damage (3 - 2 = 1), reducing their Timing attribute by 1.*
+
+### 4. Mob Punk Rules (Tier 1 Gangs)
+
+> [!IMPORTANT]
+> **Exclusive to Tier 1 Punks**: Mob rules apply **only** to Tier 1 Punks (minor street corner lackeys, pickpockets, or lookout groups). **Tier 2 Thugs** and **Tier 3 Bosses** are seasoned brawlers who always act as individual combatants with their own full attribute pools and cannot be grouped into Mobs.
+
+*   **Shared Mob Pool**: A group of Tier 1 Punks acts as a single collective entity called a **Mob**. The Mob has a **Mob Count** equal to the total number of punks in the group (e.g., a Mob of 4 Punks).
+*   **One-Hit TKO**: Every point of attribute damage dealt to the Mob instantly TKOs **1 Punk** from the gang (1 damage = 1 Punk defeated).
+    *   *Example*: A Boxer hits a 4-Punk Mob with a Cross dealing **3 Timing damage**. 3 Punks are immediately knocked out! The Mob Count drops from 4 down to 1.
+*   **Mob Group Bonus**: On its turn, the Mob rolls a single shared action check, adding a **$+1$ bonus per active Punk** remaining in the Mob (up to the standard $+10$ Modifier Cap).
+*   **Total Defeat**: When the Mob Count reaches **0**, all Punks in the Mob are defeated and any survivors scatter.
 
 ---
 
@@ -298,43 +310,44 @@ Combat is played in simultaneous **Rounds** resolved by a single **Contested Rol
 
 3. **Phase 3: Roll & Resolve (Contested Roll-Off)**
    * Now that the action matchup is revealed, combatants roll their dice:
-     * **Triangle Winner**: Rolls with **Advantage** (roll $3\text{d}10$, keep the two highest dice).
-     * **Triangle Loser**: Rolls their standard $2\text{d}10$ check.
-     * **Same Color matchup** (e.g., Red vs. Red): Both roll their standard $2\text{d}10$ check normally.
+     * **Dominant Stance (Counter Winner)**: Rolls with **Advantage** (roll $3\text{d}10$, keep the two highest dice).
+     * **Exposed Stance (Counter Loser)**: Rolls their standard $2\text{d}10$ check.
+     * **Matched Stances** (e.g., Assault vs. Assault): Both roll their standard $2\text{d}10$ check normally.
    * Each combatant calculates their **Roll Total**:
      $$\text{Roll Total} = \text{Dice Result} + \text{Governing Attribute} + \text{Technique Mastery Bonus}$$
-   * The combatant with the **higher Roll Total wins the round**, executing their sub-action. The loser's action is interrupted or fails.
-   * *Note: The triangle winner is statistically favored to win the contest, but a high-rolling triangle loser can still overcome the advantage and win the round.*
+   * In a counter matchup or grapple struggle, the combatant with the **higher Roll Total wins the check**, executing their action while interrupting the opponent's. In an **Assault vs. Assault (Strike vs. Strike)** matchup, both fighters trade blows—the fighter with the **higher Roll Total applies their damage first**. If the lower roller is knocked out (any attribute reduced to 0), their strike is interrupted and fails. If the lower roller survives, their strike connects and deals full damage back.
+   * *Note: The dominant stance is statistically favored to win the contest, but a high-rolling exposed stance can still overcome the disadvantage and win the round.*
 
 ---
 
-### 1. Resolving the Triangle (RPS)
+### 1. Stance Counter Resolution
 
-*   **Different Actions (Triangle Check)**: If the rolled colors match a winning/losing pair (e.g., Red vs. Black / Strike vs. Throw):
-    *   The triangle winner rolls with Advantage.
-    *   The triangle loser rolls normally.
+*   **Opposing Stances (Counter Check)**: If the revealed stances form a counter pair (e.g., Guard vs. Assault / Block vs. Strike):
+    *   The **Dominant Stance** (counter winner) rolls with **Advantage**.
+    *   The **Exposed Stance** (counter loser) rolls normally.
     *   **Winner-Take-All**: Only the winner of the contested roll executes their action; the loser's action is completely interrupted and fails (dealing no damage or secondary effects).
-    *   *Example 1 (Block vs. Strike)*: White beats Red. The Blocker rolls with Advantage.
+    *   *Example 1 (Guard Stance vs. Assault Stance)*: Guard beats Assault. The Blocker rolls with Advantage.
         *   If the **Blocker wins**, the block succeeds and subtracts its mitigation rating from the strike's Attribute Damage (e.g., High Guard mitigates 2 damage, completely absorbing a 2-damage Cross, but letting 1 chip damage through from a 3-damage Uppercut).
-        *   If the **Striker wins** (overcoming the blocker's advantage), the strike bypasses the guard entirely, dealing full, unmitigated Attribute Damage.
-    *   *Example 2 (Strike vs. Throw)*: Red beats Black. The Striker rolls with Advantage.
+        *   If the **Striker wins** (overcoming the guard's advantage), the strike bypasses the guard entirely, dealing full, unmitigated Attribute Damage.
+    *   *Example 2 (Assault Stance vs. Grapple Stance)*: Assault beats Grapple. The Striker rolls with Advantage.
         *   If the **Striker wins**, the strike connects, dealing Attribute Damage and interrupting the throw.
-        *   If the **Thrower wins** (overcoming the striker's advantage), the thrower successfully clinches or throws the opponent; the strike is completely interrupted and deals 0 damage.
-*   **Same Actions (Same Color Rolls)**:
-    *   **Red vs. Red (Strike vs. Strike)**: Both roll normally (no Advantage). The higher total wins the round, landing their strike. The loser's strike misses or is beat to the punch.
-    *   **White vs. White (Block vs. Block)**: No contest is needed. Both combatants remain passive in guard. Standoff; the round resets to neutral.
-    *   **Black vs. Black (Throw vs. Throw)**: A grapple struggle. Both roll off normally using either **Posture** or **Timing**. The higher total wins the check, securing a Clinch or a throw.
+        *   If the **Grappler wins** (overcoming the striker's advantage), the grappler successfully clinches or throws the opponent; the strike is completely interrupted and deals 0 damage.
+*   **Matched Stances (Same Stance Rolls)**:
+    *   **Assault vs. Assault (Strike vs. Strike)**: Sequential Trade! Both roll normally ($2\text{d}10$). The fighter with the higher Roll Total lands their strike **first**. If the lower roller is knocked out (any attribute drops to 0), they collapse and their strike is interrupted. If the lower roller survives, their strike lands and deals full damage back. Outrolling the opponent by a margin of 5 or more (or rolling a Natural 20) upgrades your strike to a **Critical Hit** ($+1$ damage).
+    *   **Guard vs. Guard (Block vs. Block)**: No contest is needed. Both combatants remain passive in guard. Standoff; the round resets to neutral.
+    *   **Grapple vs. Grapple (Throw vs. Throw)**: A grapple struggle. Both roll off normally using either **Posture** or **Timing**. The higher total wins the check, securing a Clinch or a throw.
 
 ### 2. Dice Checks (2d10 System)
 To resolve the contested roll, combatants calculate their totals using the following:
 *   **Action Roll**: Roll the chosen $2\text{d}10$ (or $3\text{d}10$ if rolling with Advantage).
 *   **Attribute Modifier**: Add the governing Attribute (**Footwork**, **Posture**, **Timing**, or **Stamina**).
-*   **Mastery Modifier**: Add the Technique Mastery bonus (**$+2$** if Trained, **$+5$** if Mastered).
+*   **Mastery Modifier**: Add the Technique Mastery bonus (**$+3$** if Trained, **$+5$** if Mastered).
 *   **The Modifier Cap**: The sum of all flat modifiers (Attribute + Mastery + style/situational bonuses) applied to any check can **never exceed $+10$**.
 *   **Temporary Status Penalties**: Temporary combat conditions (e.g., **Hobbled** or **Winded**) degrade your attribute modifiers for rolls next round, but **can never reduce an attribute below 1 for checks, and never trigger defeat/TKO**.
 *   **Compare Totals**:
     *   **Success**: Have the higher Roll Total.
     *   **Critical Success**: Succeeding by a margin of 5 or more (Winner Total - Loser Total $\ge 5$) activates secondary weapon/style/critical effects, and increases incoming damage by $+1$ attribute damage.
+    *   **The Overkill Rule (Natural 20)**: Rolling double 10s on your action dice is a **Natural 20 (Overkill)**. It guarantees an automatic Critical Hit ($+1$ damage and critical secondary effects) regardless of scores, and grants a **Momentum Surge** (instantly restoring $+1$ Stamina or Cool to the attacker).
 
 ### 3. Ties and Clashes (Identical Roll Totals)
 If both combatants calculate the exact same Roll Total, the round is resolved as follows based on the action matchup:
@@ -354,30 +367,37 @@ Combat takes place across three fluid **Ranges**. Combatants control the distanc
 
 ### 1. The Three Combat Ranges
 
-*   **Outfighting (Long Range)**: Spaced out, circling.
+*   **Outside Range (Long Range)**: Spaced out, circling outside reach.
     *   *Allowed Actions*: Only long Strikes (Low Kick, Body Kick, High Kick, Push Kick). Punches and Throws are out of range.
     *   *Mobility Perk*: **Dodge / Evasion** (Footwork-based) is highly effective at this range.
 *   **Striking Range (Medium Range)**: The pocket, exchange range.
-    *   *Allowed Actions*: All Strikes (Punches & Kicks) and Blocks. Throws are out of range.
-*   **Clinch Range (Close Range)**: Grappling, tied up.
-    *   *Allowed Actions*: All Throws (Clinch/Grab, Trip, Hip Throw, Takedown). Punches and Kicks cannot be used (except Uppercuts and style-specific Clinch strikes).
+    *   *Allowed Actions*: All Strikes (Punches & Kicks) and Guards. Throws are out of range.
+*   **Grapple Range (Close Range)**: Tied up, body-to-body grappling.
+    *   *Allowed Actions*: All Throws (Clinch/Grab, Trip, Hip Throw, Takedown) and close strikes (Uppercut, Thai Clinch knees). Long kicks and standard punches cannot be used.
 
-### 2. Controlling the Distance
+### 2. Starting Encounter Range
+The initial distance when combat begins depends on the environment and encounter context:
+
+*   **Standard Face-Off (Striking Range)**: Most standard street brawls, alley square-ups, and bar confrontations default to **Striking Range**. Both fighters start within reach of punches, kicks, and guards.
+*   **Open Ground / Long Sightlines (Outside Range)**: Wide open parking lots, street blocks, or spotting an enemy across a subway station platform starts at **Outside Range**, favoring long-range kickers.
+*   **Ambush / Close Quarters (Grapple Range)**: Fights inside crowded subway cars, elevators, narrow hallways, or ambushes from behind start at **Grapple Range**, giving grapplers immediate entry leverage.
+
+### 3. Controlling the Distance
 Fighters change range by winning clashes with specific sub-actions:
 
 #### A. Advancing (Closing the Distance)
-To move closer, perform a **Throw (Black)** action:
-*   **Clinch / Grab** or **Takedown**: Winning the check moves you forward one range step (e.g., Striking $\rightarrow$ Clinch).
-*   *Critical Success*: Advancing with a Critical Success allows you to move two range steps (e.g., Outfighting $\rightarrow$ Clinch).
+To move closer, perform a **Grapple Stance (Throw / Black)** action:
+*   **Clinch / Grab** or **Takedown**: Winning the check moves you forward one range step (e.g., Striking Range $\rightarrow$ Grapple Range).
+*   *Critical Success*: Advancing with a Critical Success allows you to move two range steps (e.g., Outside Range $\rightarrow$ Grapple Range).
 
 #### B. Retreating (Creating Distance)
-To step back safely, perform an evasive **Block (White)** action:
-*   **Dodge / Evasion**: Winning the check allows you to retreat one range step (e.g., Clinch $\rightarrow$ Striking).
+To step back safely, perform an evasive **Guard Stance (Block / White)** action:
+*   **Dodge / Evasion**: Winning the check allows you to retreat one range step (e.g., Grapple Range $\rightarrow$ Striking Range).
 *   *Note: If the check fails, the attacker keeps you trapped at the closer range.*
 
 #### C. Forcing Distance (Pushing Back)
-To actively push an opponent away, perform a specialized **Strike (Red)** action:
-*   **Push Kick (Teep)**: A successful hit pushes the opponent back one range step (e.g., Clinch $\rightarrow$ Striking).
+To actively push an opponent away, perform a specialized **Assault Stance (Strike / Red)** action:
+*   **Push Kick (Teep)**: A successful hit pushes the opponent back one range step (e.g., Grapple Range $\rightarrow$ Striking Range).
 
 ---
 
@@ -433,16 +453,18 @@ Fighters are **Winded** when hit by a successful body blow (like a **Body Kick**
 > *"Fall down seven times, stand up eight."* — Japanese Proverb
 
 
-### 1. Attribute Restoration (Natural Healing)
-Fighters recover their damaged attributes naturally over time through rest:
-*   **Minor Damage** (combat attributes at 1 or higher): Combat attributes recover by **$+1$ point** per night of rest.
-*   **Cool Composure**: The **Cool** attribute is fully restored to maximum after a single night of rest.
-*   **Severe Damage & Hospitalization** (combat attributes at 0): If any combat attribute (Timing, Posture, Footwork, Stamina) is reduced to 0, the fighter is physically incapacitated. **They cannot heal naturally.**
-    *   **Admittance Check**: To begin healing, the fighter must find a **Hospital or Free Clinic** landmark (either on a block or connected to a subway station) and pass a **Cool Check (DC 12)** to get admitted (representing the overcrowded, chaotic 1970s urban healthcare crisis). An uninjured companion can roll this check on the patient's behalf.
-    *   **Delayed Treatment**: If the check fails, the patient is turned away. They must wait until the next day to try again, or find a different hospital block.
-    *   **Recovery Rate**: Once successfully admitted, the attribute recovers by **$+1$ point** per week of complete hospital rest.
-    *   **Discharge Check**: At the end of recovery, the fighter must pass a **Posture Check (DC 12)** to avoid a permanent $-1$ reduction to their maximum score for that attribute (see Permanent Scarring below).
-*   **Unwinding Cool**: If players visit a **Transit Safe House** or a **Dive Bar** landmark, they can spend **2 XP** to immediately restore Cool to its maximum value.
+### 1. Attribute Restoration & Resting Rules
+Fighters recover their damaged attributes through short breathers and medical treatment:
+
+*   **10-Minute Short Rest (Catch Your Breath)**: Between street encounters, fighters can spend **10 minutes** resting in a relatively safe location (a quiet alleyway, diner booth, subway platform, or transit bench) to catch their wind, patch minor cuts, and shake off fatigue.
+    *   **Minor Damage (Attributes at 1 or higher)**: Fully restores all attributes (Timing, Posture, Footwork, Stamina, and Cool) back to their maximum scores.
+    *   **TKO Restriction**: A 10-minute short rest **cannot** heal any attribute that was reduced to **0** (see Hospitalization below).
+*   **Cool Composure**: Visiting a **Transit Safe House** or a **Dive Bar** landmark allows fighters to unwind and instantly recover **Cool** to its maximum value.
+*   **Severe Damage & Hospitalization (Attributes at 0)**: If any attribute (Timing, Posture, Footwork, Stamina) is reduced to **0**, the fighter suffers a physical TKO (concussion, broken bone, ligament tear). **They are physically incapacitated and cannot heal via short rests.**
+    *   **Admittance Check**: To begin recovery, the fighter must find a **Hospital or Free Clinic** landmark (on a street block or subway station) and pass a **Cool Check (DC 12)** to get admitted (representing overcrowded 1970s urban emergency rooms). An uninjured companion can roll this check on the patient's behalf.
+    *   **Delayed Treatment**: If the check fails, the patient is turned away and must wait until the next day to attempt admittance again or locate another clinic.
+    *   **Recovery Rate**: Once admitted, the attribute recovers by **$+1$ point per week** of complete hospital bed rest.
+    *   **Discharge Check**: At the end of recovery, the fighter must pass a **Posture Check (DC 12)** to avoid a permanent $-1$ reduction to their maximum score for that attribute (see Permanent Scarring Table below).
 
 ### 2. Permanent Scarring Table
 If a fighter fails their recovery check, they suffer a permanent $-1$ reduction to the maximum score of that attribute, representing career-altering physical trauma. Use the table below for narrative description and roleplay prompts:
@@ -465,7 +487,7 @@ Every game session follows a structured four-phase loop representing one night o
 
 1.  **Phase 1: The Briefing (Select Target)**: Players start in their **Home Turf** (or a previously secured safe house) and choose a destination block or station.
 2.  **Phase 2: Riding the Rails (Transit Crawl)**: Players traverse the subway line. The GM generates the line length and stop types, rolling on the *Subway Station Event Table* for each platform.
-3.  **Phase 3: Navigating the Blocks (Street Crawl)**: When exiting a station, the GM generates the block's layout, landmarks, and hazards, setting its **Danger Rank**. Players resolve any street encounters or brawls.
+3.  **Phase 3: Navigating the Blocks (Street Crawl)**: When exiting a station, the GM generates the block's layout, landmarks, and hazards, setting its **Danger Rank**. Players resolve any street encounters using the procedural rules in the [Game Master's Guide](file:///Users/johnk/github/sat-night-street-fight/gm.md#encounter-building--starting-range-matrix).
 4.  **Phase 4: Retreat to Safety (Session End)**: A session ends when the fighters successfully reach their target, escape to a Transit Safe House, return home, or get admitted to a Hospital. During this phase, players earn and spend Experience Points (XP) to train techniques, condition attributes, and heal.
 
 ---
