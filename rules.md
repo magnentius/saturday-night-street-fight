@@ -72,15 +72,17 @@ Strikes aim to inflict damage and interrupt throws.
 ##### A. Punches
 *   **Jab**: Fastest punch. High accuracy, low damage. Interrupts slower actions.
 *   **Cross**: Straight power punch. Moderate speed, high damage. Standard damage-dealer.
-*   **Hook**: Looping power punch. Slower speed, high damage. Acts as a counterpunch, gaining a damage bonus if the opponent also chose a Strike.
-*   **Uppercut**: Vertical power punch. Slow speed, massive damage. Bypasses low guards/crouching stances, but highly vulnerable to fast punches.
+*   **Hook**: Looping power punch. Slower speed, high damage. Targets the body; successful hits deal **Stamina** or **Posture** damage (rib and liver shots), gaining a damage bonus if the opponent also chose a Strike.
+*   **Uppercut**: Vertical power punch. Slow speed, massive damage. Targets alignment; successful hits deal **Posture** damage (chin lift). Bypasses low guards/crouching stances, but highly vulnerable to fast punches.
 
 #### B. Kicks
-*   **Low Kick**: Fast leg strike. Targets stability; successful hits inflict a temporary $-1$ penalty to the target's **Footwork** attribute on the next round (stacking with standard Footwork attribute damage).
-*   **Body Kick**: Mid-height power kick. Focuses on windedness; successful hits inflict a temporary $-1$ penalty to the target's **Stamina** attribute next round (stacking with standard Stamina attribute damage).
+*   **Low Kick**: Fast leg strike. Targets stability; successful hits inflict **Footwork** attribute damage and apply the **Hobbled** status condition.
+*   **Body Kick**: Mid-height power kick. Focuses on windedness; successful hits inflict **Stamina** attribute damage and apply the **Winded** status condition.
 *   **High Kick**: High-impact head kick. Very slow speed, massive damage. High chance to stun or knock out the opponent, but easily parried or caught.
 *   **Push Kick (Teep)**: Straight thrusting kick. Fast speed, low damage. Pushes the opponent back, resetting combat to neutral range and canceling throw/clinch attempts.
 *   **Taunt**: A verbal or physical psychological mock. Takes the place of a **Strike (Red)** in the combat triangle. Governed by the **Cool** attribute. Deals no physical damage, but a successful check inflicts **1 Cool damage** on the target.
+*   **Dirty Punch**: Heavy overhand punch used to close the distance. Governed by **Posture** (using forward momentum). Deals **Timing** damage. *(Only allowed for Wrestlers).*
+*   **Ground & Pound**: Striking a downed opponent on the canvas. Governed by **Posture** or **Timing**. Deals **Posture** or **Stamina** damage. Can only be selected against **Prone** or **Pinned** targets. *(Allowed for Wrestling and Judo).*
 
 ---
 
@@ -138,6 +140,9 @@ Each sub-action is governed by a specific Attribute representing the physical ca
 | **Body Kick** | **Stamina** | Strike | Heavy body strike draining target's wind. |
 | **High Kick** | **Stamina** | Strike | High-impact flexibility and explosive power. |
 | **Push Kick (Teep)** | **Footwork** | Strike | Spacing and foot placement. |
+| **Taunt** | **Cool** | Strike | Verbal or physical psychological mock. |
+| **Dirty Punch** | **Posture** | Strike | Heavy overhand punch used to close the distance. |
+| **Ground & Pound** | **Posture** | Strike | Striking a downed opponent on the canvas. |
 | **High Guard** | **Posture** | Block | Standing structure and stance. |
 | **Low Guard** | **Posture** | Block | Crouching stability. |
 | **Parry** | **Timing** | Block | Precise timing of deflection. |
@@ -261,6 +266,18 @@ Fighters are **Shaken** when their Cool attribute is reduced to 0. Cool damage i
 *   **Perk Suspension**: You cannot use style perks that require calm or precision (such as Boxer's *Slip & Counter* or Judo's *Kuzushi*).
 *   **Duration**: Lasts until Cool is restored to 1 or higher. (Does not trigger a physical TKO).
 
+### 6. Hobbled (Footwork Penalty)
+Fighters are **Hobbled** when hit by a successful low leg attack (like a **Low Kick**).
+*   **Duration**: Lasts until the end of your next action check.
+*   **Effect**: You suffer a **$-1$ penalty** to all Footwork-based rolls (this penalty increases to **$-2$** if inflicted by a Muay Thai fighter's *Heavy Leg Kicks*).
+*   **TKO Protection**: Temporary modifiers can never reduce an attribute below 1 for checks, and never trigger defeat/TKO.
+
+### 7. Winded (Stamina Penalty)
+Fighters are **Winded** when hit by a successful body blow (like a **Body Kick**).
+*   **Duration**: Lasts until the end of your next action check.
+*   **Effect**: You suffer a **$-1$ penalty** to all Stamina-based rolls.
+*   **TKO Protection**: Temporary modifiers can never reduce an attribute below 1 for checks, and never trigger defeat/TKO.
+
 ---
 
 ## Mechanics & Resolution
@@ -271,11 +288,17 @@ Fighters are **Shaken** when their Cool attribute is reduced to 0. Cool damage i
 ### Contested Round Structure
 Combat is played in simultaneous **Rounds** resolved by a single **Contested Roll**:
 
-1. **Phase 1: Commit & Reveal (Declaration)**
-   * Combatants secretly choose their action type (Red for **Strike**, White for **Block**, Black for **Throw**) along with their specific sub-action (e.g., *Red / Hook* or *White / Parry*) using colored cards, tokens, or written notes.
+1. **Phase 1: Reading the Stance (Telegraphing)**
+   * Before committing action cards, a combatant can attempt to read their opponent's body language and telegraph cues.
+   * **The Roll**: Both roll a contested check. The reader rolls **Timing** or **Cool**. The opponent rolls **Cool** (feints/bluffing) or **Timing** (speed).
+   * **Success**: The reader wins the contested check and learns the opponent's planned action card color (Red for **Strike**, White for **Block**, Black for **Throw**) before committing their own action card.
+   * **Failure**: The reader fails to read the opponent. Commits proceed secretly and simultaneously as normal.
+
+2. **Phase 2: Commit & Reveal (Declaration)**
+   * Combatants choose their action type (Red, White, or Black) along with their specific sub-action (e.g., *Red / Hook*) using cards, tokens, or written notes. If a fighter successfully read their opponent in Phase 1, the opponent must commit and show their card color first.
    * Both combatants reveal their choices simultaneously.
 
-2. **Phase 2: Roll & Resolve (Contested Roll-Off)**
+3. **Phase 3: Roll & Resolve (Contested Roll-Off)**
    * Now that the action matchup is revealed, combatants roll their dice:
      * **Triangle Winner**: Rolls with **Advantage** (roll $3\text{d}10$, keep the two highest dice).
      * **Triangle Loser**: Rolls their standard $2\text{d}10$ check.
@@ -310,7 +333,7 @@ To resolve the contested roll, combatants calculate their totals using the follo
 *   **Attribute Modifier**: Add the governing Attribute (**Footwork**, **Posture**, **Timing**, or **Stamina**).
 *   **Mastery Modifier**: Add the Technique Mastery bonus (**$+2$** if Trained, **$+5$** if Mastered).
 *   **The Modifier Cap**: The sum of all flat modifiers (Attribute + Mastery + style/situational bonuses) applied to any check can **never exceed $+10$**.
-*   **Temporary Penalties**: Temporary combat penalties (e.g. from Low Kicks or Body Kicks) degrade your attribute modifiers for rolls next round, but **can never reduce an attribute below 1 for checks, and never trigger defeat/TKO**.
+*   **Temporary Status Penalties**: Temporary combat conditions (e.g., **Hobbled** or **Winded**) degrade your attribute modifiers for rolls next round, but **can never reduce an attribute below 1 for checks, and never trigger defeat/TKO**.
 *   **Compare Totals**:
     *   **Success**: Have the higher Roll Total.
     *   **Critical Success**: Succeeding by a margin of 5 or more (Winner Total - Loser Total $\ge 5$) activates secondary weapon/style/critical effects, and increases incoming damage by $+1$ attribute damage.
@@ -349,12 +372,12 @@ Characters can adopt a specific Martial Arts Style, which dictates their availab
     *   *Throws*: Clinch/Grab only (No Trip, Hip Throw, or Takedown).
 *   **Style Perks**:
     *   **Thai Clinch**: While holding an opponent in a Clinch/Grab, you can execute Knee strikes (Strike action, Timing-based, that deals High Impact [3 damage] to either Timing or Stamina).
-    *   **Heavy Leg Kicks**: Low Kicks deal 2 Footwork damage as normal, but inflict a temporary $-2$ penalty to the target's Footwork next round (instead of $-1$).
+    *   **Heavy Leg Kicks**: Low Kicks deal 2 Footwork damage as normal, but apply a severe **Hobbled** status condition (inflicting a $-2$ penalty to Footwork rolls next round instead of $-1$).
 
 ### 3. Judo (The Gentle Way)
 *   **Focus**: Redirection & High-Impact Throws.
 *   **Allowed Actions**:
-    *   *Strikes*: Jab (No other Strikes).
+    *   *Strikes*: Jab, Ground & Pound (only vs. Prone/Pinned targets).
     *   *Blocks*: High Guard, Parry (No Low Guard or Dodge).
     *   *Throws*: Clinch/Grab, Trip/Sweep, Hip/Shoulder Throw.
 *   **Style Perks**:
@@ -364,7 +387,7 @@ Characters can adopt a specific Martial Arts Style, which dictates their availab
 ### 4. Wrestling (Ground Dominance)
 *   **Focus**: Clinches & Power Takedowns.
 *   **Allowed Actions**:
-    *   *Strikes*: Jab (No other Strikes).
+    *   *Strikes*: Jab, Dirty Punch, Ground & Pound (only vs. Prone/Pinned targets).
     *   *Blocks*: High Guard, Low Guard (No Parry or Dodge).
     *   *Throws*: Clinch/Grab, Trip/Sweep, Takedown (Double Leg).
 *   **Style Perks**:
