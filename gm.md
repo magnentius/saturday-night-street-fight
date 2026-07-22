@@ -32,10 +32,10 @@ Whenever the train pulls into a station, roll to see what awaits the players on 
 | Roll | Station Event | Description & Rules |
 | :--- | :--- | :--- |
 | **1-3** | **Clear Platform** | The station is quiet, populated only by a few nervous commuters. Players can safely exit to the street (generating a new block) or rest to recover minor attribute damage. |
-| **4-5** | **Local Gang Toll** | A group of **Standard Thugs (Tier 2)** guards the turnstiles, demanding a toll or a bribe. If players refuse, a fight breaks out at Clinch Range. |
-| **6-7** | **Ambush!** | The platform lights flicker out. A **Mob of Punks (Tier 1)** ambushes the players from the shadows, starting immediately at Clinch Range with **Advantage** on the first round. |
+| **4-5** | **Local Gang Toll** | A group of **Standard Thugs (Tier 2)** guards the turnstiles, demanding a toll or a bribe. Players can pay, fight, or bluff/negotiate past by winning a contested **Cool** check. |
+| **6-7** | **Ambush!** | The platform lights flicker out. A **Mob of Punks (Tier 1)** ambushes from the shadows at Clinch Range. Players must pass a **Cool Check (DC 10)** to keep their nerve; on a failure, the attackers gain **Advantage** on the first round. |
 | **8-9** | **Rival Crew Turf** | A rival **Boss (Tier 3)** and their enforcers are waiting on the platform, looking to defend their turf from outsiders. |
-| **10** | **Transit Safe House** | A friendly transit worker or local ally lets the players hide in an employee breakroom. Players can safely heal attributes, swap gear, or spend XP. |
+| **10** | **Transit Safe House & Clinic Connection** | A friendly transit worker lets players hide in a breakroom. This station is directly connected to a **City Hospital** (players can immediately roll the **Cool Check [DC 12]** to get admitted for Severe Recovery without exiting to the surface). Restores Cool for 2 XP. |
 
 ### 3. Procedural Subway Line Generator
 To map out a transit line between the players' Home Turf and their target destination:
@@ -120,7 +120,7 @@ Roll to determine the three primary landmarks on the block.
 
 | Roll | Landmark / Business | Tactical Layout / Features |
 | :--- | :--- | :--- |
-| **1** | **Dive Bar** | Pool table (obstructs movement), jukebox, slippery spilled drinks. |
+| **1** | **Dive Bar** | Pool table (obstructs movement), jukebox, slippery spilled drinks. Players can spend 2 XP here to unwind and fully restore Cool. |
 | **2** | **Pawn Shop** | Iron security gates (can be used to pin), glass display cases. |
 | **3** | **Abandoned Movie Theater** | Littered lobby, broken ticket booth, heavy double doors. |
 | **4** | **Greasy Spoon Diner** | High counter stools, hot coffee pots, narrow aisle-ways. |
@@ -129,7 +129,7 @@ Roll to determine the three primary landmarks on the block.
 | **7** | **Auto Repair Shop** | Tire stacks, motor oil slicks (Footwork hazard), tool racks. |
 | **8** | **Billiards Hall** | Narrow green tables, wooden cues (can be improvised strikes). |
 | **9** | **Subway Station Entrance** | Concrete stairs descending into darkness, metal turnstiles. |
-| **10** | **Construction Site** | Wooden scaffolding, loose bricks, wire fences, wet cement. |
+| **10** | **County Hospital / Free Clinic** | Crowded emergency room, police guards, antiseptic smells. Required to treat Severe Recovery (attributes at 0). Getting admitted requires a **Cool Check (DC 12)**. |
 
 ---
 
@@ -152,24 +152,24 @@ Every block in the city has a **Danger Rank** from **1 to 5** that reflects the 
 ### Danger Rank 1: Safe Zone / Home Turf
 *Friendly neighborhoods, neutral territory, or heavily patrolled sectors.*
 *   **1: Empty Street**: A quiet, peaceful night under the streetlights. No threats.
-*   **2: Friendly Merchant**: A local vendor, deli owner, or ally offers a discount. Players can spend 3 XP to gain a tip (grants Advantage on their next roll).
+*   **2: Friendly Merchant**: A local vendor or ally. Players can buy warm food to recover 1 attribute damage (costs 3 XP, or 1 XP if they win a **Cool Check [DC 10]** to barter).
 *   **3: Transit Police Patrol**: Active police presence. Brawling is forbidden; any combat actions rolled on this block immediately summon police enforcers.
-*   **4: Local Informant**: A street contact shares rumors about the next station. Players gain **Advantage** on their next Subway Station Event roll.
+*   **4: Local Informant**: A street contact. Players can roll a **Cool Check (DC 10)** to gather rumors, gaining **Advantage** on their next Subway Station Event roll on a success.
 *   **5: Safe Alleyway**: A hidden, dry alcove to hide. Players can safely rest here to recover minor attribute damage ($+1$ point to all attributes at 1 or higher).
-*   **6: Minor Nuisance**: A single pickpocket (**Tier 1 Punk**) attempts a grab and run. They will immediately flee if the player wins a contested Timing check.
+*   **6: Minor Nuisance**: A single pickpocket (**Tier 1 Punk**) attempts a grab and run. They will immediately flee if the player wins a contested **Cool** (intimidation) or Timing (chase) check.
 
 ### Danger Rank 2: Low Danger / Disputed Blocks
 *Fringe territory where low-level crews occasionally pick fights.*
 *   **1: Quiet Corridor**: The block is quiet, but shadows flicker in the alleys. No immediate threats.
-*   **2: Solitary Lookout**: A single **Tier 1 Lookout** stands guard. Players can sneak past or perform a silent takedown using a contested Timing vs. Timing check. If they fail, the alarm is raised.
-*   **3: Street Craps Game**: A group of locals gambling. Players can wager 3 XP on a single $2\text{d}10$ high-roll contest against the house. Win to gain +6 XP; lose to lose the wagered XP.
-*   **4: Foot Patrol**: Two **Tier 1 Punks** walking the beat. They will harass the players unless intimidated.
+*   **2: Solitary Lookout**: A single **Tier 1 Lookout** stands guard. Players can sneak/take them down using contested Timing, or bluff past them using a contested **Cool** check.
+*   **3: Street Craps Game**: A group of locals gambling. Players can wager 3 XP on a single contested **Cool** check against the dealer. Win to gain +6 XP; lose the XP on a failure.
+*   **4: Foot Patrol**: Two **Tier 1 Punks** walking the beat. They will harass the players unless intimidated by a contested **Cool** check.
 *   **5: Drunk Fighter**: A single **Tier 2 Thug** who is highly intoxicated and looking for a brawl. Due to their state, they roll all checks with **Disadvantage**.
-*   **6: Shakedown**: A single **Tier 2 Thug** demands a toll (1 XP) to cross the block. Refusal starts a brawl at Clinch Range.
+*   **6: Shakedown**: A single **Tier 2 Thug** demands a toll (1 XP) to cross. Players can pay, fight, or bluff past them by winning a contested **Cool** check.
 
 ### Danger Rank 3: Medium Danger / Active Turf
 *Core gang territory where members actively defend their blocks.*
-*   **1: Watchful Eyes**: Gang watchmen occupy the rooftops. Crossing the block without being spotted requires a contested Footwork check.
+*   **1: Watchful Eyes**: Gang watchmen occupy the rooftops. Crossing the block without panic requires a contested **Cool** check to blend into the shadows.
 *   **2: Rival Patrol**: Two **Tier 2 Thugs** of the local style (e.g., Boxers if in Boxers' turf) patrolling.
 *   **3: Heavy Hitter**: A single **Tier 2 Thug** carrying an improvised weapon (baseball bat or pipe), adding $+1$ damage to all successful Strikes.
 *   **4: Gang Rush**: A **Mob of Punks (Tier 1)** rushes the players, starting at Striking Range.

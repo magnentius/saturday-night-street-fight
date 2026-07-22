@@ -14,12 +14,12 @@ Select **one** Martial Arts Style (Boxing, Muay Thai, Judo, Wrestling, or Taekwo
 *   This grants you your Style Perks and dictates which sub-actions you are allowed to perform (see **Martial Arts Styles** below).
 
 ### 2. Spend Starting XP
-Every fighter starts as a blank slate with a baseline of **2** in all four Attributes (Footwork, Posture, Timing, and Stamina) and **Untrained (Rank 0)** in all techniques.
+Every fighter starts as a blank slate with a baseline of **2** in all five Attributes (Footwork, Posture, Timing, Stamina, and Cool) and **Untrained (Rank 0)** in all techniques.
 
 You have **50 Experience Points (XP)** to customize your fighter. Spend them using the same costs as character progression:
 
 #### A. Allocate Combat Attributes
-*   **Attributes**: Footwork, Posture, Timing, and Stamina.
+*   **Attributes**: Footwork, Posture, Timing, Stamina, and Cool.
 *   **Cost**: Costs **10 XP** to increase an attribute by $+1$ (starting at 2).
 *   **Limit**: No attribute can be higher than **3** at character creation.
 
@@ -31,12 +31,12 @@ You can train in any sub-actions allowed by your chosen style:
 ---
 
 ### Fighter Creation Example
-A Boxer starts with Footwork 2, Posture 2, Timing 2, Stamina 2. They spend their **50 XP** as follows:
+A Boxer starts with Footwork 2, Posture 2, Timing 2, Stamina 2, Cool 2. They spend their **50 XP** as follows:
 *   **Attributes** (Spent 30 XP):
     *   Increase Timing to 3 (costs 10 XP).
     *   Increase Posture to 3 (costs 10 XP).
     *   Increase Stamina to 3 (costs 10 XP).
-    *   *Resulting stats: Footwork 2, Posture 3, Timing 3, Stamina 3.*
+    *   *Resulting stats: Footwork 2, Posture 3, Timing 3, Stamina 3, Cool 2.*
 *   **Techniques** (Spent 18 XP):
     *   Master Hook (costs 3 XP to Train, 6 XP to Master = 9 XP).
     *   Train Jab (costs 3 XP).
@@ -80,6 +80,7 @@ Strikes aim to inflict damage and interrupt throws.
 *   **Body Kick**: Mid-height power kick. Focuses on windedness; successful hits inflict a temporary $-1$ penalty to the target's **Stamina** attribute next round (stacking with standard Stamina attribute damage).
 *   **High Kick**: High-impact head kick. Very slow speed, massive damage. High chance to stun or knock out the opponent, but easily parried or caught.
 *   **Push Kick (Teep)**: Straight thrusting kick. Fast speed, low damage. Pushes the opponent back, resetting combat to neutral range and canceling throw/clinch attempts.
+*   **Taunt**: A verbal or physical psychological mock. Takes the place of a **Strike (Red)** in the combat triangle. Governed by the **Cool** attribute. Deals no physical damage, but a successful check inflicts **1 Cool damage** on the target.
 
 ---
 
@@ -109,13 +110,14 @@ Throws aim to bypass blocks, control the opponent, and force them to the ground.
 > *"It is not important to be better than someone else, but to be better than you were yesterday."* — Jigoro Kano
 
 
-A character's physical and mental combat capabilities are defined by four core Attributes (**Option 3**) and their specific training in various sub-actions, called Technique Masteries (**Option 2**).
+A character's capabilities are defined by five core Attributes and their specific training in various sub-actions, called Technique Masteries.
 
 ### Combat Attributes
 *   **Footwork**: Agility, movement speed, evasive positioning, and lower-body dexterity.
 *   **Posture**: Physical structure, strength, balance, stability, and leverage.
 *   **Timing**: Perception, reaction speed, precision, and counter-strike detection.
 *   **Stamina**: Cardiorespiratory endurance, wind, lung recovery, and execution of heavy/exhausting maneuvers.
+*   **Cool**: Charisma, street swagger, negotiation, intimidation, and composure under pressure. Used for non-fighting checks.
 
 ### Technique Masteries (Skills)
 Characters can train in individual sub-actions (e.g., *Jab*, *Low Kick*, *Parry*, *Hip/Shoulder Throw*):
@@ -253,6 +255,12 @@ Fighters are **Stunned** when hit by a high-impact head blow (like a Critical Hi
 *   **Duration**: Lasts for 1 round.
 *   **Effect**: You cannot select **Strike (Red)** or **Throw (Black)** actions. You can only choose **High Guard** or **Low Guard** (White/Block) to cover up, and you roll this check with **Disadvantage**.
 
+### 5. Shaken (Cool 0)
+Fighters are **Shaken** when their Cool attribute is reduced to 0. Cool damage is only taken by losing a contested **Cool** check (e.g. from street encounters/gambling) or by being hit by a **Taunt** combat action.
+*   **Effect**: You suffer a **$-2$ penalty** to all Timing checks in combat (due to hesitation/panic) and have **Disadvantage** on all non-combat checks.
+*   **Perk Suspension**: You cannot use style perks that require calm or precision (such as Boxer's *Slip & Counter* or Judo's *Kuzushi*).
+*   **Duration**: Lasts until Cool is restored to 1 or higher. (Does not trigger a physical TKO).
+
 ---
 
 ## Mechanics & Resolution
@@ -382,10 +390,14 @@ Characters can adopt a specific Martial Arts Style, which dictates their availab
 
 ### 1. Attribute Restoration (Natural Healing)
 Fighters recover their damaged attributes naturally over time through rest:
-*   **Minor Damage** (attributes at 1 or higher): Attributes recover by **$+1$ point** per night of sleep.
-*   **Severe Damage** (attributes at 0 or below): The fighter was TKO'd or knocked out, and requires strict medical downtime (casting, surgery, or hospitalization) to avoid long-term degradation.
-    *   Reduced attributes recover by **$+1$ point** per week of complete rest.
-    *   At the end of recovery, they must pass a **Posture Check (DC 12)** to avoid a permanent $-1$ reduction to their maximum score for that attribute.
+*   **Minor Damage** (combat attributes at 1 or higher): Combat attributes recover by **$+1$ point** per night of rest.
+*   **Cool Composure**: The **Cool** attribute is fully restored to maximum after a single night of rest.
+*   **Severe Damage & Hospitalization** (combat attributes at 0): If any combat attribute (Timing, Posture, Footwork, Stamina) is reduced to 0, the fighter is physically incapacitated. **They cannot heal naturally.**
+    *   **Admittance Check**: To begin healing, the fighter must find a **Hospital or Free Clinic** landmark (either on a block or connected to a subway station) and pass a **Cool Check (DC 12)** to get admitted (representing the overcrowded, chaotic 1970s urban healthcare crisis). An uninjured companion can roll this check on the patient's behalf.
+    *   **Delayed Treatment**: If the check fails, the patient is turned away. They must wait until the next day to try again, or find a different hospital block.
+    *   **Recovery Rate**: Once successfully admitted, the attribute recovers by **$+1$ point** per week of complete hospital rest.
+    *   **Discharge Check**: At the end of recovery, the fighter must pass a **Posture Check (DC 12)** to avoid a permanent $-1$ reduction to their maximum score for that attribute (see Permanent Scarring below).
+*   **Unwinding Cool**: If players visit a **Transit Safe House** or a **Dive Bar** landmark, they can spend **2 XP** to immediately restore Cool to its maximum value.
 
 ### 2. Permanent Scarring Table
 If a fighter fails their recovery check, they suffer a permanent $-1$ reduction to the maximum score of that attribute, representing career-altering physical trauma. Use the table below for narrative description and roleplay prompts:
@@ -399,21 +411,31 @@ If a fighter fails their recovery check, they suffer a permanent $-1$ reduction 
 
 ---
 
-## Campaign Progression
+## Campaign Progression & The Street Crawl
 
-> *"Today is victory over yourself of yesterday; tomorrow is your victory over lesser men."* — Miyamoto Musashi
+A single campaign session of **Saturday Night Street Fight** is structured as a **Street Crawl**—a self-contained procedural run through the blighted city streets and subways.
 
+### The Street Crawl Session Loop
+Every game session follows a structured four-phase loop representing one night on the streets:
 
-Fighters grow stronger as they survive street fights, spar, and refine their techniques. After each fight, players earn **Experience Points (XP)**:
+1.  **Phase 1: The Briefing (Select Target)**: Players start in their **Home Turf** (or a previously secured safe house) and choose a destination block or station.
+2.  **Phase 2: Riding the Rails (Transit Crawl)**: Players traverse the subway line. The GM generates the line length and stop types, rolling on the *Subway Station Event Table* for each platform.
+3.  **Phase 3: Navigating the Blocks (Street Crawl)**: When exiting a station, the GM generates the block's layout, landmarks, and hazards, setting its **Danger Rank**. Players resolve any street encounters or brawls.
+4.  **Phase 4: Retreat to Safety (Session End)**: A session ends when the fighters successfully reach their target, escape to a Transit Safe House, return home, or get admitted to a Hospital. During this phase, players earn and spend Experience Points (XP) to train techniques, condition attributes, and heal.
+
+---
+
+### Experience & Character Growth
+Fighters grow stronger as they survive street brawls and refine their techniques. After each fight, players earn **Experience Points (XP)**:
 *   **Surviving a Fight**: 2 XP.
 *   **Winning the Fight**: +2 XP (4 XP total).
 *   **Highlight Reel**: +1 XP if the fighter pulled off a spectacular finish, critical throw, or a stylistic victory.
 
-### 1. Increasing Technique Masteries
+#### 1. Increasing Technique Masteries
 Fighters spend their earned XP to increase their mastery of specific sub-actions:
 *   **Untrained (Rank 0) $\rightarrow$ Trained (Rank 1)**: Costs **3 XP** and requires 1 day of intensive practice/sparring.
 *   **Trained (Rank 1) $\rightarrow$ Mastered (Rank 2)**: Costs **6 XP** (requires Rank 1 first) and requires sparring with a partner who knows the move, or successfully executing the move in 3 separate fights.
 
-### 2. Conditioning Attributes
-Fighters can train their physical body to increase their core attributes (up to a campaign maximum of **4**):
-*   **Increasing an Attribute by +1**: Costs **10 XP** and requires 1 week of dedicated strength, cardio, agility, or reaction training.
+#### 2. Conditioning Attributes
+Fighters can train their body and mind to increase their core attributes (up to a campaign maximum of **4**):
+*   **Increasing an Attribute by +1**: Costs **10 XP** and requires 1 week of dedicated training.

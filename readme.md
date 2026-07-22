@@ -1,7 +1,5 @@
 # Saturday Night Street Fight
 
-> *"Everyone has a plan until they get punched in the mouth."* — Mike Tyson
->
 > *"Be water, my friend. Empty your mind. Be formless, shapeless..."* — Bruce Lee
 
 **Saturday Night Street Fight** is a gritty, high-friction, tactical tabletop RPG of street-level brawls, martial arts, and urban survival. Inspired by the neon-drenched, steam-vented decay of **1970s New York City**, the game pits specialized fighters against local gang turf wars, corrupt enforcers, and transit-line gauntlets.
