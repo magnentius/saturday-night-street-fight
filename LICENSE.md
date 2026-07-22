@@ -36,4 +36,4 @@ Or send a letter to:
 
 When referencing, adapting, or building upon rules from *Saturday Night Street Fight*, please include the following attribution notice:
 
-> *"Saturday Night Street Fight" by John Karakashian, licensed under CC BY-NC-SA 4.0. Available at https://github.com/magnentius/sat-night-street-fight*
+> *"Saturday Night Street Fight" by John Karakashian, licensed under CC BY-NC-SA 4.0. Available at https://github.com/magnentius/saturday-night-street-fight*
