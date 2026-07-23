@@ -567,7 +567,7 @@ Every game session follows a structured four-phase loop representing one night o
 
 ---
 
-## Experience & Character Growth (XP Keys)
+## Character Advancement & XP
 
 Fighters grow stronger not just by surviving brawls, but by acting out their personal street code, brawler motivations, and martial arts philosophy. 
 
@@ -616,8 +616,6 @@ Upon reaching **Rank 200+** and mastering every technique across both your Prima
 *   **Key Counter / Buyoff**: Every Key has a **Buyoff / Counter**—a pivotal moment where your character goes against their code, forgives an enemy, or evolves. When you trigger a Key's Counter in play, you choose one of two options:
     *   **Option A**: Gain 0 XP for the encounter (you act against your code, forfeiting XP gains from that Key).
     *   **Option B (Buyoff)**: Gain a **+3 XP lump sum** (enough to immediately train 1 new Rank 1 technique!) and permanently remove the Key, opening a slot to select a new Key!
-
----
 
 #### B. The Martial Arts XP Keys List
 
