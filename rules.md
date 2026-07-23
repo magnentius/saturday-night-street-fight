@@ -6,22 +6,23 @@
 
 ## Table of Contents
 
-1. [Fighter Creation](#fighter-creation)
-2. [Attributes & Technique Masteries](#attributes--technique-masteries)
-3. [Martial Arts Styles](#martial-arts-styles)
-4. [Combat Stances & Counter Dynamics](#combat-stances--counter-dynamics)
-5. [Action Stances & Martial Techniques](#action-stances--martial-techniques)
-6. [Attribute Damage & Defeat](#attribute-damage--defeat)
-7. [Mechanics & Resolution](#mechanics--resolution)
-8. [Range & Movement](#range--movement)
-9. [Status Conditions](#status-conditions)
-10. [Healing & Recovery](#healing--recovery)
-11. [Campaign Progression & The Street Crawl](#campaign-progression--the-street-crawl)
-12. [Experience & Character Growth (XP Keys)](#experience--character-growth-xp-keys)
+1. [Fighter Creation](#1-fighter-creation)
+2. [Attributes & Technique Masteries](#2-attributes--technique-masteries)
+3. [Martial Arts Styles](#3-martial-arts-styles)
+4. [Combat Stances & Counter Dynamics](#4-combat-stances--counter-dynamics)
+5. [Action Stances & Martial Techniques](#5-action-stances--martial-techniques)
+6. [Attribute Damage & Defeat](#6-attribute-damage--defeat)
+7. [Mechanics & Resolution](#7-mechanics--resolution)
+8. [Range & Movement](#8-range--movement)
+9. [Status Conditions](#9-status-conditions)
+10. [Healing & Recovery](#10-healing--recovery)
+11. [Campaign Progression & The Street Crawl](#11-campaign-progression--the-street-crawl)
+12. [Character Advancement & XP](#12-character-advancement--xp)
+13. [Quick Reference Glossary & Index](#13-quick-reference-glossary--index)
 
 ---
 
-## Fighter Creation
+## 1. Fighter Creation
 
 > *"I fear not the man who has practiced 10,000 kicks once, but I fear the man who has practiced one kick 10,000 times."* — Bruce Lee
 
@@ -66,27 +67,27 @@ A Boxer starts with Agility 2, Power 2, Reaction 2, Stamina 2, Cool 2. They spen
 
 ---
 
-## Attributes & Technique Masteries
+## 2. Attributes & Technique Masteries
 
 > *"It is not important to be better than someone else, but to be better than you were yesterday."* — Jigoro Kano
 
 
 A character's capabilities are defined by five core Attributes and their specific training in various martial techniques, called Technique Masteries.
 
-### Combat Attributes
+### 1. Combat Attributes
 *   **Agility**: Movement speed, footwork, evasive positioning, leg sweeps, and lower-body dexterity.
 *   **Power**: Physical structure, strength, balance, heavy slams, takedowns, and leverage.
 *   **Reaction**: Perception, reaction speed, precision, head punches/kicks, and counter-strike detection.
 *   **Stamina**: Cardiorespiratory endurance, wind, lung recovery, and execution of heavy/exhausting maneuvers.
 *   **Cool**: Charisma, street swagger, negotiation, intimidation, and composure under pressure. Used for all non-fighting checks.
 
-### 1. Technique Masteries
+### 2. Technique Masteries
 Technique Masteries represent specialized training in specific strikes, blocks, or throws. Masteries add a flat bonus to your dice roll whenever you execute that specific technique in combat:
 *   **Untrained (Rank 0)**: You receive no bonus (roll $2\text{d}10 + \text{Attribute}$).
 *   **Trained (Rank 1)**: You gain a $+3$ bonus to your roll.
 *   **Mastered (Rank 2)**: You gain a $+5$ bonus to your roll.
 
-### Attribute Mapping
+### 3. Attribute Mapping & Masteries Table
 Each technique is governed by a specific Attribute representing the physical capacity required to execute it:
 
 | Martial Technique | Governing Attribute | Action Stance | Description |
@@ -114,7 +115,7 @@ Each technique is governed by a specific Attribute representing the physical cap
 
 ---
 
-## Martial Arts Styles
+## 3. Martial Arts Styles
 
 > *"Styles separate men. If you have no style, you just say, 'Here I am as a human being, how can I express myself?'"* — Bruce Lee
 
@@ -202,7 +203,7 @@ Fighters who survive the street crawl often cross-train in other martial arts di
 
 ---
 
-## Combat Stances & Counter Dynamics
+## 4. Combat Stances & Counter Dynamics
 
 > *"Be water, my friend. Empty your mind. Be formless, shapeless, like water. You put water into a cup, it becomes the cup."* — Bruce Lee
 
@@ -215,7 +216,7 @@ Fighters adopt one of three tactical combat stances during each exchange: **Stri
 
 ---
 
-## Action Stances & Martial Techniques
+## 5. Action Stances & Martial Techniques
 
 > *"Everyone has a plan until they get punched in the mouth."* — Mike Tyson
 
@@ -265,7 +266,7 @@ Throws aim to bypass blocks, control the opponent, and force them to the ground.
 
 ---
 
-## Attribute Damage & Defeat
+## 6. Attribute Damage & Defeat
 
 > *"A champion is someone who gets up when they can't."* — Jack Dempsey
 
@@ -318,12 +319,12 @@ If a defender successfully blocks or dodges, they subtract their defense rating 
 
 ---
 
-## Mechanics & Resolution
+## 7. Mechanics & Resolution
 
 > *"There is timing in everything. Timing in strategy cannot be mastered without much practice."* — Miyamoto Musashi
 
 
-### Contested Round Structure
+### 1. Contested Round Structure
 Combat is played in simultaneous **Rounds** resolved by a single **Contested Roll**:
 
 1. **Phase 1: Reading the Stance (Telegraphing)**
@@ -338,34 +339,23 @@ Combat is played in simultaneous **Rounds** resolved by a single **Contested Rol
    * Combatants choose their action type (Red, White, or Black) along with their specific technique (e.g., *Red / Hook*) using cards, tokens, or written notes. If a fighter achieved a **Perfect Read (Margin 7+)** in Phase 1, the defender must reveal their card color first. If a fighter achieved a **Partial Tell (Margin 4–6)**, the defender reveals 1 color they are NOT playing first. Otherwise, both commit secretly and reveal simultaneously.
    * Both combatants reveal their choices simultaneously.
 
-3. **Phase 3: Roll & Resolve (Contested Roll-Off)**
+3. **Phase 3: Roll & Resolve (Contested Roll-Off & Stance Counter Resolution)**
    * Now that the action matchup is revealed, combatants roll their dice:
      * **Dominant Stance (Counter Winner)**: Rolls with **Advantage** (roll $3\text{d}10$, keep the two highest dice).
      * **Exposed Stance (Counter Loser)**: Rolls their standard $2\text{d}10$ check.
      * **Matched Stances** (e.g., Strike vs. Strike): Both roll their standard $2\text{d}10$ check normally.
    * Each combatant calculates their **Roll Total**:
      $$\text{Roll Total} = \text{Dice Result} + \text{Governing Attribute} + \text{Technique Mastery Bonus}$$
-   * In a counter matchup or grapple struggle, the combatant with the **higher Roll Total wins the check**, executing their action while interrupting the opponent's. In a **Strike vs. Strike** matchup, both fighters trade blows—the fighter with the **higher Roll Total applies their damage first**. If the lower roller is knocked out (any attribute reduced to 0), their strike is interrupted and fails. If the lower roller survives, their strike connects and deals full damage back.
-   * *Note: The dominant stance is statistically favored to win the contest, but a high-rolling exposed stance can still overcome the disadvantage and win the round.*
-
----
-
-1. **Stance Counter Resolution**
-
-*   **Opposing Stances (Counter Check)**: If the revealed stances form a counter pair (e.g., Block Stance vs. Strike Stance):
-    *   The **Dominant Stance** (counter winner) rolls with **Advantage**.
-    *   The **Exposed Stance** (counter loser) rolls normally.
-    *   **Winner-Take-All**: Only the winner of the contested roll executes their action; the loser's action is completely interrupted and fails (dealing no damage or secondary effects).
-    *   *Example 1 (Block Stance vs. Strike Stance)*: Block beats Strike. The Blocker rolls with Advantage.
-        *   If the **Blocker wins**, the block succeeds and subtracts its mitigation rating from the strike's Attribute Damage (e.g., High Guard mitigates 2 damage, completely absorbing a 2-damage Cross, but letting 1 chip damage through from a 3-damage Uppercut).
-        *   If the **Striker wins** (overcoming the guard's advantage), the strike bypasses the guard entirely, dealing full, unmitigated Attribute Damage.
-    *   *Example 2 (Strike Stance vs. Throw Stance)*: Strike beats Throw. The Striker rolls with Advantage.
-        *   If the **Striker wins**, the strike connects, dealing Attribute Damage and interrupting the throw.
-        *   If the **Grappler wins** (overcoming the striker's advantage), the grappler successfully clinches or throws the opponent; the strike is completely interrupted and deals 0 damage.
-*   **Matched Stances (Same Stance Rolls)**:
-    *   **Strike vs. Strike**: Sequential Trade! Both roll normally ($2\text{d}10$). The fighter with the higher Roll Total lands their strike **first**. If the lower roller is knocked out (any attribute drops to 0), they collapse and their strike is interrupted. If the lower roller survives, their strike lands and deals full damage back. Outrolling the opponent by a margin of 5 or more (or rolling a Natural 20) upgrades your strike to a **Critical Hit** ($+1$ damage).
-    *   **Block vs. Block**: No contest is needed. Both combatants remain passive in guard. Standoff; the round resets to neutral.
-    *   **Throw vs. Throw**: A grapple struggle. Both roll off normally using either **Power** or **Reaction**. The higher total wins the check, securing a Clinch or a throw.
+   * **Opposing Stances (Counter Check)**: If the revealed stances form a counter pair (e.g., Block Stance vs. Strike Stance):
+     * The **Dominant Stance** (counter winner) rolls with **Advantage**.
+     * The **Exposed Stance** (counter loser) rolls normally.
+     * **Winner-Take-All**: Only the winner of the contested roll executes their action; the loser's action is completely interrupted and fails (dealing no damage or secondary effects).
+     * *Example 1 (Block Stance vs. Strike Stance)*: Block beats Strike. The Blocker rolls with Advantage. If the **Blocker wins**, the block succeeds and subtracts its mitigation rating from the strike's Attribute Damage. If the **Striker wins**, the strike bypasses the guard entirely, dealing full Attribute Damage.
+     * *Example 2 (Strike Stance vs. Throw Stance)*: Strike beats Throw. The Striker rolls with Advantage. If the **Striker wins**, the strike connects and interrupts the throw. If the **Grappler wins**, the grappler throws the opponent and interrupts the strike.
+   * **Matched Stances (Same Stance Rolls)**:
+     * **Strike vs. Strike**: Sequential Trade! Both roll normally ($2\text{d}10$). The fighter with the higher Roll Total lands their strike **first**. If the lower roller is knocked out, their strike is interrupted. If the lower roller survives, their strike lands and deals full damage back.
+     * **Block vs. Block**: No contest needed. Both combatants remain passive in guard. Standoff; the round resets to neutral.
+     * **Throw vs. Throw**: Grapple struggle! Both roll off normally using **Power** or **Reaction**. The higher total wins the check, securing a Clinch or throw.
 
 ### 2. The 3 Action Check Types
 To make combat timing and perk follow-ups crystal clear, all checks in **Saturday Night Street Fight** are categorized into 3 distinct Action Check types:
@@ -399,7 +389,7 @@ For non-combat environmental obstacles, street hazards, and hospital triage chec
 
 *Note: Rolling double 10s (**Natural 20**) automatically succeeds on any check regardless of target DC!*
 
-### 3. Action Roll Resolution & Modifiers
+### 4. Action Roll Resolution & Modifiers
 To resolve a contested roll, combatants calculate their totals using the following:
 *   **Action Roll**: Roll the chosen $2\text{d}10$ (or $3\text{d}10$ if rolling with Advantage or Disadvantage).
 *   **Attribute Modifier**: Add the governing Attribute (**Agility**, **Power**, **Reaction**, or **Stamina**).
@@ -411,7 +401,7 @@ To resolve a contested roll, combatants calculate their totals using the followi
     *   **Critical Success**: Succeeding by a margin of 5 or more (Winner Total - Loser Total $\ge 5$) activates secondary weapon/style/critical effects, and increases incoming damage by $+1$ attribute damage.
     *   **The Overkill Rule (Natural 20)**: Rolling double 10s on your action dice is a **Natural 20 (Overkill)**. It guarantees an automatic Critical Hit ($+1$ damage and critical secondary effects) regardless of scores, and grants a **Momentum Surge** (instantly restoring $+1$ Stamina or Cool to the attacker).
 
-### 4. Ties and Clashes (Identical Roll Totals)
+### 5. Ties and Clashes (Identical Roll Totals)
 If both combatants calculate the exact same Roll Total, the round is resolved as follows based on the action matchup:
 *   **Strike vs. Strike Clash (Red vs. Red)**: Simultaneous connection! Both strikes hit and deal full, unmitigated Attribute Damage to both fighters.
 *   **Strike vs. Block Clash (Red vs. White)**: The defense holds. The block successfully mitigates the strike's damage, but the Blocker is **Staggered** next turn from the impact.
@@ -420,7 +410,7 @@ If both combatants calculate the exact same Roll Total, the round is resolved as
 
 ---
 
-## Range & Movement
+## 8. Range & Movement
 
 > *"Float like a butterfly, sting like a bee."* — Muhammad Ali
 
@@ -463,7 +453,7 @@ To actively push an opponent away, perform a specialized **Strike Stance (Red)**
 
 ---
 
-## Status Conditions
+## 9. Status Conditions
 
 Street fights are chaotic and brutal. Combatants can inflict or suffer various temporary physical states:
 
@@ -517,7 +507,7 @@ Fighters are **Winded** when hit by a successful body blow (like a **Body Kick**
 
 ---
 
-## Healing & Recovery
+## 10. Healing & Recovery
 
 > *"Fall down seven times, stand up eight."* — Japanese Proverb
 
@@ -553,7 +543,7 @@ If a fighter fails their recovery check, their **Attribute Maximum Cap** permane
 
 ---
 
-## Campaign Progression & The Street Crawl
+## 11. Campaign Progression & The Street Crawl
 
 A single campaign session of **Saturday Night Street Fight** is structured as a **Street Crawl**—a self-contained procedural run through the blighted city streets and subways.
 
@@ -567,7 +557,7 @@ Every game session follows a structured four-phase loop representing one night o
 
 ---
 
-## Character Advancement & XP
+## 12. Character Advancement & XP
 
 Fighters grow stronger not just by surviving brawls, but by acting out their personal street code, brawler motivations, and martial arts philosophy. 
 
@@ -671,7 +661,7 @@ Upon reaching **Rank 200+** and mastering every technique across both your Prima
 
 ## 13. Quick Reference Glossary & Index
 
-### 13.1 Status Conditions Glossary
+### 1. Status Conditions Glossary
 
 | Condition | Mechanical Effect | Duration | Quick Reference |
 | :--- | :--- | :--- | :---: |
@@ -683,7 +673,7 @@ Upon reaching **Rank 200+** and mastering every technique across both your Prima
 | 🤸 **Prone** | Knocked to the ground. Must pass $2\text{d}10$ neutral Stand Up check (Win/Tie = Stand Up). | Until successful Stand Up roll. | [Go to Rule](#91-prone) |
 | 🤼 **Pinned** | Trapped under opponent. Must pass $2\text{d}10$ escape check (Win = Stand Up, Tie = Prone). | Until successful Escape roll. | [Go to Rule](#92-pinned) |
 
-### 13.2 Dice Mechanics & Action Checks Glossary
+### 2. Dice Mechanics & Action Checks Glossary
 
 | Term | Definition & Tabletop Impact | Quick Reference |
 | :--- | :--- | :---: |
@@ -695,7 +685,7 @@ Upon reaching **Rank 200+** and mastering every technique across both your Prima
 | 💀 **Natural 20 (Overkill)** | Rolling double 10s on action dice. Automatic Critical Hit ($+1$ damage) + Momentum Surge. | [Go to Rule](#3-action-roll-resolution--modifiers) |
 | ⚡ **Momentum Surge** | Instantly restores $+1$ Stamina or $+1$ Cool upon rolling a Natural 20. | [Go to Rule](#3-action-roll-resolution--modifiers) |
 
-### 13.3 Damage, Hospitalization & Character Advancement Glossary
+### 3. Damage, Hospitalization & Character Advancement Glossary
 
 | Term | Definition & Tabletop Impact | Quick Reference |
 | :--- | :--- | :---: |
