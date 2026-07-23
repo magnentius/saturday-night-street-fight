@@ -327,7 +327,7 @@ def format_character_sheet(name, style_name, attrs, masteries, unspent_xp, arche
         style_str += f" (*{style['Focus']}*)"
     sheet.append(style_str)
     spent_xp = 50 - unspent_xp
-    sheet.append(f"**Character Rank**: {spent_xp} (Total Spent XP — Unlocks 3rd Key Slot at Rank 60)")
+    sheet.append(f"**Character Rank**: {spent_xp} (Martial Disciple — Unlocks 3rd Key Slot at Rank 60 Martial Adept)")
     sheet.append(f"**Available XP (Bank)**: {unspent_xp} XP\n")
     
     sheet.append("## Attributes")

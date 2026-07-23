@@ -590,8 +590,8 @@ As fighters invest XP and train their discipline, their rising **Character Rank*
 
 | Rank Tier | Required Spent XP | Mastery Requirement | Title & Unlocks |
 | :--- | :--- | :--- | :--- |
-| **Street Brawler** | **Rank 50** | Baseline creation moves | Starting character (2 active Key slots). |
-| **Street Veteran** | **Rank 60** | Spent ~10 XP in play | **3rd Active Key Slot Unlocked** (Maximum 3 active Keys). |
+| **Martial Disciple** | **Rank 50** | Baseline creation moves | Starting character (2 active Key slots). |
+| **Martial Adept** | **Rank 60** | Spent ~10 XP in play | **3rd Active Key Slot Unlocked** (Maximum 3 active Keys). |
 | **Style Master** | **Rank 150** | Mastered (Rank 2) all techniques in Primary Style | **Master Title** + Select 1 **Mastery Perk** (*Dojo Founder* or *Perfect Form*). |
 | **Grandmaster** | **Rank 200+** | Mastered all techniques in Primary & Secondary Styles | **Grandmaster Title** + **Dual Style Mastery** (Secondary elevated to Primary, all 4 perks active + 2nd Master Achievement). |
 
