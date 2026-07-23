@@ -608,16 +608,18 @@ Upon reaching **Rank 200+** and mastering every technique across both your Prima
     *   **Perfect Form (Style B)**: Flawless execution extends to your 2nd style. When performing a Mastered technique from Style B, any $1\text{d}10$ die result of 1–4 counts as 5.
     *   **Dojo Founder (Style B)**: You found a 2nd Dojo on Home Turf for your elevated 2nd style, gaining an additional $1\text{d}10$ Dojo Disciples Mob.
 
-### 3. How Keys & Unlocks Work
-*   **Starting Keys**: At character creation (**Rank 50**), select **2 Keys** from the list below.
-*   **Unlocking 3rd Key Slot**: When your fighter's **Character Rank reaches 60** (after spending ~10 XP in campaign play), you permanently unlock your **3rd active Key slot** (Maximum 3 active Keys).
+### 3. The Martial Arts XP Keys System
+
+#### A. How Keys & Unlocks Work
+*   **Starting Keys**: At character creation (**Rank 50 — Martial Disciple / Street Soldier**), select **2 Keys** from the list below.
+*   **Unlocking 3rd Key Slot**: When your fighter's **Character Rank reaches 60 (Martial Adept / Turf Enforcer)** (after spending ~10 XP in campaign play), you permanently unlock your **3rd active Key slot** (Maximum 3 active Keys).
 *   **Key Counter / Buyoff**: Every Key has a **Buyoff / Counter**—a pivotal moment where your character goes against their code, forgives an enemy, or evolves. When you trigger a Key's Counter in play, you choose one of two options:
     *   **Option A**: Gain 0 XP for the encounter (you act against your code, forfeiting XP gains from that Key).
     *   **Option B (Buyoff)**: Gain a **+3 XP lump sum** (enough to immediately train 1 new Rank 1 technique!) and permanently remove the Key, opening a slot to select a new Key!
 
 ---
 
-### 3. The Martial Arts XP Keys List
+#### B. The Martial Arts XP Keys List
 
 #### A. Key of Dojo Pride (Style Honor)
 *Your character lives to prove that their martial arts style (Boxing, Judo, Karate, Kung Fu, Muay Thai, Wrestling, Taekwondo) is superior to all others.*
