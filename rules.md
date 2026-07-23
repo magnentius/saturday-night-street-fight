@@ -49,20 +49,22 @@ You can train in any techniques allowed by your chosen style:
 *   **Trained (Rank 1)** ($+3$ bonus): Costs **3 XP** per technique.
 *   **Mastered (Rank 2)** ($+5$ bonus): Costs **6 XP** (requires Rank 1 first, for a total of 9 XP).
 
+### 3. Choose 2 Character Keys
+Select **2 Keys** from [The Martial Arts XP Keys System](#3-the-martial-arts-xp-keys-system) (such as *Key of Dojo Pride*, *Key of Turf Loyalty*, *Key of the Iron Fist*, etc.).
+*   **XP & Advancement**: Keys drive your character advancement and award Experience Points (XP) during play whenever your fighter fulfills their motivations or overcomes personal obstacles.
+*   **Key Slots**: Starting at **Rank 50 (Martial Disciple / Street Soldier)**, you have 2 active Key slots. (Reaching **Rank 60** permanently unlocks your 3rd active Key slot).
+
 ---
 
 ### Fighter Creation Example
-A Boxer starts with Agility 2, Power 2, Reaction 2, Stamina 2, Cool 2. They spend their **50 XP** as follows:
-*   **Attributes** (Spent 30 XP):
-    *   Increase Reaction to 3 (costs 10 XP).
-    *   Increase Power to 3 (costs 10 XP).
-    *   Increase Stamina to 3 (costs 10 XP).
-    *   *Resulting stats: Agility 2, Power 3, Reaction 3, Stamina 3, Cool 2.*
-*   **Techniques** (Spent 18 XP):
-    *   Master Hook (costs 3 XP to Train, 6 XP to Master = 9 XP).
-    *   Train Jab (costs 3 XP).
-    *   Train Dodge (costs 3 XP).
-    *   Train Parry (costs 3 XP).
+A Boxer starts with Agility 2, Power 2, Reaction 2, Stamina 2, Cool 2. They build their character as follows:
+*   **Step 1: Choose Style**: Boxing (*Slip & Counter*, *Iron Chin* perks).
+*   **Step 2: Spend 50 XP**:
+    *   **Attributes** (Spent 30 XP): Reaction 3 (10 XP), Power 3 (10 XP), Stamina 3 (10 XP). *Resulting stats: Agility 2, Power 3, Reaction 3, Stamina 3, Cool 2.*
+    *   **Techniques** (Spent 18 XP): Master Hook (9 XP), Train Jab (3 XP), Train Dodge (3 XP), Train Parry (3 XP). Banked 2 unspent XP.
+*   **Step 3: Choose 2 Keys**:
+    *   *Key of Dojo Pride* (Defeat rival styles in 1v1 duels for 1 XP).
+    *   *Key of Turf Loyalty* (Defend home block or transit safe house for 1 XP).
 *   **Remaining XP**: 2 XP unspent (saved for campaign play).
 
 ---
