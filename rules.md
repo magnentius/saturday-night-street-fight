@@ -138,7 +138,7 @@ Characters can adopt a specific Martial Arts Style, which dictates their availab
     *   *Blocks*: High Guard, Parry (No Low Guard or Dodge).
     *   *Throws*: Clinch/Grab only (No Trip, Hip Throw, or Takedown).
 *   **Style Perks**:
-    *   **Thai Clinch**: Unlocks the exclusive **Clinch Knee** technique (Assault Stance / Strike, Reaction-based, High Impact 3 damage to Reaction or Stamina) usable while holding an opponent in a Clinch/Grab.
+    *   **Thai Clinch**: Unlocks the exclusive **Clinch Knee** technique (Strike Stance, Reaction-based, High Impact 3 damage to Reaction or Stamina) usable while holding an opponent in a Clinch/Grab.
     *   **Heavy Leg Kicks**: Low Kicks deal 2 Agility damage as normal, but apply a severe **Hobbled** status condition (inflicting a $-2$ penalty to Agility rolls next round instead of $-1$).
 
 ### 3. Judo (The Gentle Way)
@@ -158,7 +158,7 @@ Characters can adopt a specific Martial Arts Style, which dictates their availab
     *   *Blocks*: High Guard, Low Guard (No Parry or Dodge).
     *   *Throws*: Clinch/Grab, Trip/Sweep, Takedown (Double Leg), Submission Hold (only vs. Prone/Pinned targets).
 *   **Style Perks**:
-    *   **Shooter**: Double Leg Takedowns can be executed directly from **Striking Range** (bypassing the need to Clinch first) and gain a **$+2$ bonus** if the target chose an Assault Stance (Strike).
+    *   **Shooter**: Double Leg Takedowns can be executed directly from **Striking Range** (bypassing the need to Clinch first) and gain a **$+2$ bonus** if the target chose a Strike Stance.
     *   **Ground Control**: Winning a Grapple Struggle (Black vs. Black) automatically knocks the opponent prone and pins them, preventing them from choosing a Strike next turn.
 
 ### 5. Karate (The Way of the Empty Hand)
@@ -207,11 +207,11 @@ Fighters who survive the street crawl often cross-train in other martial arts di
 > *"Be water, my friend. Empty your mind. Be formless, shapeless, like water. You put water into a cup, it becomes the cup."* — Bruce Lee
 
 
-Fighters adopt one of three tactical combat stances during each exchange: **Assault Stance (Strike / Red)**, **Guard Stance (Block / White)**, or **Grapple Stance (Throw / Black)**. Combat dominance follows a natural counter relationship:
+Fighters adopt one of three tactical combat stances during each exchange: **Strike Stance (Red)**, **Block Stance (White)**, or **Throw Stance (Black)**. Combat dominance follows a natural rock-paper-scissors counter relationship:
 
-*   **Assault Stance** beats **Grapple Stance** ($\text{Assault} > \text{Grapple}$): Fast offensive strikes interrupt grappling entries and takedowns before leverage can be established.
-*   **Guard Stance** beats **Assault Stance** ($\text{Guard} > \text{Assault}$): High/low defensive guards deflect or absorb incoming punches and kicks.
-*   **Grapple Stance** beats **Guard Stance** ($\text{Grapple} > \text{Guard}$): A passive defensive stance leaves a fighter vulnerable to sweeps, clinches, and projections.
+*   **Strike Stance** beats **Throw Stance** ($\text{Strike} > \text{Throw}$): Fast offensive strikes interrupt grappling entries and takedowns before leverage can be established.
+*   **Block Stance** beats **Strike Stance** ($\text{Block} > \text{Strike}$): High/low defensive guards deflect or absorb incoming punches and kicks.
+*   **Throw Stance** beats **Block Stance** ($\text{Throw} > \text{Block}$): A passive defensive guard leaves a fighter vulnerable to sweeps, clinches, and projections.
 
 ---
 
@@ -238,7 +238,7 @@ Strikes aim to inflict damage and interrupt throws.
 *   **Push Kick (Teep)**: Straight thrusting kick. Fast speed, low damage. Pushes the opponent back, resetting combat to neutral range and canceling throw/clinch attempts.
 
 #### C. Special Strikes
-*   **Taunt**: A verbal or physical psychological mock. Takes the place of an **Assault Stance (Strike / Red)** action. Governed by the **Cool** attribute. Deals no physical damage, but a successful check inflicts **1 Cool damage** on the target.
+*   **Taunt**: A verbal or physical psychological mock. Takes the place of a **Strike Stance (Red)** action. Governed by the **Cool** attribute. Deals no physical damage, but a successful check inflicts **1 Cool damage** on the target.
 *   **Ground & Pound**: Striking a downed opponent on the canvas. Governed by **Power** or **Reaction**. Deals **Power** or **Stamina** damage. Can only be selected against **Prone** or **Pinned** targets. *(Allowed for Wrestling and Judo).*
 
 ---
@@ -345,30 +345,30 @@ Combat is played in simultaneous **Rounds** resolved by a single **Contested Rol
    * Now that the action matchup is revealed, combatants roll their dice:
      * **Dominant Stance (Counter Winner)**: Rolls with **Advantage** (roll $3\text{d}10$, keep the two highest dice).
      * **Exposed Stance (Counter Loser)**: Rolls their standard $2\text{d}10$ check.
-     * **Matched Stances** (e.g., Assault vs. Assault): Both roll their standard $2\text{d}10$ check normally.
+     * **Matched Stances** (e.g., Strike vs. Strike): Both roll their standard $2\text{d}10$ check normally.
    * Each combatant calculates their **Roll Total**:
      $$\text{Roll Total} = \text{Dice Result} + \text{Governing Attribute} + \text{Technique Mastery Bonus}$$
-   * In a counter matchup or grapple struggle, the combatant with the **higher Roll Total wins the check**, executing their action while interrupting the opponent's. In an **Assault vs. Assault (Strike vs. Strike)** matchup, both fighters trade blows—the fighter with the **higher Roll Total applies their damage first**. If the lower roller is knocked out (any attribute reduced to 0), their strike is interrupted and fails. If the lower roller survives, their strike connects and deals full damage back.
+   * In a counter matchup or grapple struggle, the combatant with the **higher Roll Total wins the check**, executing their action while interrupting the opponent's. In a **Strike vs. Strike** matchup, both fighters trade blows—the fighter with the **higher Roll Total applies their damage first**. If the lower roller is knocked out (any attribute reduced to 0), their strike is interrupted and fails. If the lower roller survives, their strike connects and deals full damage back.
    * *Note: The dominant stance is statistically favored to win the contest, but a high-rolling exposed stance can still overcome the disadvantage and win the round.*
 
 ---
 
-### 1. Stance Counter Resolution
+1. **Stance Counter Resolution**
 
-*   **Opposing Stances (Counter Check)**: If the revealed stances form a counter pair (e.g., Guard vs. Assault / Block vs. Strike):
+*   **Opposing Stances (Counter Check)**: If the revealed stances form a counter pair (e.g., Block Stance vs. Strike Stance):
     *   The **Dominant Stance** (counter winner) rolls with **Advantage**.
     *   The **Exposed Stance** (counter loser) rolls normally.
     *   **Winner-Take-All**: Only the winner of the contested roll executes their action; the loser's action is completely interrupted and fails (dealing no damage or secondary effects).
-    *   *Example 1 (Guard Stance vs. Assault Stance)*: Guard beats Assault. The Blocker rolls with Advantage.
+    *   *Example 1 (Block Stance vs. Strike Stance)*: Block beats Strike. The Blocker rolls with Advantage.
         *   If the **Blocker wins**, the block succeeds and subtracts its mitigation rating from the strike's Attribute Damage (e.g., High Guard mitigates 2 damage, completely absorbing a 2-damage Cross, but letting 1 chip damage through from a 3-damage Uppercut).
         *   If the **Striker wins** (overcoming the guard's advantage), the strike bypasses the guard entirely, dealing full, unmitigated Attribute Damage.
-    *   *Example 2 (Assault Stance vs. Grapple Stance)*: Assault beats Grapple. The Striker rolls with Advantage.
+    *   *Example 2 (Strike Stance vs. Throw Stance)*: Strike beats Throw. The Striker rolls with Advantage.
         *   If the **Striker wins**, the strike connects, dealing Attribute Damage and interrupting the throw.
         *   If the **Grappler wins** (overcoming the striker's advantage), the grappler successfully clinches or throws the opponent; the strike is completely interrupted and deals 0 damage.
 *   **Matched Stances (Same Stance Rolls)**:
-    *   **Assault vs. Assault (Strike vs. Strike)**: Sequential Trade! Both roll normally ($2\text{d}10$). The fighter with the higher Roll Total lands their strike **first**. If the lower roller is knocked out (any attribute drops to 0), they collapse and their strike is interrupted. If the lower roller survives, their strike lands and deals full damage back. Outrolling the opponent by a margin of 5 or more (or rolling a Natural 20) upgrades your strike to a **Critical Hit** ($+1$ damage).
-    *   **Guard vs. Guard (Block vs. Block)**: No contest is needed. Both combatants remain passive in guard. Standoff; the round resets to neutral.
-    *   **Grapple vs. Grapple (Throw vs. Throw)**: A grapple struggle. Both roll off normally using either **Power** or **Reaction**. The higher total wins the check, securing a Clinch or a throw.
+    *   **Strike vs. Strike**: Sequential Trade! Both roll normally ($2\text{d}10$). The fighter with the higher Roll Total lands their strike **first**. If the lower roller is knocked out (any attribute drops to 0), they collapse and their strike is interrupted. If the lower roller survives, their strike lands and deals full damage back. Outrolling the opponent by a margin of 5 or more (or rolling a Natural 20) upgrades your strike to a **Critical Hit** ($+1$ damage).
+    *   **Block vs. Block**: No contest is needed. Both combatants remain passive in guard. Standoff; the round resets to neutral.
+    *   **Throw vs. Throw**: A grapple struggle. Both roll off normally using either **Power** or **Reaction**. The higher total wins the check, securing a Clinch or a throw.
 
 ### 2. Die Roll Architecture (Strictly d10 System)
 All mechanics and random tables in **Saturday Night Street Fight** strictly use ten-sided dice (d10):
@@ -429,17 +429,17 @@ The initial distance when combat begins depends on the environment and encounter
 Fighters change range by winning clashes with specific techniques:
 
 #### A. Advancing (Closing the Distance)
-To move closer, perform a **Grapple Stance (Throw / Black)** action:
+To move closer, perform a **Throw Stance (Black)** action:
 *   **Clinch / Grab** or **Takedown**: Winning the check moves you forward one range step (e.g., Striking Range $\rightarrow$ Grapple Range).
 *   *Critical Success*: Advancing with a Critical Success allows you to move two range steps (e.g., Outside Range $\rightarrow$ Grapple Range).
 
 #### B. Retreating (Creating Distance)
-To step back safely, perform an evasive **Guard Stance (Block / White)** action:
+To step back safely, perform an evasive **Block Stance (White)** action:
 *   **Dodge / Evasion**: Winning the check allows you to retreat one range step (e.g., Grapple Range $\rightarrow$ Striking Range).
 *   *Note: If the check fails, the attacker keeps you trapped at the closer range.*
 
 #### C. Forcing Distance (Pushing Back)
-To actively push an opponent away, perform a specialized **Assault Stance (Strike / Red)** action:
+To actively push an opponent away, perform a specialized **Strike Stance (Red)** action:
 *   **Push Kick (Teep)**: A successful hit pushes the opponent back one range step (e.g., Grapple Range $\rightarrow$ Striking Range).
 
 ---
@@ -450,7 +450,7 @@ Street fights are chaotic and brutal. Combatants can inflict or suffer various t
 
 ### 1. Prone (Lying on the Ground)
 Fighters are knocked **Prone** when hit by a throwing action (Trip/Sweep, Hip/Shoulder Throw, Takedown) or when knocked down. While Prone:
-*   **Action Limitation**: You cannot choose **Strike (Red)** actions.
+*   **Action Limitation**: You cannot choose **Strike Stance (Red)** actions.
 *   **Disadvantage**: You roll with **Disadvantage** (roll $3\text{d}10$, keep the two lowest dice) on all checks while Prone (including checks to defend or stand up).
 *   **Defense Restriction**: You cannot choose Dodge/Evasion. You can only choose High Guard, Low Guard, or Parry to defend from the ground.
 *   **Getting Up**: To stand back up, you must declare the **Stand Up** technique (resolved as a **Block / White** action, governed by **Agility**). If you win the contested check, you stand up and remove this condition. If you lose, you remain Prone.
