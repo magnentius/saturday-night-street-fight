@@ -17,6 +17,7 @@ This guide provides the Game Master (GM) with setting guidelines, environmental 
 7. [NPC Stats & Threat Tiers](#npc-stats--threat-tiers)
 8. [Group Combat Rules](#group-combat-rules)
 9. [The Saturday Night Soundtrack (1970s Playlist)](#the-saturday-night-soundtrack-1970s-playlist)
+10. [Brawler Name & Alias Database](#10-brawler-name--alias-database)
 
 ---
 
@@ -396,3 +397,15 @@ To set the mood at your table, roll a **$1\text{d}10$** on the tables below to s
 | **8** | "Born to Run" | Bruce Springsteen (1975) |
 | **9** | "White Riot" | The Clash (1977) |
 | **10** | "Kung Fu Fighting" | Carl Douglas (1974) |
+
+---
+
+## 10. Brawler Name & Alias Database
+
+When generating PCs or GMing NPCs on the fly, use the official [Brawler Name & Alias Database](names.md) to generate authentic 1970s street names across diverse cultural backgrounds:
+
+*   **Asian Brawler Names**: East Asian, Southeast Asian, and South Asian given names and surnames (*Kenji Chen*, *Mei-Ling Sato*, *Somchai Prasert*).
+*   **Latino & Hispanic Brawler Names**: Nuyorican, Dominican, Mexican, and South American given names and surnames (*Hector Vega*, *Carmen Morales*, *Tito Ortiz*).
+*   **European & Anglo Brawler Names**: Italian, Irish/Anglo, and Eastern European given names and surnames (*Vinnie Gambini*, *Mickey O'Neill*, *Ivan Petrov*).
+*   **African & African-American Brawler Names**: 1970s Urban, Diaspora, and West/East African given names and surnames (*Cassius Jackson*, *Pamela Mercer*, *Kwame Mensah*).
+*   **Street Monikers & Alias Generator**: Roll $1\text{d}10$ (Prefix) + $1\text{d}10$ (Combat Moniker) to generate street titles like *Iron Viper*, *Slick Hammer*, *Razor Tiger*, or *Thunder Brawler*.

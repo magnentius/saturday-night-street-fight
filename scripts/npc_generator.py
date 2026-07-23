@@ -2,7 +2,7 @@
 import sys
 import os
 import random
-from pc_generator import STYLES, ATTRIBUTES, generate_random_character, format_character_sheet
+from pc_generator import STYLES, ATTRIBUTES, generate_random_character, generate_random_name, format_character_sheet
 
 PUNK_NICKNAMES = [
     "Slick", "Weasel", "Razor", "Spitfire", "Zipper", "Ditch", "Gator", "Rat", "Clutch", "Flea", 
@@ -89,7 +89,7 @@ ENCOUNTERS = {
 
 def generate_punk():
     nickname = random.choice(PUNK_NICKNAMES)
-    name = f"'{nickname}'"
+    name = f"{generate_random_name()} ('{nickname}')"
     attrs = {attr: 1 for attr in ATTRIBUTES}
     return {
         "name": name,
@@ -103,7 +103,7 @@ def generate_thug():
     nickname = random.choice(THUG_NICKNAMES)
     style_name = random.choice(list(STYLES.keys()))
     style = STYLES[style_name]
-    name = f"'{nickname}' ({style_name})"
+    name = f"{generate_random_name()} ('{nickname}') ({style_name})"
     
     attrs = {attr: 2 for attr in ATTRIBUTES}
     
@@ -125,7 +125,7 @@ def generate_thug():
 def generate_boss():
     nickname = random.choice(BOSS_NICKNAMES)
     name, style_name, arch_name, attrs, masteries, unspent_xp = generate_random_character()
-    full_name = f"'{nickname}' {name} ({style_name})"
+    full_name = f"{name} ('{nickname}') ({style_name})"
     style = STYLES[style_name]
     return {
         "name": full_name,
@@ -142,7 +142,7 @@ def generate_warlord():
     nickname = random.choice(OVERLORD_NICKNAMES)
     style_name = random.choice(list(STYLES.keys()))
     style = STYLES[style_name]
-    full_name = f"Warlord '{nickname}' ({style_name})"
+    full_name = f"Warlord {generate_random_name()} ('{nickname}') ({style_name})"
     
     attrs = {attr: 4 for attr in ATTRIBUTES}
     

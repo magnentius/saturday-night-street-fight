@@ -84,11 +84,45 @@ def print_header(title):
     print(f" {title.upper()} ".center(60, "="))
     print("=" * 60)
 
+NAMES_DATABASE = {
+    "Asian": {
+        "Male": ["Kenji", "Bruce", "Jet", "Donnie", "Shin", "Jun", "Min-ho", "Hiro", "Takeshi", "Kazuo", "Tony", "Somchai", "Vikram", "Minh"],
+        "Female": ["Mei", "Michelle", "Angela", "Chun-Li", "Yuko", "Lin", "Hana", "Sakura", "Malee", "Priya", "Linh", "Sun-Hee"],
+        "Surnames": ["Chen", "Lee", "Wang", "Zhang", "Sato", "Tanaka", "Park", "Kim", "Wong", "Wu", "Nguyen", "Sharma", "Patel"]
+    },
+    "Latino": {
+        "Male": ["Hector", "Carlos", "Mateo", "Manny", "Tito", "Angel", "Rafael", "Javier", "Esteban", "Willie", "Beto", "Diego", "Rodrigo"],
+        "Female": ["Carmen", "Rosa", "Isabel", "Marisol", "Elena", "Josefina", "Teresa", "Bianca", "Rosario", "Camila", "Paloma"],
+        "Surnames": ["Vega", "Morales", "Rodriguez", "Ortiz", "Reyes", "Cruz", "Rivera", "Torres", "Vargas", "Mendoza", "Gomez", "Santiago"]
+    },
+    "European": {
+        "Male": ["Vinnie", "Frankie", "Sal", "Mickey", "Jack", "Tommy", "Seamus", "Buster", "Dutch", "Ivan", "Viktor", "Boris", "Dmitri"],
+        "Female": ["Gina", "Francesca", "Sophia", "Maggie", "Colleen", "Roxie", "Daisy", "Bridget", "Anya", "Katya", "Natasha", "Olga"],
+        "Surnames": ["Gambini", "Barbosa", "Rossi", "Moretti", "O'Neill", "Cooper", "Mercer", "Miller", "Kovacs", "Callahan", "Petrov", "Kowalski"]
+    },
+    "African": {
+        "Male": ["Cassius", "Sonny", "Spider", "Malik", "Tyrone", "Darnell", "Marcus", "Otis", "Jabari", "Kwame", "Kofi", "Tariq", "Sekou"],
+        "Female": ["Pam", "Nia", "Tamara", "Maya", "Queenie", "Brenda", "Desiree", "Hazel", "Ebony", "Amina", "Zahra", "Awa", "Zuri"],
+        "Surnames": ["Jackson", "Mercer", "Washington", "Freeman", "Banks", "Vance", "Woods", "Hayes", "King", "Mensah", "Okonjo", "Diallo", "Keita"]
+    }
+}
+
+MONIKER_PREFIXES = ["Iron", "Slick", "Silent", "Wild", "Velvet", "Razor", "Heavy", "Ghost", "Thunder", "Golden"]
+MONIKER_SUFFIXES = ["Viper", "Hammer", "Panther", "Cobra", "Dragon", "Tiger", "Machete", "Falcon", "Brawler", "Shadow"]
+
+def generate_random_name():
+    eth = random.choice(list(NAMES_DATABASE.keys()))
+    gender = random.choice(["Male", "Female"])
+    first = random.choice(NAMES_DATABASE[eth][gender])
+    last = random.choice(NAMES_DATABASE[eth]["Surnames"])
+    if random.random() < 0.4:
+        alias = f"'{random.choice(MONIKER_PREFIXES)} {random.choice(MONIKER_SUFFIXES)}'"
+        return f"{first} {alias} {last}"
+    return f"{first} {last}"
+
 def generate_random_character(name=None):
     if not name:
-        first_names = ["Jack", "Kenji", "Vinnie", "Mickey", "Spider", "Buster", "Sonny", "Cassius", "Rocky", "Dutch"]
-        last_names = ["Cooper", "Sato", "Gambini", "O'Neill", "Cruz", "Keaton", "Barbosa", "Mercer", "Kovacs", "Miller"]
-        name = f"{random.choice(first_names)} {random.choice(last_names)}"
+        name = generate_random_name()
 
     style_name = random.choice(list(STYLES.keys()))
     style = STYLES[style_name]
