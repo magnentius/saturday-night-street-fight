@@ -46,7 +46,7 @@ ENCOUNTERS = {
         ("Shakedown", "A single Tier 2 Thug demands a turf toll. Players can fight or bluff past with a contested Cool check."),
         ("Tagging Crew", "Three Tier 1 Punks spray-painting gang slogans. They grow hostile if confronted."),
         ("Narrow Alley Shortcut", "A dark alley starting at Striking Range."),
-        ("Debris Obstruction", "Loose wooden crates; requires an Agility Check (DC 8) to cross without tripping."),
+        ("Debris Obstruction", "Loose wooden crates; requires an Agility Check (DC 10 — Easy) to cross without tripping."),
         ("Stolen Vehicle", "A stripped car creating cover in the center of the block.")
     ],
     3: [
@@ -183,12 +183,14 @@ def generate_grandmaster():
     selected_moves = random.sample(combined_moves, min(6, len(combined_moves)))
     masteries = {move: 2 for move in selected_moves}
     
-    perks = list(primary["Perks"]) + [f"[Secondary {secondary_name}] {p}" for p in secondary["Perks"]]
+    mastery_perk_a = f"**Perfect Form ({primary_name})**: Dice clash floor is 5."
+    mastery_perk_b = f"**Dojo Founder ({secondary_name})**: Commands 1d10 Dojo Disciples Mob."
+    perks = list(primary["Perks"]) + [f"[Elevated {secondary_name}] {p}" for p in secondary["Perks"]] + [mastery_perk_a, mastery_perk_b]
     
     return {
         "name": full_name,
         "tier": "Tier 4+: Syndicate Grandmaster Warlord",
-        "style": f"{primary_name} / {secondary_name} (Dual Discipline)",
+        "style": f"{primary_name} / {secondary_name} (Dual Style Mastery)",
         "focus": f"{primary['Focus']} & {secondary['Focus']}",
         "attrs": attrs,
         "masteries": masteries,

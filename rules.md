@@ -593,7 +593,7 @@ As fighters invest XP and train their discipline, their rising **Character Rank*
 | **Street Brawler** | **Rank 50** | Baseline creation moves | Starting character (2 active Key slots). |
 | **Street Veteran** | **Rank 60** | Spent ~10 XP in play | **3rd Active Key Slot Unlocked** (Maximum 3 active Keys). |
 | **Style Master** | **Rank 150** | Mastered (Rank 2) all techniques in Primary Style | **Master Title** + Select 1 **Mastery Perk** (*Dojo Founder* or *Perfect Form*). |
-| **Grandmaster** | **Rank 200+** | Mastered (Rank 2) all techniques in Primary & Secondary Styles | **Grandmaster Title** + **Dual Discipline Mastery** (All 4 style perks active!). |
+| **Grandmaster** | **Rank 200+** | Mastered all techniques in Primary & Secondary Styles | **Grandmaster Title** + **Dual Style Mastery** (Secondary elevated to Primary, all 4 perks active + 2nd Master Achievement). |
 
 #### A. Master Rank (Rank 150)
 Upon reaching **Rank 150** and mastering every technique in your Primary Style, you earn the title **Master of [Style Name]** *(e.g., "Master of Boxing", "Master of Judo")* and choose **1 Mastery Perk**:
@@ -602,7 +602,11 @@ Upon reaching **Rank 150** and mastering every technique in your Primary Style, 
 
 #### B. Grandmaster Rank (Rank 200+)
 Upon reaching **Rank 200+** and mastering every technique across both your Primary and Secondary Styles, you achieve the ultimate street title of **Grandmaster / Street Legend**:
-*   **Dual Discipline Mastery**: You permanently unlock the **2nd Style Perk** of your Secondary Martial Arts Style! You now gain the active benefits of **all 4 Style Perks** (2 from your Primary Style + 2 from your Secondary Style).
+*   **Secondary Style Elevation**: Your Secondary Martial Arts Style is permanently elevated to a **Full Primary Style** (you now hold two Primary Styles!).
+*   **Dual Style Mastery Perk**: You automatically gain the **2nd Style Perk** of your elevated Secondary Style (activating all 4 style perks across both styles simultaneously).
+*   **Second Master Achievement Choice**: You gain a 2nd Master Achievement choice for your newly elevated style:
+    *   **Perfect Form (Style B)**: Flawless execution extends to your 2nd style. When performing a Mastered technique from Style B, any $1\text{d}10$ die result of 1–4 counts as 5.
+    *   **Dojo Founder (Style B)**: You found a 2nd Dojo on Home Turf for your elevated 2nd style, gaining an additional $1\text{d}10$ Dojo Disciples Mob.
 
 ### 3. How Keys & Unlocks Work
 *   **Starting Keys**: At character creation (**Rank 50**), select **2 Keys** from the list below.

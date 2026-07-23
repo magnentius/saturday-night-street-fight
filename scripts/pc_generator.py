@@ -22,7 +22,7 @@ STYLES = {
         "Throws": ["clinch"],
         "Perks": [
             "**Thai Clinch**: Unlocks Clinch Knee (Reaction-based, 3 damage to Reaction or Stamina) usable while holding a Clinch.",
-            "**Heavy Leg Kicks**: Low Kicks deal 2 Agility damage and apply a severe Hobbled status condition (-2 penalty next round)."
+            "**Heavy Leg Kicks**: Low Kicks deal 2 Agility damage, apply the Hobbled status condition, and prevent the target from selecting Dodge on their next Stance Check."
         ]
     },
     "Judo": {

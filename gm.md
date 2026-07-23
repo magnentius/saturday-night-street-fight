@@ -257,7 +257,7 @@ When building a street encounter or resolving a random event during the Street C
 *   **Tier 2: Thugs / Enforcers (Standard Encounter)**: 1–2 seasoned brawlers (Attributes 2–3, 1–2 Trained/Mastered moves). Always individual combatants (PC Win Rate ~60%).
 *   **Tier 3: Syndicate Boss (Climax Encounter)**: 1 Boss built using the full 50 XP budget (Attributes 3, multiple Mastered moves). High-stakes duel (PC Win Rate ~50%).
 *   **Tier 4: Syndicate Overlord / Master (End-Game Climax Boss)**: 1 Sector Warlord / Dojo Master built using a **100–150 XP budget** (Attributes 4s, Mastered moves, *Perfect Form* or *Dojo Founder* disciples). Climax endgame duel for veteran PCs (PC Win Rate ~55–65%).
-*   **Tier 4+: Syndicate Grandmaster Warlord (Ultimate Campaign Climax)**: 1 Supreme Leader / Grandmaster built using a **180–200+ XP budget** (Dual Discipline: Primary + Secondary style, *Dual Discipline Mastery* activating all 4 style perks). Designed as the ultimate challenge for maxed PCs.
+*   **Tier 4+: Syndicate Grandmaster Warlord (Ultimate Campaign Climax)**: 1 Supreme Leader / Grandmaster built using a **180–200+ XP budget** (**Dual Style Mastery**: Secondary elevated to Primary, *Dual Style Mastery* activating all 4 style perks + 2nd Master Achievement). Designed as the ultimate challenge for maxed PCs.
 
 ### 2. Environmental Starting Range Table
 When an encounter begins, determine the starting range based on the location or roll **1d10**:
@@ -327,10 +327,10 @@ Sector warlords, dojo masters, or syndicate leaders who rule entire districts.
 *   **Tactics**: Relentless pressure, stance reading mastery, and devastating combo strings. Tuned for climax duels against veteran PCs.
 
 ### 5. Syndicate Grandmaster Warlords (Tier 4+)
-Endgame campaign bosses, syndicate supreme leaders, or legendary martial arts grandmasters who have unified two martial arts disciplines into a seamless hybrid fighting system.
+Endgame campaign bosses, syndicate supreme leaders, or legendary martial arts grandmasters who have unified two martial arts disciplines into a seamless dual-primary fighting system.
 *   **Creation**: Built using a **180–200+ XP budget** (Attributes maxed at 4, 6–8 Mastered Rank 2 techniques with $+5$ bonus).
-*   **Dual Discipline**: Cross-trained in a **Primary Style** and **Secondary Style** (15 XP).
-*   **Grandmaster Perk**: Possesses **Dual Discipline Mastery** (gains **all 4 Style Perks**—2 from Primary + 2 from Secondary!).
+*   **Dual Style Elevation**: Elevated to hold **two Primary Styles** (Dual Style Mastery).
+*   **Grandmaster Perks & Achievements**: Possesses **Dual Style Mastery** (gains **all 4 Style Perks**—2 from Style A + 2 from Style B!) and **two Master Achievements** (*Perfect Form* and/or *Dojo Founder* across both styles).
 *   **Tactics**: High-friction stance reading, dual-style counterplay (e.g., Boxer Slip & Counter combined with Judo Throw Reversals), and devastating tactical endurance. Designed as the ultimate climax challenge for maxed PC crews.
 
 ---
