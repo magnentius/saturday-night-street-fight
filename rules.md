@@ -592,11 +592,11 @@ As fighters invest XP and train their discipline, their rising **Character Rank*
 | :--- | :--- | :--- | :--- |
 | **Rank 50** | **50 XP** | Baseline creation moves | **Martial Disciple / Street Soldier** (2 active Key slots). |
 | **Rank 60** | **60 XP** | Spent ~10 XP in play | **Martial Adept / Turf Enforcer** (**3rd Active Key Slot Unlocked**). |
-| **Rank 150** | **150 XP** | Mastered all moves in Primary Style | **Style Master / Original Gangster** + Select 1 **Mastery Perk** (*Dojo Founder* or *Perfect Form*). |
+| **Rank 150** | **150 XP** | Mastered all moves in Primary Style | **Master / Original Gangster (OG)** + Select 1 **Mastery Perk** (*Dojo Founder* or *Perfect Form*). |
 | **Rank 200+** | **200+ XP** | Mastered all moves in Primary & Secondary Styles | **Grandmaster / Street Legend** + **Dual Style Mastery** (Secondary elevated to Primary, all 4 perks active + 2nd Master Achievement). |
 
-#### A. Master Rank (Rank 150): Style Master / Original Gangster
-Upon reaching **Rank 150** and mastering every technique in your Primary Style, you earn the dual titles **Style Master / Original Gangster (O.G.)** and choose **1 Mastery Perk**:
+#### A. Master Rank (Rank 150): Master / Original Gangster (OG)
+Upon reaching **Rank 150** and mastering every technique in your Primary Style, you earn the dual titles **Master / Original Gangster (OG)** and choose **1 Mastery Perk**:
 *   **Dojo Founder**: You establish your own martial arts dojo on Home Turf (acting as a **Danger Rank 1 Safe Zone**). You gain a loyal crew of **$1\text{d}10$ Dojo Disciples (Tier 1 Mob)** who guard your dojo and can accompany your crew on street crawl runs (using GM Mob Rules). If any disciples fall in battle, new students enroll at your dojo when resting, restoring your disciple Mob count back to $1\text{d}10$.
 *   **Perfect Form**: Your execution of primary style moves becomes flawless. When performing a Mastered technique from your Primary Style, your clash die roll cannot be lower than 5 (any $1\text{d}10$ die result of 1–4 counts as 5).
 
