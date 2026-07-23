@@ -139,7 +139,7 @@ Characters can adopt a specific Martial Arts Style, which dictates their availab
     *   *Throws*: Clinch/Grab only (No Trip, Hip Throw, or Takedown).
 *   **Style Perks**:
     *   **Thai Clinch**: Unlocks the exclusive **Clinch Knee** technique (Strike Stance, Reaction-based, High Impact 3 damage to Reaction or Stamina) usable while holding an opponent in a Clinch/Grab.
-    *   **Heavy Leg Kicks**: Low Kicks deal 2 Agility damage as normal, but apply a severe **Hobbled** status condition (inflicting a $-2$ penalty to Agility rolls next round instead of $-1$).
+    *   **Heavy Leg Kicks**: Low Kicks deal 2 Agility damage as normal, but inflict **Hobbled** and also prevent the target from selecting **Dodge/Evasion** on their next Stance Check.
 
 ### 3. Judo (The Gentle Way)
 *   **Focus**: Redirection & High-Impact Throws.
@@ -367,7 +367,14 @@ Combat is played in simultaneous **Rounds** resolved by a single **Contested Rol
     *   **Block vs. Block**: No contest is needed. Both combatants remain passive in guard. Standoff; the round resets to neutral.
     *   **Throw vs. Throw**: A grapple struggle. Both roll off normally using either **Power** or **Reaction**. The higher total wins the check, securing a Clinch or a throw.
 
-### 2. Die Roll Architecture (Strictly d10 System)
+### 2. The 3 Action Check Types
+To make combat timing and perk follow-ups crystal clear, all checks in **Saturday Night Street Fight** are categorized into 3 distinct Action Check types:
+
+*   **Stance Check (Primary Action Roll)**: The primary contested roll of Phase 3 in a combat round, committed simultaneously using Action Cards (**Strike Stance**, **Block Stance**, **Throw Stance**). Temporary status penalties like **Staggered**, **Hobbled**, and **Winded** specifically apply their penalty/Disadvantage to your **very next Stance Check**.
+*   **Perk Reaction Check (Immediate Special Follow-up)**: A free, immediate bonus check triggered by a style perk upon landing a strike or executing a parry (e.g., *Judo Kuzushi Sweeping Reversal*, *Karate Kiai Shout*). Perk Reaction Checks resolve instantly within the same round, do not consume your stance card, and do not clear Stance Check conditions.
+*   **Environmental Check (Hazard / Reaction Roll)**: A roll triggered by street hazards, subway trains, or ambient conditions ($2\text{d}10 + \text{Agility}$ or $\text{Cool}$).
+
+### 3. Die Roll Architecture (Strictly d10 System)
 All mechanics and random tables in **Saturday Night Street Fight** strictly use ten-sided dice (d10):
 
 *   **Standard Checks (2d10)**: Roll **$2\text{d}10 + \text{Attribute} + \text{Technique Mastery} + \text{Modifiers}$** vs Target DC or Opponent's Roll Total. Used for all combat actions, attribute checks, and out-of-combat challenges.
@@ -447,44 +454,51 @@ Street fights are chaotic and brutal. Combatants can inflict or suffer various t
 
 ### 1. Prone (Lying on the Ground)
 Fighters are knocked **Prone** when hit by a throwing action (Trip/Sweep, Hip/Shoulder Throw, Takedown) or when knocked down. While Prone:
-*   **Action Limitation**: You cannot choose **Strike Stance (Red)** actions.
-*   **Disadvantage**: You roll with **Disadvantage** (roll $3\text{d}10$, keep the two lowest dice) on all checks while Prone (including checks to defend or stand up).
-*   **Defense Restriction**: You cannot choose Dodge/Evasion. You can only choose High Guard, Low Guard, or Parry to defend from the ground.
-*   **Getting Up**: To stand back up, you must declare the **Stand Up** technique (resolved as a **Block / White** action, governed by **Agility**). If you win the contested check, you stand up and remove this condition. If you lose, you remain Prone.
+*   **Duration**: Lasts until you successfully execute a **Stand Up** check (win or tie).
+*   **Action Limitation**: You cannot choose **Strike Stance (Red)** actions or Dodge/Evasion.
+*   **Ground Disadvantage**: You roll with **Disadvantage** (roll $3\text{d}10$, keep the two lowest dice) on defensive checks while lying on the ground (Guards, Parries, or Ground Throws).
+*   **Getting Up (Neutral Roll)**: To stand back up, you declare the **Stand Up** technique (resolved as a **Block / White** action, governed by **Agility**). Unlike ground defense, the **Stand Up check is a standard $2\text{d}10$ check** (it does NOT suffer Disadvantage). If you win or tie the contested check, you stand back up and remove the Prone condition! If you lose the contest, you remain Prone.
 
 ### 2. Pinned (Trapped on the Canvas)
 Fighters are **Pinned** when an opponent wins a Grapple Struggle (Black vs. Black) on the ground (e.g., via Wrestling's *Ground Control* perk). While Pinned:
-*   **Incapacitated**: You cannot select **Stand Up** or **Dodge/Evasion**.
-*   **Disadvantage**: You roll with **Disadvantage** on all checks.
-*   **Escaping**: To escape, you must choose **Clinch/Grab** (Throw / Black, governed by **Power**) to engage in a Grapple Struggle. If you win the check, you break the pin (returning to Prone, but no longer Pinned). If you lose, the pin is maintained.
+*   **Duration**: Lasts until you successfully execute an **Escape** check (win = Clean Break, tie = Partial Break).
+*   **Action Limitation**: You cannot select **Strike Stance (Red)** or **Dodge/Evasion**.
+*   **Ground Disadvantage**: You roll with **Disadvantage** (roll $3\text{d}10$, keep the two lowest dice) on defensive checks while remaining pinned on the ground (Guards or Parries).
+*   **Dual Escape Paths (Neutral Roll)**: To escape a Pin, you choose either:
+    *   **Power Escape (Bridge & Roll)**: Declare **Clinch/Grab** (Throw / Black, governed by **Power**).
+    *   **Agility Escape (Hip Scramble / Guard Recovery)**: Declare **High Guard / Low Guard** (Block / White, governed by **Agility**).
+    *   Unlike ground defense, an **Escape check is a standard $2\text{d}10$ check** (it does NOT suffer Disadvantage).
+*   **Escape Resolution**:
+    *   **Win**: **Clean Break!** Removes **both Pinned and Prone** (you stand right back up to your feet!).
+    *   **Tie**: **Partial Break!** Removes **Pinned** (reducing your position to Prone).
+    *   **Loss**: The Pin is maintained.
 
 ### 3. Staggered (Off-Balance)
 Fighters are **Staggered** temporarily when their attack is successfully parried, or due to specific style effects.
-*   **Duration**: Lasts until the end of your next action check.
-*   **Effect**: You roll with **Disadvantage** on your next action check.
+*   **Duration**: Lasts for 1 Stance Check (until the end of your next Stance Check).
+*   **Effect**: You roll with **Disadvantage** (roll $3\text{d}10$, keep the two lowest dice) on your next Stance Check.
 
 ### 4. Stunned (Dazed)
 Fighters are **Stunned** when hit by a high-impact head blow (like a Critical High Kick) or projected hard (like a Judo Hip Throw).
 *   **Duration**: Lasts for 1 round.
-*   **Effect**: You cannot select **Strike (Red)** or **Throw (Black)** actions. You can only choose **High Guard** or **Low Guard** (White/Block) to cover up, and you roll this check with **Disadvantage**.
+*   **Action Limitation**: You are dazed and cannot choose **Strike Stance (Red)** or **Throw Stance (Black)** actions. You can only choose **High Guard** or **Low Guard** (Block / White) to cover up.
+*   **Instinctive Guard (Neutral Roll)**: Covering up with High Guard or Low Guard is a **standard $2\text{d}10$ check** (it does NOT suffer Disadvantage). This allows your guard to function and mitigate 2 damage if hit.
 
 ### 5. Shaken (Cool 0)
-Fighters are **Shaken** when their Cool attribute is reduced to 0. Cool damage is only taken by losing a contested **Cool** check (e.g. from street encounters/gambling) or by being hit by a **Taunt** combat action.
-*   **Effect**: You suffer a **$-2$ penalty** to all Reaction checks in combat (due to hesitation/panic) and have **Disadvantage** on all non-combat checks.
+Fighters are **Shaken** when their Cool attribute is reduced to 0. Cool damage is taken by losing a contested **Cool** check (e.g. from street encounters/gambling) or by being hit by a **Taunt** combat action.
+*   **Duration**: Lasts until Cool is restored to 1 or higher at a **Social Sanctuary** (Dive Bar, Diner, Safe House).
+*   **Effect**: You roll with **Disadvantage** (roll $3\text{d}10$, keep the two lowest dice) on all **Reaction Stance Checks** in combat (due to hesitation/panic) and on all non-combat checks.
 *   **Perk Suspension**: You cannot use style perks that require calm or precision (such as Boxer's *Slip & Counter* or Judo's *Kuzushi*).
-*   **Duration**: Lasts until Cool is restored to 1 or higher. (Does not trigger a physical TKO).
 
-### 6. Hobbled (Agility Penalty)
+### 6. Hobbled (Leg Damage)
 Fighters are **Hobbled** when hit by a successful low leg attack (like a **Low Kick**).
-*   **Duration**: Lasts until the end of your next action check.
-*   **Effect**: You suffer a **$-1$ penalty** to all Agility-based rolls (this penalty increases to **$-2$** if inflicted by a Muay Thai fighter's *Heavy Leg Kicks*).
-*   **TKO Protection**: Temporary modifiers can never reduce an attribute below 1 for checks, and never trigger defeat/TKO.
+*   **Duration**: Lasts for 1 Stance Check (until the end of your next Stance Check).
+*   **Effect**: You roll with **Disadvantage** (roll $3\text{d}10$, keep the two lowest dice) on all **Agility-based Stance Checks** (*Dodge, Low Kick, Push Kick, Trip, Stand Up*).
 
-### 7. Winded (Stamina Penalty)
-Fighters are **Winded** when hit by a successful body blow (like a **Body Kick**).
-*   **Duration**: Lasts until the end of your next action check.
-*   **Effect**: You suffer a **$-1$ penalty** to all Stamina-based rolls.
-*   **TKO Protection**: Temporary modifiers can never reduce an attribute below 1 for checks, and never trigger defeat/TKO.
+### 7. Winded (Body Blow)
+Fighters are **Winded** when hit by a successful body blow (like a **Body Kick** or **Hook** body shot).
+*   **Duration**: Lasts for 1 Stance Check (until the end of your next Stance Check).
+*   **Effect**: You roll with **Disadvantage** (roll $3\text{d}10$, keep the two lowest dice) on all **Stamina and Power-based Stance Checks** (*High Kick, Body Kick, Throws, Takedowns, Clinches*).
 
 ---
 
@@ -510,7 +524,7 @@ Fighters recover their damaged attributes through short breathers and medical tr
         *   **Success**: All attributes are fully restored to their maximum scores.
         *   **Failure (Permanent Scarring)**: The **Attribute Maximum Cap** for that specific attribute permanently drops by **$-1$** (e.g., Max Agility Cap drops from $4 \rightarrow 3$).
         *   **Capped-Down Current Score**: If the fighter's current attribute score was above the new lower Maximum Cap, their current attribute score is **immediately capped down** to match the new Maximum Cap (e.g., if current score was restored to 3, but the cap dropped to 2, their current score becomes 2).
-        *   **Career-Ending Retirement (Cap 0)**: If any attribute's Maximum Cap is ever reduced to **0**, the brawler suffers a career-ending permanent disability and must retire from street fighting (**Forced Retirement**).
+        *   **Career-Ending Retirement (Cap 1)**: If any attribute's Maximum Cap is ever reduced to **1**, the brawler suffers a career-ending permanent injury (since a single point of damage would reduce them to 0 TKO) and must retire from street fighting (**Forced Retirement**).
 
 ### 2. Permanent Scarring Table
 If a fighter fails their recovery check, their **Attribute Maximum Cap** permanently drops by $-1$ and their current score is capped down to match. Use the table below for narrative description and roleplay prompts:
@@ -550,10 +564,10 @@ Rather than flat combat XP, **Saturday Night Street Fight** uses **XP Keys**. Ke
         *   **Attribute Conditioning Boost (10 XP)**: Instantly increases both your **current attribute score** and **maximum attribute score** by $+1$ (providing an immediate 1-point heal that can save a fighter from TKO!).
         *   **Technique Training (3 XP / 6 XP)**: Instantly unlocks or upgrades a move mastery, applying its $+3$ (Trained) or $+5$ (Mastered) bonus to your very next exchange.
         *   **Instant Cross-Training (15 XP)**: Instantly unlocks a Secondary Style and 1 Secondary Perk mid-fight or mid-crawl.
-    *   *At Character Creation*: Starting 50 XP budget minus XP spent on creation (e.g., 50 – 48 = **2 Available XP**).
+    *   *At Character Creation*: Starting 50 XP budget (e.g., 48–50 XP spent; any unspent XP remains banked in your Available XP pool).
 *   **Character Rank (= Total Spent XP)**: Your fighter's overall power level, street reputation, and total XP investment.
-    *   *At Character Creation*: Rank equals XP spent during creation (e.g., **Rank 48**).
-    *   *In Play*: Whenever you spend XP on training or conditioning attributes, your **Character Rank increases by the exact amount spent!** *(e.g., Spending 3 XP to train a move increases your Rank from 48 to 51).*
+    *   *At Character Creation*: Rank equals starting 50 XP budget (e.g., **Rank 50**).
+    *   *In Play*: Whenever you spend XP on training or conditioning attributes, your **Character Rank increases by the exact amount spent!** *(e.g., Spending 3 XP to train a move increases your Rank from 50 to 53).*
 
 ### 2. Character Rank Achievements & Milestones
 
@@ -561,8 +575,8 @@ As fighters invest XP and train their discipline, their rising **Character Rank*
 
 | Rank Tier | Required Spent XP | Mastery Requirement | Title & Unlocks |
 | :--- | :--- | :--- | :--- |
-| **Street Brawler** | **Rank 48** | Baseline creation moves | Starting character (2 active Key slots). |
-| **Street Veteran** | **Rank 60** | Spent ~12 XP in play | **3rd Active Key Slot Unlocked** (Maximum 3 active Keys). |
+| **Street Brawler** | **Rank 50** | Baseline creation moves | Starting character (2 active Key slots). |
+| **Street Veteran** | **Rank 60** | Spent ~10 XP in play | **3rd Active Key Slot Unlocked** (Maximum 3 active Keys). |
 | **Style Master** | **Rank 150** | Mastered (Rank 2) all techniques in Primary Style | **Master Title** + Select 1 **Mastery Perk** (*Dojo Founder* or *Perfect Form*). |
 | **Grandmaster** | **Rank 200+** | Mastered (Rank 2) all techniques in Primary & Secondary Styles | **Grandmaster Title** + **Dual Discipline Mastery** (All 4 style perks active!). |
 
@@ -576,8 +590,8 @@ Upon reaching **Rank 200+** and mastering every technique across both your Prima
 *   **Dual Discipline Mastery**: You permanently unlock the **2nd Style Perk** of your Secondary Martial Arts Style! You now gain the active benefits of **all 4 Style Perks** (2 from your Primary Style + 2 from your Secondary Style).
 
 ### 3. How Keys & Unlocks Work
-*   **Starting Keys**: At character creation (Rank ~48), select **2 Keys** from the list below.
-*   **Unlocking 3rd Key Slot**: When your fighter's **Character Rank reaches 60** (after spending ~12 XP in campaign play), you permanently unlock your **3rd active Key slot** (Maximum 3 active Keys).
+*   **Starting Keys**: At character creation (**Rank 50**), select **2 Keys** from the list below.
+*   **Unlocking 3rd Key Slot**: When your fighter's **Character Rank reaches 60** (after spending ~10 XP in campaign play), you permanently unlock your **3rd active Key slot** (Maximum 3 active Keys).
 *   **Key Counter / Buyoff**: Every Key has a **Buyoff / Counter**—a pivotal moment where your character goes against their code, forgives an enemy, or evolves. When you trigger a Key's Counter in play, you choose one of two options:
     *   **Option A**: Gain 0 XP for the encounter (you act against your code, forfeiting XP gains from that Key).
     *   **Option B (Buyoff)**: Gain a **+3 XP lump sum** (enough to immediately train 1 new Rank 1 technique!) and permanently remove the Key, opening a slot to select a new Key!
@@ -633,15 +647,3 @@ Upon reaching **Rank 200+** and mastering every technique across both your Prima
 *   **1 XP**: Offer tactical advice or spend a 10-minute short rest conditioning a companion.
 *   **2 XP**: Save a companion from taking a severe attribute TKO (0) by placing yourself directly in harm's way.
 *   **Buyoff / Counter**: Abandon your student/protégé in the middle of a brawl to save yourself. *(Gain +3 XP, remove Key).*
-
----
-
-### 4. Spending Experience Points
-Fighters spend their earned XP during **Phase 4: Retreat to Safety** to train techniques and condition their body:
-
-#### A. Increasing Technique Masteries
-*   **Untrained (Rank 0) $\rightarrow$ Trained (Rank 1)** ($+3$ bonus): Costs **3 XP** and requires 1 day of practice.
-*   **Trained (Rank 1) $\rightarrow$ Mastered (Rank 2)** ($+5$ bonus): Costs **6 XP** (requires Rank 1 first) and requires sparring or executing the move in 3 separate fights.
-
-#### B. Conditioning Attributes
-*   **Increasing an Attribute by +1**: Costs **10 XP** and requires 1 week of dedicated training (up to the campaign cap of **4**).

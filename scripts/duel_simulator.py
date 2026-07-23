@@ -160,14 +160,20 @@ class Combatant:
             if total_w > 0:
                 for k in weights: weights[k] /= total_w
 
-        if self.prone:
+        if self.prone or self.pinned:
             weights["strike"] = 0.0
-            total = weights["block"] + weights["throw"]
-            if total > 0:
-                weights["block"] /= total
-                weights["throw"] /= total
+            if self.pinned:
+                if self.attrs["agility"] >= self.attrs["power"]:
+                    weights["block"], weights["throw"] = 0.6, 0.4
+                else:
+                    weights["block"], weights["throw"] = 0.4, 0.6
             else:
-                weights["block"] = 1.0
+                total = weights["block"] + weights["throw"]
+                if total > 0:
+                    weights["block"] /= total
+                    weights["throw"] /= total
+                else:
+                    weights["block"] = 1.0
 
         r = random.random()
         if r < weights.get("strike", 0):
@@ -269,7 +275,15 @@ class Combatant:
                 self.slip_adv = False
             
         keep_highest = True
-        if self.prone or self.pinned or self.staggered or (self.stunned and action == "block"):
+        is_escape = (self.prone and technique == "stand up") or (self.pinned and action in ["block", "throw"])
+        has_disadv = (
+            ((self.prone or self.pinned) and not is_escape) or 
+            self.staggered or 
+            (self.hobbled > 0 and attr_name == "agility") or 
+            (self.winded and attr_name in ["stamina", "power"]) or 
+            (self.shaken and attr_name == "reaction")
+        )
+        if has_disadv:
             keep_highest = False
             if num_dice == 2:
                 num_dice = 3
@@ -289,16 +303,7 @@ class Combatant:
         if self.style_name == "Wrestling" and technique == "takedown" and opponent_action == "strike":
             shooter_bonus = 2
             flat_mod += shooter_bonus
-        
-        temp_penalty = 0
-        if attr_name == "agility" and self.hobbled > 0:
-            temp_penalty += self.hobbled
-        if attr_name == "stamina" and self.winded:
-            temp_penalty += 1
-        if self.shaken and attr_name == "reaction":
-            temp_penalty += 2
             
-        flat_mod -= temp_penalty
         if flat_mod > 10:
             flat_mod = 10
         
@@ -313,8 +318,6 @@ class Combatant:
             roll_log += f" + {chain_bonus} Chain Strike"
         if shooter_bonus > 0:
             roll_log += f" + {shooter_bonus} Shooter"
-        if temp_penalty > 0:
-            roll_log += f" - {temp_penalty} Status"
         roll_log += f", {adv_text})"
         if is_nat20:
             roll_log += f" [NATURAL 20!]"
@@ -558,17 +561,40 @@ def run_fight(p1, p2, should_write=False):
             if p1_color == "strike" and p2_color == "block":
                 log_print(f"  -> {p2.name}'s block holds, but they are STAGGERED next turn.")
                 p2.staggered = True
+                if p2_sub == "stand up" and p2.prone:
+                    p2.prone = False
+                    log_print(f"  -> {p2.name} stands back up.")
             elif p2_color == "strike" and p1_color == "block":
                 log_print(f"  -> {p1.name}'s block holds, but they are STAGGERED next turn.")
                 p1.staggered = True
+                if p1_sub == "stand up" and p1.prone:
+                    p1.prone = False
+                    log_print(f"  -> {p1.name} stands back up.")
             else:
+                if p1_sub == "stand up" and p1.prone:
+                    p1.prone = False
+                    log_print(f"  -> {p1.name} stands back up.")
+                if p2_sub == "stand up" and p2.prone:
+                    p2.prone = False
+                    log_print(f"  -> {p2.name} stands back up.")
                 log_print("  -> Standoff! Fighters reset to neutral.")
+
+            if p1.pinned:
+                p1.pinned = False
+                log_print(f"  -> [Partial Break!] {p1.name} breaks the pin down to Prone.")
+            if p2.pinned:
+                p2.pinned = False
+                log_print(f"  -> [Partial Break!] {p2.name} breaks the pin down to Prone.")
             continue
 
         # Winner-take-all resolution
         margin = w_total - l_total
         crit = w_nat20 or (margin >= 5)
         log_print(f"\n-> {C_GREEN}{C_BOLD}{winner.name} wins the exchange!{C_RESET} (Margin: {margin})")
+        if winner.pinned:
+            winner.pinned = False
+            winner.prone = False
+            log_print(f"   {C_GREEN}[Clean Break!]{C_RESET} {winner.name} breaks the pin and stands right back up to their feet!")
         if crit:
             metrics[w_key]["crits"] += 1
             if not w_nat20:
