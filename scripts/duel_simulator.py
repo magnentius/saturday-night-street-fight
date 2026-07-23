@@ -8,7 +8,7 @@ import time
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 from pc_generator import STYLES, ATTRIBUTES, generate_random_character, format_character_sheet
-from npc_generator import generate_punk, generate_thug, generate_boss, generate_overlord, generate_grandmaster
+from npc_generator import generate_punk, generate_thug, generate_boss, generate_warlord, generate_overlord
 
 # ANSI Color code constants for terminal output
 C_RESET  = "\033[0m"
@@ -901,8 +901,8 @@ def main():
     print("  1. Tier 1 Punk / Lookout")
     print("  2. Tier 2 Standard Thug")
     print("  3. Tier 3 Syndicate Boss")
-    print("  4. Tier 4 Syndicate Overlord (Master)")
-    print("  5. Tier 4+ Syndicate Grandmaster Warlord")
+    print("  4. Tier 4 Syndicate Warlord (Master)")
+    print("  5. Tier 4+ Supreme Syndicate Overlord (Grandmaster)")
     try:
         opp_choice = input("Select opponent tier (1-5, default 2): ").strip()
     except (KeyboardInterrupt, SystemExit):
@@ -913,9 +913,9 @@ def main():
     elif opp_choice == "3":
         npc_data = generate_boss()
     elif opp_choice == "4":
-        npc_data = generate_overlord()
+        npc_data = generate_warlord()
     elif opp_choice == "5":
-        npc_data = generate_grandmaster()
+        npc_data = generate_overlord()
     else:
         npc_data = generate_thug()
 

@@ -256,8 +256,8 @@ When building a street encounter or resolving a random event during the Street C
 *   **Tier 1: Punks / Lookouts (Minor Obstacle)**: Groups of 2–6 Punks using **Mob Punk Rules** (1 damage = 1 Punk TKO'd; all defeated at Mob Pool 0). Tuned as minor street hurdles (PC Win Rate ~90%).
 *   **Tier 2: Thugs / Enforcers (Standard Encounter)**: 1–2 seasoned brawlers (Attributes 2–3, 1–2 Trained/Mastered moves). Always individual combatants (PC Win Rate ~60%).
 *   **Tier 3: Syndicate Boss (Climax Encounter)**: 1 Boss built using the full 50 XP budget (Attributes 3, multiple Mastered moves). High-stakes duel (PC Win Rate ~50%).
-*   **Tier 4: Syndicate Overlord / Master (End-Game Climax Boss)**: 1 Sector Warlord / Dojo Master built using a **100–150 XP budget** (Attributes 4s, Mastered moves, *Perfect Form* or *Dojo Founder* disciples). Climax endgame duel for veteran PCs (PC Win Rate ~55–65%).
-*   **Tier 4+: Syndicate Grandmaster Warlord (Ultimate Campaign Climax)**: 1 Supreme Leader / Grandmaster built using a **180–200+ XP budget** (**Dual Style Mastery**: Secondary elevated to Primary, *Dual Style Mastery* activating all 4 style perks + 2nd Master Achievement). Designed as the ultimate challenge for maxed PCs.
+*   **Tier 4: Syndicate Warlord / Master (End-Game Climax Boss)**: 1 Sector Warlord / Dojo Master built using a **100–150 XP budget** (Attributes 4s, Mastered moves, *Perfect Form* or *Dojo Founder* disciples). Climax endgame duel for veteran PCs (PC Win Rate ~55–65%).
+*   **Tier 4+: Supreme Syndicate Overlord / Grandmaster (Ultimate Campaign Climax)**: 1 Supreme Leader / Grandmaster built using a **180–200+ XP budget** (**Dual Style Mastery**: Secondary elevated to Primary, *Dual Style Mastery* activating all 4 style perks + 2nd Master Achievement). Designed as the ultimate challenge for maxed PCs.
 
 ### 2. Environmental Starting Range Table
 When an encounter begins, determine the starting range based on the location or roll **1d10**:
@@ -313,20 +313,20 @@ Enforcers, muscle, or standard gang soldiers who know how to swing a bat or thro
 *   **Perks**: None.
 *   **Tactics**: Always individual combatants. Defensive when outnumbered, aggressive when having the upper hand.
 
-### 3. Bosses & Leaders (Tier 3)
-Gang leaders, legendary street fighters, or elite enforcers. 
-*   **Creation**: Built using the standard **Fighter Creation Rules** (50 XP budget, starting attributes at 2, cap of 3 at creation).
-*   **Style**: Choose one of the 7 Martial Arts Styles and apply both perks.
+### 3. Syndicate Bosses (Tier 3)
+Neighborhood bosses who control local blocks and transit hubs.
+*   **Creation**: Built using a **50 XP budget** (Attributes 3, 2–3 Mastered Rank 2 techniques with $+5$ bonus).
+*   **Style**: Primary Martial Arts Style with both style perks active.
 *   **Tactics**: Highly strategic, targeting the player's weakest attribute.
 
-### 4. Syndicate Overlords & Masters (Tier 4)
+### 4. Syndicate Warlords & Masters (Tier 4)
 Sector warlords, dojo masters, or syndicate leaders who rule entire districts.
 *   **Creation**: Built using a **100–150 XP budget** (Attributes at 4, 4 Mastered Rank 2 techniques with $+5$ bonus).
 *   **Style**: Primary Martial Arts Style with both style perks active.
 *   **Master Perks**: Possesses a Master Rank perk—either **Perfect Form** (dice clash floor of 5) or **Dojo Founder** (accompanied by $1\text{d}10$ Dojo Disciples Tier 1 Mob).
 *   **Tactics**: Relentless pressure, stance reading mastery, and devastating combo strings. Tuned for climax duels against veteran PCs.
 
-### 5. Syndicate Grandmaster Warlords (Tier 4+)
+### 5. Supreme Syndicate Overlords / Grandmasters (Tier 4+)
 Endgame campaign bosses, syndicate supreme leaders, or legendary martial arts grandmasters who have unified two martial arts disciplines into a seamless dual-primary fighting system.
 *   **Creation**: Built using a **180–200+ XP budget** (Attributes maxed at 4, 6–8 Mastered Rank 2 techniques with $+5$ bonus).
 *   **Dual Style Elevation**: Elevated to hold **two Primary Styles** (Dual Style Mastery).

@@ -138,11 +138,11 @@ def generate_boss():
         "unspent_xp": unspent_xp
     }
 
-def generate_overlord():
+def generate_warlord():
     nickname = random.choice(OVERLORD_NICKNAMES)
     style_name = random.choice(list(STYLES.keys()))
     style = STYLES[style_name]
-    full_name = f"Master '{nickname}' ({style_name})"
+    full_name = f"Warlord '{nickname}' ({style_name})"
     
     attrs = {attr: 4 for attr in ATTRIBUTES}
     
@@ -155,7 +155,7 @@ def generate_overlord():
     
     return {
         "name": full_name,
-        "tier": "Tier 4: Syndicate Overlord (Master)",
+        "tier": "Tier 4: Syndicate Warlord (Master)",
         "style": style_name,
         "focus": style["Focus"],
         "attrs": attrs,
@@ -164,7 +164,7 @@ def generate_overlord():
         "unspent_xp": 0
     }
 
-def generate_grandmaster():
+def generate_overlord():
     nickname = random.choice(OVERLORD_NICKNAMES)
     styles_list = list(STYLES.keys())
     primary_name = random.choice(styles_list)
@@ -173,7 +173,7 @@ def generate_grandmaster():
     primary = STYLES[primary_name]
     secondary = STYLES[secondary_name]
     
-    full_name = f"Grandmaster '{nickname}' ({primary_name} / {secondary_name})"
+    full_name = f"Supreme Overlord '{nickname}' ({primary_name} / {secondary_name})"
     attrs = {attr: 4 for attr in ATTRIBUTES}
     
     allowed_primary = primary["Strikes"] + primary["Blocks"] + primary["Throws"]
@@ -189,7 +189,7 @@ def generate_grandmaster():
     
     return {
         "name": full_name,
-        "tier": "Tier 4+: Syndicate Grandmaster Warlord",
+        "tier": "Tier 4+: Supreme Syndicate Overlord (Grandmaster)",
         "style": f"{primary_name} / {secondary_name} (Dual Style Mastery)",
         "focus": f"{primary['Focus']} & {secondary['Focus']}",
         "attrs": attrs,
@@ -204,52 +204,41 @@ def print_npc(npc):
     print(f"Tier: {npc['tier']}")
     if "style" in npc:
         print(f"Style: {npc['style']} ({npc['focus']})")
-    print(f"Attributes: R{npc['attrs']['reaction']}/P{npc['attrs']['power']}/A{npc['attrs']['agility']}/S{npc['attrs']['stamina']}/C{npc['attrs']['cool']}")
-    
-    print("Masteries:")
-    if not npc["masteries"]:
-        print("  None (Untrained Rank 0)")
-    for move, rank in npc["masteries"].items():
-        rank_text = "Trained (Rank 1, +3)" if rank == 1 else "Mastered (Rank 2, +5)"
-        print(f"  - {move.title()}: {rank_text}")
-        
+    attrs_str = "/".join([f"{attr[0].upper()}{npc['attrs'][attr]}" for attr in ATTRIBUTES])
+    print(f"Attributes: {attrs_str}")
+    if npc["masteries"]:
+        print("Masteries:")
+        for move, rank in npc["masteries"].items():
+            bonus = "+3" if rank == 1 else "+5"
+            r_str = "Trained" if rank == 1 else "Mastered"
+            print(f"  - {move.title()}: {r_str} (Rank {rank}, {bonus})")
     print("Style Perks:")
     for perk in npc["perks"]:
-        # strip markdown formatting for cleaner terminal print
-        clean_perk = perk.replace("**", "")
-        print(f"  - {clean_perk}")
-
-def print_header(title):
-    print("=" * 60)
-    print(f" {title.upper()} ".center(60, "="))
-    print("=" * 60)
+        print(f"  - {perk}")
+    print()
 
 def generate_encounter(danger_rank=None):
-    if not danger_rank:
-        danger_rank = random.randint(1, 5)
-        
-    roll = random.randint(1, 6)
-    title, desc = ENCOUNTERS[danger_rank][roll - 1]
+    if danger_rank is None:
+        danger_rank = random.choice(list(ENCOUNTERS.keys()))
     
-    print_header(f"Danger Rank {danger_rank} Encounter (Roll: {roll})")
-    print(f"Encounter: {title}")
-    print(f"Description: {desc}\n")
-    
-    # Spawn NPCs based on encounter type
+    title, desc = random.choice(ENCOUNTERS[danger_rank])
+    print("=" * 60)
+    print(f"STREET CRAWL ENCOUNTER — Danger Rank {danger_rank}: {title.upper()}")
+    print("=" * 60)
+    print(f"Scenario: {desc}\n")
+
     npcs = []
-    
-    if title == "Minor Nuisance":
+    if title in ["Empty Street", "Friendly Merchant", "Corner Newsstand", "Diner Window Seat", "Street Musician", "Quiet Corridor", "Stolen Vehicle"]:
+        print("No hostile combatants present.")
+        return
+    elif title in ["Minor Nuisance", "Solitary Lookout"]:
         npcs.append(generate_punk())
-    elif title == "Solitary Lookout":
-        npcs.append(generate_punk())
-    elif title == "Foot Patrol":
+    elif title in ["Foot Patrol", "Tagging Crew"]:
         npcs.append(generate_punk())
         npcs.append(generate_punk())
-    elif title == "Drunk Fighter":
-        thug = generate_thug()
-        thug["name"] += " [INTOXICATED: rolls at Disadvantage]"
-        npcs.append(thug)
-    elif title == "Shakedown":
+    elif title in ["Drunk Fighter", "Shakedown", "Watchful Eyes"]:
+        npcs.append(generate_thug())
+    elif title in ["Street Craps Game", "Off-Duty Brawler", "Narrow Alley Shortcut", "Debris Obstruction"]:
         npcs.append(generate_thug())
     elif title == "Rival Patrol":
         npcs.append(generate_thug())
@@ -366,10 +355,10 @@ def main():
             print_npc(generate_thug())
         elif arg in ["--boss", "-b"]:
             print_npc(generate_boss())
+        elif arg in ["--warlord", "-w"]:
+            print_npc(generate_warlord())
         elif arg in ["--overlord", "-o"]:
             print_npc(generate_overlord())
-        elif arg in ["--grandmaster", "-g"]:
-            print_npc(generate_grandmaster())
         elif arg in ["--danger", "-d"]:
             try:
                 rank = int(sys.argv[2])
@@ -381,13 +370,13 @@ def main():
                 print("Usage: ./npc_generator.py --danger <1-5>")
         else:
             print("Options:")
-            print("  --punk        : Generate a Tier 1 Punk/Lookout")
-            print("  --thug        : Generate a Tier 2 Thug")
-            print("  --boss        : Generate a Tier 3 Boss")
-            print("  --overlord    : Generate a Tier 4 Syndicate Overlord (Master)")
-            print("  --grandmaster : Generate a Tier 4+ Syndicate Grandmaster Warlord")
-            print("  --danger      : Generate an encounter for a specific Danger Rank (1-5)")
-            print("  (no args)     : Generate a completely random street block encounter")
+            print("  --punk     : Generate a Tier 1 Punk/Lookout")
+            print("  --thug     : Generate a Tier 2 Thug")
+            print("  --boss     : Generate a Tier 3 Boss")
+            print("  --warlord  : Generate a Tier 4 Syndicate Warlord (Master)")
+            print("  --overlord : Generate a Tier 4+ Supreme Syndicate Overlord (Grandmaster)")
+            print("  --danger   : Generate an encounter for a specific Danger Rank (1-5)")
+            print("  (no args)  : Generate a completely random street block encounter")
     else:
         generate_encounter()
 

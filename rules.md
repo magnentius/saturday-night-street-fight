@@ -588,20 +588,20 @@ Rather than flat combat XP, **Saturday Night Street Fight** uses **XP Keys**. Ke
 
 As fighters invest XP and train their discipline, their rising **Character Rank** unlocks key campaign milestones, martial titles, and legendary perks:
 
-| Rank Tier | Required Spent XP | Mastery Requirement | Title & Unlocks |
+| Rank Tier | Required Spent XP | Mastery Requirement | Dual Martial / Street Title & Unlocks |
 | :--- | :--- | :--- | :--- |
-| **Martial Disciple** | **Rank 50** | Baseline creation moves | Starting character (2 active Key slots). |
-| **Martial Adept** | **Rank 60** | Spent ~10 XP in play | **3rd Active Key Slot Unlocked** (Maximum 3 active Keys). |
-| **Style Master** | **Rank 150** | Mastered (Rank 2) all techniques in Primary Style | **Master Title** + Select 1 **Mastery Perk** (*Dojo Founder* or *Perfect Form*). |
-| **Grandmaster** | **Rank 200+** | Mastered all techniques in Primary & Secondary Styles | **Grandmaster Title** + **Dual Style Mastery** (Secondary elevated to Primary, all 4 perks active + 2nd Master Achievement). |
+| **Rank 50** | **50 XP** | Baseline creation moves | **Martial Disciple / Street Soldier** (2 active Key slots). |
+| **Rank 60** | **60 XP** | Spent ~10 XP in play | **Martial Adept / Turf Enforcer** (**3rd Active Key Slot Unlocked**). |
+| **Rank 150** | **150 XP** | Mastered all moves in Primary Style | **Style Master / Original Gangster** + Select 1 **Mastery Perk** (*Dojo Founder* or *Perfect Form*). |
+| **Rank 200+** | **200+ XP** | Mastered all moves in Primary & Secondary Styles | **Grandmaster / Street Legend** + **Dual Style Mastery** (Secondary elevated to Primary, all 4 perks active + 2nd Master Achievement). |
 
-#### A. Master Rank (Rank 150)
-Upon reaching **Rank 150** and mastering every technique in your Primary Style, you earn the title **Master of [Style Name]** *(e.g., "Master of Boxing", "Master of Judo")* and choose **1 Mastery Perk**:
+#### A. Master Rank (Rank 150): Style Master / Original Gangster
+Upon reaching **Rank 150** and mastering every technique in your Primary Style, you earn the dual titles **Style Master / Original Gangster (O.G.)** and choose **1 Mastery Perk**:
 *   **Dojo Founder**: You establish your own martial arts dojo on Home Turf (acting as a **Danger Rank 1 Safe Zone**). You gain a loyal crew of **$1\text{d}10$ Dojo Disciples (Tier 1 Mob)** who guard your dojo and can accompany your crew on street crawl runs (using GM Mob Rules). If any disciples fall in battle, new students enroll at your dojo when resting, restoring your disciple Mob count back to $1\text{d}10$.
 *   **Perfect Form**: Your execution of primary style moves becomes flawless. When performing a Mastered technique from your Primary Style, your clash die roll cannot be lower than 5 (any $1\text{d}10$ die result of 1–4 counts as 5).
 
-#### B. Grandmaster Rank (Rank 200+)
-Upon reaching **Rank 200+** and mastering every technique across both your Primary and Secondary Styles, you achieve the ultimate street title of **Grandmaster / Street Legend**:
+#### B. Grandmaster Rank (Rank 200+): Grandmaster / Street Legend
+Upon reaching **Rank 200+** and mastering every technique across both your Primary and Secondary Styles, you achieve the ultimate dual titles of **Grandmaster / Street Legend**:
 *   **Secondary Style Elevation**: Your Secondary Martial Arts Style is permanently elevated to a **Full Primary Style** (you now hold two Primary Styles!).
 *   **Dual Style Mastery Perk**: You automatically gain the **2nd Style Perk** of your elevated Secondary Style (activating all 4 style perks across both styles simultaneously).
 *   **Second Master Achievement Choice**: You gain a 2nd Master Achievement choice for your newly elevated style:
