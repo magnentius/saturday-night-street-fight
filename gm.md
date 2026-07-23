@@ -145,10 +145,10 @@ Roll to determine the three primary landmarks on the block.
 
 | Roll | Landmark / Business | Tactical Layout / Features |
 | :--- | :--- | :--- |
-| **1** | **Dive Bar** | Pool table (obstructs movement), jukebox, slippery spilled drinks. Players can rest here to unwind and fully restore Cool to maximum. |
+| **1** | **Dive Bar** | Pool table (obstructs movement), jukebox, slippery spilled drinks. **Social Sanctuary**: Players can unwind here to fully restore Cool back to maximum. |
 | **2** | **Pawn Shop** | Iron security gates (can be used to pin), glass display cases. |
 | **3** | **Abandoned Movie Theater** | Littered lobby, broken ticket booth, heavy double doors. |
-| **4** | **Greasy Spoon Diner** | High counter stools, hot coffee pots, narrow aisle-ways. |
+| **4** | **Greasy Spoon Diner** | High counter stools, hot coffee pots, narrow aisle-ways. **Social Sanctuary**: Players can eat hot meals and unwind here to fully restore Cool back to maximum. |
 | **5** | **Tenement Steps & Stoop** | Elevated concrete steps, metal handrails, basement stairwell. |
 | **6** | **Narrow Alleyway** | Dumpsters (can block exits), fire escapes, wooden pallets. |
 | **7** | **Auto Repair Shop** | Tire stacks, motor oil slicks (Agility hazard), tool racks. |
@@ -256,7 +256,8 @@ When building a street encounter or resolving a random event during the Street C
 *   **Tier 1: Punks / Lookouts (Minor Obstacle)**: Groups of 2–6 Punks using **Mob Punk Rules** (1 damage = 1 Punk TKO'd; all defeated at Mob Pool 0). Tuned as minor street hurdles (PC Win Rate ~90%).
 *   **Tier 2: Thugs / Enforcers (Standard Encounter)**: 1–2 seasoned brawlers (Attributes 2–3, 1–2 Trained/Mastered moves). Always individual combatants (PC Win Rate ~60%).
 *   **Tier 3: Syndicate Boss (Climax Encounter)**: 1 Boss built using the full 50 XP budget (Attributes 3, multiple Mastered moves). High-stakes duel (PC Win Rate ~50%).
-*   **Tier 4: Syndicate Overlord (End-Game Climax Boss)**: 1 Sector Warlord / Grand Master built using an **80–100 XP budget** (Attributes 4s, multiple Mastered Rank 2 techniques +5). Climax endgame duel tuned for veteran and maxed PCs (PC Win Rate ~55–65%).
+*   **Tier 4: Syndicate Overlord / Master (End-Game Climax Boss)**: 1 Sector Warlord / Dojo Master built using a **100–150 XP budget** (Attributes 4s, Mastered moves, *Perfect Form* or *Dojo Founder* disciples). Climax endgame duel for veteran PCs (PC Win Rate ~55–65%).
+*   **Tier 4+: Syndicate Grandmaster Warlord (Ultimate Campaign Climax)**: 1 Supreme Leader / Grandmaster built using a **180–200+ XP budget** (Dual Discipline: Primary + Secondary style, *Dual Discipline Mastery* activating all 4 style perks). Designed as the ultimate challenge for maxed PCs.
 
 ### 2. Environmental Starting Range Table
 When an encounter begins, determine the starting range based on the location or roll **1d10**:
@@ -318,11 +319,19 @@ Gang leaders, legendary street fighters, or elite enforcers.
 *   **Style**: Choose one of the 7 Martial Arts Styles and apply both perks.
 *   **Tactics**: Highly strategic, targeting the player's weakest attribute.
 
-### 4. Syndicate Overlords (Tier 4)
-Sector warlords, grand masters, or syndicate leaders who rule entire districts.
-*   **Creation**: Built using an **80–100 XP budget** (Attributes at 4, 4 Mastered Rank 2 techniques with $+5$ bonus).
-*   **Style**: Choose one of the 7 Martial Arts Styles and apply both style perks.
-*   **Tactics**: Relentless pressure, stance reading mastery, and devastating combo strings. Tuned for climax duels against veteran/maxed PCs.
+### 4. Syndicate Overlords & Masters (Tier 4)
+Sector warlords, dojo masters, or syndicate leaders who rule entire districts.
+*   **Creation**: Built using a **100–150 XP budget** (Attributes at 4, 4 Mastered Rank 2 techniques with $+5$ bonus).
+*   **Style**: Primary Martial Arts Style with both style perks active.
+*   **Master Perks**: Possesses a Master Rank perk—either **Perfect Form** (dice clash floor of 5) or **Dojo Founder** (accompanied by $1\text{d}10$ Dojo Disciples Tier 1 Mob).
+*   **Tactics**: Relentless pressure, stance reading mastery, and devastating combo strings. Tuned for climax duels against veteran PCs.
+
+### 5. Syndicate Grandmaster Warlords (Tier 4+)
+Endgame campaign bosses, syndicate supreme leaders, or legendary martial arts grandmasters who have unified two martial arts disciplines into a seamless hybrid fighting system.
+*   **Creation**: Built using a **180–200+ XP budget** (Attributes maxed at 4, 6–8 Mastered Rank 2 techniques with $+5$ bonus).
+*   **Dual Discipline**: Cross-trained in a **Primary Style** and **Secondary Style** (15 XP).
+*   **Grandmaster Perk**: Possesses **Dual Discipline Mastery** (gains **all 4 Style Perks**—2 from Primary + 2 from Secondary!).
+*   **Tactics**: High-friction stance reading, dual-style counterplay (e.g., Boxer Slip & Counter combined with Judo Throw Reversals), and devastating tactical endurance. Designed as the ultimate climax challenge for maxed PC crews.
 
 ---
 
@@ -336,7 +345,7 @@ Use these rules when players are outnumbered or coordinating with allies.
 ### 1. Mob Punk Rules (Exclusive to Tier 1 Gangs)
 
 > [!IMPORTANT]
-> **Exclusive to Tier 1 Punks**: Mob rules apply **only** to Tier 1 Punks (minor street corner lackeys, pickpockets, or lookout groups). **Tier 2 Thugs** and **Tier 3 Bosses** are seasoned brawlers who always act as individual combatants with their own full attribute pools and cannot be grouped into Mobs.
+> **Tier 1 Mob Rules**: Mob rules apply to Tier 1 Punks (minor street corner lackeys, pickpockets, or lookout groups) as well as PC-aligned **Dojo Disciples** (granted by the *Dojo Founder* Master perk). **Tier 2 Thugs** and **Tier 3 Bosses** are seasoned brawlers who always act as individual combatants with their own full attribute pools and cannot be grouped into Mobs.
 
 *   **Shared Mob Pool**: A group of Tier 1 Punks acts as a single collective entity called a **Mob**. The Mob has a **Mob Count** equal to the total number of punks in the group (e.g., a Mob of 4 Punks).
 *   **One-Hit TKO**: Every point of attribute damage dealt to the Mob instantly TKOs **1 Punk** from the gang (1 damage = 1 Punk defeated).

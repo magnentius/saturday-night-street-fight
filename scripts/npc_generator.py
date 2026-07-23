@@ -142,7 +142,7 @@ def generate_overlord():
     nickname = random.choice(OVERLORD_NICKNAMES)
     style_name = random.choice(list(STYLES.keys()))
     style = STYLES[style_name]
-    full_name = f"Overlord '{nickname}' ({style_name})"
+    full_name = f"Master '{nickname}' ({style_name})"
     
     attrs = {attr: 4 for attr in ATTRIBUTES}
     
@@ -150,14 +150,49 @@ def generate_overlord():
     selected_moves = random.sample(allowed_moves, min(4, len(allowed_moves)))
     masteries = {move: 2 for move in selected_moves}
     
+    mastery_perk = "**Perfect Form**: Primary clash dice roll floor is 5 (1-4 count as 5)."
+    perks = list(style["Perks"]) + [mastery_perk]
+    
     return {
         "name": full_name,
-        "tier": "Tier 4: Syndicate Overlord",
+        "tier": "Tier 4: Syndicate Overlord (Master)",
         "style": style_name,
         "focus": style["Focus"],
         "attrs": attrs,
         "masteries": masteries,
-        "perks": style["Perks"],
+        "perks": perks,
+        "unspent_xp": 0
+    }
+
+def generate_grandmaster():
+    nickname = random.choice(OVERLORD_NICKNAMES)
+    styles_list = list(STYLES.keys())
+    primary_name = random.choice(styles_list)
+    secondary_name = random.choice([s for s in styles_list if s != primary_name])
+    
+    primary = STYLES[primary_name]
+    secondary = STYLES[secondary_name]
+    
+    full_name = f"Grandmaster '{nickname}' ({primary_name} / {secondary_name})"
+    attrs = {attr: 4 for attr in ATTRIBUTES}
+    
+    allowed_primary = primary["Strikes"] + primary["Blocks"] + primary["Throws"]
+    allowed_secondary = secondary["Strikes"] + secondary["Blocks"] + secondary["Throws"]
+    combined_moves = list(set(allowed_primary + allowed_secondary))
+    
+    selected_moves = random.sample(combined_moves, min(6, len(combined_moves)))
+    masteries = {move: 2 for move in selected_moves}
+    
+    perks = list(primary["Perks"]) + [f"[Secondary {secondary_name}] {p}" for p in secondary["Perks"]]
+    
+    return {
+        "name": full_name,
+        "tier": "Tier 4+: Syndicate Grandmaster Warlord",
+        "style": f"{primary_name} / {secondary_name} (Dual Discipline)",
+        "focus": f"{primary['Focus']} & {secondary['Focus']}",
+        "attrs": attrs,
+        "masteries": masteries,
+        "perks": perks,
         "unspent_xp": 0
     }
 
@@ -331,6 +366,8 @@ def main():
             print_npc(generate_boss())
         elif arg in ["--overlord", "-o"]:
             print_npc(generate_overlord())
+        elif arg in ["--grandmaster", "-g"]:
+            print_npc(generate_grandmaster())
         elif arg in ["--danger", "-d"]:
             try:
                 rank = int(sys.argv[2])
@@ -342,12 +379,13 @@ def main():
                 print("Usage: ./npc_generator.py --danger <1-5>")
         else:
             print("Options:")
-            print("  --punk     : Generate a Tier 1 Punk/Lookout")
-            print("  --thug     : Generate a Tier 2 Thug")
-            print("  --boss     : Generate a Tier 3 Boss")
-            print("  --overlord : Generate a Tier 4 Syndicate Overlord")
-            print("  --danger   : Generate an encounter for a specific Danger Rank (1-5)")
-            print("  (no args)  : Generate a completely random street block encounter")
+            print("  --punk        : Generate a Tier 1 Punk/Lookout")
+            print("  --thug        : Generate a Tier 2 Thug")
+            print("  --boss        : Generate a Tier 3 Boss")
+            print("  --overlord    : Generate a Tier 4 Syndicate Overlord (Master)")
+            print("  --grandmaster : Generate a Tier 4+ Syndicate Grandmaster Warlord")
+            print("  --danger      : Generate an encounter for a specific Danger Rank (1-5)")
+            print("  (no args)     : Generate a completely random street block encounter")
     else:
         generate_encounter()
 

@@ -8,7 +8,7 @@ import time
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 from pc_generator import STYLES, ATTRIBUTES, generate_random_character, format_character_sheet
-from npc_generator import generate_punk, generate_thug, generate_boss, generate_overlord
+from npc_generator import generate_punk, generate_thug, generate_boss, generate_overlord, generate_grandmaster
 
 # ANSI Color code constants for terminal output
 C_RESET  = "\033[0m"
@@ -106,7 +106,8 @@ class Combatant:
         if self.stunned:
             choices = ["block"]
             sub = "high guard" if random.random() < 0.5 else "low guard"
-            if self.style_name and "low guard" not in STYLES[self.style_name]["Blocks"]:
+            style_key = self.style_name.split(" / ")[0] if self.style_name and " / " in self.style_name else self.style_name
+            if style_key and "low guard" not in STYLES[style_key]["Blocks"]:
                 sub = "high guard"
             return "block", sub
 
@@ -185,7 +186,8 @@ class Combatant:
             if color == "block": return "high guard"
             return "clinch"
             
-        style = STYLES[self.style_name]
+        style_key = self.style_name.split(" / ")[0] if " / " in self.style_name else self.style_name
+        style = STYLES[style_key]
         
         if self.prone:
             if color == "block":
@@ -870,9 +872,10 @@ def main():
     print("  1. Tier 1 Punk / Lookout")
     print("  2. Tier 2 Standard Thug")
     print("  3. Tier 3 Syndicate Boss")
-    print("  4. Tier 4 Syndicate Overlord")
+    print("  4. Tier 4 Syndicate Overlord (Master)")
+    print("  5. Tier 4+ Syndicate Grandmaster Warlord")
     try:
-        opp_choice = input("Select opponent tier (1-4, default 2): ").strip()
+        opp_choice = input("Select opponent tier (1-5, default 2): ").strip()
     except (KeyboardInterrupt, SystemExit):
         sys.exit(0)
 
@@ -882,6 +885,8 @@ def main():
         npc_data = generate_boss()
     elif opp_choice == "4":
         npc_data = generate_overlord()
+    elif opp_choice == "5":
+        npc_data = generate_grandmaster()
     else:
         npc_data = generate_thug()
 

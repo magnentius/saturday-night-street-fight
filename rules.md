@@ -272,12 +272,15 @@ Throws aim to bypass blocks, control the opponent, and force them to the ground.
 
 Instead of tracking numerical hitpoints, combatants suffer direct damage to their core **Attributes** (Agility, Power, Reaction, and Stamina). This damage degrades their rolls in real-time, representing fatigue and cumulative physical trauma.
 
-### 1. The Defeat Condition
-A combatant is defeated (knocked out, submits, or suffers a referee stoppage) immediately when **any of their four attributes is reduced to 0 (or below)**.
+### 1. The Defeat Condition & Instant Death
+A combatant is defeated (knocked out, submits, or suffers a referee stoppage) immediately when **any single physical attribute is reduced to 0 (or below)**:
 *   **Reaction reaches 0**: Knocked Out (concussion KO, loss of consciousness).
 *   **Power reaches 0**: Structural TKO (broken ribs, physical collapse, or submission).
 *   **Agility reaches 0**: Mobility TKO (broken leg, blown knee, unable to stand).
 *   **Stamina reaches 0**: Exhaustion TKO (complete cardiorespiratory failure/collapse).
+
+> [!CAUTION]
+> **Catastrophic Systemic Trauma (Instant Street Death)**: If a combatant suffers relentless punishment such that **ALL FOUR physical attributes (Reaction, Power, Agility, AND Stamina) are reduced to 0 simultaneously**, their body suffers total systemic collapse (massive brainstem trauma, internal hemorrhage, and cardiac failure). The fighter dies **instantly on the spot**. No hospital check, short rest, or triage can save them—their story ends on the asphalt (**Character Death**).
 
 ### 2. Inflicting Attribute Damage
 When an attack connects, it deals direct damage to a specific attribute based on the strike's target and impact level.
@@ -310,14 +313,8 @@ If a defender successfully blocks or dodges, they subtract their defense rating 
 
 ### 4. Mob Punk Rules (Tier 1 Gangs)
 
-> [!IMPORTANT]
-> **Exclusive to Tier 1 Punks**: Mob rules apply **only** to Tier 1 Punks (minor street corner lackeys, pickpockets, or lookout groups). **Tier 2 Thugs** and **Tier 3 Bosses** are seasoned brawlers who always act as individual combatants with their own full attribute pools and cannot be grouped into Mobs.
-
-*   **Shared Mob Pool**: A group of Tier 1 Punks acts as a single collective entity called a **Mob**. The Mob has a **Mob Count** equal to the total number of punks in the group (e.g., a Mob of 4 Punks).
-*   **One-Hit TKO**: Every point of attribute damage dealt to the Mob instantly TKOs **1 Punk** from the gang (1 damage = 1 Punk defeated).
-    *   *Example*: A Boxer hits a 4-Punk Mob with a Cross dealing **3 Reaction damage**. 3 Punks are immediately knocked out! The Mob Count drops from 4 down to 1.
-*   **Mob Group Bonus**: On its turn, the Mob rolls a single shared action check, adding a **$+1$ bonus per active Punk** remaining in the Mob (up to the standard $+10$ Modifier Cap).
-*   **Total Defeat**: When the Mob Count reaches **0**, all Punks in the Mob are defeated and any survivors scatter.
+> [!NOTE]
+> **Game Master Rules**: Group combat against minor Tier 1 Punks (lookouts, pickpockets, and street-corner lackeys) uses **Mob Rules** (Shared Mob Pools, 1-Hit TKOs, and Mob Group Bonuses) managed by the Game Master. See **[Game Master's Guide: Group Combat Rules](gm.md#1-mob-punk-rules-exclusive-to-tier-1-gangs)** for full specifications.
 
 ---
 
@@ -499,12 +496,14 @@ Fighters are **Winded** when hit by a successful body blow (like a **Body Kick**
 ### 1. Attribute Restoration & Resting Rules
 Fighters recover their damaged attributes through short breathers and medical treatment:
 
-*   **10-Minute Short Rest (Catch Your Breath)**: Between street encounters, fighters can spend **10 minutes** resting in a relatively safe location (a quiet alleyway, diner booth, subway platform, or transit bench) to catch their wind, patch minor cuts, and shake off fatigue.
-    *   **Minor Damage (Attributes at 1 or higher)**: Fully restores all attributes (Reaction, Power, Agility, Stamina, and Cool) back to their maximum scores.
-    *   **TKO Restriction**: A 10-minute short rest **cannot** heal any attribute that was reduced to **0** (see Hospitalization below).
-*   **Cool Composure**: Visiting a **Transit Safe House** or a **Dive Bar** landmark allows fighters to unwind and instantly recover **Cool** to its maximum value.
-*   **Severe Damage & Hospitalization (Attributes at 0)**: If any attribute (Reaction, Power, Agility, Stamina) is reduced to **0**, the fighter suffers a physical TKO (concussion, broken bone, ligament tear). **They are physically incapacitated and cannot heal via short rests.**
-    *   **Admittance Check**: To begin recovery, the fighter must reach a **Hospital or Free Clinic** landmark (on a street block or subway station) and pass a **Cool Check (DC 12)** to get admitted (representing overcrowded 1970s urban emergency rooms). An uninjured companion can roll this check on the patient's behalf.
+*   **10-Minute Short Rest (Catch Your Breath)**: Between street encounters, fighters can spend **10 minutes** resting in a relatively safe location (a quiet alleyway, subway platform, or transit bench) to catch their wind and patch minor physical wounds.
+    *   **Physical Attributes Only (Reaction, Power, Agility, Stamina at 1+)**: Fully restores physical attributes back to their maximum scores.
+    *   **Cool Exclusion**: Short rests in dangerous territory **do NOT restore Cool**. Psychological stress and street shock cannot be shaken off in a cold alleyway.
+    *   **TKO Restriction**: A 10-minute short rest **cannot** heal any physical attribute that was reduced to **0** (see Severe Damage & Hospitalization below).
+*   **Social Sanctuary & Unwinding (Cool Restoration)**: Restoring **Cool** back to its maximum score requires visiting a social sanctuary—such as a **Dive Bar**, **Greasy Spoon Diner**, **Transit Safe House**, or returning to **Home Turf**—to unwind, drink, listen to music, and regain street composure.
+*   **Severe Damage & Hospitalization (Attributes at 0)**: If any physical attribute (Reaction, Power, Agility, Stamina) is reduced to **0**, the fighter suffers a physical TKO (concussion, broken bone, ligament tear). **They are physically incapacitated and cannot heal via short rests.**
+    *   **Catastrophic Trauma (Instant Street Death)**: If **all four physical attributes** (Reaction, Power, Agility, and Stamina) are reduced to 0 simultaneously, the fighter suffers total systemic collapse and dies **instantly on the spot**. No hospital admittance check or triage can save them.
+    *   **Admittance Check**: To begin recovery for non-fatal TKOs (1-3 attributes at 0), the fighter must reach a **Hospital or Free Clinic** landmark (on a street block or subway station) and pass a **Cool Check (DC 12)** to get admitted (representing overcrowded 1970s urban emergency rooms). An uninjured companion can roll this check on the patient's behalf.
     *   **The 24-Hour Emergency Ticking Clock (Street Death)**: An incapacitated fighter (0 attribute) has **24 Hours (a maximum of 3 Admittance Checks)** to reach emergency medical care. If 24 hours elapse without admittance (or if 3 checks fail without winning a **Contested Cool Check** to pull street strings and bypass triage lines), untreated internal trauma, concussions, or exposure result in **Street Death (Character Death)**!
     *   **Recovery Rate**: Once admitted, hospital treatment requires **1 week of complete bed rest per zeroed attribute** (e.g., 1 zeroed attribute = 1 week; 2 zeroed attributes = 2 weeks).
     *   **Discharge Check (Permanent Maximum Cap Reduction)**: At the end of hospital recovery, the fighter must pass a **Power Check (DC 12)** to test their body's long-term healing resilience.
@@ -556,7 +555,27 @@ Rather than flat combat XP, **Saturday Night Street Fight** uses **XP Keys**. Ke
     *   *At Character Creation*: Rank equals XP spent during creation (e.g., **Rank 48**).
     *   *In Play*: Whenever you spend XP on training or conditioning attributes, your **Character Rank increases by the exact amount spent!** *(e.g., Spending 3 XP to train a move increases your Rank from 48 to 51).*
 
-### 2. How Keys & Unlocks Work
+### 2. Character Rank Achievements & Milestones
+
+As fighters invest XP and train their discipline, their rising **Character Rank** unlocks key campaign milestones, martial titles, and legendary perks:
+
+| Rank Tier | Required Spent XP | Mastery Requirement | Title & Unlocks |
+| :--- | :--- | :--- | :--- |
+| **Street Brawler** | **Rank 48** | Baseline creation moves | Starting character (2 active Key slots). |
+| **Street Veteran** | **Rank 60** | Spent ~12 XP in play | **3rd Active Key Slot Unlocked** (Maximum 3 active Keys). |
+| **Style Master** | **Rank 150** | Mastered (Rank 2) all techniques in Primary Style | **Master Title** + Select 1 **Mastery Perk** (*Dojo Founder* or *Perfect Form*). |
+| **Grandmaster** | **Rank 200+** | Mastered (Rank 2) all techniques in Primary & Secondary Styles | **Grandmaster Title** + **Dual Discipline Mastery** (All 4 style perks active!). |
+
+#### A. Master Rank (Rank 150)
+Upon reaching **Rank 150** and mastering every technique in your Primary Style, you earn the title **Master of [Style Name]** *(e.g., "Master of Boxing", "Master of Judo")* and choose **1 Mastery Perk**:
+*   **Dojo Founder**: You establish your own martial arts dojo on Home Turf (acting as a **Danger Rank 1 Safe Zone**). You gain a loyal crew of **$1\text{d}10$ Dojo Disciples (Tier 1 Mob)** who guard your dojo and can accompany your crew on street crawl runs (using GM Mob Rules). If any disciples fall in battle, new students enroll at your dojo when resting, restoring your disciple Mob count back to $1\text{d}10$.
+*   **Perfect Form**: Your execution of primary style moves becomes flawless. When performing a Mastered technique from your Primary Style, your clash die roll cannot be lower than 5 (any $1\text{d}10$ die result of 1–4 counts as 5).
+
+#### B. Grandmaster Rank (Rank 200+)
+Upon reaching **Rank 200+** and mastering every technique across both your Primary and Secondary Styles, you achieve the ultimate street title of **Grandmaster / Street Legend**:
+*   **Dual Discipline Mastery**: You permanently unlock the **2nd Style Perk** of your Secondary Martial Arts Style! You now gain the active benefits of **all 4 Style Perks** (2 from your Primary Style + 2 from your Secondary Style).
+
+### 3. How Keys & Unlocks Work
 *   **Starting Keys**: At character creation (Rank ~48), select **2 Keys** from the list below.
 *   **Unlocking 3rd Key Slot**: When your fighter's **Character Rank reaches 60** (after spending ~12 XP in campaign play), you permanently unlock your **3rd active Key slot** (Maximum 3 active Keys).
 *   **Key Counter / Buyoff**: Every Key has a **Buyoff / Counter**—a pivotal moment where your character goes against their code, forgives an enemy, or evolves. When you trigger a Key's Counter in play, you choose one of two options:
