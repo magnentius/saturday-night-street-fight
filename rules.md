@@ -92,7 +92,7 @@ A character's capabilities are defined by five core Attributes and their specifi
 
 ### 2. Technique Masteries
 Technique Masteries represent specialized training in specific strikes, blocks, or throws. Masteries add a flat bonus to your dice roll whenever you execute that specific technique in combat:
-*   **Untrained (Rank 0)**: You receive no bonus (roll $2\text{d}10 + \text{Attribute}$).
+*   **Untrained (Rank 0)**: You receive no bonus (roll 2d10 + Attribute).
 *   **Trained (Rank 1)**: You gain a $+3$ bonus to your roll.
 *   **Mastered (Rank 2)**: You gain a $+5$ bonus to your roll.
 
@@ -138,7 +138,7 @@ Characters can adopt a specific Martial Arts Style, which dictates their availab
     *   *Blocks*: High Guard, Parry, Dodge/Evasion (No Low Guard).
     *   *Throws*: Clinch/Grab only (No Trip, Hip Throw, or Takedown).
 *   **Style Perks**:
-    *   **Slip & Counter**: Successfully defending with Dodge/Evasion grants **Advantage ($3\text{d}10$)** on your next Strike action in the following round.
+    *   **Slip & Counter**: Successfully defending with Dodge/Evasion grants **Advantage (3d10)** on your next Strike action in the following round.
     *   **Iron Chin**: High Guard mitigates $+1$ damage against Punches (for a total of 3 damage mitigated, neutralizing Jabs, Crosses, and Hooks).
 
 ### 2. Muay Thai (Art of Eight Limbs)
@@ -179,7 +179,7 @@ Characters can adopt a specific Martial Arts Style, which dictates their availab
     *   *Throws*: None.
 *   **Style Perks**:
     *   **Ikken Hissatsu (One Strike, One Kill)**: When you land a Critical Hit (margin $\ge 5$ or Natural 20), the attack deals an additional $+1$ attribute damage on top of the normal critical bonus (for a total of $+2$ bonus damage on crits).
-    *   **Kiai Shout**: Once per fight, after landing a successful Strike, you may let out a devastating battle cry. Roll a contested **Cool Check** ($2\text{d}10 + \text{Cool}$ vs. $2\text{d}10 + \text{Cool}$). If you win, the defender suffers **1 Cool damage AND the Staggered condition** (Disadvantage on their next Stance Check).
+    *   **Kiai Shout**: Once per fight, after landing a successful Strike, you may let out a devastating battle cry. Roll a contested **Cool Check** (2d10 + Cool vs. 2d10 + Cool). If you win, the defender suffers **1 Cool damage AND the Staggered condition** (Disadvantage on their next Stance Check).
 
 ### 6. Kung Fu (The Martial Way)
 *   **Focus**: Flowing Combos & Trapping Hands.
@@ -189,7 +189,7 @@ Characters can adopt a specific Martial Arts Style, which dictates their availab
     *   *Throws*: Trip/Sweep only (No Clinch, Hip Throw, or Takedown).
 *   **Style Perks**:
     *   **Chain Strike**: If you successfully landed a Strike last round, your next Strike this round gains a $+2$ bonus (representing flowing combo sequences).
-    *   **Flowing Redirect**: When you successfully Parry a Strike, you trap the opponent's limbs—they suffer the **Staggered** condition and your next Strike against them gains **Advantage ($3\text{d}10$)**.
+    *   **Flowing Redirect**: When you successfully Parry a Strike, you trap the opponent's limbs—they suffer the **Staggered** condition and your next Strike against them gains **Advantage (3d10)**.
 
 ### 7. Taekwondo (The Way of the Foot and Fist)
 *   **Focus**: Agile Footwork & High Kicks.
@@ -338,7 +338,7 @@ Combat is played in simultaneous **Rounds** resolved by a single **Contested Rol
 
 1. **Phase 1: Reading the Stance (Telegraphing)**
    * Before committing action cards, combatants can attempt to read each other's body language and telegraph cues.
-   * **The Roll**: Both roll a contested check ($2\text{d}10 + \text{Reaction}$ or $\text{Cool}$). The reader rolls **Reaction** (spotting muscle movement) or **Cool** (reading intention). The defender rolls **Cool** (feints/poker face) or **Reaction** (masking entries).
+   * **The Roll**: Both roll a contested check (2d10 + Reaction or Cool). The reader rolls **Reaction** (spotting muscle movement) or **Cool** (reading intention). The defender rolls **Cool** (feints/poker face) or **Reaction** (masking entries).
    * **Margin Thresholds** ($\text{Margin} = \text{Winner Total} - \text{Loser Total}$):
      * **Margin 0–3 (Unclear / Feinted)**: Body language is unreadable or successfully feinted. Both combatants commit their action cards **secretly and simultaneously** in Phase 2.
      * **Margin 4–6 (Partial Tell)**: The reader spots a subtle tell! The reader learns **1 stance color the defender is NOT taking** (e.g., *"He's NOT Blocking"*), narrowing the defender's stance down to 2 choices before the reader commits their card.
@@ -350,9 +350,9 @@ Combat is played in simultaneous **Rounds** resolved by a single **Contested Rol
 
 3. **Phase 3: Roll & Resolve (Contested Roll-Off & Stance Counter Resolution)**
    * Now that the action matchup is revealed, combatants roll their dice:
-     * **Dominant Stance (Counter Winner)**: Rolls with **Advantage** (roll $3\text{d}10$, keep the two highest dice).
-     * **Exposed Stance (Counter Loser)**: Rolls their standard $2\text{d}10$ check.
-     * **Matched Stances** (e.g., Strike vs. Strike): Both roll their standard $2\text{d}10$ check normally.
+     * **Dominant Stance (Counter Winner)**: Rolls with **Advantage** (roll 3d10, keep the two highest dice).
+     * **Exposed Stance (Counter Loser)**: Rolls their standard 2d10 check.
+     * **Matched Stances** (e.g., Strike vs. Strike): Both roll their standard 2d10 check normally.
    * Each combatant calculates their **Roll Total**:
      $$\text{Roll Total} = \text{Dice Result} + \text{Governing Attribute} + \text{Technique Mastery Bonus}$$
    * **Opposing Stances (Counter Check)**: If the revealed stances form a counter pair (e.g., Block Stance vs. Strike Stance):
@@ -362,7 +362,7 @@ Combat is played in simultaneous **Rounds** resolved by a single **Contested Rol
      * *Example 1 (Block Stance vs. Strike Stance)*: Block beats Strike. The Blocker rolls with Advantage. If the **Blocker wins**, the block succeeds and subtracts its mitigation rating from the strike's Attribute Damage. If the **Striker wins**, the strike bypasses the guard entirely, dealing full Attribute Damage.
      * *Example 2 (Strike Stance vs. Throw Stance)*: Strike beats Throw. The Striker rolls with Advantage. If the **Striker wins**, the strike connects and interrupts the throw. If the **Grappler wins**, the grappler throws the opponent and interrupts the strike.
    * **Matched Stances (Same Stance Rolls)**:
-     * **Strike vs. Strike**: Sequential Trade! Both roll normally ($2\text{d}10$). The fighter with the higher Roll Total lands their strike **first**. If the lower roller is knocked out, their strike is interrupted. If the lower roller survives, their strike lands and deals full damage back.
+     * **Strike vs. Strike**: Sequential Trade! Both roll normally (2d10). The fighter with the higher Roll Total lands their strike **first**. If the lower roller is knocked out, their strike is interrupted. If the lower roller survives, their strike lands and deals full damage back.
      * **Block vs. Block**: No contest needed. Both combatants remain passive in guard. Standoff; the round resets to neutral.
      * **Throw vs. Throw**: Grapple struggle! Both roll off normally using **Power** or **Reaction**. The higher total wins the check, securing a Clinch or throw.
 
@@ -371,19 +371,19 @@ To make combat timing and perk follow-ups crystal clear, all checks in **Saturda
 
 *   **Stance Check (Primary Action Roll)**: The primary contested roll of Phase 3 in a combat round, committed simultaneously using Action Cards (**Strike Stance**, **Block Stance**, **Throw Stance**). Temporary status penalties like **Staggered**, **Hobbled**, and **Winded** specifically apply their penalty/Disadvantage to your **very next Stance Check**.
 *   **Perk Reaction Check (Immediate Special Follow-up)**: A free, immediate bonus check triggered by a style perk upon landing a strike or executing a parry. Perk Reaction Checks resolve instantly within the same round, do not consume a stance card, and do not clear Stance Check conditions. A Perk Reaction Check rolls against either:
-    *   **Immediate Contested Physical Roll**: Roll against an immediate opponent reaction roll ($2\text{d}10 + \text{Agility}$ or $\text{Power}$) to land a follow-up reversal (e.g., Judo *Kuzushi* sweeping throw).
-    *   **Immediate Contested Mental Roll**: Roll a contested **Cool Check** ($2\text{d}10 + \text{Cool}$ vs. $2\text{d}10 + \text{Cool}$) to shake an opponent's spirit (e.g., Karate *Kiai Shout*).
-*   **Environmental Check (Hazard / Reaction Roll)**: A roll triggered by street hazards, subway trains, or ambient conditions ($2\text{d}10 + \text{Agility}$ or $\text{Cool}$).
+    *   **Immediate Contested Physical Roll**: Roll against an immediate opponent reaction roll (2d10 + Agility or Power) to land a follow-up reversal (e.g., Judo *Kuzushi* sweeping throw).
+    *   **Immediate Contested Mental Roll**: Roll a contested **Cool Check** (2d10 + Cool vs. 2d10 + Cool) to shake an opponent's spirit (e.g., Karate *Kiai Shout*).
+*   **Environmental Check (Hazard / Reaction Roll)**: A roll triggered by street hazards, subway trains, or ambient conditions (2d10 + Agility or Cool).
 
 ### 3. Die Roll Architecture (Strictly d10 System)
 All mechanics and random tables in **Saturday Night Street Fight** strictly use ten-sided dice (d10):
 
-*   **Standard Checks (2d10)**: Roll **$2\text{d}10 + \text{Attribute} + \text{Technique Mastery} + \text{Modifiers}$** vs Target DC or Opponent's Roll Total. Used for all combat actions, attribute checks, and out-of-combat challenges.
-*   **Advantage Checks (3d10 Keep 2 Highest)**: Rolled when in a **Dominant Stance**, executing a stealth ambush, holding high ground, or exploiting a target's vulnerability. Roll $3\text{d}10$ and sum the two highest dice.
-*   **Disadvantage Checks (3d10 Keep 2 Lowest)**: Rolled when in an **Exposed Stance**, fighting in blind spots/steam vents, being flanked, or defending while Prone/Pinned. Roll $3\text{d}10$ and sum the two lowest dice.
+*   **Standard Checks (2d10)**: Roll **2d10 + Attribute + Technique Mastery + Modifiers** vs Target DC or Opponent's Roll Total. Used for all combat actions, attribute checks, and out-of-combat challenges.
+*   **Advantage Checks (3d10 Keep 2 Highest)**: Rolled when in a **Dominant Stance**, executing a stealth ambush, holding high ground, or exploiting a target's vulnerability. Roll 3d10 and sum the two highest dice.
+*   **Disadvantage Checks (3d10 Keep 2 Lowest)**: Rolled when in an **Exposed Stance**, fighting in blind spots/steam vents, being flanked, or defending while Prone/Pinned. Roll 3d10 and sum the two lowest dice.
 *   **Natural 20 (Double 10s)**: Rolling double 10s on action dice is a **Natural 20 (Overkill)**. Guarantees an automatic Critical Hit ($+1$ damage and critical status) + **Momentum Surge** ($+1$ Stamina or Cool recovery).
-*   **Reaction Rolls (2d10 + Cool)**: Rolled when encountering new street gangs or NPCs to determine initial disposition ($2\text{d}10 + \text{Cool}$).
-*   **Table & Generator Rolls (1d10)**: All procedural tables (environmental starting ranges, subway events, street names, landmarks, environmental hazards, block danger rank encounters, and 1970s soundtracks) roll a single **$1\text{d}10$**.
+*   **Reaction Rolls (2d10 + Cool)**: Rolled when encountering new street gangs or NPCs to determine initial disposition (2d10 + Cool).
+*   **Table & Generator Rolls (1d10)**: All procedural tables (environmental starting ranges, subway events, street names, landmarks, environmental hazards, block danger rank encounters, and 1970s soundtracks) roll a single **1d10**.
 
 #### Standardized Target DC Tiers (Non-Combat & Environmental Checks)
 For non-combat environmental obstacles, street hazards, and hospital triage checks where no opponent is actively rolling back, difficulty is governed by 5 standardized Target DC tiers:
@@ -400,7 +400,7 @@ For non-combat environmental obstacles, street hazards, and hospital triage chec
 
 ### 4. Action Roll Resolution & Modifiers
 To resolve a contested roll, combatants calculate their totals using the following:
-*   **Action Roll**: Roll the chosen $2\text{d}10$ (or $3\text{d}10$ if rolling with Advantage or Disadvantage).
+*   **Action Roll**: Roll the chosen 2d10 (or 3d10 if rolling with Advantage or Disadvantage).
 *   **Attribute Modifier**: Add the governing Attribute (**Agility**, **Power**, **Reaction**, or **Stamina**).
 *   **Mastery Modifier**: Add the Technique Mastery bonus (**$+3$** if Trained, **$+5$** if Mastered).
 *   **The Modifier Cap**: The sum of all flat modifiers (Attribute + Mastery + style/situational bonuses) applied to any check can **never exceed $+10$**.
@@ -470,18 +470,18 @@ Street fights are chaotic and brutal. Combatants can inflict or suffer various t
 Fighters are knocked **Prone** when hit by a throwing action (Trip/Sweep, Hip/Shoulder Throw, Takedown) or when knocked down. While Prone:
 *   **Duration**: Lasts until you successfully execute a **Stand Up** check (win or tie).
 *   **Action Limitation**: You cannot choose **Strike Stance (Red)** actions or Dodge/Evasion.
-*   **Ground Disadvantage**: You roll with **Disadvantage** (roll $3\text{d}10$, keep the two lowest dice) on defensive checks while lying on the ground (Guards, Parries, or Ground Throws).
-*   **Getting Up (Neutral Roll)**: To stand back up, you declare the **Stand Up** technique (resolved as a **Block / White** action, governed by **Agility**). Unlike ground defense, the **Stand Up check is a standard $2\text{d}10$ check** (it does NOT suffer Disadvantage). If you win or tie the contested check, you stand back up and remove the Prone condition! If you lose the contest, you remain Prone.
+*   **Ground Disadvantage**: You roll with **Disadvantage** (roll 3d10, keep the two lowest dice) on defensive checks while lying on the ground (Guards, Parries, or Ground Throws).
+*   **Getting Up (Neutral Roll)**: To stand back up, you declare the **Stand Up** technique (resolved as a **Block / White** action, governed by **Agility**). Unlike ground defense, the **Stand Up check is a standard 2d10 check** (it does NOT suffer Disadvantage). If you win or tie the contested check, you stand back up and remove the Prone condition! If you lose the contest, you remain Prone.
 
 ### 2. Pinned (Trapped on the Canvas)
 Fighters are **Pinned** when an opponent wins a Grapple Struggle (Black vs. Black) on the ground (e.g., via Wrestling's *Ground Control* perk). While Pinned:
 *   **Duration**: Lasts until you successfully execute an **Escape** check (win = Clean Break, tie = Partial Break).
 *   **Action Limitation**: You cannot select **Strike Stance (Red)** or **Dodge/Evasion**.
-*   **Ground Disadvantage**: You roll with **Disadvantage** (roll $3\text{d}10$, keep the two lowest dice) on defensive checks while remaining pinned on the ground (Guards or Parries).
+*   **Ground Disadvantage**: You roll with **Disadvantage** (roll 3d10, keep the two lowest dice) on defensive checks while remaining pinned on the ground (Guards or Parries).
 *   **Dual Escape Paths (Neutral Roll)**: To escape a Pin, you choose either:
     *   **Power Escape (Bridge & Roll)**: Declare **Clinch/Grab** (Throw / Black, governed by **Power**).
     *   **Agility Escape (Hip Scramble / Guard Recovery)**: Declare **High Guard / Low Guard** (Block / White, governed by **Agility**).
-    *   Unlike ground defense, an **Escape check is a standard $2\text{d}10$ check** (it does NOT suffer Disadvantage).
+    *   Unlike ground defense, an **Escape check is a standard 2d10 check** (it does NOT suffer Disadvantage).
 *   **Escape Resolution**:
     *   **Win**: **Clean Break!** Removes **both Pinned and Prone** (you stand right back up to your feet!).
     *   **Tie**: **Partial Break!** Removes **Pinned** (reducing your position to Prone).
@@ -490,29 +490,29 @@ Fighters are **Pinned** when an opponent wins a Grapple Struggle (Black vs. Blac
 ### 3. Staggered (Off-Balance)
 Fighters are **Staggered** temporarily when their attack is successfully parried, or due to specific style effects.
 *   **Duration**: Lasts for 1 Stance Check (until the end of your next Stance Check).
-*   **Effect**: You roll with **Disadvantage** (roll $3\text{d}10$, keep the two lowest dice) on your next Stance Check.
+*   **Effect**: You roll with **Disadvantage** (roll 3d10, keep the two lowest dice) on your next Stance Check.
 
 ### 4. Stunned (Dazed)
 Fighters are **Stunned** when hit by a high-impact head blow (like a Critical High Kick) or projected hard (like a Judo Hip Throw).
 *   **Duration**: Lasts for 1 round.
 *   **Action Limitation**: You are dazed and cannot choose **Strike Stance (Red)** or **Throw Stance (Black)** actions. You can only choose **High Guard** or **Low Guard** (Block / White) to cover up.
-*   **Instinctive Guard (Neutral Roll)**: Covering up with High Guard or Low Guard is a **standard $2\text{d}10$ check** (it does NOT suffer Disadvantage). This allows your guard to function and mitigate 2 damage if hit.
+*   **Instinctive Guard (Neutral Roll)**: Covering up with High Guard or Low Guard is a **standard 2d10 check** (it does NOT suffer Disadvantage). This allows your guard to function and mitigate 2 damage if hit.
 
 ### 5. Shaken (Cool 0)
 Fighters are **Shaken** when their Cool attribute is reduced to 0. Cool damage is taken by losing a contested **Cool** check (e.g. from street encounters/gambling) or by being hit by a **Taunt** combat action.
 *   **Duration**: Lasts until Cool is restored to 1 or higher at a **Social Sanctuary** (Dive Bar, Diner, Safe House).
-*   **Effect**: You roll with **Disadvantage** (roll $3\text{d}10$, keep the two lowest dice) on all **Reaction Stance Checks** in combat (due to hesitation/panic) and on all non-combat checks.
+*   **Effect**: You roll with **Disadvantage** (roll 3d10, keep the two lowest dice) on all **Reaction Stance Checks** in combat (due to hesitation/panic) and on all non-combat checks.
 *   **Perk Suspension**: You cannot use style perks that require calm or precision (such as Boxer's *Slip & Counter* or Judo's *Kuzushi*).
 
 ### 6. Hobbled (Leg Damage)
 Fighters are **Hobbled** when hit by a successful low leg attack (like a **Low Kick**).
 *   **Duration**: Lasts for 1 Stance Check (until the end of your next Stance Check).
-*   **Effect**: You roll with **Disadvantage** (roll $3\text{d}10$, keep the two lowest dice) on all **Agility-based Stance Checks** (*Dodge, Low Kick, Push Kick, Trip, Stand Up*).
+*   **Effect**: You roll with **Disadvantage** (roll 3d10, keep the two lowest dice) on all **Agility-based Stance Checks** (*Dodge, Low Kick, Push Kick, Trip, Stand Up*).
 
 ### 7. Winded (Body Blow)
 Fighters are **Winded** when hit by a successful body blow (like a **Body Kick** or **Hook** body shot).
 *   **Duration**: Lasts for 1 Stance Check (until the end of your next Stance Check).
-*   **Effect**: You roll with **Disadvantage** (roll $3\text{d}10$, keep the two lowest dice) on all **Stamina and Power-based Stance Checks** (*High Kick, Body Kick, Throws, Takedowns, Clinches*).
+*   **Effect**: You roll with **Disadvantage** (roll 3d10, keep the two lowest dice) on all **Stamina and Power-based Stance Checks** (*High Kick, Body Kick, Throws, Takedowns, Clinches*).
 
 ---
 
@@ -596,16 +596,16 @@ As fighters invest XP and train their discipline, their rising **Character Rank*
 
 #### A. Master Rank (Rank 150): Master / Original Gangster (OG)
 Upon reaching **Rank 150** and mastering every technique in your Primary Style, you earn the dual titles **Master / Original Gangster (OG)** and choose **1 Mastery Perk**:
-*   **Dojo Founder**: You establish your own martial arts dojo on Home Turf (acting as a **Danger Rank 1 Safe Zone**). You gain a loyal crew of **$1\text{d}10$ Dojo Disciples (Tier 1 Mob)** who guard your dojo and can accompany your crew on street crawl runs (using GM Mob Rules). If any disciples fall in battle, new students enroll at your dojo when resting, restoring your disciple Mob count back to $1\text{d}10$.
-*   **Perfect Form**: Your execution of primary style moves becomes flawless. When performing a Mastered technique from your Primary Style, your clash die roll cannot be lower than 5 (any $1\text{d}10$ die result of 1–4 counts as 5).
+*   **Dojo Founder**: You establish your own martial arts dojo on Home Turf (acting as a **Danger Rank 1 Safe Zone**). You gain a loyal crew of **1d10 Dojo Disciples (Tier 1 Mob)** who guard your dojo and can accompany your crew on street crawl runs (using GM Mob Rules). If any disciples fall in battle, new students enroll at your dojo when resting, restoring your disciple Mob count back to 1d10.
+*   **Perfect Form**: Your execution of primary style moves becomes flawless. When performing a Mastered technique from your Primary Style, your clash die roll cannot be lower than 5 (any 1d10 die result of 1–4 counts as 5).
 
 #### B. Grandmaster Rank (Rank 200+): Grandmaster / Street Legend
 Upon reaching **Rank 200+** and mastering every technique across both your Primary and Secondary Styles, you achieve the ultimate dual titles of **Grandmaster / Street Legend**:
 *   **Secondary Style Elevation**: Your Secondary Martial Arts Style is permanently elevated to a **Full Primary Style** (you now hold two Primary Styles!).
 *   **Dual Style Mastery Perk**: You automatically gain the **2nd Style Perk** of your elevated Secondary Style (activating all 4 style perks across both styles simultaneously).
 *   **Second Master Achievement Choice**: You gain a 2nd Master Achievement choice for your newly elevated style:
-    *   **Perfect Form (Style B)**: Flawless execution extends to your 2nd style. When performing a Mastered technique from Style B, any $1\text{d}10$ die result of 1–4 counts as 5.
-    *   **Dojo Founder (Style B)**: You found a 2nd Dojo on Home Turf for your elevated 2nd style, gaining an additional $1\text{d}10$ Dojo Disciples Mob.
+    *   **Perfect Form (Style B)**: Flawless execution extends to your 2nd style. When performing a Mastered technique from Style B, any 1d10 die result of 1–4 counts as 5.
+    *   **Dojo Founder (Style B)**: You found a 2nd Dojo on Home Turf for your elevated 2nd style, gaining an additional 1d10 Dojo Disciples Mob.
 
 ### 3. The Martial Arts XP Keys System
 
@@ -677,17 +677,17 @@ Upon reaching **Rank 200+** and mastering every technique across both your Prima
 | 🦵 **Hobbled** | Inflicts **Disadvantage on Agility Stance Checks** (*Dodge, Low Kick, Trip, Stand Up*). | Lasts for 1 Stance Check. | [Go to Rule](#96-hobbled) |
 | 🫁 **Winded** | Inflicts **Disadvantage on Stamina & Power Stance Checks** (*High Kick, Body Kick, Throws, Takedowns, Clinch*). | Lasts for 1 Stance Check. | [Go to Rule](#97-winded) |
 | 🧠 **Shaken** | Inflicts **Disadvantage on Reaction Stance Checks & Non-Combat Checks**; suspends precision perks (*Slip & Counter, Kuzushi*). | Lasts for 1 Stance Check. | [Go to Rule](#95-shaken) |
-| 💫 **Stunned** | Mind dazed; can only cover up via High Guard or Low Guard ($2\text{d}10$ neutral roll). Cannot attack. | Lasts for 1 Stance Check. | [Go to Rule](#94-stunned) |
-| 💥 **Staggered** | Unsteady footing; next incoming strike gains Advantage ($3\text{d}10$). | Lasts until next incoming attack. | [Go to Rule](#93-staggered) |
-| 🤸 **Prone** | Knocked to the ground. Must pass $2\text{d}10$ neutral Stand Up check (Win/Tie = Stand Up). | Until successful Stand Up roll. | [Go to Rule](#91-prone) |
-| 🤼 **Pinned** | Trapped under opponent. Must pass $2\text{d}10$ escape check (Win = Stand Up, Tie = Prone). | Until successful Escape roll. | [Go to Rule](#92-pinned) |
+| 💫 **Stunned** | Mind dazed; can only cover up via High Guard or Low Guard (2d10 neutral roll). Cannot attack. | Lasts for 1 Stance Check. | [Go to Rule](#94-stunned) |
+| 💥 **Staggered** | Unsteady footing; next incoming strike gains Advantage (3d10). | Lasts until next incoming attack. | [Go to Rule](#93-staggered) |
+| 🤸 **Prone** | Knocked to the ground. Must pass 2d10 neutral Stand Up check (Win/Tie = Stand Up). | Until successful Stand Up roll. | [Go to Rule](#91-prone) |
+| 🤼 **Pinned** | Trapped under opponent. Must pass 2d10 escape check (Win = Stand Up, Tie = Prone). | Until successful Escape roll. | [Go to Rule](#92-pinned) |
 
 ### 2. Dice Mechanics & Action Checks Glossary
 
 | Term | Definition & Tabletop Impact | Quick Reference |
 | :--- | :--- | :---: |
-| 🎲 **Advantage** | Roll $3\text{d}10$ and sum the 2 highest dice. Rolled in Dominant Stance or exploiting vulnerabilities. | [Go to Rule](#3-action-roll-resolution--modifiers) |
-| 🎲 **Disadvantage** | Roll $3\text{d}10$ and sum the 2 lowest dice. Rolled in Exposed Stance or under status penalties. | [Go to Rule](#3-action-roll-resolution--modifiers) |
+| 🎲 **Advantage** | Roll 3d10 and sum the 2 highest dice. Rolled in Dominant Stance or exploiting vulnerabilities. | [Go to Rule](#3-action-roll-resolution--modifiers) |
+| 🎲 **Disadvantage** | Roll 3d10 and sum the 2 lowest dice. Rolled in Exposed Stance or under status penalties. | [Go to Rule](#3-action-roll-resolution--modifiers) |
 | 🎯 **Stance Check** | Main action check declared each exchange (*Punches, Kicks, Guards, Throws, Evading, Standing Up*). | [Go to Rule](#72-the-3-action-check-types) |
 | ⚡ **Perk Reaction Check** | Immediate triggered check granted by style perks (*Judo Kuzushi, Karate Kiai Shout*). | [Go to Rule](#72-the-3-action-check-types) |
 | ⛰️ **Environmental Check** | Non-combat check rolled against fixed Target DCs (*DC 10 Easy, DC 12 Medium, DC 15 Hard, DC 18 Very Hard, DC 20 Impossible*). | [Go to Rule](#72-the-3-action-check-types) |

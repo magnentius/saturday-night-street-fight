@@ -2,17 +2,17 @@
 
 > *"The streets don't ask where you came from, only if you can stand when the bell rings."*
 
-Roll the dice and let the streets name your brawler. All rolls use **$1\text{d}10$** only.
+Roll the dice and let the streets name your brawler. All rolls use **1d10** only.
 
 **Quick Name Generation — 3 Rolls**
-1. **Roll $1\text{d}10$** → Cultural Origin (Table 0)
-2. **Roll $1\text{d}10$** → Given Name from your origin's Male or Female table
-3. **Roll $1\text{d}10$** → Surname from your origin's Surname table
-4. *(Optional)* **Roll $1\text{d}10$ + $1\text{d}10$** → Street Alias (Table 5)
+1. **Roll 1d10** → Cultural Origin (Table 0)
+2. **Roll 1d10** → Given Name from your origin's Male or Female table
+3. **Roll 1d10** → Surname from your origin's Surname table
+4. *(Optional)* **Roll 1d10 + 1d10** → Street Alias (Table 5)
 
 ---
 
-## Table 0 — Cultural Origin ($1\text{d}10$)
+## Table 0 — Cultural Origin (1d10)
 
 | Roll | Cultural Origin | Neighborhood Flavor |
 | :---: | :--- | :--- |
@@ -29,7 +29,7 @@ Roll the dice and let the streets name your brawler. All rolls use **$1\text{d}1
 
 *Inspired by Hong Kong martial arts cinema, Chinatowns, Little Tokyos, and Asian diaspora communities.*
 
-### Table 1A — Asian Male Given Names ($1\text{d}10$)
+### Table 1A — Asian Male Given Names (1d10)
 
 | Roll | Name | Origin |
 | :---: | :--- | :--- |
@@ -44,7 +44,7 @@ Roll the dice and let the streets name your brawler. All rolls use **$1\text{d}1
 | **9** | **Arjun** | South Asian (Indian) |
 | **10** | **Min-ho** | Korean |
 
-### Table 1B — Asian Female Given Names ($1\text{d}10$)
+### Table 1B — Asian Female Given Names (1d10)
 
 | Roll | Name | Origin |
 | :---: | :--- | :--- |
@@ -59,7 +59,7 @@ Roll the dice and let the streets name your brawler. All rolls use **$1\text{d}1
 | **9** | **Yuko** | Japanese |
 | **10** | **Ananya** | South Asian (Indian) |
 
-### Table 1C — Asian Surnames ($1\text{d}10$)
+### Table 1C — Asian Surnames (1d10)
 
 | Roll | Surname | Origin |
 | :---: | :--- | :--- |
@@ -80,7 +80,7 @@ Roll the dice and let the streets name your brawler. All rolls use **$1\text{d}1
 
 *Inspired by 1970s Nuyorican street culture, East Harlem, the Bronx, and Caribbean/Latin American heritage.*
 
-### Table 2A — Latino Male Given Names ($1\text{d}10$)
+### Table 2A — Latino Male Given Names (1d10)
 
 | Roll | Name | Origin |
 | :---: | :--- | :--- |
@@ -95,7 +95,7 @@ Roll the dice and let the streets name your brawler. All rolls use **$1\text{d}1
 | **9** | **Diego** | Mexican |
 | **10** | **Rodrigo** | South American |
 
-### Table 2B — Latina Female Given Names ($1\text{d}10$)
+### Table 2B — Latina Female Given Names (1d10)
 
 | Roll | Name | Origin |
 | :---: | :--- | :--- |
@@ -110,7 +110,7 @@ Roll the dice and let the streets name your brawler. All rolls use **$1\text{d}1
 | **9** | **Paloma** | Latin American |
 | **10** | **Valentina** | South American |
 
-### Table 2C — Latino Surnames ($1\text{d}10$)
+### Table 2C — Latino Surnames (1d10)
 
 | Roll | Surname | Origin |
 | :---: | :--- | :--- |
@@ -131,7 +131,7 @@ Roll the dice and let the streets name your brawler. All rolls use **$1\text{d}1
 
 *Inspired by Little Italy, South Boston, Hell's Kitchen, and European immigrant neighborhoods.*
 
-### Table 3A — European Male Given Names ($1\text{d}10$)
+### Table 3A — European Male Given Names (1d10)
 
 | Roll | Name | Origin |
 | :---: | :--- | :--- |
@@ -146,7 +146,7 @@ Roll the dice and let the streets name your brawler. All rolls use **$1\text{d}1
 | **9** | **Viktor** | Eastern European |
 | **10** | **Dmitri** | Russian |
 
-### Table 3B — European Female Given Names ($1\text{d}10$)
+### Table 3B — European Female Given Names (1d10)
 
 | Roll | Name | Origin |
 | :---: | :--- | :--- |
@@ -161,7 +161,7 @@ Roll the dice and let the streets name your brawler. All rolls use **$1\text{d}1
 | **9** | **Katya** | Russian |
 | **10** | **Natasha** | Russian |
 
-### Table 3C — European Surnames ($1\text{d}10$)
+### Table 3C — European Surnames (1d10)
 
 | Roll | Surname | Origin |
 | :---: | :--- | :--- |
@@ -182,7 +182,7 @@ Roll the dice and let the streets name your brawler. All rolls use **$1\text{d}1
 
 *Inspired by 1970s Funk culture, Harlem, Bedford-Stuyvesant, and African heritage.*
 
-### Table 4A — African / African-American Male Given Names ($1\text{d}10$)
+### Table 4A — African / African-American Male Given Names (1d10)
 
 | Roll | Name | Origin |
 | :---: | :--- | :--- |
@@ -197,7 +197,7 @@ Roll the dice and let the streets name your brawler. All rolls use **$1\text{d}1
 | **9** | **Sekou** | West African (Guinean) |
 | **10** | **Idris** | African / Arabic |
 
-### Table 4B — African / African-American Female Given Names ($1\text{d}10$)
+### Table 4B — African / African-American Female Given Names (1d10)
 
 | Roll | Name | Origin |
 | :---: | :--- | :--- |
@@ -212,7 +212,7 @@ Roll the dice and let the streets name your brawler. All rolls use **$1\text{d}1
 | **9** | **Zuri** | Swahili |
 | **10** | **Fatou** | West African (Senegalese) |
 
-### Table 4C — African / African-American Surnames ($1\text{d}10$)
+### Table 4C — African / African-American Surnames (1d10)
 
 | Roll | Surname | Origin |
 | :---: | :--- | :--- |
@@ -231,9 +231,9 @@ Roll the dice and let the streets name your brawler. All rolls use **$1\text{d}1
 
 ## Table 5 — Street Alias & Moniker Generator
 
-Roll **$1\text{d}10$** for a **Prefix Descriptor** and another **$1\text{d}10$** for a **Combat Moniker**. Combine them for your brawler's street alias.
+Roll **1d10** for a **Prefix Descriptor** and another **1d10** for a **Combat Moniker**. Combine them for your brawler's street alias.
 
-### Table 5A — Alias Prefix ($1\text{d}10$)
+### Table 5A — Alias Prefix (1d10)
 
 | Roll | Prefix |
 | :---: | :--- |
@@ -248,7 +248,7 @@ Roll **$1\text{d}10$** for a **Prefix Descriptor** and another **$1\text{d}10$**
 | **9** | **Thunder** |
 | **10** | **Golden** |
 
-### Table 5B — Alias Moniker ($1\text{d}10$)
+### Table 5B — Alias Moniker (1d10)
 
 | Roll | Moniker | Example Full Alias |
 | :---: | :--- | :--- |

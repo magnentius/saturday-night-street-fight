@@ -44,12 +44,12 @@ Fighters move through the blighted city by riding the subway line. Traveling fro
 2.  **Riding the Rails**: The train travels through the underground tunnels. For each station the train passes through or stops at, the GM rolls on the **Subway Station Event Table** below.
 3.  **Explore the Block (Station-Linked Danger)**: When players exit a station to the surface, the GM generates a new block using the **Block Generation System**. The block's **Danger Rank** is directly tied to the type of station they just exited:
     *   **Transit Safe House** (Event Roll 10) $\rightarrow$ Exits onto a **Danger Rank 1** block.
-    *   **Transfer Hub** (Station Type 5-7) $\rightarrow$ Exits onto a **Danger Rank 1** (1-4 on $1\text{d}10$) or **Danger Rank 2** (5-10 on $1\text{d}10$) block.
-    *   **Local Stop** (Station Type 1-4) $\rightarrow$ Exits onto a **Danger Rank 2** (1-6 on $1\text{d}10$) or **Danger Rank 3** (7-10 on $1\text{d}10$) block.
-    *   **Danger Zone** (Station Type 8-9) $\rightarrow$ Exits onto a **Danger Rank 4** (1-6 on $1\text{d}10$) or **Danger Rank 5** (7-10 on $1\text{d}10$) block.
+    *   **Transfer Hub** (Station Type 5-7) $\rightarrow$ Exits onto a **Danger Rank 1** (1-4 on 1d10) or **Danger Rank 2** (5-10 on 1d10) block.
+    *   **Local Stop** (Station Type 1-4) $\rightarrow$ Exits onto a **Danger Rank 2** (1-6 on 1d10) or **Danger Rank 3** (7-10 on 1d10) block.
+    *   **Danger Zone** (Station Type 8-9) $\rightarrow$ Exits onto a **Danger Rank 4** (1-6 on 1d10) or **Danger Rank 5** (7-10 on 1d10) block.
     *   **Final Station (Boss's Lair)** $\rightarrow$ Exits onto a **Danger Rank 5** block.
 
-### Subway Station Event Table (Roll $1\text{d}10$)
+### Subway Station Event Table (Roll 1d10)
 Whenever the train pulls into a station, roll to see what awaits the players on the platform:
 
 | Roll | Station Event | Description & Rules |
@@ -62,10 +62,10 @@ Whenever the train pulls into a station, roll to see what awaits the players on 
 
 ### Procedural Subway Line Generator
 To map out a transit line between the players' Home Turf and their target destination:
-1.  **Roll Line Length**: Roll **$1\text{d}10$** to determine the number of intermediate stations on the line (1–3: 3 stations, 4–7: 5 stations, 8–10: 7 stations).
-2.  **Generate Stations**: For each intermediate station, roll a **$1\text{d}10$** on the table below to determine its layout and routing choices:
+1.  **Roll Line Length**: Roll **1d10** to determine the number of intermediate stations on the line (1–3: 3 stations, 4–7: 5 stations, 8–10: 7 stations).
+2.  **Generate Stations**: For each intermediate station, roll a **1d10** on the table below to determine its layout and routing choices:
 
-| Roll ($1\text{d}10$) | Station Type | Description & Routing Rules |
+| Roll (1d10) | Station Type | Description & Routing Rules |
 | :--- | :--- | :--- |
 | **1-4** | **Local Stop** | Standard station. Roll on the *Subway Station Event Table* normally when arriving. |
 | **5-7** | **Transfer Hub** | Large intersecting station. Players can choose to switch to a different line, bypassing the next station on their current route but adding $+1$ station to their total trip. |
@@ -112,7 +112,7 @@ graph TD
 
 To generate the block where a fight takes place, the GM rolls on the following tables to create a distinct intersection, populate it with businesses, and add environmental hazards.
 
-### Step 1: Street Name Generator (Roll $2\text{d}10$ four times)
+### Step 1: Street Name Generator (Roll 2d10 four times)
 Roll two ten-sided dice to get a number between 2 and 20. Roll four times to generate the street names that intersect to form your block.
 
 | Roll | Street Name A (Prefix) | Street Name B (Suffix/Avenue) |
@@ -141,7 +141,7 @@ Roll two ten-sided dice to get a number between 2 and 20. Roll four times to gen
 
 ---
 
-### Step 2: Populate the Block (Roll $1\text{d}10$ three times)
+### Step 2: Populate the Block (Roll 1d10 three times)
 Roll to determine the three primary landmarks on the block.
 
 | Roll | Landmark / Business | Tactical Layout / Features |
@@ -159,7 +159,7 @@ Roll to determine the three primary landmarks on the block.
 
 ---
 
-### Step 3: Environmental Hazards (Roll $1\text{d}10$ for the block)
+### Step 3: Environmental Hazards (Roll 1d10 for the block)
 These hazards add mechanical friction to the brawls.
 
 | Roll | Hazard | Mechanical Effect |
@@ -177,7 +177,7 @@ These hazards add mechanical friction to the brawls.
 > *"The ultimate weapon in any fight is a person's courage and composure."* — Joe Lewis *(1970s World Karate Champion)*
 
 
-Every block in the city has a **Danger Rank** from **1 to 5** that reflects the presence of hostile gang control. When players arrive at a block, the GM determines the Danger Rank and rolls a **$1\text{d}10$** on the corresponding table below to generate the encounter:
+Every block in the city has a **Danger Rank** from **1 to 5** that reflects the presence of hostile gang control. When players arrive at a block, the GM determines the Danger Rank and rolls a **1d10** on the corresponding table below to generate the encounter:
 
 ### Danger Rank 1: Safe Zone / Home Turf
 *Friendly neighborhoods, neutral territory, or heavily patrolled sectors.*
@@ -281,9 +281,9 @@ If a party successfully ambushes an enemy (or gets ambushed):
 > *"To know oneself is to study oneself in action with another person."* — Bruce Lee
 
 
-When players encounter a new gang, mob of punks, or street NPC during a Street Crawl (or exiting a subway station), the GM or lead player rolls **$2\text{d}10 + \text{Cool}$** to determine the group's initial reaction, demeanor, and threat level:
+When players encounter a new gang, mob of punks, or street NPC during a Street Crawl (or exiting a subway station), the GM or lead player rolls **2d10 + Cool** to determine the group's initial reaction, demeanor, and threat level:
 
-| $2\text{d}10 + \text{Cool}$ Total | Initial Disposition | Narrative & Tactical Outcome |
+| 2d10 + Cool Total | Initial Disposition | Narrative & Tactical Outcome |
 | :--- | :--- | :--- |
 | **5 or lower** | **Hostile / Ambush** | Immediate attack! Enemies launch a surprise strike or force **Grapple Range**. |
 | **6–10** | **Aggressive / Demand Turf Toll** | Unfriendly. They demand a street favor or provoke a brawl. Passing a **Cool Check (DC 12)** defuses the tension; failure triggers combat. |
@@ -324,7 +324,7 @@ Neighborhood bosses who control local blocks and transit hubs.
 Sector warlords, dojo masters, or syndicate leaders who rule entire districts.
 *   **Creation**: Built using a **100–150 XP budget** (Attributes at 4, 4 Mastered Rank 2 techniques with $+5$ bonus).
 *   **Style**: Primary Martial Arts Style with both style perks active.
-*   **Master Perks**: Possesses a Master Rank perk—either **Perfect Form** (dice clash floor of 5) or **Dojo Founder** (accompanied by $1\text{d}10$ Dojo Disciples Tier 1 Mob).
+*   **Master Perks**: Possesses a Master Rank perk—either **Perfect Form** (dice clash floor of 5) or **Dojo Founder** (accompanied by 1d10 Dojo Disciples Tier 1 Mob).
 *   **Tactics**: Relentless pressure, stance reading mastery, and devastating combo strings. Tuned for climax duels against veteran PCs.
 
 ### 5. Supreme Syndicate Overlords / Grandmasters (Tier 4+)
@@ -357,7 +357,7 @@ Use these rules when players are outnumbered or coordinating with allies.
 ### 2. Flanking & Third-Party Intervention
 If a fighter is double-teamed by multiple opponents:
 *   The defender must choose one attacker to be their **Primary Threat** and roll against them normally.
-*   Against any **secondary (flanking) attackers**, the defender rolls with **Disadvantage** (roll $3\text{d}10$, keep the two lowest dice) and cannot choose Dodge/Evasion or Parry.
+*   Against any **secondary (flanking) attackers**, the defender rolls with **Disadvantage** (roll 3d10, keep the two lowest dice) and cannot choose Dodge/Evasion or Parry.
 
 ---
 
@@ -366,11 +366,11 @@ If a fighter is double-teamed by multiple opponents:
 > *"Rhythm is everything in fighting. Every move you make starts with your heart, and that's in rhythm or you're in trouble."* — Sugar Ray Robinson
 
 
-To set the mood at your table, roll a **$1\text{d}10$** on the tables below to select a track during session exploration or brawls:
+To set the mood at your table, roll a **1d10** on the tables below to select a track during session exploration or brawls:
 
 ### Gritty Exploration & Mood (Subways & Wet Asphalt)
 
-| Roll ($1\text{d}10$) | Song | Artist & Year |
+| Roll (1d10) | Song | Artist & Year |
 | :--- | :--- | :--- |
 | **1** | "Across 110th Street" | Bobby Womack (1972) |
 | **2** | "Walk on the Wild Side" | Lou Reed (1972) |
@@ -385,7 +385,7 @@ To set the mood at your table, roll a **$1\text{d}10$** on the tables below to s
 
 ### High-Energy Street Brawls
 
-| Roll ($1\text{d}10$) | Song | Artist & Year |
+| Roll (1d10) | Song | Artist & Year |
 | :--- | :--- | :--- |
 | **1** | "The Payback" | James Brown (1973) |
 | **2** | "Blitzkrieg Bop" | Ramones (1976) |
@@ -408,4 +408,4 @@ When generating PCs or GMing NPCs on the fly, use the official [Brawler Name & A
 *   **Latino & Hispanic Brawler Names**: Nuyorican, Dominican, Mexican, and South American given names and surnames (*Hector Vega*, *Carmen Morales*, *Tito Ortiz*).
 *   **European & Anglo Brawler Names**: Italian, Irish/Anglo, and Eastern European given names and surnames (*Vinnie Gambini*, *Mickey O'Neill*, *Ivan Petrov*).
 *   **African & African-American Brawler Names**: 1970s Urban, Diaspora, and West/East African given names and surnames (*Cassius Jackson*, *Pamela Mercer*, *Kwame Mensah*).
-*   **Street Monikers & Alias Generator**: Roll $1\text{d}10$ (Prefix) + $1\text{d}10$ (Combat Moniker) to generate street titles like *Iron Viper*, *Slick Hammer*, *Razor Tiger*, or *Thunder Brawler*.
+*   **Street Monikers & Alias Generator**: Roll 1d10 (Prefix) + 1d10 (Combat Moniker) to generate street titles like *Iron Viper*, *Slick Hammer*, *Razor Tiger*, or *Thunder Brawler*.
