@@ -22,7 +22,7 @@ STYLES = {
         "Throws": ["clinch"],
         "Perks": [
             "**Thai Clinch**: Unlocks Clinch Knee (Reaction-based, 3 damage to Reaction or Stamina) usable while holding a Clinch.",
-            "**Heavy Leg Kicks**: Low Kicks deal 2 Agility damage, apply the Hobbled status condition, and prevent the target from selecting Dodge on their next Stance Check."
+            "**Heavy Leg Kicks**: Low Kicks deal 2 Agility damage, apply the Hobbled status condition, and prevent the target from selecting Dodge on their next Action Roll."
         ]
     },
     "Judo": {
@@ -137,22 +137,24 @@ def generate_random_character(name=None):
                 "name": "Classic Slugger",
                 "attrs": ["reaction", "stamina", "power"],
                 "moves_priority": [
-                    ("hook", 2),       # Primary attack (Mastered)
+                    ("hook", 1),       # Primary attack (Trained)
                     ("dodge", 1),      # Primary defense (Trained)
                     ("jab", 1),        # Set up counters (Trained)
-                    ("dodge", 2),      # Master defense (Mastered)
-                    ("cross", 1)       # Secondary attack (Trained)
+                    ("cross", 1),      # Secondary attack (Trained)
+                    ("high guard", 1), # High block (Trained)
+                    ("uppercut", 1)    # Power punch (Trained)
                 ]
             },
             {
                 "name": "The Showman (Cool-Focused)",
                 "attrs": ["cool", "reaction", "stamina"],
                 "moves_priority": [
-                    ("taunt", 2),      # Master mental damage (Mastered)
+                    ("taunt", 1),      # Mental damage (Trained)
                     ("dodge", 1),      # Composure defense (Trained)
                     ("hook", 1),       # Attack (Trained)
-                    ("taunt", 2),      # Ensure Taunt is fully Mastered
-                    ("parry", 1)       # Defensive option (Trained)
+                    ("parry", 1),      # Defensive option (Trained)
+                    ("jab", 1),        # Fast strike (Trained)
+                    ("cross", 1)       # Secondary attack (Trained)
                 ]
             }
         ],
@@ -161,22 +163,24 @@ def generate_random_character(name=None):
                 "name": "Classic Clincher",
                 "attrs": ["stamina", "reaction", "agility"],
                 "moves_priority": [
-                    ("low kick", 2),   # Primary attack (Mastered)
+                    ("low kick", 1),   # Primary attack (Trained)
                     ("clinch", 1),     # Set up Thai Clinch knees (Trained)
                     ("high guard", 1), # Composure defense (Trained)
                     ("push kick", 1),  # Range control (Trained)
-                    ("hook", 1)        # Backup punch (Trained)
+                    ("hook", 1),       # Backup punch (Trained)
+                    ("body kick", 1)   # Torso strike (Trained)
                 ]
             },
             {
                 "name": "The Intimidator (Cool-Focused)",
                 "attrs": ["cool", "stamina", "reaction"],
                 "moves_priority": [
-                    ("taunt", 2),      # Master mental pressure (Mastered)
+                    ("taunt", 1),      # Mental pressure (Trained)
                     ("clinch", 1),     # Force grapple (Trained)
                     ("low kick", 1),   # Harass legs (Trained)
                     ("high guard", 1), # Cover up (Trained)
-                    ("jab", 1)         # Fast strike (Trained)
+                    ("jab", 1),        # Fast strike (Trained)
+                    ("body kick", 1)   # Heavy kick (Trained)
                 ]
             }
         ],
@@ -185,22 +189,24 @@ def generate_random_character(name=None):
                 "name": "Classic Kuzushi Thrower",
                 "attrs": ["power", "reaction", "cool"],
                 "moves_priority": [
-                    ("hip throw", 2),  # Primary projection (Mastered)
+                    ("hip throw", 1),  # Primary projection (Trained)
                     ("parry", 1),      # Trigger Kuzushi reaction (Trained)
                     ("clinch", 1),     # Close distance (Trained)
                     ("ground & pound", 1), # Exploit down position (Trained)
-                    ("trip", 1)        # Secondary sweep (Trained)
+                    ("trip", 1),       # Secondary sweep (Trained)
+                    ("high guard", 1)  # Guard stance (Trained)
                 ]
             },
             {
                 "name": "The Stoic Master (Cool-Focused)",
                 "attrs": ["cool", "power", "reaction"],
                 "moves_priority": [
-                    ("taunt", 2),      # Mental pressure (Mastered)
+                    ("taunt", 1),      # Mental pressure (Trained)
                     ("hip throw", 1),  # Retaliatory throw (Trained)
                     ("parry", 1),      # Set up counters (Trained)
                     ("ground & pound", 1), # Exploit down position (Trained)
-                    ("hip throw", 2)   # Master throw (Mastered)
+                    ("clinch", 1),     # Close distance (Trained)
+                    ("trip", 1)        # Sweep (Trained)
                 ]
             }
         ],
@@ -209,22 +215,24 @@ def generate_random_character(name=None):
                 "name": "Classic Takedown Dominator",
                 "attrs": ["power", "stamina", "cool"],
                 "moves_priority": [
-                    ("takedown", 2),   # Primary power takedown (Mastered)
+                    ("takedown", 1),   # Primary power takedown (Trained)
                     ("submission hold", 1), # Tap-out submission (Trained)
                     ("clinch", 1),     # Close distance (Trained)
                     ("ground & pound", 1), # Exploit down position (Trained)
-                    ("low guard", 1)   # Keep base low (Trained)
+                    ("low guard", 1),  # Keep base low (Trained)
+                    ("suplex", 1)      # Heavy throw (Trained)
                 ]
             },
             {
                 "name": "The Ring Warlord (Cool-Focused)",
                 "attrs": ["cool", "power", "stamina"],
                 "moves_priority": [
-                    ("taunt", 2),      # Demoralize opponent (Mastered)
+                    ("taunt", 1),      # Demoralize opponent (Trained)
                     ("takedown", 1),   # Close the show (Trained)
                     ("submission hold", 1), # Tap-out submission (Trained)
                     ("ground & pound", 1), # Exploit pin position (Trained)
-                    ("takedown", 2)    # Master takedown (Mastered)
+                    ("clinch", 1),     # Close distance (Trained)
+                    ("low guard", 1)   # Defense base (Trained)
                 ]
             }
         ],
@@ -233,22 +241,24 @@ def generate_random_character(name=None):
                 "name": "Classic Point Fighter",
                 "attrs": ["reaction", "power", "stamina"],
                 "moves_priority": [
-                    ("cross", 2),      # Primary precision strike (Mastered)
+                    ("cross", 1),      # Primary precision strike (Trained)
                     ("parry", 1),      # Disciplined defense (Trained)
                     ("high kick", 1),  # Head kick threat (Trained)
                     ("jab", 1),        # Fast setup strike (Trained)
-                    ("parry", 2)       # Master parry (Mastered)
+                    ("low kick", 1),   # Sweep strike (Trained)
+                    ("high guard", 1)  # Guard stance (Trained)
                 ]
             },
             {
                 "name": "The Sensei (Cool-Focused)",
                 "attrs": ["cool", "reaction", "power"],
                 "moves_priority": [
-                    ("taunt", 2),      # Kiai intimidation (Mastered)
+                    ("taunt", 1),      # Kiai intimidation (Trained)
                     ("cross", 1),      # Precision strike (Trained)
                     ("parry", 1),      # Counter defense (Trained)
                     ("hook", 1),       # Body shot (Trained)
-                    ("cross", 2)       # Master cross (Mastered)
+                    ("high kick", 1),  # High kick (Trained)
+                    ("jab", 1)         # Fast setup (Trained)
                 ]
             }
         ],
@@ -257,22 +267,24 @@ def generate_random_character(name=None):
                 "name": "Classic Chain Striker",
                 "attrs": ["reaction", "agility", "stamina"],
                 "moves_priority": [
-                    ("jab", 2),        # Fast combo starter (Mastered)
+                    ("jab", 1),        # Fast combo starter (Trained)
                     ("dodge", 1),      # Flowing evasion (Trained)
                     ("push kick", 1),  # Distance control (Trained)
                     ("cross", 1),      # Follow-up strike (Trained)
-                    ("dodge", 2)       # Master evasion (Mastered)
+                    ("parry", 1),      # Deflection (Trained)
+                    ("trip", 1)        # Leg sweep (Trained)
                 ]
             },
             {
                 "name": "The Philosopher (Cool-Focused)",
                 "attrs": ["cool", "reaction", "agility"],
                 "moves_priority": [
-                    ("taunt", 2),      # Mental pressure (Mastered)
+                    ("taunt", 1),      # Mental pressure (Trained)
                     ("parry", 1),      # Flowing redirect (Trained)
                     ("jab", 1),        # Fast strike (Trained)
                     ("trip", 1),       # Sweep follow-up (Trained)
-                    ("parry", 2)       # Master parry (Mastered)
+                    ("dodge", 1),      # Flowing evasion (Trained)
+                    ("cross", 1)       # Precision strike (Trained)
                 ]
             }
         ],
@@ -281,21 +293,24 @@ def generate_random_character(name=None):
                 "name": "Classic Outfighting Kicker",
                 "attrs": ["agility", "reaction", "stamina"],
                 "moves_priority": [
-                    ("dodge", 2),      # Master outfighting evasion (Mastered)
+                    ("dodge", 1),      # Outfighting evasion (Trained)
                     ("push kick", 1),  # Set up spinning kicks (Trained)
-                    ("high kick", 2),  # Primary strike (Mastered)
-                    ("cross", 1)       # Secondary punch (Trained)
+                    ("high kick", 1),  # Primary strike (Trained)
+                    ("cross", 1),      # Secondary punch (Trained)
+                    ("low kick", 1),   # Leg strike (Trained)
+                    ("parry", 1)       # Deflection (Trained)
                 ]
             },
             {
                 "name": "The Flashy Showman (Cool-Focused)",
                 "attrs": ["cool", "agility", "reaction"],
                 "moves_priority": [
-                    ("taunt", 2),      # Trash talk (Mastered)
+                    ("taunt", 1),      # Trash talk (Trained)
                     ("dodge", 1),      # Flashy defense (Trained)
                     ("push kick", 1),  # Distance maker (Trained)
                     ("high kick", 1),  # Head strike (Trained)
-                    ("dodge", 2)       # Master evasion (Mastered)
+                    ("cross", 1),      # Secondary punch (Trained)
+                    ("low kick", 1)    # Sweep strike (Trained)
                 ]
             }
         ]
@@ -309,42 +324,22 @@ def generate_random_character(name=None):
             attrs[attr] = 3
             xp -= 10
 
-    # 2. Spend remaining XP on prioritized moves list
+    # 2. Spend remaining XP on prioritized moves list (Rank 1 / Trained cap at creation)
     masteries = {}
-    for move, target_rank in arch["moves_priority"]:
-        curr_rank = masteries.get(move, 0)
-
-        if curr_rank < target_rank:
-            if target_rank == 1 and curr_rank == 0:
-                if xp >= 3:
-                    masteries[move] = 1
-                    xp -= 3
-            elif target_rank == 2 and curr_rank == 0:
-                if xp >= 9:
-                    masteries[move] = 2
-                    xp -= 9
-                elif xp >= 3:
-                    masteries[move] = 1
-                    xp -= 3
-            elif target_rank == 2 and curr_rank == 1:
-                if xp >= 6:
-                    masteries[move] = 2
-                    xp -= 6
-
-    # 3. Spend leftover XP randomly on any remaining allowed moves
-    allowed_moves = style["Strikes"] + style["Blocks"] + style["Throws"]
-    attempts = 0
-    while xp >= 3 and attempts < 100:
-        attempts += 1
-        move = random.choice(allowed_moves)
-        curr_rank = masteries.get(move, 0)
-        
-        if curr_rank == 0:
+    for move, _ in arch["moves_priority"]:
+        if masteries.get(move, 0) == 0 and xp >= 3:
             masteries[move] = 1
             xp -= 3
-        elif curr_rank == 1 and xp >= 6:
-            masteries[move] = 2
-            xp -= 6
+
+    # 3. Spend leftover XP on any remaining allowed moves (Rank 1 / Trained cap at creation)
+    allowed_moves = list(style["Strikes"] + style["Blocks"] + style["Throws"])
+    random.shuffle(allowed_moves)
+    for move in allowed_moves:
+        if xp < 3:
+            break
+        if masteries.get(move, 0) == 0:
+            masteries[move] = 1
+            xp -= 3
 
     return name, style_name, arch["name"], attrs, masteries, xp
 
@@ -361,7 +356,7 @@ def format_character_sheet(name, style_name, attrs, masteries, unspent_xp, arche
         style_str += f" (*{style['Focus']}*)"
     sheet.append(style_str)
     spent_xp = 50 - unspent_xp
-    sheet.append(f"**Character Rank**: {spent_xp} (Martial Disciple / Street Soldier — Unlocks 3rd Key Slot at Rank 60 Martial Adept / Turf Enforcer)")
+    sheet.append(f"**Character Rank**: {spent_xp} (Martial Disciple / Soldier — Unlocks 3rd Key Slot at Rank 60 Martial Adept / Enforcer)")
     sheet.append(f"**Available XP (Bank)**: {unspent_xp} XP\n")
     
     sheet.append("## Attributes")

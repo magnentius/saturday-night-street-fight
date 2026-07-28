@@ -2,7 +2,7 @@
 
 > *"Be water, my friend. Empty your mind. Be formless, shapeless..."* — Bruce Lee
 
-**Saturday Night Street Fight** is a gritty, high-friction, tactical tabletop RPG of street-level brawls, martial arts, and urban survival. Set in the neon-drenched, steam-vented decay of **1970s New York City**, the game pits specialized fighters against local gang turf wars, corrupt enforcers, and subway transit gauntlets.
+**Saturday Night Street Fight** is a gritty, high-friction, tactical tabletop RPG of street-level brawls, martial arts, and urban survival. Set in the neon-drenched, steam-vented decay of **1970s Empire City**, players form a volunteer **Vigilante Safety Patrol**—a crew of martial artists from different disciplines who ride the subways and sweep high-risk neighborhood blocks to protect citizens, clean up crime, and dismantle syndicate gang turfs.
 
 ---
 

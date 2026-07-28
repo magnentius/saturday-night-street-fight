@@ -265,6 +265,46 @@ Roll **1d10** for a **Prefix Descriptor** and another **1d10** for a **Combat Mo
 
 ---
 
+## Table 6 — Vigilante Patrol & Street Crew Generator
+
+Use this table to name your player character's vigilante safety patrol crew at character creation or generate rival street patrols, neighborhood watch groups, and gang crews during street sweeps.
+
+Roll **1d10 + 1d10**:
+1. **Roll 1d10** → Patrol Prefix (Table 6A)
+2. **Roll 1d10** → Patrol Title (Table 6B)
+
+### Table 6A — Patrol Crew Prefix (1d10)
+
+| Roll | Prefix / Adjective |
+| :---: | :--- |
+| **1** | **Night** |
+| **2** | **Guardian** |
+| **3** | **Iron** |
+| **4** | **Street** |
+| **5** | **Metro** |
+| **6** | **Crimson** |
+| **7** | **Dragon** |
+| **8** | **Shadow** |
+| **9** | **Empire** |
+| **10** | **Velvet** |
+
+### Table 6B — Patrol Crew Title (1d10)
+
+| Roll | Unit Title |
+| :---: | :--- |
+| **1** | **Patrol** |
+| **2** | **Angels** |
+| **3** | **Watch** |
+| **4** | **Defenders** |
+| **5** | **Enforcers** |
+| **6** | **Squad** |
+| **7** | **Corps** |
+| **8** | **Knights** |
+| **9** | **Vanguard** |
+| **10** | **Sentinels** |
+
+---
+
 ## Example Name Rolls
 
 > **Roll 1 (Origin)**: 3 → **Latino / Hispanic**
@@ -291,3 +331,11 @@ Roll **1d10** for a **Prefix Descriptor** and another **1d10** for a **Combat Mo
 >   → *Re-roll B*: 5 → **European / Anglo** (use Surname: Roll 2 → *Rossi*)
 >
 > ✅ **Result**: *Takeshi Rossi*
+
+---
+
+> **Vigilante Patrol Roll**:
+>   → *Prefix Roll 6A*: 2 → **Guardian**
+>   → *Title Roll 6B*: 2 → **Angels**
+>
+> ✅ **Result**: *The Guardian Angels*

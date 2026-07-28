@@ -16,8 +16,9 @@ This guide provides the Game Master (GM) with setting guidelines, environmental 
 6. [Encounter Disposition (Reaction Roll)](#encounter-disposition-reaction-roll)
 7. [NPC Stats & Threat Tiers](#npc-stats--threat-tiers)
 8. [Group Combat Rules](#group-combat-rules)
-9. [The Saturday Night Soundtrack (1970s Playlist)](#the-saturday-night-soundtrack-1970s-playlist)
-10. [Brawler Name & Alias Database](#10-brawler-name--alias-database)
+9. [Police Siren Clock & Shakedown Mechanics](#9-police-siren-clock--shakedown-mechanics)
+10. [The Saturday Night Soundtrack (1970s Playlist)](#the-saturday-night-soundtrack-1970s-playlist)
+11. [Brawler Name & Alias Database](#11-brawler-name--alias-database)
 
 ---
 
@@ -26,9 +27,10 @@ This guide provides the Game Master (GM) with setting guidelines, environmental 
 > *"In the midst of chaos, there is also opportunity."* — Sun Tzu
 
 
-The setting is inspired by 1970s New York City—a blighted, financially broken metropolis during the mid-1970s. 
+The setting is set in 1970s Empire City—a blighted, financially broken metropolis during the mid-1970s. 
 *   **The Vibe**: Steam rising from manholes, cracked asphalt, flickering neon signs, graffiti-covered subway cars, piles of uncollected garbage, and yellow cabs splashing through puddles under broken streetlights.
-*   **The Conflict**: Power vacuums, street gangs defending blocks, turf wars, corrupt officials, and neighborhoods left to fend for themselves.
+*   **The Conflict**: Power vacuums, street gangs defending blocks, turf wars, corrupt officials, and municipal services stretched to the breaking point.
+*   **The Vigilante Patrol Hook**: Inspired by historical volunteer subway safety patrols (like the 1979 *Magnificent Thirteen*), the Player Characters form a volunteer **Vigilante Safety Patrol**. Wearing matching street insignia (red berets, armbands, or satin patrol jackets), this crew of martial artists from different dojos and disciplines rides the subway transit system and sweeps high-risk blocks—standing up as the only line of defense protecting innocent commuters and neighborhood residents from crime.
 
 ---
 
@@ -361,7 +363,41 @@ If a fighter is double-teamed by multiple opponents:
 
 ---
 
-## The Saturday Night Soundtrack (1970s Playlist)
+## 9. Police Siren Clock & Shakedown Mechanics
+
+> *"You hear that in the distance? That ain't thunder, kid. That's precinct sirens. We got two minutes before this block is crawling with squad cars."*
+
+
+In 1970s Empire City, brawls in public spaces draw police attention. The **Police Siren Clock** acts as a tactical battlefield timer that forces combatants to win quickly, protect injured comrades, and vanish before precinct officers arrive.
+
+### 1. Police Siren Clock (Response Timer)
+When a brawl breaks out in a public or commercial location (Subway Platform, Commercial Street, Diner, Transit Hub), the GM sets the **Police Siren Clock** based on the block's **Danger Rank**:
+
+| Block Danger Rank | Location Type | Police Siren Clock | Tactical Impact |
+| :---: | :--- | :---: | :--- |
+| **Danger Rank 1** | Transit Hub / Main Street | **3 Rounds** | Fast response; high police presence. Finish or retreat quickly! |
+| **Danger Rank 2–3** | Commercial Street / Diner | **4 Rounds** | Moderate response time; 4 rounds to resolve duel. |
+| **Danger Rank 4** | Dark Alley / Dive Bar | **5 Rounds** | Delayed response; sirens echo in the distance. |
+| **Danger Rank 5** | Abandoned Warehouse / Gang Turf | **No Police** | No-Go Zone; police refuse to enter. Fight to TKO. |
+
+*   **Counting Down**: At the end of each combat round, reduce the Police Siren Clock by 1.
+*   **Round 2 Warning**: When the clock reaches 2, the GM announces: *"Sirens wail three blocks away!"*
+
+### 2. Police Arrival & Resolution
+When the Siren Clock hits **0**, two squad cars pull up with flashing lights and precinct officers spill out with nightsticks drawn. The brawl immediately ends and remaining combatants choose one of two options:
+
+*   🏃 **Scram & Vanish (Agility or Cool Check — DC 12)**:
+    *   Fighters attempt to sprint down subway vents, climb fire escapes, or melt into dark alleyways.
+    *   *Success*: The brawler vanishes cleanly into the night.
+    *   *Failure*: The brawler is cornered and subjected to a Police Shakedown.
+*   🚔 **Police Shakedown (Cool Check — DC 12)**:
+    *   Precinct officers view vigilante safety patrols with suspicion. Brawlers can attempt to bluff innocence, leverage patrol reputation, or bribe officers via a **Cool Check (DC 12 — Medium)**.
+    *   *Success*: Officers let the fighter go with a warning (*"Get off my block before I change my mind"*).
+    *   *Failure (Lockup)*: **Central Booking (1 Night in Lockup)**. The fighter loses 1 day of campaign time and must pay a **$50 Bail / Fine** (or spend 1 XP to pull street strings and get released).
+
+---
+
+## 10. The Saturday Night Soundtrack (1970s Playlist)
 
 > *"Rhythm is everything in fighting. Every move you make starts with your heart, and that's in rhythm or you're in trouble."* — Sugar Ray Robinson
 
@@ -400,7 +436,7 @@ To set the mood at your table, roll a **1d10** on the tables below to select a t
 
 ---
 
-## 10. Brawler Name & Alias Database
+## 11. Brawler Name & Alias Database
 
 When generating PCs or GMing NPCs on the fly, use the official [Brawler Name & Alias Database](names.md) to generate authentic 1970s street names across diverse cultural backgrounds:
 
@@ -409,3 +445,4 @@ When generating PCs or GMing NPCs on the fly, use the official [Brawler Name & A
 *   **European & Anglo Brawler Names**: Italian, Irish/Anglo, and Eastern European given names and surnames (*Vinnie Gambini*, *Mickey O'Neill*, *Ivan Petrov*).
 *   **African & African-American Brawler Names**: 1970s Urban, Diaspora, and West/East African given names and surnames (*Cassius Jackson*, *Pamela Mercer*, *Kwame Mensah*).
 *   **Street Monikers & Alias Generator**: Roll 1d10 (Prefix) + 1d10 (Combat Moniker) to generate street titles like *Iron Viper*, *Slick Hammer*, *Razor Tiger*, or *Thunder Brawler*.
+*   **Vigilante Patrol & Street Crew Generator**: Roll 1d10 (Patrol Prefix) + 1d10 (Unit Title) to generate patrol crew titles like *The Guardian Angels*, *The Night Patrol*, *The Crimson Defenders*, or *The Metro Enforcers*.

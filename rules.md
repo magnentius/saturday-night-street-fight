@@ -10,7 +10,7 @@
 2. [Attributes & Technique Masteries](#2-attributes--technique-masteries)
 3. [Martial Arts Styles](#3-martial-arts-styles)
 4. [Combat Stances & Counter Dynamics](#4-combat-stances--counter-dynamics)
-5. [Action Stances & Martial Techniques](#5-action-stances--martial-techniques)
+5. [Combat Stances & Martial Techniques](#5-combat-stances--martial-techniques)
 6. [Attribute Damage & Defeat](#6-attribute-damage--defeat)
 7. [Mechanics & Resolution](#7-mechanics--resolution)
 8. [Range & Movement](#8-range--movement)
@@ -27,7 +27,10 @@
 > *"I fear not the man who has practiced 10,000 kicks once, but I fear the man who has practiced one kick 10,000 times."* — Bruce Lee
 
 
-To build a fighter, follow these four simple steps:
+### Campaign Premise: The Vigilante Safety Patrol
+Player Characters form a volunteer **Vigilante Safety Patrol**—a crew of trained martial artists from different disciplines (Boxing, Judo, Muay Thai, Karate, Kung Fu, Wrestling, Taekwondo) who patrol Empire City's subways and dark blocks to fight crime and protect citizens. Inspired by historical volunteer patrols like the 1979 *Magnificent Thirteen*, your crew wears matching street insignia (red berets, armbands, or custom patrol jackets) and operates out of a designated Home Turf station.
+
+To build a fighter, follow these simple steps:
 
 ### 1. Choose a Martial Arts Style
 Select **one** Martial Arts Style (Boxing, Muay Thai, Judo, Wrestling, Karate, Kung Fu, or Taekwondo). 
@@ -47,18 +50,18 @@ You have **50 Experience Points (XP)** to customize your fighter. Spend them usi
 You have **Untrained (Rank 0)** in all techniques by default.
 You can train in any techniques allowed by your chosen style:
 *   **Trained (Rank 1)** ($+3$ bonus): Costs **3 XP** per technique.
-*   **Mastered (Rank 2)** ($+5$ bonus): Costs **6 XP** (requires Rank 1 first, for a total of 9 XP).
+*   **Mastered (Rank 2 Cap)**: Technique masteries are capped at **Trained (Rank 1)** at character creation. Upgrading a technique to **Mastered (Rank 2)** ($+5$ bonus, 6 XP upgrade) is unlocked during campaign play after character creation.
 
 ### 3. Choose 2 Character Keys
 Select **2 Keys** from [The Martial Arts XP Keys System](#3-the-martial-arts-xp-keys-system) (such as *Key of Dojo Pride*, *Key of Turf Loyalty*, *Key of the Iron Fist*, etc.).
 *   **XP & Advancement**: Keys drive your character advancement and award Experience Points (XP) during play whenever your fighter fulfills their motivations or overcomes personal obstacles.
-*   **Key Slots**: Starting at **Rank 50 (Martial Disciple / Street Soldier)**, you have 2 active Key slots. (Reaching **Rank 60** permanently unlocks your 3rd active Key slot).
+*   **Key Slots**: Starting at **Rank 50 (Martial Disciple / Soldier)**, you have 2 active Key slots. (Reaching **Rank 60** permanently unlocks your 3rd active Key slot).
 
 ### 4. Choose Name & Rank Title Focus
 Give your brawler a unique street name and select your starting **Rank Title Focus** at Rank 50:
 *   **Martial Focus Title**: **Martial Disciple** (for traditionalists, dojo disciples, and martial purists).
-*   **Street Focus Title**: **Street Soldier** (for gang enforcers, street brawlers, and neighborhood defenders).
-*   *Progression*: As your character spends XP and advances in rank, your rank title upgrades automatically (e.g. Rank 60 *Martial Adept* or *Turf Enforcer*; Rank 150 *Master* or *Original Gangster*; Rank 200+ *Grandmaster* or *Street Legend*). See [Character Rank Achievements & Milestones](#2-character-rank-achievements--milestones).
+*   **Street Focus Title**: **Soldier** (for gang enforcers, street brawlers, and neighborhood defenders).
+*   *Progression*: As your character spends XP and advances in rank, your rank title upgrades automatically (e.g. Rank 60 *Martial Adept* or *Enforcer*; Rank 150 *Master* or *Captain*; Rank 200+ *Grandmaster* or *Street Legend*). See [Character Rank Achievements & Milestones](#2-character-rank-achievements--milestones).
 
 ---
 
@@ -67,11 +70,11 @@ A Boxer starts with Agility 2, Power 2, Reaction 2, Stamina 2, Cool 2. They buil
 *   **Step 1: Choose Style**: Boxing (*Slip & Counter*, *Iron Chin* perks).
 *   **Step 2: Spend 50 XP**:
     *   **Attributes** (Spent 30 XP): Reaction 3 (10 XP), Power 3 (10 XP), Stamina 3 (10 XP). *Resulting stats: Agility 2, Power 3, Reaction 3, Stamina 3, Cool 2.*
-    *   **Techniques** (Spent 18 XP): Master Hook (9 XP), Train Jab (3 XP), Train Dodge (3 XP), Train Parry (3 XP). Banked 2 unspent XP.
+    *   **Techniques** (Spent 18 XP): Train Hook (3 XP), Train Cross (3 XP), Train Jab (3 XP), Train Dodge (3 XP), Train Parry (3 XP), Train High Guard (3 XP).
 *   **Step 3: Choose 2 Keys**:
     *   *Key of Dojo Pride* (Defeat rival styles in 1v1 duels for 1 XP).
     *   *Key of Turf Loyalty* (Defend home block or transit safe house for 1 XP).
-*   **Step 4: Name & Title Focus**: "Jack 'Iron Jab' Mercer", Rank 50 Title Focus: **Street Soldier**.
+*   **Step 4: Name & Title Focus**: "Jack 'Iron Jab' Mercer", Rank 50 Title Focus: **Soldier**.
 *   **Remaining XP**: 2 XP unspent (saved for campaign play).
 
 ---
@@ -99,7 +102,7 @@ Technique Masteries represent specialized training in specific strikes, blocks, 
 ### 3. Attribute Mapping & Masteries Table
 Each technique is governed by a specific Attribute representing the physical capacity required to execute it:
 
-| Martial Technique | Governing Attribute | Action Stance | Description |
+| Martial Technique | Governing Attribute | Combat Stance | Description |
 | :--- | :--- | :--- | :--- |
 | **Jab** | **Reaction** | Strike | Speed and reaction-based entry. |
 | **Cross** | **Reaction** | Strike | Straight rear punch delivered with alignment and timing. |
@@ -149,7 +152,7 @@ Characters can adopt a specific Martial Arts Style, which dictates their availab
     *   *Throws*: Clinch/Grab only (No Trip, Hip Throw, or Takedown).
 *   **Style Perks**:
     *   **Thai Clinch**: Unlocks the exclusive **Clinch Knee** technique (Strike Stance, Reaction-based, High Impact 3 damage to Reaction or Stamina) usable while holding an opponent in a Clinch/Grab.
-    *   **Heavy Leg Kicks**: Low Kicks deal 2 Agility damage as normal, but inflict **Hobbled** and also prevent the target from selecting **Dodge/Evasion** on their next Stance Check.
+    *   **Heavy Leg Kicks**: Low Kicks deal 2 Agility damage as normal, but inflict **Hobbled** and also prevent the target from selecting **Dodge/Evasion** on their next Action Roll.
 
 ### 3. Judo (The Gentle Way)
 *   **Focus**: Redirection & High-Impact Throws.
@@ -179,7 +182,7 @@ Characters can adopt a specific Martial Arts Style, which dictates their availab
     *   *Throws*: None.
 *   **Style Perks**:
     *   **Ikken Hissatsu (One Strike, One Kill)**: When you land a Critical Hit (margin $\ge 5$ or Natural 20), the attack deals an additional $+1$ attribute damage on top of the normal critical bonus (for a total of $+2$ bonus damage on crits).
-    *   **Kiai Shout**: Once per fight, after landing a successful Strike, you may let out a devastating battle cry. Roll a contested **Cool Check** (2d10 + Cool vs. 2d10 + Cool). If you win, the defender suffers **1 Cool damage AND the Staggered condition** (Disadvantage on their next Stance Check).
+    *   **Kiai Shout**: Once per fight, after landing a successful Strike, you may let out a devastating battle cry. Roll a contested **Cool Check** (2d10 + Cool vs. 2d10 + Cool). If you win, the defender suffers **1 Cool damage AND the Staggered condition** (Disadvantage on their next Action Roll).
 
 ### 6. Kung Fu (The Martial Way)
 *   **Focus**: Flowing Combos & Trapping Hands.
@@ -225,7 +228,7 @@ Fighters adopt one of three tactical combat stances during each exchange: **Stri
 
 ---
 
-## 5. Action Stances & Martial Techniques
+## 5. Combat Stances & Martial Techniques
 
 > *"Everyone has a plan until they get punched in the mouth."* — Mike Tyson
 
@@ -350,14 +353,14 @@ Combat is played in simultaneous **Rounds** resolved by a single **Contested Rol
 
 3. **Phase 3: Roll & Resolve (Contested Roll-Off & Stance Counter Resolution)**
    * Now that the action matchup is revealed, combatants roll their dice:
-     * **Dominant Stance (Counter Winner)**: Rolls with **Advantage** (roll 3d10, keep the two highest dice).
-     * **Exposed Stance (Counter Loser)**: Rolls their standard 2d10 check.
+     * **Dominant State (Counter Winner)**: Rolls with **Advantage** (roll 3d10, keep the two highest dice).
+     * **Exposed State (Counter Loser)**: Rolls their standard 2d10 check.
      * **Matched Stances** (e.g., Strike vs. Strike): Both roll their standard 2d10 check normally.
    * Each combatant calculates their **Roll Total**:
      $$\text{Roll Total} = \text{Dice Result} + \text{Governing Attribute} + \text{Technique Mastery Bonus}$$
    * **Opposing Stances (Counter Check)**: If the revealed stances form a counter pair (e.g., Block Stance vs. Strike Stance):
-     * The **Dominant Stance** (counter winner) rolls with **Advantage**.
-     * The **Exposed Stance** (counter loser) rolls normally.
+     * The **Dominant State** (counter winner) rolls with **Advantage**.
+     * The **Exposed State** (counter loser) rolls normally.
      * **Winner-Take-All**: Only the winner of the contested roll executes their action; the loser's action is completely interrupted and fails (dealing no damage or secondary effects).
      * *Example 1 (Block Stance vs. Strike Stance)*: Block beats Strike. The Blocker rolls with Advantage. If the **Blocker wins**, the block succeeds and subtracts its mitigation rating from the strike's Attribute Damage. If the **Striker wins**, the strike bypasses the guard entirely, dealing full Attribute Damage.
      * *Example 2 (Strike Stance vs. Throw Stance)*: Strike beats Throw. The Striker rolls with Advantage. If the **Striker wins**, the strike connects and interrupts the throw. If the **Grappler wins**, the grappler throws the opponent and interrupts the strike.
@@ -369,8 +372,8 @@ Combat is played in simultaneous **Rounds** resolved by a single **Contested Rol
 ### 2. The 3 Action Check Types
 To make combat timing and perk follow-ups crystal clear, all checks in **Saturday Night Street Fight** are categorized into 3 distinct Action Check types:
 
-*   **Stance Check (Primary Action Roll)**: The primary contested roll of Phase 3 in a combat round, committed simultaneously using Action Cards (**Strike Stance**, **Block Stance**, **Throw Stance**). Temporary status penalties like **Staggered**, **Hobbled**, and **Winded** specifically apply their penalty/Disadvantage to your **very next Stance Check**.
-*   **Perk Reaction Check (Immediate Special Follow-up)**: A free, immediate bonus check triggered by a style perk upon landing a strike or executing a parry. Perk Reaction Checks resolve instantly within the same round, do not consume a stance card, and do not clear Stance Check conditions. A Perk Reaction Check rolls against either:
+*   **Action Roll (Primary Combat Action)**: The primary contested roll of Phase 3 in a combat round, committed simultaneously using Action Cards (**Strike Stance**, **Block Stance**, **Throw Stance**). Temporary status penalties like **Staggered**, **Hobbled**, and **Winded** specifically apply their penalty/Disadvantage to your **very next Action Roll**.
+*   **Perk Reaction (Immediate Special Follow-up)**: A free, immediate bonus check triggered by a style perk upon landing a strike or executing a parry. Perk Reactions resolve instantly within the same round, do not consume a stance card, and do not clear Action Roll conditions. A Perk Reaction rolls against either:
     *   **Immediate Contested Physical Roll**: Roll against an immediate opponent reaction roll (2d10 + Agility or Power) to land a follow-up reversal (e.g., Judo *Kuzushi* sweeping throw).
     *   **Immediate Contested Mental Roll**: Roll a contested **Cool Check** (2d10 + Cool vs. 2d10 + Cool) to shake an opponent's spirit (e.g., Karate *Kiai Shout*).
 *   **Environmental Check (Hazard / Reaction Roll)**: A roll triggered by street hazards, subway trains, or ambient conditions (2d10 + Agility or Cool).
@@ -379,8 +382,8 @@ To make combat timing and perk follow-ups crystal clear, all checks in **Saturda
 All mechanics and random tables in **Saturday Night Street Fight** strictly use ten-sided dice (d10):
 
 *   **Standard Checks (2d10)**: Roll **2d10 + Attribute + Technique Mastery + Modifiers** vs Target DC or Opponent's Roll Total. Used for all combat actions, attribute checks, and out-of-combat challenges.
-*   **Advantage Checks (3d10 Keep 2 Highest)**: Rolled when in a **Dominant Stance**, executing a stealth ambush, holding high ground, or exploiting a target's vulnerability. Roll 3d10 and sum the two highest dice.
-*   **Disadvantage Checks (3d10 Keep 2 Lowest)**: Rolled when in an **Exposed Stance**, fighting in blind spots/steam vents, being flanked, or defending while Prone/Pinned. Roll 3d10 and sum the two lowest dice.
+*   **Advantage Checks (3d10 Keep 2 Highest)**: Rolled when in a **Dominant State**, executing a stealth ambush, holding high ground, or exploiting a target's vulnerability. Roll 3d10 and sum the two highest dice.
+*   **Disadvantage Checks (3d10 Keep 2 Lowest)**: Rolled when in an **Exposed State**, fighting in blind spots/steam vents, being flanked, or defending while Prone/Pinned. Roll 3d10 and sum the two lowest dice.
 *   **Natural 20 (Double 10s)**: Rolling double 10s on action dice is a **Natural 20 (Overkill)**. Guarantees an automatic Critical Hit ($+1$ damage and critical status) + **Momentum Surge** ($+1$ Stamina or Cool recovery).
 *   **Reaction Rolls (2d10 + Cool)**: Rolled when encountering new street gangs or NPCs to determine initial disposition (2d10 + Cool).
 *   **Table & Generator Rolls (1d10)**: All procedural tables (environmental starting ranges, subway events, street names, landmarks, environmental hazards, block danger rank encounters, and 1970s soundtracks) roll a single **1d10**.
@@ -391,9 +394,9 @@ For non-combat environmental obstacles, street hazards, and hospital triage chec
 | Tier | Difficulty Level | Target DC | Average Brawler (Attr 2) Success | Recommended Usage |
 | :--- | :--- | :---: | :---: | :--- |
 | 🟢 **Easy** | Minor Obstacle | **DC 10** | **79%** | Gathering street rumors, jumping over low debris, street navigation |
-| 🟡 **Medium** | Standard Challenge | **DC 12** | **64%** | Hospital ER triage admittance, turnstile bribes, slippery pavement |
-| 🔴 **Hard** | Severe Challenge | **DC 15** | **36%** | Hospital Discharge healing resilience check, picking heavy locks, razor wire fence |
-| 🟣 **Very Hard** | Extremely Tough | **DC 18** | **15%** | Leaping across rooftop alley gaps, picking bank vaults, extreme street feats |
+| 🟡 **Medium** | Standard Challenge | **DC 12** | **64%** | Hospital ER triage admittance, 1-Attribute Discharge check, turnstile bribes |
+| 🔴 **Hard** | Severe Challenge | **DC 15** | **36%** | 2-Attribute Discharge check, picking heavy locks, razor wire fence |
+| 🟣 **Very Hard** | Extremely Tough | **DC 18** | **15%** | 3-Attribute Discharge check, leaping across rooftop alley gaps, bank vaults |
 | 💀 **Impossible** | Nearly Impossible | **DC 20** | **6%** | Surviving a collapsing building structure, performing miraculous feats |
 
 *Note: Rolling double 10s (**Natural 20**) automatically succeeds on any check regardless of target DC!*
@@ -489,8 +492,8 @@ Fighters are **Pinned** when an opponent wins a Grapple Struggle (Black vs. Blac
 
 ### 3. Staggered (Off-Balance)
 Fighters are **Staggered** temporarily when their attack is successfully parried, or due to specific style effects.
-*   **Duration**: Lasts for 1 Stance Check (until the end of your next Stance Check).
-*   **Effect**: You roll with **Disadvantage** (roll 3d10, keep the two lowest dice) on your next Stance Check.
+*   **Duration**: Lasts for 1 Action Roll (until the end of your next Action Roll).
+*   **Effect**: You roll with **Disadvantage** (roll 3d10, keep the two lowest dice) on your next Action Roll.
 
 ### 4. Stunned (Dazed)
 Fighters are **Stunned** when hit by a high-impact head blow (like a Critical High Kick) or projected hard (like a Judo Hip Throw).
@@ -501,18 +504,18 @@ Fighters are **Stunned** when hit by a high-impact head blow (like a Critical Hi
 ### 5. Shaken (Cool 0)
 Fighters are **Shaken** when their Cool attribute is reduced to 0. Cool damage is taken by losing a contested **Cool** check (e.g. from street encounters/gambling) or by being hit by a **Taunt** combat action.
 *   **Duration**: Lasts until Cool is restored to 1 or higher at a **Social Sanctuary** (Dive Bar, Diner, Safe House).
-*   **Effect**: You roll with **Disadvantage** (roll 3d10, keep the two lowest dice) on all **Reaction Stance Checks** in combat (due to hesitation/panic) and on all non-combat checks.
+*   **Effect**: You roll with **Disadvantage** (roll 3d10, keep the two lowest dice) on all **Reaction-governed Action Rolls** in combat (due to hesitation/panic) and on all non-combat checks.
 *   **Perk Suspension**: You cannot use style perks that require calm or precision (such as Boxer's *Slip & Counter* or Judo's *Kuzushi*).
 
 ### 6. Hobbled (Leg Damage)
 Fighters are **Hobbled** when hit by a successful low leg attack (like a **Low Kick**).
-*   **Duration**: Lasts for 1 Stance Check (until the end of your next Stance Check).
-*   **Effect**: You roll with **Disadvantage** (roll 3d10, keep the two lowest dice) on all **Agility-based Stance Checks** (*Dodge, Low Kick, Push Kick, Trip, Stand Up*).
+*   **Duration**: Lasts for 1 Action Roll (until the end of your next Action Roll).
+*   **Effect**: You roll with **Disadvantage** (roll 3d10, keep the two lowest dice) on all **Agility-based Action Rolls** (*Dodge, Low Kick, Push Kick, Trip, Stand Up*).
 
 ### 7. Winded (Body Blow)
 Fighters are **Winded** when hit by a successful body blow (like a **Body Kick** or **Hook** body shot).
-*   **Duration**: Lasts for 1 Stance Check (until the end of your next Stance Check).
-*   **Effect**: You roll with **Disadvantage** (roll 3d10, keep the two lowest dice) on all **Stamina and Power-based Stance Checks** (*High Kick, Body Kick, Throws, Takedowns, Clinches*).
+*   **Duration**: Lasts for 1 Action Roll (until the end of your next Action Roll).
+*   **Effect**: You roll with **Disadvantage** (roll 3d10, keep the two lowest dice) on all **Stamina and Power-based Action Rolls** (*High Kick, Body Kick, Throws, Takedowns, Clinches*).
 
 ---
 
@@ -533,12 +536,18 @@ Fighters recover their damaged attributes through short breathers and medical tr
     *   **Catastrophic Trauma (Instant Street Death)**: If **all four physical attributes** (Reaction, Power, Agility, and Stamina) are reduced to 0 simultaneously, the fighter suffers total systemic collapse and dies **instantly on the spot**. No hospital admittance check or triage can save them.
     *   **Admittance Check**: To begin recovery for non-fatal TKOs (1-3 attributes at 0), the fighter must reach a **Hospital or Free Clinic** landmark (on a street block or subway station) and pass a **Cool Check (DC 12)** to get admitted (representing overcrowded 1970s urban emergency rooms). An uninjured companion can roll this check on the patient's behalf.
     *   **The 24-Hour Emergency Ticking Clock (Street Death)**: An incapacitated fighter (0 attribute) has **24 Hours (a maximum of 2 Admittance Checks, 12 hours per check)** to reach emergency medical care. If 24 hours elapse without admittance (failing both checks without winning a **Contested Cool Check** to pull street strings and bypass triage lines), untreated internal trauma, concussions, or exposure result in **Street Death (Character Death)**!
-    *   **Recovery Rate**: Once admitted, hospital treatment requires **1 week of complete bed rest per zeroed attribute** (e.g., 1 zeroed attribute = 1 week; 2 zeroed attributes = 2 weeks).
-    *   **Discharge Check (Permanent Maximum Cap Reduction)**: At the end of hospital recovery, the fighter must pass a **Power Check (DC 15 — Hard)** to test their body's long-term healing resilience.
+    *   **Recovery Rate**: Once admitted, hospital treatment requires **1 week of complete bed rest per zeroed attribute** (e.g., 1 zeroed attribute = 1 week; 2 zeroed attributes = 2 weeks; 3 zeroed attributes = 3 weeks).
+    *   **Discharge Check (Healing Resilience & Scarring)**: At the end of hospital recovery, the fighter must pass a **Power Check** to test their body's long-term healing resilience. The Target DC scales dynamically based on the number of zeroed physical attributes:
+        *   **1 Zeroed Attribute**: **DC 12 (Medium)** — Focused trauma (concussion, single fracture).
+        *   **2 Zeroed Attributes**: **DC 15 (Hard)** — Multiple severe trauma (compound fracture, internal bleeding).
+        *   **3 Zeroed Attributes**: **DC 18 (Very Hard)** — Critical trauma (organ damage, ICU polytrauma).
         *   **Success**: All attributes are fully restored to their maximum scores.
-        *   **Failure (Permanent Scarring)**: The **Attribute Maximum Cap** for that specific attribute permanently drops by **$-1$** (e.g., Max Agility Cap drops from $4 \rightarrow 3$).
+        *   **Failure (Permanent Scarring)**: The **Attribute Maximum Cap** for one of the zeroed attributes (player's choice among the zeroed stats) permanently drops by **$-1$** (e.g., Max Agility Cap drops from $4 \rightarrow 3$).
         *   **Capped-Down Current Score**: If the fighter's current attribute score was above the new lower Maximum Cap, their current attribute score is **immediately capped down** to match the new Maximum Cap (e.g., if current score was restored to 3, but the cap dropped to 2, their current score becomes 2).
         *   **Career-Ending Retirement (Cap 1)**: If any attribute's Maximum Cap is ever reduced to **1**, the brawler suffers a career-ending permanent injury (since a single point of damage would reduce them to 0 TKO) and must retire from street fighting (**Forced Retirement**).
+    *   **Replacement Characters (Patrol Inheritance Rule)**: When a fighter suffers **Street Death**, **Catastrophic Trauma**, or **Forced Retirement**, the player creates a replacement character representing a veteran martial artist who steps up to join the Vigilante Safety Patrol in honor of their fallen comrade:
+        *   **75% Rank Inheritance**: The new character's starting **Character Rank** equals **75% of the fallen character's Rank** (minimum **Rank 50**). For example, if a Rank 120 brawler dies, the replacement character starts at **Rank 90**.
+        *   **XP Creation Budget**: The player receives a starting XP budget equal to their new Rank (e.g., Rank 90 = 90 XP budget) to allocate between attributes (max 3 at creation), technique masteries (capped at Rank 1 Trained at creation), and secondary style cross-training.
 
 ### 2. Permanent Scarring Table
 If a fighter fails their recovery check, their **Attribute Maximum Cap** permanently drops by $-1$ and their current score is capped down to match. Use the table below for narrative description and roleplay prompts:
@@ -589,13 +598,13 @@ As fighters invest XP and train their discipline, their rising **Character Rank*
 
 | Rank Tier | Required Spent XP | Mastery Requirement | Dual Martial / Street Title & Unlocks |
 | :--- | :--- | :--- | :--- |
-| **Rank 50** | **50 XP** | Baseline creation moves | **Martial Disciple / Street Soldier** (2 active Key slots). |
-| **Rank 60** | **60 XP** | Spent ~10 XP in play | **Martial Adept / Turf Enforcer** (**3rd Active Key Slot Unlocked**). |
-| **Rank 150** | **150 XP** | Mastered all moves in Primary Style | **Master / Original Gangster (OG)** + Select 1 **Mastery Perk** (*Dojo Founder* or *Perfect Form*). |
+| **Rank 50** | **50 XP** | Baseline creation moves | **Martial Disciple / Soldier** (2 active Key slots). |
+| **Rank 60** | **60 XP** | Spent ~10 XP in play | **Martial Adept / Enforcer** (**3rd Active Key Slot Unlocked**). |
+| **Rank 150** | **150 XP** | Mastered all moves in Primary Style | **Master / Captain** + Select 1 **Mastery Perk** (*Dojo Founder* or *Perfect Form*). |
 | **Rank 200+** | **200+ XP** | Mastered all moves in Primary & Secondary Styles | **Grandmaster / Street Legend** + **Dual Style Mastery** (Secondary elevated to Primary, all 4 perks active + 2nd Master Achievement). |
 
-#### A. Master Rank (Rank 150): Master / Original Gangster (OG)
-Upon reaching **Rank 150** and mastering every technique in your Primary Style, you earn the dual titles **Master / Original Gangster (OG)** and choose **1 Mastery Perk**:
+#### A. Master Rank (Rank 150): Master / Captain
+Upon reaching **Rank 150** and mastering every technique in your Primary Style, you earn the dual titles **Master / Captain** and choose **1 Mastery Perk**:
 *   **Dojo Founder**: You establish your own martial arts dojo on Home Turf (acting as a **Danger Rank 1 Safe Zone**). You gain a loyal crew of **1d10 Dojo Disciples (Tier 1 Mob)** who guard your dojo and can accompany your crew on street crawl runs (using GM Mob Rules). If any disciples fall in battle, new students enroll at your dojo when resting, restoring your disciple Mob count back to 1d10.
 *   **Perfect Form**: Your execution of primary style moves becomes flawless. When performing a Mastered technique from your Primary Style, your clash die roll cannot be lower than 5 (any 1d10 die result of 1–4 counts as 5).
 
@@ -610,61 +619,67 @@ Upon reaching **Rank 200+** and mastering every technique across both your Prima
 ### 3. The Martial Arts XP Keys System
 
 #### A. How Keys & Unlocks Work
-*   **Starting Keys**: At character creation (**Rank 50 — Martial Disciple / Street Soldier**), select **2 Keys** from the list below.
-*   **Unlocking 3rd Key Slot**: When your fighter's **Character Rank reaches 60 (Martial Adept / Turf Enforcer)** (after spending ~10 XP in campaign play), you permanently unlock your **3rd active Key slot** (Maximum 3 active Keys).
+*   **Starting Keys**: At character creation (**Rank 50 — Martial Disciple / Soldier**), select **2 Keys** from the list below.
+*   **Unlocking 3rd Key Slot**: When your fighter's **Character Rank reaches 60 (Martial Adept / Enforcer)** (after spending ~10 XP in campaign play), you permanently unlock your **3rd active Key slot** (Maximum 3 active Keys).
 *   **Key Counter / Buyoff**: Every Key has a **Buyoff / Counter**—a pivotal moment where your character goes against their code, forgives an enemy, or evolves. When you trigger a Key's Counter in play, you choose one of two options:
     *   **Option A**: Gain 0 XP for the encounter (you act against your code, forfeiting XP gains from that Key).
     *   **Option B (Buyoff)**: Gain a **+3 XP lump sum** (enough to immediately train 1 new Rank 1 technique!) and permanently remove the Key, opening a slot to select a new Key!
 
-#### B. The Martial Arts XP Keys List
+#### B. The Vigilante Patrol XP Keys List
 
-#### A. Key of Dojo Pride (Style Honor)
-*Your character lives to prove that their martial arts style (Boxing, Judo, Karate, Kung Fu, Muay Thai, Wrestling, Taekwondo) is superior to all others.*
-*   **1 XP**: Defeat an opponent who practices a different martial arts style in a 1v1 duel.
-*   **2 XP**: Defeat a rival Tier 3 Boss who publicly mocks or discredits your style.
-*   **Buyoff / Counter**: Publicly admit that another style is superior to yours or abandon your primary style. *(Gain +3 XP, remove Key).*
+#### A. Key of the Guardian Patrol (Civilian Shield)
+*Your character takes personal responsibility for protecting innocent commuters, neighborhood residents, and street vendors from crime.*
+*   **1 XP**: Intervene to protect an innocent civilian, subway commuter, or vendor from a mugging, gang harassment, or street hazard.
+*   **2 XP**: Safely escort an endangered civilian across a Danger Rank 3+ block or subway stop without them taking any physical damage.
+*   **Buyoff / Counter**: Stand by and allow a civilian to be harmed or extorted to preserve your crew's stealth or save yourself. *(Gain +3 XP, remove Key).*
 
-#### B. Key of Turf Loyalty (Neighborhood Defender)
-*Your character is fiercely protective of your home turf, neighborhood, and local crew.*
-*   **1 XP**: Defend your home block or transit safe house from an intruding gang.
-*   **2 XP**: Reclaim a lost block or drive a rival Syndicate Boss completely off your neighborhood's turf.
-*   **Buyoff / Counter**: Abandon your home turf to save yourself, or sell out your block to a rival syndicate. *(Gain +3 XP, remove Key).*
+#### B. Key of Turf Loyalty (Neighborhood Defense)
+*Your character is fiercely protective of your patrol crew's home turf, transit station, and local community.*
+*   **1 XP**: Clear a Danger Rank block or defend your patrol crew's transit safe house from an intruding syndicate gang.
+*   **2 XP**: Reclaim a captured block or drive a syndicate Boss completely off your neighborhood's turf.
+*   **Buyoff / Counter**: Abandon your patrol turf to save yourself, or surrender a safe house to a rival syndicate. *(Gain +3 XP, remove Key).*
 
-#### C. Key of the Iron Fist (The Challenger)
-*Your character seeks out the toughest enforcers and syndicate bosses on the street to test their physical limits.*
-*   **1 XP**: Challenge the strongest opponent in an encounter to a 1v1 duel.
+#### C. Key of the Vigilante Code (Street Justice)
+*Your character abides by a strict vigilante code: no lethal weapons, no executing helpless foes, and offering lost youth a chance to walk away.*
+*   **1 XP**: Spare a defeated gang punk, offering them a chance to abandon syndicate crime rather than inflicting permanent scarring.
+*   **2 XP**: Refuse to break your vigilante code even when doing so results in taking severe attribute damage or losing a fight.
+*   **Buyoff / Counter**: Execute a cold-blooded finishing blow or use a lethal weapon to win a brawl. *(Gain +3 XP, remove Key).*
+
+#### D. Key of Dojo Pride (Style Honor)
+*Your character lives to prove that your martial arts discipline (Boxing, Judo, Karate, Kung Fu, Muay Thai, Wrestling, Taekwondo) is effective in real street defense.*
+*   **1 XP**: Defeat a rival brawler who practices a different martial art in a 1v1 duel during a patrol sweep.
+*   **2 XP**: Defeat a rival Syndicate Boss who publicly discredits your dojo or martial arts style.
+*   **Buyoff / Counter**: Publicly admit your style is inferior, or abandon your primary style techniques. *(Gain +3 XP, remove Key).*
+
+#### E. Key of the Street Informant (Urban Intelligence)
+*You excel at reading the pulse of Empire City—working contacts, spotting ambushes, and extracting intel from street hustlers.*
+*   **1 XP**: Uncover a gang ambush, spot a hidden trap, or secure vital street intel via a successful **Cool check**.
+*   **2 XP**: Turn a syndicate lookout or street informant into a permanent ally for your patrol crew.
+*   **Buyoff / Counter**: Burn a loyal street informant or sell out your crew's patrol route to a syndicate enforcer. *(Gain +3 XP, remove Key).*
+
+#### F. Key of Vengeance (Syndicate Grudge)
+*You hold a deep grudge against a specific criminal syndicate or corrupt official who ruined your dojo, neighborhood, or family.*
+*   **1 XP**: Dismantle a criminal operation (mugger den, protection racket, contraband stash) run by your targeted syndicate.
+*   **2 XP**: Bring down the Syndicate Leader or corrupt official who destroyed your past.
+*   **Buyoff / Counter**: Forgive your sworn enemy or grant amnesty to the syndicate leader who destroyed your past. *(Gain +3 XP, remove Key).*
+
+#### G. Key of the Iron Shield (The Challenger)
+*You step up to draw fire, seeking out the toughest syndicate enforcers and warlords to test your martial limits.*
+*   **1 XP**: Step up to challenge the strongest syndicate enforcer in an encounter to draw attacks away from your crew.
 *   **2 XP**: Defeat a Tier 3 Syndicate Boss in single combat without receiving assistance from allies.
-*   **Buyoff / Counter**: Refuse a direct challenge from a rival brawler, or flee from a fight you could have won. *(Gain +3 XP, remove Key).*
+*   **Buyoff / Counter**: Refuse a direct challenge from a gang boss, or flee from a fight you could have led. *(Gain +3 XP, remove Key).*
 
-#### D. Key of the Street Code (Brawler Honor)
-*Your character abides by a strict code of street honor: no sucker punches, no jumping isolated fighters, and protecting the weak.*
-*   **1 XP**: Allow a defeated opponent to walk away without executing a finishing blow or inflicting permanent scarring.
-*   **2 XP**: Refuse to break your street code even when doing so results in taking severe damage or losing a fight.
-*   **Buyoff / Counter**: Execute a dishonorable sucker punch, or abandon an innocent to save your own skin. *(Gain +3 XP, remove Key).*
+#### H. Key of the Underdog (Rising Grit)
+*You thrive when the odds are stacked against you, refusing to yield no matter how battered your body becomes.*
+*   **1 XP**: Enter a brawl or continue a patrol sweep while already suffering from 1 or more attribute damage.
+*   **2 XP**: Win a high-stakes encounter while at least two of your physical attributes are reduced to 1 point.
+*   **Buyoff / Counter**: Surrender to a syndicate gang when you still have fight left in you. *(Gain +3 XP, remove Key).*
 
-#### E. Key of the Hustler (Street Favors & Bets)
-*You are in it for the street leverage—gambling, extortion, favor trading, and raw survival hustle.*
-*   **1 XP**: Win a street craps gamble, extortion roll, or land a favorable favor/information trade via a **Cool check**.
-*   **2 XP**: Secure control of a high-value commercial landmark (like a Pawn Shop or Transit Hub) for your crew.
-*   **Buyoff / Counter**: Do a major street favor or give up valuable leverage to a stranger for free without leveraging a **Cool check**. *(Gain +3 XP, remove Key).*
-
-#### F. Key of Vengeance (The Grudge)
-*You hold a deep, burning grudge against a specific rival syndicate, gang leader, or corrupt official who wronged you.*
-*   **1 XP**: Hurt or humiliate a member or lackey of the targeted syndicate.
-*   **2 XP**: Defeat the syndicate leader or bring down their primary stronghold.
-*   **Buyoff / Counter**: Forgive your sworn enemy, or let the syndicate leader go free when you have them at your mercy. *(Gain +3 XP, remove Key).*
-
-#### G. Key of the Underdog (Rising Grit)
-*You love proving the doubters wrong, thriving when the odds are stacked against you.*
-*   **1 XP**: Enter a brawl while already suffering from 1 or more attribute damage.
-*   **2 XP**: Win an encounter while at least two of your attributes are reduced to 1 point.
-*   **Buyoff / Counter**: Give up mid-fight or surrender to an opponent when you still have fight left in you. *(Gain +3 XP, remove Key).*
-
-#### H. Key of the Mentor (Protecting the Crew)
-*You care about bringing up the next generation of street brawlers and protecting your crew's rookies.*
-*   **1 XP**: Offer tactical advice or spend a 10-minute short rest conditioning a companion.
-*   **2 XP**: Save a companion from taking a severe attribute TKO (0) by placing yourself directly in harm's way.
-*   **Buyoff / Counter**: Abandon your student/protégé in the middle of a brawl to save yourself. *(Gain +3 XP, remove Key).*
+#### I. Key of the Patrol Captain (Protecting the Crew)
+*You take care of your crew members, bringing up junior patrol members and ensuring everyone makes it back to Home Turf alive.*
+*   **1 XP**: Offer tactical guidance or spend a 10-minute short rest conditioning a junior patrol companion.
+*   **2 XP**: Save a crew member from taking a severe attribute TKO (0) by placing yourself directly in harm's way.
+*   **Buyoff / Counter**: Abandon a patrol crew member in the middle of a street ambush to save yourself. *(Gain +3 XP, remove Key).*
 
 ---
 
@@ -674,10 +689,10 @@ Upon reaching **Rank 200+** and mastering every technique across both your Prima
 
 | Condition | Mechanical Effect | Duration | Quick Reference |
 | :--- | :--- | :--- | :---: |
-| 🦵 **Hobbled** | Inflicts **Disadvantage on Agility Stance Checks** (*Dodge, Low Kick, Trip, Stand Up*). | Lasts for 1 Stance Check. | [Go to Rule](#96-hobbled) |
-| 🫁 **Winded** | Inflicts **Disadvantage on Stamina & Power Stance Checks** (*High Kick, Body Kick, Throws, Takedowns, Clinch*). | Lasts for 1 Stance Check. | [Go to Rule](#97-winded) |
-| 🧠 **Shaken** | Inflicts **Disadvantage on Reaction Stance Checks & Non-Combat Checks**; suspends precision perks (*Slip & Counter, Kuzushi*). | Lasts for 1 Stance Check. | [Go to Rule](#95-shaken) |
-| 💫 **Stunned** | Mind dazed; can only cover up via High Guard or Low Guard (2d10 neutral roll). Cannot attack. | Lasts for 1 Stance Check. | [Go to Rule](#94-stunned) |
+| 🦵 **Hobbled** | Inflicts **Disadvantage on Agility Action Rolls** (*Dodge, Low Kick, Trip, Stand Up*). | Lasts for 1 Action Roll. | [Go to Rule](#96-hobbled) |
+| 🫁 **Winded** | Inflicts **Disadvantage on Stamina & Power Action Rolls** (*High Kick, Body Kick, Throws, Takedowns, Clinch*). | Lasts for 1 Action Roll. | [Go to Rule](#97-winded) |
+| 🧠 **Shaken** | Inflicts **Disadvantage on Reaction Action Rolls & Non-Combat Checks**; suspends precision perks (*Slip & Counter, Kuzushi*). | Lasts for 1 Action Roll. | [Go to Rule](#95-shaken) |
+| 💫 **Stunned** | Mind dazed; can only cover up via High Guard or Low Guard (2d10 neutral roll). Cannot attack. | Lasts for 1 Action Roll. | [Go to Rule](#94-stunned) |
 | 💥 **Staggered** | Unsteady footing; next incoming strike gains Advantage (3d10). | Lasts until next incoming attack. | [Go to Rule](#93-staggered) |
 | 🤸 **Prone** | Knocked to the ground. Must pass 2d10 neutral Stand Up check (Win/Tie = Stand Up). | Until successful Stand Up roll. | [Go to Rule](#91-prone) |
 | 🤼 **Pinned** | Trapped under opponent. Must pass 2d10 escape check (Win = Stand Up, Tie = Prone). | Until successful Escape roll. | [Go to Rule](#92-pinned) |
@@ -686,10 +701,10 @@ Upon reaching **Rank 200+** and mastering every technique across both your Prima
 
 | Term | Definition & Tabletop Impact | Quick Reference |
 | :--- | :--- | :---: |
-| 🎲 **Advantage** | Roll 3d10 and sum the 2 highest dice. Rolled in Dominant Stance or exploiting vulnerabilities. | [Go to Rule](#3-action-roll-resolution--modifiers) |
-| 🎲 **Disadvantage** | Roll 3d10 and sum the 2 lowest dice. Rolled in Exposed Stance or under status penalties. | [Go to Rule](#3-action-roll-resolution--modifiers) |
-| 🎯 **Stance Check** | Main action check declared each exchange (*Punches, Kicks, Guards, Throws, Evading, Standing Up*). | [Go to Rule](#72-the-3-action-check-types) |
-| ⚡ **Perk Reaction Check** | Immediate triggered check granted by style perks (*Judo Kuzushi, Karate Kiai Shout*). | [Go to Rule](#72-the-3-action-check-types) |
+| 🎲 **Advantage** | Roll 3d10 and sum the 2 highest dice. Rolled in Dominant State or exploiting vulnerabilities. | [Go to Rule](#3-action-roll-resolution--modifiers) |
+| 🎲 **Disadvantage** | Roll 3d10 and sum the 2 lowest dice. Rolled in Exposed State or under status penalties. | [Go to Rule](#3-action-roll-resolution--modifiers) |
+| 🎯 **Action Roll** | Main action check declared each exchange (*Punches, Kicks, Guards, Throws, Evading, Standing Up*). | [Go to Rule](#72-the-3-action-check-types) |
+| ⚡ **Perk Reaction** | Immediate triggered check granted by style perks (*Judo Kuzushi, Karate Kiai Shout*). | [Go to Rule](#72-the-3-action-check-types) |
 | ⛰️ **Environmental Check** | Non-combat check rolled against fixed Target DCs (*DC 10 Easy, DC 12 Medium, DC 15 Hard, DC 18 Very Hard, DC 20 Impossible*). | [Go to Rule](#72-the-3-action-check-types) |
 | 💀 **Natural 20 (Overkill)** | Rolling double 10s on action dice. Automatic Critical Hit ($+1$ damage) + Momentum Surge. | [Go to Rule](#3-action-roll-resolution--modifiers) |
 | ⚡ **Momentum Surge** | Instantly restores $+1$ Stamina or $+1$ Cool upon rolling a Natural 20. | [Go to Rule](#3-action-roll-resolution--modifiers) |
@@ -700,8 +715,9 @@ Upon reaching **Rank 200+** and mastering every technique across both your Prima
 | :--- | :--- | :---: |
 | 🚑 **TKO (Technical Knockout)** | 1–3 physical attributes reduced to 0. Fighter is incapacitated and requires Hospital Admittance. | [Go to Rule](#102-hospital-recovery--triage-clock) |
 | 🏥 **Admittance Check** | Cool Check (DC 12 — Medium) to get admitted to ER triage within 24 Hours (max 2 attempts, 12 hrs per check). | [Go to Rule](#102-hospital-recovery--triage-clock) |
-| 🩺 **Discharge Check** | Power Check (DC 15 — Hard) after 1 week bed rest per 0 attribute. Failure permanently reduces Max Attribute Cap by $-1$. | [Go to Rule](#102-hospital-recovery--triage-clock) |
+| 🩺 **Discharge Check** | Power Check (DC 12 / 15 / 18 based on 1–3 zeroed attributes) after 1 week bed rest per 0 attribute. Failure permanently reduces Max Attribute Cap by $-1$. | [Go to Rule](#102-hospital-recovery--triage-clock) |
 | ☠️ **Street Death** | Character Death resulting from failing both ER admittance checks or 4 physical attributes zeroed simultaneously. | [Go to Rule](#102-hospital-recovery--triage-clock) |
+| 🛡️ **Patrol Inheritance** | Replacement PC starts at 75% of fallen PC's Rank (min Rank 50) with an equivalent starting XP budget. | [Go to Rule](#102-hospital-recovery--triage-clock) |
 | 🏆 **Character Rank** | Total spent XP. Governs dual martial/street rank titles and milestone unlocks (*Rank 50, 60, 150, 200+*). | [Go to Rule](#2-character-rank-achievements--milestones) |
 | 🔑 **XP Keys** | Character motivation drivers awarding 1–2 XP per encounter and +3 XP lump sums on Key Buyoffs. | [Go to Rule](#3-the-martial-arts-xp-keys-system) |
 | ☯️ **Dual Style Mastery** | Rank 200+ Grandmaster perk. Elevates Secondary Style to Primary, activating all 4 style perks + 2nd Master Achievement. | [Go to Rule](#b-grandmaster-rank-rank-200-grandmaster--street-legend) |
