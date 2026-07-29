@@ -343,12 +343,12 @@ Combat is played in simultaneous **Rounds** resolved by a single **Contested Rol
    * Before committing action cards, combatants can attempt to read each other's body language and telegraph cues.
    * **The Roll**: Both roll a contested check (2d10 + Reaction or Cool). The reader rolls **Reaction** (spotting muscle movement) or **Cool** (reading intention). The defender rolls **Cool** (feints/poker face) or **Reaction** (masking entries).
    * **Margin Thresholds** ($\text{Margin} = \text{Winner Total} - \text{Loser Total}$):
-     * **Margin 0–3 (Unclear / Feinted)**: Body language is unreadable or successfully feinted. Both combatants commit their action cards **secretly and simultaneously** in Phase 2.
-     * **Margin 4–6 (Partial Tell)**: The reader spots a subtle tell! The reader learns **1 stance color the defender is NOT taking** (e.g., *"He's NOT Blocking"*), narrowing the defender's stance down to 2 choices before the reader commits their card.
-     * **Margin 7+ or Natural 20 (Perfect Read)**: The reader gets a flawless read! The defender must commit and reveal their exact action card color (Red for **Strike**, White for **Block**, Black for **Throw**) before the reader commits their card.
+     * **Tie / Loss (Unclear / Feinted)**: Body language is unreadable or successfully feinted. Both combatants commit their action cards **secretly and simultaneously** in Phase 2.
+     * **Win, Margin 1–4 (Partial Tell)**: The reader spots a subtle tell! The reader learns **1 stance color the defender is NOT taking** (e.g., *"He's NOT Blocking"*), narrowing the defender's stance down to 2 choices before the reader commits their card.
+     * **Critical Success, Margin 5+ or Natural 20 (Perfect Read)**: The reader gets a flawless read! The defender must commit and reveal their exact action card color (Red for **Strike**, White for **Block**, Black for **Throw**) before the reader commits their card.
 
 2. **Phase 2: Commit & Reveal (Declaration)**
-   * Combatants choose their action type (Red, White, or Black) along with their specific technique (e.g., *Red / Hook*) using cards, tokens, or written notes. If a fighter achieved a **Perfect Read (Margin 7+)** in Phase 1, the defender must reveal their card color first. If a fighter achieved a **Partial Tell (Margin 4–6)**, the defender reveals 1 color they are NOT playing first. Otherwise, both commit secretly and reveal simultaneously.
+   * Combatants choose their action type (Red, White, or Black) along with their specific technique (e.g., *Red / Hook*) using cards, tokens, or written notes. If a fighter achieved a **Perfect Read** in Phase 1, the defender must reveal their card color first. If a fighter achieved a **Partial Tell**, the defender reveals 1 color they are NOT playing first. Otherwise, both commit secretly and reveal simultaneously.
    * Both combatants reveal their choices simultaneously.
 
 3. **Phase 3: Roll & Resolve (Contested Roll-Off & Stance Counter Resolution)**
@@ -474,14 +474,14 @@ Fighters are knocked **Prone** when hit by a throwing action (Trip/Sweep, Hip/Sh
 *   **Duration**: Lasts until you successfully execute a **Stand Up** check (win or tie).
 *   **Action Limitation**: You cannot choose **Strike Stance (Red)** actions or Dodge/Evasion.
 *   **Ground Disadvantage**: You roll with **Disadvantage** (roll 3d10, keep the two lowest dice) on defensive checks while lying on the ground (Guards, Parries, or Ground Throws).
-*   **Getting Up (Neutral Roll)**: To stand back up, you declare the **Stand Up** technique (resolved as a **Block / White** action, governed by **Agility**). Unlike ground defense, the **Stand Up check is a standard 2d10 check** (it does NOT suffer Disadvantage). If you win or tie the contested check, you stand back up and remove the Prone condition! If you lose the contest, you remain Prone.
+*   **Getting Up (Neutral Roll)**: To stand back up, your action for the round must be the **Stand Up** technique (resolved as a **Block / White** action, governed by **Agility**). Unlike ground defense, the **Stand Up check is a standard 2d10 check** (it does NOT suffer Disadvantage). If you win or tie the contested check, you stand back up and remove the Prone condition! If you lose the contest, you remain Prone.
 
 ### 2. Pinned (Trapped on the Canvas)
 Fighters are **Pinned** when an opponent wins a Grapple Struggle (Black vs. Black) on the ground (e.g., via Wrestling's *Ground Control* perk). While Pinned:
 *   **Duration**: Lasts until you successfully execute an **Escape** check (win = Clean Break, tie = Partial Break).
 *   **Action Limitation**: You cannot select **Strike Stance (Red)** or **Dodge/Evasion**.
 *   **Ground Disadvantage**: You roll with **Disadvantage** (roll 3d10, keep the two lowest dice) on defensive checks while remaining pinned on the ground (Guards or Parries).
-*   **Dual Escape Paths (Neutral Roll)**: To escape a Pin, you choose either:
+*   **Dual Escape Paths (Neutral Roll)**: To escape a Pin, your action for the round must be one of the following:
     *   **Power Escape (Bridge & Roll)**: Declare **Clinch/Grab** (Throw / Black, governed by **Power**).
     *   **Agility Escape (Hip Scramble / Guard Recovery)**: Declare **High Guard / Low Guard** (Block / White, governed by **Agility**).
     *   Unlike ground defense, an **Escape check is a standard 2d10 check** (it does NOT suffer Disadvantage).
@@ -492,12 +492,12 @@ Fighters are **Pinned** when an opponent wins a Grapple Struggle (Black vs. Blac
 
 ### 3. Staggered (Off-Balance)
 Fighters are **Staggered** temporarily when their attack is successfully parried, or due to specific style effects.
-*   **Duration**: Lasts for 1 Action Roll (until the end of your next Action Roll).
+*   **Duration**: Lasts for 1 Round (until the end of the next round).
 *   **Effect**: You roll with **Disadvantage** (roll 3d10, keep the two lowest dice) on your next Action Roll.
 
 ### 4. Stunned (Dazed)
 Fighters are **Stunned** when hit by a high-impact head blow (like a Critical High Kick) or projected hard (like a Judo Hip Throw).
-*   **Duration**: Lasts for 1 round.
+*   **Duration**: Lasts for 1 Round (until the end of the next round).
 *   **Action Limitation**: You are dazed and cannot choose **Strike Stance (Red)** or **Throw Stance (Black)** actions. You can only choose **High Guard** or **Low Guard** (Block / White) to cover up.
 *   **Instinctive Guard (Neutral Roll)**: Covering up with High Guard or Low Guard is a **standard 2d10 check** (it does NOT suffer Disadvantage). This allows your guard to function and mitigate 2 damage if hit.
 
@@ -509,12 +509,12 @@ Fighters are **Shaken** when their Cool attribute is reduced to 0. Cool damage i
 
 ### 6. Hobbled (Leg Damage)
 Fighters are **Hobbled** when hit by a successful low leg attack (like a **Low Kick**).
-*   **Duration**: Lasts for 1 Action Roll (until the end of your next Action Roll).
+*   **Duration**: Lasts for 1 Round (until the end of the next round).
 *   **Effect**: You roll with **Disadvantage** (roll 3d10, keep the two lowest dice) on all **Agility-based Action Rolls** (*Dodge, Low Kick, Push Kick, Trip, Stand Up*).
 
 ### 7. Winded (Body Blow)
 Fighters are **Winded** when hit by a successful body blow (like a **Body Kick** or **Hook** body shot).
-*   **Duration**: Lasts for 1 Action Roll (until the end of your next Action Roll).
+*   **Duration**: Lasts for 1 Round (until the end of the next round).
 *   **Effect**: You roll with **Disadvantage** (roll 3d10, keep the two lowest dice) on all **Stamina and Power-based Action Rolls** (*High Kick, Body Kick, Throws, Takedowns, Clinches*).
 
 ---
@@ -534,8 +534,11 @@ Fighters recover their damaged attributes through short breathers and medical tr
 *   **Social Sanctuary & Unwinding (Cool Restoration)**: Restoring **Cool** back to its maximum score requires visiting a social sanctuary—such as a **Dive Bar**, **Greasy Spoon Diner**, **Transit Safe House**, or returning to **Home Turf**—to unwind, drink, listen to music, and regain street composure.
 *   **Severe Damage & Hospitalization (Attributes at 0)**: If any physical attribute (Reaction, Power, Agility, Stamina) is reduced to **0**, the fighter suffers a physical TKO (concussion, broken bone, ligament tear). **They are physically incapacitated and cannot heal via short rests.**
     *   **Catastrophic Trauma (Instant Street Death)**: If **all four physical attributes** (Reaction, Power, Agility, and Stamina) are reduced to 0 simultaneously, the fighter suffers total systemic collapse and dies **instantly on the spot**. No hospital admittance check or triage can save them.
-    *   **Admittance Check**: To begin recovery for non-fatal TKOs (1-3 attributes at 0), the fighter must reach a **Hospital or Free Clinic** landmark (on a street block or subway station) and pass a **Cool Check (DC 12)** to get admitted (representing overcrowded 1970s urban emergency rooms). An uninjured companion can roll this check on the patient's behalf.
-    *   **The 24-Hour Emergency Ticking Clock (Street Death)**: An incapacitated fighter (0 attribute) has **24 Hours (a maximum of 2 Admittance Checks, 12 hours per check)** to reach emergency medical care. If 24 hours elapse without admittance (failing both checks without winning a **Contested Cool Check** to pull street strings and bypass triage lines), untreated internal trauma, concussions, or exposure result in **Street Death (Character Death)**!
+    *   **Admittance Check (The Ticking Clock)**: To begin recovery for non-fatal TKOs (1-3 attributes at 0), the fighter must reach a **Hospital or Free Clinic** landmark and pass a **Cool Check** to get admitted (representing overcrowded 1970s urban emergency rooms). An uninjured companion can roll this check on the patient's behalf. The Target DC scales based on severity:
+        *   **1 Zeroed Attribute**: **DC 12 (Medium)**
+        *   **2 Zeroed Attributes**: **DC 15 (Hard)**
+        *   **3 Zeroed Attributes**: **DC 18 (Very Hard)**
+        *   **Failure**: The crew must immediately spend street favors (Cool check), banked XP, or bribe money to get them admitted. If they cannot, untreated trauma results in **Street Death (Character Death)**!
     *   **Recovery Rate**: Once admitted, hospital treatment requires **1 week of complete bed rest per zeroed attribute** (e.g., 1 zeroed attribute = 1 week; 2 zeroed attributes = 2 weeks; 3 zeroed attributes = 3 weeks).
     *   **Discharge Check (Healing Resilience & Scarring)**: At the end of hospital recovery, the fighter must pass a **Power Check** to test their body's long-term healing resilience. The Target DC scales dynamically based on the number of zeroed physical attributes:
         *   **1 Zeroed Attribute**: **DC 12 (Medium)** — Focused trauma (concussion, single fracture).
@@ -689,11 +692,11 @@ Upon reaching **Rank 200+** and mastering every technique across both your Prima
 
 | Condition | Mechanical Effect | Duration | Quick Reference |
 | :--- | :--- | :--- | :---: |
-| 🦵 **Hobbled** | Inflicts **Disadvantage on Agility Action Rolls** (*Dodge, Low Kick, Trip, Stand Up*). | Lasts for 1 Action Roll. | [Go to Rule](#96-hobbled) |
-| 🫁 **Winded** | Inflicts **Disadvantage on Stamina & Power Action Rolls** (*High Kick, Body Kick, Throws, Takedowns, Clinch*). | Lasts for 1 Action Roll. | [Go to Rule](#97-winded) |
-| 🧠 **Shaken** | Inflicts **Disadvantage on Reaction Action Rolls & Non-Combat Checks**; suspends precision perks (*Slip & Counter, Kuzushi*). | Lasts for 1 Action Roll. | [Go to Rule](#95-shaken) |
-| 💫 **Stunned** | Mind dazed; can only cover up via High Guard or Low Guard (2d10 neutral roll). Cannot attack. | Lasts for 1 Action Roll. | [Go to Rule](#94-stunned) |
-| 💥 **Staggered** | Unsteady footing; next incoming strike gains Advantage (3d10). | Lasts until next incoming attack. | [Go to Rule](#93-staggered) |
+| 🦵 **Hobbled** | Inflicts **Disadvantage on Agility Action Rolls** (*Dodge, Low Kick, Trip, Stand Up*). | Lasts for 1 Round. | [Go to Rule](#96-hobbled) |
+| 🫁 **Winded** | Inflicts **Disadvantage on Stamina & Power Action Rolls** (*High Kick, Body Kick, Throws, Takedowns, Clinch*). | Lasts for 1 Round. | [Go to Rule](#97-winded) |
+| 🧠 **Shaken** | Inflicts **Disadvantage on Reaction Action Rolls & Non-Combat Checks**; suspends precision perks (*Slip & Counter, Kuzushi*). | Until Cool is restored. | [Go to Rule](#95-shaken) |
+| 💫 **Stunned** | Mind dazed; can only cover up via High Guard or Low Guard (2d10 neutral roll). Cannot attack. | Lasts for 1 Round. | [Go to Rule](#94-stunned) |
+| 💥 **Staggered** | Unsteady footing; next incoming strike gains Advantage (3d10). | Lasts for 1 Round. | [Go to Rule](#93-staggered) |
 | 🤸 **Prone** | Knocked to the ground. Must pass 2d10 neutral Stand Up check (Win/Tie = Stand Up). | Until successful Stand Up roll. | [Go to Rule](#91-prone) |
 | 🤼 **Pinned** | Trapped under opponent. Must pass 2d10 escape check (Win = Stand Up, Tie = Prone). | Until successful Escape roll. | [Go to Rule](#92-pinned) |
 
@@ -714,7 +717,7 @@ Upon reaching **Rank 200+** and mastering every technique across both your Prima
 | Term | Definition & Tabletop Impact | Quick Reference |
 | :--- | :--- | :---: |
 | 🚑 **TKO (Technical Knockout)** | 1–3 physical attributes reduced to 0. Fighter is incapacitated and requires Hospital Admittance. | [Go to Rule](#102-hospital-recovery--triage-clock) |
-| 🏥 **Admittance Check** | Cool Check (DC 12 — Medium) to get admitted to ER triage within 24 Hours (max 2 attempts, 12 hrs per check). | [Go to Rule](#102-hospital-recovery--triage-clock) |
+| 🏥 **Admittance Check** | Cool Check (DC 12 / 15 / 18 based on 1–3 zeroed attributes) to get admitted to ER triage. Failure requires bribes or leads to Street Death. | [Go to Rule](#102-hospital-recovery--triage-clock) |
 | 🩺 **Discharge Check** | Power Check (DC 12 / 15 / 18 based on 1–3 zeroed attributes) after 1 week bed rest per 0 attribute. Failure permanently reduces Max Attribute Cap by $-1$. | [Go to Rule](#102-hospital-recovery--triage-clock) |
 | ☠️ **Street Death** | Character Death resulting from failing both ER admittance checks or 4 physical attributes zeroed simultaneously. | [Go to Rule](#102-hospital-recovery--triage-clock) |
 | 🛡️ **Patrol Inheritance** | Replacement PC starts at 75% of fallen PC's Rank (min Rank 50) with an equivalent starting XP budget. | [Go to Rule](#102-hospital-recovery--triage-clock) |
