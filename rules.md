@@ -290,9 +290,9 @@ Strikes aim to inflict damage and interrupt throws.
 ### 2. Blocks
 Blocks aim to mitigate damage from incoming strikes.
 
-*   **High Guard**: Standard standing block protecting the head and torso. Negates most punch damage and high/mid kicks. Vulnerable to low kicks and easily bypassed by Throws.
-*   **Low Guard**: Crouching or dropped block protecting the legs. Negates low kicks and leg attacks. Vulnerable to high strikes and easily bypassed by Throws.
-*   **Parry**: High-skill deflection. Low passive defense, but if successful against a Strike, it staggers the opponent and allows a guaranteed fast counter-strike (e.g., a Jab) on the next action.
+*   **High Guard**: Standard standing block protecting the head and torso—the reliable all-purpose shell. Absorbs punches and mid/high kicks well, but a **Low Kick** slips in beneath it, and any Throw goes straight through.
+*   **Low Guard**: Crouching or dropped block protecting the legs and base. Absorbs a **Low Kick** better than anything else in the game, but an **Uppercut** comes up underneath a crouch and bypasses it entirely. Throws go straight through this one too.
+*   **Parry**: High-skill deflection—you meet the incoming limb and turn it aside. A Parry that **wins** its clash negates the strike completely and leaves the attacker **Staggered**; a Parry that **fails** offers no protection whatsoever. **The Stagger is your riposte**: a Staggered opponent rolls their next Action Roll at Disadvantage, and that flat-footed moment is the opening you strike into on the following exchange. Styles built around trapping and redirection—Judo's *Kuzushi*, Kung Fu's *Flowing Redirect*—cash that opening in **immediately** instead of waiting a round.
 *   **Dodge / Evasion**: Dynamic movement to completely avoid attacks. Completely avoids any Strike regardless of height. Succeeding grants a movement or positioning advantage.
 *   **Stand Up**: Special defensive maneuver used only while **Prone**. Attempting to stand up and reset to a neutral standing stance.
 *   **Footwork**: Universal repositioning step available to every style. Rather than defending in place, you advance or retreat one range step. Carries no Mitigation Rating—you are moving, not covering. See [Range & Movement](#8-range--movement).
@@ -353,7 +353,8 @@ Block Stance actions resolve in two steps. **Winning** the clash interrupts the 
 
 | Block | If You **Win** the Clash | If You **Lose** the Clash |
 | :--- | :--- | :--- |
-| **High / Low Guard** | Strike fully interrupted. No damage. | Strike lands, but the guard absorbs **2 damage**. |
+| **High Guard** | Strike fully interrupted. No damage. | Absorbs **2 damage**—but only **1** against a **Low Kick**, which lands beneath it. |
+| **Low Guard** | Strike fully interrupted. No damage. | Absorbs **2 damage**—**3** against a **Low Kick**, but **nothing at all** against an **Uppercut**, which rises underneath a crouch. |
 | **Dodge / Evasion** | Strike fully avoided regardless of height. You may retreat one range step. | Caught flush mid-movement. **No mitigation**—full damage. |
 | **Parry** | Strike fully deflected. The attacker is **Staggered**. | The deflection fails completely. **No mitigation**—full damage. |
 
