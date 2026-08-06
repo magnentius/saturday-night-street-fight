@@ -44,7 +44,7 @@ You have **50 Experience Points (XP)** to customize your fighter. Spend them usi
 #### A. Allocate Combat Attributes
 *   **Attributes**: Agility, Power, Reaction, Stamina, and Cool.
 *   **Cost**: Costs **10 XP** to increase an attribute by $+1$ (starting at 2).
-*   **Limit**: No attribute can be higher than **3** at character creation.
+*   **Limit**: No attribute can be higher than **3** at character creation. The lifetime **Attribute Cap is 4**, and that fourth point must be earned in play.
 
 #### B. Train Technique Masteries
 You have **Untrained (Rank 0)** in all techniques by default.
@@ -93,13 +93,32 @@ A character's capabilities are defined by five core Attributes and their specifi
 *   **Stamina**: Cardiorespiratory endurance, wind, lung recovery, and execution of heavy/exhausting maneuvers.
 *   **Cool**: Charisma, street swagger, negotiation, intimidation, and composure under pressure. Used for all non-fighting checks.
 
-### 2. Technique Masteries
+### 2. Attribute Scores, Maximums & The Cap
+
+Every attribute is tracked at three levels. Keeping them straight matters, because damage moves one, training moves another, and permanent injury moves the third.
+
+| Layer | What It Is | How It Moves |
+| :--- | :--- | :--- |
+| **Current Score** | What you have *right now*. Every roll uses this number. | Falls as you take attribute damage; returns with rest. |
+| **Maximum Score** | What rest restores you to. Begins at **2** for every attribute. | Rises $+1$ per **Attribute Conditioning Boost** (10 XP). |
+| **Attribute Cap** | The hard ceiling your Maximum Score can never exceed. **4 for every fighter.** | Only ever falls—$-1$ per **Permanent Scarring** from a failed Discharge Check. |
+
+*   **The Cap Is 4**: No amount of XP, training, or street legend raises an attribute's Maximum Score above **4**. A Grandmaster and a first-night rookie have the same ceiling; what separates them is technique mastery, not raw physique.
+*   **At Character Creation**: Maximum Scores start at 2 and may be raised to a limit of **3** (see [Fighter Creation](#1-fighter-creation)). The fourth point is earned in play.
+*   **Cool Is Capped Too**: Cool follows the same ceiling of 4. Because the [Permanent Scarring](#2-permanent-scarring-table) table covers only the four *physical* attributes, a fighter's **Cool Cap can never be reduced**—a broken body does not make you less charming.
+*   **Damage Is a Deficit**: Both ordinary damage and **Wound damage** are tracked as a deficit *against* your Maximum Score, never as a rewrite of it—$\text{Current} = \text{Maximum} - \text{ordinary damage} - \text{Wounds}$. This is why raising your Maximum lifts your Current Score with it while healing nothing at all.
+*   **Why a Ceiling Exists**: Attributes are this game's hit points. An uncapped attribute would be uncapped health, and every damage number in this book—strikes, Wounds, swarms, submissions—is tuned against a pool that tops out at 4. The **Modifier Cap** of $+10$ makes the point from the other direction: at Attribute 4 plus a Mastered technique you are already at $+9$, so further raw attribute would barely register on a roll anyway.
+
+> [!NOTE]
+> **When Everything Is Maxed**: A veteran who has Mastered every technique and reached Cap on every attribute has nothing left to buy—and that is intended. Late-game progression lives in the **Rank milestones** (Master perks at Rank 150, Dual Style Mastery at Rank 200+). Beyond those, banked XP keeps its worth as an emergency reserve: it is the last thing standing between a dying crewmate and **Street Death** when nobody has the Cool left to burn.
+
+### 3. Technique Masteries
 Technique Masteries represent specialized training in specific strikes, blocks, or throws. Masteries add a flat bonus to your dice roll whenever you execute that specific technique in combat:
 *   **Untrained (Rank 0)**: You receive no bonus (roll 2d10 + Attribute).
 *   **Trained (Rank 1)**: You gain a $+3$ bonus to your roll.
 *   **Mastered (Rank 2)**: You gain a $+5$ bonus to your roll.
 
-### 3. Attribute Mapping & Masteries Table
+### 4. Attribute Mapping & Masteries Table
 Each technique is governed by a specific Attribute representing the physical capacity required to execute it:
 
 | Martial Technique | Governing Attribute | Combat Stance | Description |
@@ -119,6 +138,7 @@ Each technique is governed by a specific Attribute representing the physical cap
 | **Parry** | **Reaction** | Block | Hand deflection and reaction timing. |
 | **Dodge / Evasion** | **Agility** | Block | Lateral footwork and evasive movement using agility. |
 | **Stand Up** | **Agility** | Block | Recovering footwork from Prone stance using agility. |
+| **Footwork** | **Agility** | Block | Advancing or retreating one range step. Universal to all styles. |
 | **Clinch / Grab** | **Reaction** | Throw | Securing collars or wrists with rapid reflexes. |
 | **Trip / Sweep** | **Agility** | Throw | Leg hook and agility footwork sweep. |
 | **Hip / Shoulder Throw** | **Power** | Throw | Redirection lift using hips and structural power. |
@@ -142,7 +162,7 @@ Characters can adopt a specific Martial Arts Style, which dictates their availab
     *   *Throws*: Clinch/Grab only (No Trip, Hip Throw, or Takedown).
 *   **Style Perks**:
     *   **Slip & Counter**: Successfully defending with Dodge/Evasion grants **Advantage (3d10)** on your next Strike action in the following round.
-    *   **Iron Chin**: High Guard mitigates $+1$ damage against Punches (for a total of 3 damage mitigated, neutralizing Jabs, Crosses, and Hooks).
+    *   **Iron Chin**: Your High Guard's **Mitigation Rating** rises by $+1$ against Punches (a total of 3 absorbed), meaning a Jab, Cross, or Hook that beats your guard still fails to hurt you.
 
 ### 2. Muay Thai (Art of Eight Limbs)
 *   **Focus**: Bone-breaking Kicks & Clinch Grappling.
@@ -192,7 +212,7 @@ Characters can adopt a specific Martial Arts Style, which dictates their availab
     *   *Throws*: Trip/Sweep only (No Clinch, Hip Throw, or Takedown).
 *   **Style Perks**:
     *   **Chain Strike**: If you successfully landed a Strike last round, your next Strike this round gains a $+2$ bonus (representing flowing combo sequences).
-    *   **Flowing Redirect**: When you successfully Parry a Strike, you trap the opponent's limbs—they suffer the **Staggered** condition and your next Strike against them gains **Advantage (3d10)**.
+    *   **Flowing Redirect (Trapping Hands)**: Your hands never stop moving, and a Kung Fu parry deflects even when it fails. Your **Parry** has a **Mitigation Rating of 2**—the defensive floor that other styles get from a guard. When your Parry *wins* the clash, you also trap the opponent's limbs: your next Strike against them gains **Advantage (3d10)**, on top of the Stagger every successful Parry already inflicts.
 
 ### 7. Taekwondo (The Way of the Foot and Fist)
 *   **Focus**: Agile Footwork & High Kicks.
@@ -212,6 +232,17 @@ Fighters who survive the street crawl often cross-train in other martial arts di
 *   **Technique Access**: You permanently unlock the technique list of your Secondary Style, allowing you to spend XP to train and master its moves (e.g., a Boxer who cross-trains Wrestling unlocks *Double Leg Takedown* and *Submission Hold*).
 *   **Secondary Perk Selection**: Upon adopting a Secondary Style, choose **1 Style Perk** from that style's perk list. You gain that perk's benefit in combat.
 *   **Style Capacity**: A fighter can hold a maximum of **1 Secondary Style** (Total 2 Styles: Primary + Secondary). You cannot adopt a 3rd style.
+
+### 9. Universal Techniques (All Styles)
+
+Three techniques sit outside the style system. **Every fighter may perform them regardless of style**, and they can be trained and mastered with XP like any other technique:
+
+*   **Footwork** (Block / White, governed by **Agility**): Advance or retreat one range step. See [Range & Movement](#8-range--movement).
+*   **Stand Up** (Block / White, governed by **Agility**): Recover from the **Prone** condition. See [Status Conditions](#9-status-conditions).
+*   **Taunt** (Strike / Red, governed by **Cool**): Psychological mockery inflicting 1 Cool damage. See [Special Strikes](#c-special-strikes).
+
+> [!NOTE]
+> Universal techniques do **not** count toward the "master every move in your style" requirement for the **Rank 150 Master** and **Rank 200+ Grandmaster** milestones.
 
 ---
 
@@ -264,6 +295,7 @@ Blocks aim to mitigate damage from incoming strikes.
 *   **Parry**: High-skill deflection. Low passive defense, but if successful against a Strike, it staggers the opponent and allows a guaranteed fast counter-strike (e.g., a Jab) on the next action.
 *   **Dodge / Evasion**: Dynamic movement to completely avoid attacks. Completely avoids any Strike regardless of height. Succeeding grants a movement or positioning advantage.
 *   **Stand Up**: Special defensive maneuver used only while **Prone**. Attempting to stand up and reset to a neutral standing stance.
+*   **Footwork**: Universal repositioning step available to every style. Rather than defending in place, you advance or retreat one range step. Carries no Mitigation Rating—you are moving, not covering. See [Range & Movement](#8-range--movement).
 
 ---
 
@@ -314,20 +346,69 @@ When an attack connects, it deals direct damage to a specific attribute based on
 
 #### Success Modifier
 *   **Critical Success**: If the attacker wins the clash with a margin of 5 or more (Winner Total - Loser Total $\ge 5$), the attribute damage is increased by $+1$.
-*   **The Overkill Rule (Natural 20)**: If a combatant rolls a **Natural 20** (double 10s on their dice roll), their action automatically becomes an **Overkill Critical Hit** ($+1$ attribute damage and secondary critical effects) regardless of scores. In addition, the adrenaline spike grants a **Momentum Surge**: the attacker instantly restores **$+1$ Stamina or Cool** (up to their starting maximum).
+*   **The Overkill Rule (Natural 20)**: If a combatant rolls a **Natural 20** (double 10s on their dice roll), their action automatically becomes an **Overkill Critical Hit** ($+1$ attribute damage and secondary critical effects) regardless of scores. In addition, the adrenaline spike grants a **Momentum Surge**: the attacker instantly restores **$+1$ Stamina or Cool** (up to their Maximum Score, and **ordinary damage only**—a surge never closes a Wound).
 
 ### 3. Mitigation (Blocking & Dodging)
-If a defender successfully blocks or dodges, they subtract their defense rating from the incoming attack's base damage:
-*   **High/Low Guard**: Mitigates 2 damage.
-*   **Dodge / Evasion**: Mitigates 3 damage.
-*   **Parry**: If the parry check succeeds, it mitigates 100% of incoming damage and staggers the attacker.
+Block Stance actions resolve in two steps. **Winning** the clash interrupts the strike outright, exactly as Winner-Take-All demands. **Losing** the clash means the strike gets through—but a guard held under fire still absorbs punishment, and that residual absorption is the block's **Mitigation Rating**:
 
-*Example: A combatant is hit by a High Kick (Base 3 Reaction damage) while using a High Guard (Mitigates 2). The defender takes 1 Reaction damage (3 - 2 = 1), reducing their Reaction attribute by 1.*
+| Block | If You **Win** the Clash | If You **Lose** the Clash |
+| :--- | :--- | :--- |
+| **High / Low Guard** | Strike fully interrupted. No damage. | Strike lands, but the guard absorbs **2 damage**. |
+| **Dodge / Evasion** | Strike fully avoided regardless of height. You may retreat one range step. | Caught flush mid-movement. **No mitigation**—full damage. |
+| **Parry** | Strike fully deflected. The attacker is **Staggered**. | The deflection fails completely. **No mitigation**—full damage. |
 
-### 4. Mob Punk Rules (Tier 1 Gangs)
+*Example: A combatant is hit by a High Kick (Base 3 Reaction damage) while using a High Guard, and **loses** the clash. The guard absorbs 2, so the defender takes 1 Reaction damage (3 - 2 = 1). Had they won the clash, the kick would have been interrupted for no damage at all.*
+
+> [!IMPORTANT]
+> **Mitigation never applies against Throws.** A guard is structure, and a throw is designed to defeat structure—this is precisely why Throw beats Block on the counter wheel. A fighter who turtles up against a grappler eats the throw in full.
+
+This gives the three blocks distinct risk profiles rather than a strict power ranking. **Guards** are the low-variance choice: unspectacular on a win, forgiving on a loss. **Dodge** and **Parry** are high-variance: superb on a win (evasion plus repositioning; deflection plus a Stagger), and catastrophic on a loss.
 
 > [!NOTE]
-> **Game Master Rules**: Group combat against minor Tier 1 Punks (lookouts, pickpockets, and street-corner lackeys) uses **Mob Rules** (Shared Mob Pools, 1-Hit TKOs, and Mob Group Bonuses) managed by the Game Master. See **[Game Master's Guide: Group Combat Rules](gm.md#1-mob-punk-rules-exclusive-to-tier-1-gangs)** for full specifications.
+> **Style perks can rewrite these numbers.** Boxing's *Iron Chin* raises its High Guard to **3** against punches, and Kung Fu's *Flowing Redirect* gives its Parry a Mitigation Rating of **2**—which is how a style with no guard in its list still has a defensive floor. Always use your style's modified rating.
+
+### 4. Armed Attackers & Wound Damage
+
+Empire City is full of people who did not come to the block empty-handed. A bat, a length of pipe, a snapped-off cue—weapons in a street fight do not make a thug hit *harder*. They make the damage **follow you home**.
+
+*   **The Armed Trait**: A combatant holding a weapon is **Armed**. Their successful **Strikes** deal **Wound damage** instead of ordinary attribute damage. Throws and grapples are unaffected—you cannot stab someone with leverage.
+*   **No Damage Bonus**: An Armed attacker deals the *same* numbers as an unarmed one. Base damage, mitigation, and critical bonuses are all unchanged.
+*   **Wound Damage**: Wounds reduce attributes exactly like ordinary damage and trigger TKO at 0 in exactly the same way. The difference is entirely in recovery—**a 10-Minute Short Rest cannot restore Wound damage.** Record Wounds separately from ordinary damage (circling the pips works well). See [Healing & Recovery](#10-healing--recovery).
+
+*   **Wounds Are Physical Only**: Only the four physical attributes can carry Wounds. **Cool damage is never a Wound**—an Armed fighter's *Taunt* is still just a Taunt, and Burning Cool never leaves one behind.
+*   **Instant Recoveries Do Not Close Wounds**: The game's two mid-fight recoveries treat the damage deficit differently, and neither one treats an injury:
+    *   **Momentum Surge** (Natural 20) restores **ordinary damage only**. Adrenaline gets your wind back; it does not close a split scalp. If the attribute you would restore carries nothing but Wounds, take the **Cool** option instead or lose the surge.
+    *   **Attribute Conditioning Boost** (10 XP) raises your **Maximum Score**, and your Current Score rises with it. It still buys a wounded fighter that one point of breathing room, and can still pull them back from the edge of a TKO—but it treats nothing. The Wound deficit sits there underneath, still waiting on a night's sleep.
+
+*Example: A brawler with Reaction 3 takes 1 ordinary damage and 1 Wound, dropping to Reaction 1. A short rest in an alleyway restores the ordinary point only, bringing them back to Reaction 2. That last point does not return until they sleep somewhere safe. If they instead spend 10 XP on a Conditioning Boost, their Maximum rises to 4 and their Current to 2—they are still carrying the Wound, they simply have more room above it.*
+
+#### Improvised vs. Lethal Weapons
+| Weapon Grade | Examples | Effect |
+| :--- | :--- | :--- |
+| **Improvised** | Baseball bat, lead pipe, billiard cue, bottle, trash can lid | Strikes deal **Wound damage**. |
+| **Lethal** | Knife, straight razor, chain, zip gun | Strikes deal **Wound damage**. On a **Critical Hit**, the Wound is **Grievous**: if that attribute is ever driven to 0, the **Discharge Check** to avoid permanent scarring is made at **one DC tier harder**. |
+
+#### Taking Up a Weapon
+Any fighter may snatch up a weapon lying within reach—a cue off the rack, a pipe dropped by a disarmed thug. **Doing so costs your entire action for the round**, and you gain the Armed trait until you lose the weapon.
+
+> [!CAUTION]
+> **A Vigilante Patrol Carries Nothing.** Your crew's legitimacy is the only thing standing between you and the precinct. An **Armed player character** makes the **Police Siren Clock tick down 2 per round instead of 1**—squad cars prioritize reports of men with pipes. Winning a brawl with a **Lethal** weapon triggers the Buyoff for the *Key of the Vigilante Code*.
+
+#### Losing a Weapon (Disarming)
+A weapon is a problem to be solved, not merely damage to be absorbed. There are three ways to take one away:
+
+*   **Knocked Prone (Automatic)**: An Armed fighter knocked **Prone** by any throw **drops their weapon automatically**. It lands on the ground within reach at Grapple Range. This is why grapplers are the natural answer to an armed opponent.
+*   **Disarm from a Block**: When you **win a clash against an Armed attacker's Strike** using any Block Stance action, you may immediately attempt a **Disarm** as a free follow-up: a contested **2d10 + Reaction** against their **2d10 + Power**. Win, and the weapon clatters away out of reach. *(A **Parry** is the ideal setup, since it also leaves the attacker Staggered.)*
+*   **Disarm from a Clinch**: While you hold an Armed opponent in a **Clinch/Grab**, you may declare **Disarm** as your Throw Stance action that round, using the same contested roll.
+
+*Recovering a dropped weapon costs a full action, and a weapon knocked away by a Disarm is out of reach entirely—somebody has to cross the block for it.*
+
+---
+
+### 5. Mob Punk Rules (Tier 1 Gangs)
+
+> [!NOTE]
+> **Game Master Rules**: Group combat against minor Tier 1 Punks (lookouts, pickpockets, and street-corner lackeys) uses **Mob Rules** (Shared Mob Pools, 1-Hit TKOs, Mob Group Bonuses, Swarm Attacks, and morale/scattering) managed by the Game Master. See **[Game Master's Guide: Group Combat Rules](gm.md#1-mob-punk-rules-exclusive-to-tier-1-gangs)** for full specifications.
 
 ---
 
@@ -362,11 +443,11 @@ Combat is played in simultaneous **Rounds** resolved by a single **Contested Rol
      * The **Dominant State** (counter winner) rolls with **Advantage**.
      * The **Exposed State** (counter loser) rolls normally.
      * **Winner-Take-All**: Only the winner of the contested roll executes their action; the loser's action is completely interrupted and fails (dealing no damage or secondary effects).
-     * *Example 1 (Block Stance vs. Strike Stance)*: Block beats Strike. The Blocker rolls with Advantage. If the **Blocker wins**, the block succeeds and subtracts its mitigation rating from the strike's Attribute Damage. If the **Striker wins**, the strike bypasses the guard entirely, dealing full Attribute Damage.
+     * *Example 1 (Block Stance vs. Strike Stance)*: Block beats Strike. The Blocker rolls with Advantage. If the **Blocker wins**, the strike is interrupted outright for no damage, and the block's own effect triggers (Parry staggers, Dodge repositions). If the **Striker wins**, the strike lands—reduced only by the block's **Mitigation Rating**, which is 2 for a Guard and nothing at all for a failed Dodge or Parry. See [Mitigation](#3-mitigation-blocking--dodging).
      * *Example 2 (Strike Stance vs. Throw Stance)*: Strike beats Throw. The Striker rolls with Advantage. If the **Striker wins**, the strike connects and interrupts the throw. If the **Grappler wins**, the grappler throws the opponent and interrupts the strike.
    * **Matched Stances (Same Stance Rolls)**:
      * **Strike vs. Strike**: Sequential Trade! Both roll normally (2d10). The fighter with the higher Roll Total lands their strike **first**. If the lower roller is knocked out, their strike is interrupted. If the lower roller survives, their strike lands and deals full damage back.
-     * **Block vs. Block**: No contest needed. Both combatants remain passive in guard. Standoff; the round resets to neutral.
+     * **Block vs. Block**: No contest needed **unless** at least one fighter declared **Footwork** or a retreating **Dodge**. If neither did, both combatants remain passive in guard—standoff, and the round resets to neutral. If either declared a range change, both roll normally (2d10); the winner's declared movement takes effect and the loser's does not. *(This is what allows a pressure fighter to walk down an opponent who keeps backing off.)*
      * **Throw vs. Throw**: Grapple struggle! Both roll off normally using **Power** or **Reaction**. The higher total wins the check, securing a Clinch or throw.
 
 ### 2. The 3 Action Check Types
@@ -401,6 +482,28 @@ For non-combat environmental obstacles, street hazards, and hospital triage chec
 
 *Note: Rolling double 10s (**Natural 20**) automatically succeeds on any check regardless of target DC!*
 
+#### The Cool Economy (Favors, Face & Money)
+**Saturday Night Street Fight has no money.** Nobody tracks bills, nobody keeps a ledger, and there is no equipment list to shop from. Empire City in 1975 runs on favors, face, and who owes whom—and all of that is **Cool**.
+
+Wherever another game would ask what is in your pocket, this one asks **what your word is worth on this block**. A turnstile bribe, an ER nurse moving you up the list, a desk sergeant losing your paperwork, a fence keeping quiet: every one of them is a Cool problem. When an expense comes up, you have two ways to meet it:
+
+*   **Talk Your Way Through (Cool Check)**: Roll **2d10 + Cool** against the expense's Target DC. Success costs you nothing at all. Failure means you do not get it—and the door usually does not open twice.
+*   **Burn Cool (Automatic)**: Skip the roll and **spend Cool points directly**, reducing your current Cool score exactly as Cool damage would. You call in a marker, trade on the patrol's name, or promise somebody something. It always works, and it always costs.
+
+| Expense | Cool Check DC | Burn Cost |
+| :--- | :---: | :---: |
+| **Minor** — turnstile bribe, a hot meal, a street toll, a name from a stoop kid | **DC 10** | **1 Cool** |
+| **Standard** — ER admittance, bail at Central Booking, a fence's silence | **DC 12** | **2 Cool** |
+| **Serious** — a doctor who files no paperwork, a cop who forgets a face entirely | **DC 15** | **3 Cool** |
+| **Desperate** — an ER that admits a dying man with no questions asked, a precinct captain called off | **DC 18** | **4 Cool** |
+
+*   **The Crew Pays Together**: Any crew member may burn Cool on another's behalf, and a single expense may be **split across any number of them**—no starting brawler carries 4 Cool alone. Somebody always knows somebody.
+*   **Going Broke**: Burning your last point of Cool leaves you **Shaken** (see [Status Conditions](#9-status-conditions))—and a Shaken brawler rolls all non-combat checks at **Disadvantage**. A fighter who has spent every favor they had cannot talk their way into anything until they unwind at a **Social Sanctuary**. That is what being broke looks like here.
+*   **Cool Is Your Wallet**: This makes Cool a genuine build decision rather than a dump stat. XP spent raising Cool is XP spent on being the crew member who can always get a door opened.
+
+> [!NOTE]
+> **What Cool Cannot Buy**: Cool never purchases XP, techniques, attribute increases, or weapons. It buys *access, silence, and goodwill*—the things a martial artist cannot punch their way to.
+
 ### 4. Action Roll Resolution & Modifiers
 To resolve a contested roll, combatants calculate their totals using the following:
 *   **Action Roll**: Roll the chosen 2d10 (or 3d10 if rolling with Advantage or Disadvantage).
@@ -411,13 +514,14 @@ To resolve a contested roll, combatants calculate their totals using the followi
 *   **Compare Totals**:
     *   **Success**: Have the higher Roll Total.
     *   **Critical Success**: Succeeding by a margin of 5 or more (Winner Total - Loser Total $\ge 5$) activates secondary weapon/style/critical effects, and increases incoming damage by $+1$ attribute damage.
-    *   **The Overkill Rule (Natural 20)**: Rolling double 10s on your action dice is a **Natural 20 (Overkill)**. It guarantees an automatic Critical Hit ($+1$ damage and critical secondary effects) regardless of scores, and grants a **Momentum Surge** (instantly restoring $+1$ Stamina or Cool to the attacker).
+    *   **The Overkill Rule (Natural 20)**: Rolling double 10s on your action dice is a **Natural 20 (Overkill)**. It guarantees an automatic Critical Hit ($+1$ damage and critical secondary effects) regardless of scores, and grants a **Momentum Surge** (instantly restoring $+1$ Stamina or Cool to the attacker—ordinary damage only, never a Wound).
 
 ### 5. Ties and Clashes (Identical Roll Totals)
 If both combatants calculate the exact same Roll Total, the round is resolved as follows based on the action matchup:
 *   **Strike vs. Strike Clash (Red vs. Red)**: Simultaneous connection! Both strikes hit and deal full, unmitigated Attribute Damage to both fighters.
-*   **Strike vs. Block Clash (Red vs. White)**: The defense holds. The block successfully mitigates the strike's damage, but the Blocker is **Staggered** next turn from the impact.
+*   **Strike vs. Block Clash (Red vs. White)**: The defense holds—the strike is **interrupted for no damage**, exactly as a won block. But the block's own effect does **not** trigger (no Stagger from a Parry, no reposition from a Dodge), and the Blocker is **Staggered** next turn from the sheer impact.
 *   **Throw vs. Throw Clash (Black vs. Black)**: A wrestling stalemate. Both fighters struggle for leverage and reset to a neutral standing stance.
+*   **Win-or-Tie Maneuvers**: **Footwork**, **Stand Up**, and **Pin Escapes** succeed on a tie by their own rules. A tie resolves in the mover's favour no matter what the opponent declared—these are the exceptions to the standoff below.
 *   **All Other Matches**: A neutral standoff. The round resets.
 
 ---
@@ -432,12 +536,21 @@ Combat takes place across three fluid **Ranges**. Combatants control the distanc
 ### 1. The Three Combat Ranges
 
 *   **Outside Range (Long Range)**: Spaced out, circling outside reach.
-    *   *Allowed Actions*: Only long Strikes (Low Kick, Body Kick, High Kick, Push Kick). Punches and Throws are out of range.
+    *   *Strikes*: Long kicks only (Low Kick, Body Kick, High Kick, Push Kick). Punches cannot reach.
+    *   *Throws*: None. A grappler must first close to Striking Range.
+    *   *Blocks*: Any Block allowed by your style.
     *   *Mobility Perk*: **Dodge / Evasion** (Agility-based) is highly effective at this range.
 *   **Striking Range (Medium Range)**: The pocket, exchange range.
-    *   *Allowed Actions*: All Strikes (Punches & Kicks) and Guards. Throws are out of range.
+    *   *Strikes*: All Strikes (Punches & Kicks).
+    *   *Throws*: **Clinch / Grab only**, used as a grappling entry that closes to Grapple Range. Every other throw requires Grapple Range. *(Exception: Wrestling's **Shooter** perk permits a Takedown directly from Striking Range.)*
+    *   *Blocks*: Any Block allowed by your style.
 *   **Grapple Range (Close Range)**: Tied up, body-to-body grappling.
-    *   *Allowed Actions*: All Throws (Clinch/Grab, Trip, Hip Throw, Takedown) and close strikes (Uppercut, Thai Clinch knees). Long kicks and standard punches cannot be used.
+    *   *Strikes*: Close strikes only (Uppercut, Muay Thai's Clinch Knee, and Ground & Pound against Prone/Pinned targets). Long kicks and standard punches cannot be used.
+    *   *Throws*: All Throws (Clinch/Grab, Trip, Hip Throw, Takedown, Submission Hold).
+    *   *Blocks*: Any Block allowed by your style.
+
+> [!IMPORTANT]
+> **No fighter is ever left without a legal action.** At every range you may adopt a **Block Stance** using any block your style allows, or declare **Footwork** to change the distance. A style that cannot attack at the current range is not trapped there—it is being out-positioned, and it closes or breaks away with Footwork.
 
 ### 2. Starting Encounter Range
 The initial distance when combat begins depends on the environment and encounter context:
@@ -449,19 +562,29 @@ The initial distance when combat begins depends on the environment and encounter
 ### 3. Controlling the Distance
 Fighters change range by winning clashes with specific techniques:
 
-#### A. Advancing (Closing the Distance)
-To move closer, perform a **Throw Stance (Black)** action:
-*   **Clinch / Grab** or **Takedown**: Winning the check moves you forward one range step (e.g., Striking Range $\rightarrow$ Grapple Range).
-*   *Critical Success*: Advancing with a Critical Success allows you to move two range steps (e.g., Outside Range $\rightarrow$ Grapple Range).
+#### A. Footwork (Universal Range Change)
+**Footwork** is available to every fighter regardless of style (see [Universal Techniques](#9-universal-techniques-all-styles)). It is declared as a **Block Stance (White)** action governed by **Agility**, and you name the direction—**Advance** or **Retreat**—when you commit your card.
+*   **Win or Tie**: You move one range step in the declared direction.
+*   **Loss**: You hold position and your opponent dictates the distance this round.
+*   **Critical Success (margin $\ge 5$)**: You cover two range steps (e.g., Outside Range $\rightarrow$ Grapple Range).
+*   *Tactical Note*: Because Footwork is a Block Stance action, it beats Strikes and loses to Throws. Walking down a kicker is safe; walking down a grappler is not.
+*   *Restriction*: You must be standing. A **Prone** or **Pinned** fighter must first Stand Up or Escape.
 
-#### B. Retreating (Creating Distance)
-To step back safely, perform an evasive **Block Stance (White)** action:
-*   **Dodge / Evasion**: Winning the check allows you to retreat one range step (e.g., Grapple Range $\rightarrow$ Striking Range).
+#### B. Advancing with a Grappling Entry
+Fighters with grappling in their style can close and seize control in a single motion using a **Throw Stance (Black)** action:
+*   **Clinch / Grab**: From Striking Range, winning the check closes to **Grapple Range** and holds the opponent there, preventing them from backing away.
+*   *Wrestling's Shooter perk*: Permits a **Takedown (Double Leg)** launched directly from Striking Range, closing the distance and scoring the throw in one action.
+*   *Critical Success*: A grappling entry won with a Critical Success also leaves the opponent unable to retreat on their following action.
+
+#### C. Retreating (Creating Distance)
+*   **Footwork (Retreat)**: The universal option, available to every style.
+*   **Dodge / Evasion**: Styles that possess Dodge may retreat one range step as part of a successful Dodge—evading the strike and creating distance in the same action.
 *   *Note: If the check fails, the attacker keeps you trapped at the closer range.*
 
-#### C. Forcing Distance (Pushing Back)
+#### D. Forcing Distance (Pushing Back)
 To actively push an opponent away, perform a specialized **Strike Stance (Red)** action:
 *   **Push Kick (Teep)**: A successful hit pushes the opponent back one range step (e.g., Grapple Range $\rightarrow$ Striking Range).
+*   *At Outside Range*: There is no further step to give. The Teep deals its damage normally but does not move the target.
 
 ---
 
@@ -482,9 +605,10 @@ Fighters are **Pinned** when an opponent wins a Grapple Struggle (Black vs. Blac
 *   **Action Limitation**: You cannot select **Strike Stance (Red)** or **Dodge/Evasion**.
 *   **Ground Disadvantage**: You roll with **Disadvantage** (roll 3d10, keep the two lowest dice) on defensive checks while remaining pinned on the ground (Guards or Parries).
 *   **Dual Escape Paths (Neutral Roll)**: To escape a Pin, your action for the round must be one of the following:
-    *   **Power Escape (Bridge & Roll)**: Declare **Clinch/Grab** (Throw / Black, governed by **Power**).
-    *   **Agility Escape (Hip Scramble / Guard Recovery)**: Declare **High Guard / Low Guard** (Block / White, governed by **Agility**).
+    *   **Power Escape (Bridge & Roll)**: A **Throw Stance (Black)** action governed by **Power**.
+    *   **Agility Escape (Hip Scramble / Guard Recovery)**: A **Block Stance (White)** action governed by **Agility**.
     *   Unlike ground defense, an **Escape check is a standard 2d10 check** (it does NOT suffer Disadvantage).
+*   **Escapes Are Universal**: Both escape paths are available to **every fighter regardless of style**—a pinned brawler scrambles with whatever they have. If your style trains the matching technique (**Clinch/Grab** for the Power Escape, **High/Low Guard** for the Agility Escape), add its Mastery bonus; otherwise you roll untrained. Note that the governing attributes above deliberately override the Attribute Mapping table: escaping a pin is raw hips and leverage, not clean technique.
 *   **Escape Resolution**:
     *   **Win**: **Clean Break!** Removes **both Pinned and Prone** (you stand right back up to your feet!).
     *   **Tie**: **Partial Break!** Removes **Pinned** (reducing your position to Prone).
@@ -498,11 +622,13 @@ Fighters are **Staggered** temporarily when their attack is successfully parried
 ### 4. Stunned (Dazed)
 Fighters are **Stunned** when hit by a high-impact head blow (like a Critical High Kick) or projected hard (like a Judo Hip Throw).
 *   **Duration**: Lasts for 1 Round (until the end of the next round).
-*   **Action Limitation**: You are dazed and cannot choose **Strike Stance (Red)** or **Throw Stance (Black)** actions. You can only choose **High Guard** or **Low Guard** (Block / White) to cover up.
-*   **Instinctive Guard (Neutral Roll)**: Covering up with High Guard or Low Guard is a **standard 2d10 check** (it does NOT suffer Disadvantage). This allows your guard to function and mitigate 2 damage if hit.
+*   **Action Limitation**: You are dazed and cannot choose **Strike Stance (Red)** or **Throw Stance (Black)** actions. You can only cover up with a **Block Stance (White)** action, using any block your style allows at its normal **Mitigation Rating**.
+*   **Instinctive Guard (Neutral Roll)**: Covering up is a **standard 2d10 check** (it does NOT suffer Disadvantage), so your block still functions and absorbs damage normally if it is beaten.
+*   **Too Rattled for Finesse**: While Stunned you cannot take any **free follow-up**—no Disarm attempt, no Perk Reaction—even off a block that wins its clash. You may cover up, and nothing more.
+*   **No Walking It Off**: **Footwork** is a Block Stance action, but a dazed fighter cannot use it to change range. You are covering up, not moving.
 
 ### 5. Shaken (Cool 0)
-Fighters are **Shaken** when their Cool attribute is reduced to 0. Cool damage is taken by losing a contested **Cool** check (e.g. from street encounters/gambling) or by being hit by a **Taunt** combat action.
+Fighters are **Shaken** when their Cool attribute is reduced to 0. Cool is lost by **Burning Cool** to cover an expense (see [The Cool Economy](#the-cool-economy-favors-face--money))—far and away the most common route—by losing a contested **Cool** check (e.g. from street encounters/gambling), or by being hit by a **Taunt** combat action.
 *   **Duration**: Lasts until Cool is restored to 1 or higher at a **Social Sanctuary** (Dive Bar, Diner, Safe House).
 *   **Effect**: You roll with **Disadvantage** (roll 3d10, keep the two lowest dice) on all **Reaction-governed Action Rolls** in combat (due to hesitation/panic) and on all non-combat checks.
 *   **Perk Suspension**: You cannot use style perks that require calm or precision (such as Boxer's *Slip & Counter* or Judo's *Kuzushi*).
@@ -531,6 +657,9 @@ Fighters recover their damaged attributes through short breathers and medical tr
     *   **Physical Attributes Only (Reaction, Power, Agility, Stamina at 1+)**: Fully restores physical attributes back to their maximum scores.
     *   **Cool Exclusion**: Short rests in dangerous territory **do NOT restore Cool**. Psychological stress and street shock cannot be shaken off in a cold alleyway.
     *   **TKO Restriction**: A 10-minute short rest **cannot** heal any physical attribute that was reduced to **0** (see Severe Damage & Hospitalization below).
+    *   **Wound Restriction**: A 10-minute short rest **cannot** restore **Wound damage** dealt by an Armed attacker (see Full Night's Rest below).
+*   **Full Night's Rest (Wound Recovery)**: **Wound damage**—inflicted by [Armed attackers](#4-armed-attackers--wound-damage)—cannot be shaken off between encounters. Clearing Wounds requires a genuine night's sleep somewhere safe: **Home Turf**, a **Transit Safe House**, or a hospital bed. A full night's rest restores **all Wound damage** (and any ordinary damage along with it) to attributes at 1 or higher.
+    *   *Why It Matters*: This is the middle gear of the recovery system. Fists are shrugged off in ten minutes; steel and lumber cost you a night; a zeroed attribute costs you weeks. A crew that keeps running into armed enforcers will limp into the back half of a street crawl carrying real damage—which is exactly when the *Key of the Underdog* starts paying out.
 *   **Social Sanctuary & Unwinding (Cool Restoration)**: Restoring **Cool** back to its maximum score requires visiting a social sanctuary—such as a **Dive Bar**, **Greasy Spoon Diner**, **Transit Safe House**, or returning to **Home Turf**—to unwind, drink, listen to music, and regain street composure.
 *   **Severe Damage & Hospitalization (Attributes at 0)**: If any physical attribute (Reaction, Power, Agility, Stamina) is reduced to **0**, the fighter suffers a physical TKO (concussion, broken bone, ligament tear). **They are physically incapacitated and cannot heal via short rests.**
     *   **Catastrophic Trauma (Instant Street Death)**: If **all four physical attributes** (Reaction, Power, Agility, and Stamina) are reduced to 0 simultaneously, the fighter suffers total systemic collapse and dies **instantly on the spot**. No hospital admittance check or triage can save them.
@@ -538,19 +667,20 @@ Fighters recover their damaged attributes through short breathers and medical tr
         *   **1 Zeroed Attribute**: **DC 12 (Medium)**
         *   **2 Zeroed Attributes**: **DC 15 (Hard)**
         *   **3 Zeroed Attributes**: **DC 18 (Very Hard)**
-        *   **Failure**: The crew must immediately spend street favors (Cool check), banked XP, or bribe money to get them admitted. If they cannot, untreated trauma results in **Street Death (Character Death)**!
+        *   **Failure**: The crew must immediately **Burn Cool** (see [The Cool Economy](#the-cool-economy-favors-face--money)) to force the admittance—**2 / 3 / 4 Cool** for 1 / 2 / 3 zeroed attributes, matching the check's own DC. The cost may be **split across any number of crew members**. Any shortfall nobody can cover may be paid by burning **banked XP** as an absolute last resort, at **3 XP per outstanding Cool point**. If the crew can cover neither, untreated trauma results in **Street Death (Character Death)**!
     *   **Recovery Rate**: Once admitted, hospital treatment requires **1 week of complete bed rest per zeroed attribute** (e.g., 1 zeroed attribute = 1 week; 2 zeroed attributes = 2 weeks; 3 zeroed attributes = 3 weeks).
     *   **Discharge Check (Healing Resilience & Scarring)**: At the end of hospital recovery, the fighter must pass a **Power Check** to test their body's long-term healing resilience. The Target DC scales dynamically based on the number of zeroed physical attributes:
         *   **1 Zeroed Attribute**: **DC 12 (Medium)** — Focused trauma (concussion, single fracture).
         *   **2 Zeroed Attributes**: **DC 15 (Hard)** — Multiple severe trauma (compound fracture, internal bleeding).
         *   **3 Zeroed Attributes**: **DC 18 (Very Hard)** — Critical trauma (organ damage, ICU polytrauma).
         *   **Success**: All attributes are fully restored to their maximum scores.
-        *   **Failure (Permanent Scarring)**: The **Attribute Maximum Cap** for one of the zeroed attributes (player's choice among the zeroed stats) permanently drops by **$-1$** (e.g., Max Agility Cap drops from $4 \rightarrow 3$).
+        *   **Failure (Permanent Scarring)**: The **Attribute Cap** for one of the zeroed attributes (player's choice among the zeroed stats) permanently drops by **$-1$** from its starting value of 4 (e.g., Agility Cap drops from $4 \rightarrow 3$). Scarring strikes only *physical* attributes—a Cool Cap is never reduced.
         *   **Capped-Down Current Score**: If the fighter's current attribute score was above the new lower Maximum Cap, their current attribute score is **immediately capped down** to match the new Maximum Cap (e.g., if current score was restored to 3, but the cap dropped to 2, their current score becomes 2).
         *   **Career-Ending Retirement (Cap 1)**: If any attribute's Maximum Cap is ever reduced to **1**, the brawler suffers a career-ending permanent injury (since a single point of damage would reduce them to 0 TKO) and must retire from street fighting (**Forced Retirement**).
     *   **Replacement Characters (Patrol Inheritance Rule)**: When a fighter suffers **Street Death**, **Catastrophic Trauma**, or **Forced Retirement**, the player creates a replacement character representing a veteran martial artist who steps up to join the Vigilante Safety Patrol in honor of their fallen comrade:
         *   **75% Rank Inheritance**: The new character's starting **Character Rank** equals **75% of the fallen character's Rank** (minimum **Rank 50**). For example, if a Rank 120 brawler dies, the replacement character starts at **Rank 90**.
-        *   **XP Creation Budget**: The player receives a starting XP budget equal to their new Rank (e.g., Rank 90 = 90 XP budget) to allocate between attributes (max 3 at creation), technique masteries (capped at Rank 1 Trained at creation), and secondary style cross-training.
+        *   **XP Creation Budget**: The player receives a starting XP budget equal to their new Rank (e.g., Rank 90 = 90 XP budget) to allocate between attributes, technique masteries, and secondary style cross-training.
+        *   **Veterans Build Under Advancement Rules**: A replacement character above Rank 50 is a seasoned brawler, not a raw recruit, and therefore builds using the **advancement rules rather than the creation caps**—attributes up to **4**, techniques up to **Mastered (Rank 2)**, and cross-training freely available. *(Without this, the creation caps of Attribute 3 and Trained-only would leave budgets above roughly 100 XP literally impossible to spend, and would make a Rank 140 replacement far weaker than a Rank 140 veteran.)*
 
 ### 2. Permanent Scarring Table
 If a fighter fails their recovery check, their **Attribute Maximum Cap** permanently drops by $-1$ and their current score is capped down to match. Use the table below for narrative description and roleplay prompts:
@@ -576,6 +706,9 @@ Every game session follows a structured four-phase loop representing one night o
 3.  **Phase 3: Navigating the Blocks (Street Crawl)**: When exiting a station, the GM generates the block's layout, landmarks, and hazards, setting its **Danger Rank**. Players resolve any street encounters using the procedural rules in the [Game Master's Guide](gm.md#encounter-building--starting-range-matrix).
 4.  **Phase 4: Session End & Recovery**: A session ends when the fighters complete their street run, reach a Transit Safe House, return home, or get admitted to a Hospital. Players can spend earned Experience Points (XP) **instantly on the fly at any time** or bank it in their pool for future breakthroughs.
 
+> [!NOTE]
+> **Blocks Remember You.** Danger Ranks are not fixed scenery—they track who controls the street. Clearing a block permanently lowers its Danger Rank, a block driven to Rank 1 becomes **Secured** crew territory, and every session ends with the syndicate pushing back somewhere on the map. Over a campaign the crew is fighting for a subway line, not a series of unrelated nights. See **[Game Master's Guide: Turf Control & The Campaign Map](gm.md#turf-control--the-campaign-map)**.
+
 ---
 
 ## 12. Character Advancement & XP
@@ -587,13 +720,14 @@ Rather than flat combat XP, **Saturday Night Street Fight** uses **XP Keys**. Ke
 ### 1. Character Rank & Available XP
 *   **Available XP (Bank)**: The unspent XP sitting in your pool ready to spend on technique masteries, attribute conditioning, or cross-training.
     *   **Instant On-The-Fly Spending**: Available XP can be spent **INSTANTLY AT ANY TIME**—in the middle of a duel, between rounds, during street exploration, or while resting on Home Turf.
-        *   **Attribute Conditioning Boost (10 XP)**: Instantly increases both your **current attribute score** and **maximum attribute score** by $+1$ (providing an immediate 1-point heal that can save a fighter from TKO!).
+        *   **Attribute Conditioning Boost (10 XP)**: Instantly increases both your **Current Score** and your **Maximum Score** by $+1$ (providing an immediate 1-point heal that can save a fighter from TKO!). This can never carry a Maximum Score above your **Attribute Cap of 4**—see [Attribute Scores, Maximums & The Cap](#2-attribute-scores-maximums--the-cap). A fighter already at Cap cannot buy their way out of a knockout.
         *   **Technique Training (3 XP / 6 XP)**: Instantly unlocks or upgrades a move mastery, applying its $+3$ (Trained) or $+5$ (Mastered) bonus to your very next exchange.
         *   **Instant Cross-Training (15 XP)**: Instantly unlocks a Secondary Style and 1 Secondary Perk mid-fight or mid-crawl.
     *   *At Character Creation*: Starting 50 XP budget (e.g., 48–50 XP spent; any unspent XP remains banked in your Available XP pool).
-*   **Character Rank (= Total Spent XP)**: Your fighter's overall power level, street reputation, and total XP investment.
-    *   *At Character Creation*: Rank equals starting 50 XP budget (e.g., **Rank 50**).
-    *   *In Play*: Whenever you spend XP on training or conditioning attributes, your **Character Rank increases by the exact amount spent!** *(e.g., Spending 3 XP to train a move increases your Rank from 50 to 53).*
+*   **Character Rank (= Total XP Earned)**: Your fighter's overall power level, street reputation, and total career investment. Rank counts every XP you have **earned**, whether you have spent it on training or are still holding it in the bank.
+    *   *At Character Creation*: Rank is exactly **50**—your full starting budget—whether you spend all 50 or bank a few for later. Banking XP delays your training; it does not shrink your reputation.
+    *   *In Play*: Whenever a Key awards XP, your **Character Rank increases by that amount**, and the XP simultaneously lands in your Available XP pool to spend when you choose. *(e.g., Earning 3 XP raises your Rank from 50 to 53 and gives you 3 XP to train a move with.)*
+    *   **Burned XP (Last-Resort Favors)**: XP spent on anything other than training—the desperate last-ditch option when a crew has no Cool left to burn for a hospital admittance—is **burned**. It leaves your Available XP pool and is subtracted from your Rank. Talking your way out of a holding cell does not make you a better martial artist.
 
 ### 2. Character Rank Achievements & Milestones
 
@@ -638,15 +772,15 @@ Upon reaching **Rank 200+** and mastering every technique across both your Prima
 
 #### B. Key of Turf Loyalty (Neighborhood Defense)
 *Your character is fiercely protective of your patrol crew's home turf, transit station, and local community.*
-*   **1 XP**: Clear a Danger Rank block or defend your patrol crew's transit safe house from an intruding syndicate gang.
-*   **2 XP**: Reclaim a captured block or drive a syndicate Boss completely off your neighborhood's turf.
-*   **Buyoff / Counter**: Abandon your patrol turf to save yourself, or surrender a safe house to a rival syndicate. *(Gain +3 XP, remove Key).*
+*   **1 XP**: **Clear a block** (dropping its Danger Rank by 1), or defend Home Turf or a Secured block from an intruding syndicate gang.
+*   **2 XP**: **Reclaim a block** the syndicate captured in a Pushback, or drive a syndicate Boss completely off your neighborhood's turf.
+*   **Buyoff / Counter**: Let a Secured block fall without contesting it, or surrender Home Turf to a rival syndicate. *(Gain +3 XP, remove Key).*
 
 #### C. Key of the Vigilante Code (Street Justice)
 *Your character abides by a strict vigilante code: no lethal weapons, no executing helpless foes, and offering lost youth a chance to walk away.*
 *   **1 XP**: Spare a defeated gang punk, offering them a chance to abandon syndicate crime rather than inflicting permanent scarring.
 *   **2 XP**: Refuse to break your vigilante code even when doing so results in taking severe attribute damage or losing a fight.
-*   **Buyoff / Counter**: Execute a cold-blooded finishing blow or use a lethal weapon to win a brawl. *(Gain +3 XP, remove Key).*
+*   **Buyoff / Counter**: Execute a cold-blooded finishing blow, or take up a **Lethal** weapon (knife, razor, chain) and win a brawl with it. *(Gain +3 XP, remove Key).*
 
 #### D. Key of Dojo Pride (Style Honor)
 *Your character lives to prove that your martial arts discipline (Boxing, Judo, Karate, Kung Fu, Muay Thai, Wrestling, Taekwondo) is effective in real street defense.*
@@ -662,14 +796,14 @@ Upon reaching **Rank 200+** and mastering every technique across both your Prima
 
 #### F. Key of Vengeance (Syndicate Grudge)
 *You hold a deep grudge against a specific criminal syndicate or corrupt official who ruined your dojo, neighborhood, or family.*
-*   **1 XP**: Dismantle a criminal operation (mugger den, protection racket, contraband stash) run by your targeted syndicate.
+*   **1 XP**: **Dismantle a Syndicate Operation** (mugger den, protection racket, numbers bank, chop shop) run by your targeted syndicate.
 *   **2 XP**: Bring down the Syndicate Leader or corrupt official who destroyed your past.
 *   **Buyoff / Counter**: Forgive your sworn enemy or grant amnesty to the syndicate leader who destroyed your past. *(Gain +3 XP, remove Key).*
 
 #### G. Key of the Iron Shield (The Challenger)
 *You step up to draw fire, seeking out the toughest syndicate enforcers and warlords to test your martial limits.*
 *   **1 XP**: Step up to challenge the strongest syndicate enforcer in an encounter to draw attacks away from your crew.
-*   **2 XP**: Defeat a Tier 3 Syndicate Boss in single combat without receiving assistance from allies.
+*   **2 XP**: Defeat a Tier 3 Syndicate Boss as the **sole Challenger of a Duel**—first into the circle, never tagging out, and accepting no Cornerman actions from your crew.
 *   **Buyoff / Counter**: Refuse a direct challenge from a gang boss, or flee from a fight you could have led. *(Gain +3 XP, remove Key).*
 
 #### H. Key of the Underdog (Rising Grit)
@@ -692,35 +826,40 @@ Upon reaching **Rank 200+** and mastering every technique across both your Prima
 
 | Condition | Mechanical Effect | Duration | Quick Reference |
 | :--- | :--- | :--- | :---: |
-| 🦵 **Hobbled** | Inflicts **Disadvantage on Agility Action Rolls** (*Dodge, Low Kick, Trip, Stand Up*). | Lasts for 1 Round. | [Go to Rule](#96-hobbled) |
-| 🫁 **Winded** | Inflicts **Disadvantage on Stamina & Power Action Rolls** (*High Kick, Body Kick, Throws, Takedowns, Clinch*). | Lasts for 1 Round. | [Go to Rule](#97-winded) |
-| 🧠 **Shaken** | Inflicts **Disadvantage on Reaction Action Rolls & Non-Combat Checks**; suspends precision perks (*Slip & Counter, Kuzushi*). | Until Cool is restored. | [Go to Rule](#95-shaken) |
-| 💫 **Stunned** | Mind dazed; can only cover up via High Guard or Low Guard (2d10 neutral roll). Cannot attack. | Lasts for 1 Round. | [Go to Rule](#94-stunned) |
-| 💥 **Staggered** | Unsteady footing; next incoming strike gains Advantage (3d10). | Lasts for 1 Round. | [Go to Rule](#93-staggered) |
-| 🤸 **Prone** | Knocked to the ground. Must pass 2d10 neutral Stand Up check (Win/Tie = Stand Up). | Until successful Stand Up roll. | [Go to Rule](#91-prone) |
-| 🤼 **Pinned** | Trapped under opponent. Must pass 2d10 escape check (Win = Stand Up, Tie = Prone). | Until successful Escape roll. | [Go to Rule](#92-pinned) |
+| 🦵 **Hobbled** | Inflicts **Disadvantage on Agility Action Rolls** (*Dodge, Low Kick, Trip, Footwork, Stand Up*). | Lasts for 1 Round. | [Go to Rule](#6-hobbled-leg-damage) |
+| 🫁 **Winded** | Inflicts **Disadvantage on Stamina & Power Action Rolls** (*High Kick, Body Kick, Throws, Takedowns, Clinch*). | Lasts for 1 Round. | [Go to Rule](#7-winded-body-blow) |
+| 🧠 **Shaken** | Inflicts **Disadvantage on Reaction Action Rolls & Non-Combat Checks**; suspends precision perks (*Slip & Counter, Kuzushi*). | Until Cool is restored. | [Go to Rule](#5-shaken-cool-0) |
+| 💫 **Stunned** | Mind dazed; can only cover up with a Block Stance action (2d10 neutral roll). Cannot attack. | Lasts for 1 Round. | [Go to Rule](#4-stunned-dazed) |
+| 💥 **Staggered** | Unsteady footing; you roll with **Disadvantage (3d10 keep 2 lowest)** on your next Action Roll. | Lasts for 1 Round. | [Go to Rule](#3-staggered-off-balance) |
+| 🤸 **Prone** | Knocked to the ground. Must pass 2d10 neutral Stand Up check (Win/Tie = Stand Up). | Until successful Stand Up roll. | [Go to Rule](#1-prone-lying-on-the-ground) |
+| 🤼 **Pinned** | Trapped under opponent. Must pass 2d10 escape check (Win = Stand Up, Tie = Prone). | Until successful Escape roll. | [Go to Rule](#2-pinned-trapped-on-the-canvas) |
 
 ### 2. Dice Mechanics & Action Checks Glossary
 
 | Term | Definition & Tabletop Impact | Quick Reference |
 | :--- | :--- | :---: |
-| 🎲 **Advantage** | Roll 3d10 and sum the 2 highest dice. Rolled in Dominant State or exploiting vulnerabilities. | [Go to Rule](#3-action-roll-resolution--modifiers) |
-| 🎲 **Disadvantage** | Roll 3d10 and sum the 2 lowest dice. Rolled in Exposed State or under status penalties. | [Go to Rule](#3-action-roll-resolution--modifiers) |
-| 🎯 **Action Roll** | Main action check declared each exchange (*Punches, Kicks, Guards, Throws, Evading, Standing Up*). | [Go to Rule](#72-the-3-action-check-types) |
-| ⚡ **Perk Reaction** | Immediate triggered check granted by style perks (*Judo Kuzushi, Karate Kiai Shout*). | [Go to Rule](#72-the-3-action-check-types) |
-| ⛰️ **Environmental Check** | Non-combat check rolled against fixed Target DCs (*DC 10 Easy, DC 12 Medium, DC 15 Hard, DC 18 Very Hard, DC 20 Impossible*). | [Go to Rule](#72-the-3-action-check-types) |
-| 💀 **Natural 20 (Overkill)** | Rolling double 10s on action dice. Automatic Critical Hit ($+1$ damage) + Momentum Surge. | [Go to Rule](#3-action-roll-resolution--modifiers) |
-| ⚡ **Momentum Surge** | Instantly restores $+1$ Stamina or $+1$ Cool upon rolling a Natural 20. | [Go to Rule](#3-action-roll-resolution--modifiers) |
+| 🎲 **Advantage** | Roll 3d10 and sum the 2 highest dice. Rolled in Dominant State or exploiting vulnerabilities. | [Go to Rule](#4-action-roll-resolution--modifiers) |
+| 🎲 **Disadvantage** | Roll 3d10 and sum the 2 lowest dice. Rolled in Exposed State or under status penalties. | [Go to Rule](#4-action-roll-resolution--modifiers) |
+| 🎯 **Action Roll** | Main action check declared each exchange (*Punches, Kicks, Guards, Throws, Evading, Standing Up*). | [Go to Rule](#2-the-3-action-check-types) |
+| ⚡ **Perk Reaction** | Immediate triggered check granted by style perks (*Judo Kuzushi, Karate Kiai Shout*). | [Go to Rule](#2-the-3-action-check-types) |
+| ⛰️ **Environmental Check** | Non-combat check rolled against fixed Target DCs (*DC 10 Easy, DC 12 Medium, DC 15 Hard, DC 18 Very Hard, DC 20 Impossible*). | [Go to Rule](#2-the-3-action-check-types) |
+| 💸 **Burn Cool** | Pay an expense automatically by spending Cool points instead of rolling (1 / 2 / 3 for Minor / Standard / Serious). There is no money in this game—Cool is the currency. | [Go to Rule](#the-cool-economy-favors-face--money) |
+| 💀 **Natural 20 (Overkill)** | Rolling double 10s on action dice. Automatic Critical Hit ($+1$ damage) + Momentum Surge. | [Go to Rule](#4-action-roll-resolution--modifiers) |
+| ⚡ **Momentum Surge** | Instantly restores $+1$ Stamina or $+1$ Cool upon rolling a Natural 20. | [Go to Rule](#4-action-roll-resolution--modifiers) |
 
 ### 3. Damage, Hospitalization & Character Advancement Glossary
 
 | Term | Definition & Tabletop Impact | Quick Reference |
 | :--- | :--- | :---: |
-| 🚑 **TKO (Technical Knockout)** | 1–3 physical attributes reduced to 0. Fighter is incapacitated and requires Hospital Admittance. | [Go to Rule](#102-hospital-recovery--triage-clock) |
-| 🏥 **Admittance Check** | Cool Check (DC 12 / 15 / 18 based on 1–3 zeroed attributes) to get admitted to ER triage. Failure requires bribes or leads to Street Death. | [Go to Rule](#102-hospital-recovery--triage-clock) |
-| 🩺 **Discharge Check** | Power Check (DC 12 / 15 / 18 based on 1–3 zeroed attributes) after 1 week bed rest per 0 attribute. Failure permanently reduces Max Attribute Cap by $-1$. | [Go to Rule](#102-hospital-recovery--triage-clock) |
-| ☠️ **Street Death** | Character Death resulting from failing both ER admittance checks or 4 physical attributes zeroed simultaneously. | [Go to Rule](#102-hospital-recovery--triage-clock) |
-| 🛡️ **Patrol Inheritance** | Replacement PC starts at 75% of fallen PC's Rank (min Rank 50) with an equivalent starting XP budget. | [Go to Rule](#102-hospital-recovery--triage-clock) |
-| 🏆 **Character Rank** | Total spent XP. Governs dual martial/street rank titles and milestone unlocks (*Rank 50, 60, 150, 200+*). | [Go to Rule](#2-character-rank-achievements--milestones) |
+| 🔪 **Armed** | Holding a weapon. Successful **Strikes** deal Wound damage instead of ordinary damage (no damage bonus). An Armed PC doubles the Police Siren Clock's tick rate. | [Go to Rule](#4-armed-attackers--wound-damage) |
+| 🩸 **Wound Damage** | Attribute damage from an Armed attacker, on physical attributes only. Behaves normally in combat, but neither a 10-Minute Short Rest, a Momentum Surge, nor a Conditioning Boost will close it—only a **Full Night's Rest** somewhere safe. | [Go to Rule](#4-armed-attackers--wound-damage) |
+| 🤛 **Disarm** | Strip an opponent's weapon: free contested check (2d10 + Reaction vs. 2d10 + Power) after winning a Block clash, or declared from a Clinch. Any throw that knocks an Armed fighter **Prone** disarms them automatically. | [Go to Rule](#4-armed-attackers--wound-damage) |
+| 🚑 **TKO (Technical Knockout)** | 1–3 physical attributes reduced to 0. Fighter is incapacitated and requires Hospital Admittance. | [Go to Rule](#1-attribute-restoration--resting-rules) |
+| 🏥 **Admittance Check** | Cool Check (DC 12 / 15 / 18 based on 1–3 zeroed attributes) to get admitted to ER triage. Failure forces the crew to **Burn Cool**, or leads to Street Death. | [Go to Rule](#1-attribute-restoration--resting-rules) |
+| 🩺 **Discharge Check** | Power Check (DC 12 / 15 / 18 based on 1–3 zeroed attributes) after 1 week bed rest per 0 attribute. Failure permanently reduces Max Attribute Cap by $-1$. | [Go to Rule](#1-attribute-restoration--resting-rules) |
+| ☠️ **Street Death** | Character Death resulting from failing both ER admittance checks or 4 physical attributes zeroed simultaneously. | [Go to Rule](#1-attribute-restoration--resting-rules) |
+| 🛡️ **Patrol Inheritance** | Replacement PC starts at 75% of fallen PC's Rank (min Rank 50) with an equivalent starting XP budget. | [Go to Rule](#1-attribute-restoration--resting-rules) |
+| 📈 **Attribute Cap** | The hard ceiling on any attribute's Maximum Score: **4**, for every fighter, physical and Cool alike. Never rises; falls $-1$ per Permanent Scarring. At Cap 1, Forced Retirement. | [Go to Rule](#2-attribute-scores-maximums--the-cap) |
+| 🏆 **Character Rank** | Total XP earned (spent *and* banked), less any XP burned on last-resort favors. Governs dual martial/street rank titles and milestone unlocks (*Rank 50, 60, 150, 200+*). | [Go to Rule](#2-character-rank-achievements--milestones) |
 | 🔑 **XP Keys** | Character motivation drivers awarding 1–2 XP per encounter and +3 XP lump sums on Key Buyoffs. | [Go to Rule](#3-the-martial-arts-xp-keys-system) |
 | ☯️ **Dual Style Mastery** | Rank 200+ Grandmaster perk. Elevates Secondary Style to Primary, activating all 4 style perks + 2nd Master Achievement. | [Go to Rule](#b-grandmaster-rank-rank-200-grandmaster--street-legend) |
