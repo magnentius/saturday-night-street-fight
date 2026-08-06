@@ -278,7 +278,7 @@ Strikes aim to inflict damage and interrupt throws.
 #### B. Kicks
 *   **Low Kick**: Fast leg strike. Targets stability; successful hits inflict **Agility** attribute damage and apply the **Hobbled** status condition.
 *   **Body Kick**: Mid-height power kick. Focuses on windedness; successful hits inflict **Stamina** attribute damage and apply the **Winded** status condition.
-*   **High Kick**: High-impact head kick. Very slow speed, massive damage. High chance to stun or knock out the opponent, but easily parried or caught.
+*   **High Kick**: High-impact head kick. Very slow speed, massive damage. A **Critical Hit** leaves the target **Stunned**. Easily parried or caught.
 *   **Push Kick (Teep)**: Straight thrusting kick. Fast speed, low damage. Pushes the opponent back, resetting combat to neutral range and canceling throw/clinch attempts.
 
 #### C. Special Strikes
@@ -304,7 +304,7 @@ Throws aim to bypass blocks, control the opponent, and force them to the ground.
 
 *   **Clinch / Grab**: Simple entry grapple to hold the opponent. Deals no initial damage, but prevents the opponent from backing away and sets up advanced grappling.
 *   **Trip / Sweep**: Quick attack on the opponent's base/balance. Fast speed, low damage. Knocks opponent prone. Especially effective against High Guards.
-*   **Hip / Shoulder Throw**: High-impact projection throw. Moderate speed, high damage. Knocks the opponent prone and stuns them for a turn.
+*   **Hip / Shoulder Throw**: High-impact projection throw. Moderate speed, high damage. Knocks the opponent **Prone** and leaves them **Stunned**—Judo's signature, and the reason a thrown fighter loses the following exchange.
 *   **Takedown (Double Leg)**: Power drive to force the opponent down. Bypasses High Guards entirely, but highly vulnerable to fast Strikes like Uppercuts or Jabs.
 *   **Submission Hold**: Joint lock or chokehold applied on the mat. Governed by **Power**. Deals High Impact (3 damage) to **Stamina** (choke/joint pressure). Can only be selected against **Prone** or **Pinned** targets. *(Allowed for Wrestling and Judo).*
 
@@ -346,7 +346,8 @@ When an attack connects, it deals direct damage to a specific attribute based on
 
 #### Success Modifier
 *   **Critical Success**: If the attacker wins the clash with a margin of 5 or more (Winner Total - Loser Total $\ge 5$), the attribute damage is increased by $+1$.
-*   **The Overkill Rule (Natural 20)**: If a combatant rolls a **Natural 20** (double 10s on their dice roll), their action automatically becomes an **Overkill Critical Hit** ($+1$ attribute damage and secondary critical effects) regardless of scores. In addition, the adrenaline spike grants a **Momentum Surge**: the attacker instantly restores **$+1$ Stamina or Cool** (up to their Maximum Score, and **ordinary damage only**—a surge never closes a Wound).
+*   **The Overkill Rule (Natural 20)**: If a combatant rolls a **Natural 20** (double 10s on their dice roll), their action automatically becomes an **Overkill Critical Hit** ($+1$ attribute damage and secondary critical effects). A Natural 20 **wins its clash outright, whatever the totals**—the lucky haymaker that drops a better fighter. In addition, the adrenaline spike grants a **Momentum Surge**: the attacker instantly restores **$+1$ Stamina or Cool** (up to their Maximum Score, and **ordinary damage only**—a surge never closes a Wound).
+    *   **When Both Roll Natural 20**: Neither auto-wins. Compare Roll Totals normally, and settle an exact tie with [Ties and Clashes](#5-ties-and-clashes-identical-roll-totals). The loser's action still fails under **Winner-Take-All** and lands no Overkill—but *both* fighters keep their Momentum Surge. The adrenaline was real either way.
 
 ### 3. Mitigation (Blocking & Dodging)
 Block Stance actions resolve in two steps. **Winning** the clash interrupts the strike outright, exactly as Winner-Take-All demands. **Losing** the clash means the strike gets through—but a guard held under fire still absorbs punishment, and that residual absorption is the block's **Mitigation Rating**:
@@ -443,7 +444,7 @@ Combat is played in simultaneous **Rounds** resolved by a single **Contested Rol
    * **Opposing Stances (Counter Check)**: If the revealed stances form a counter pair (e.g., Block Stance vs. Strike Stance):
      * The **Dominant State** (counter winner) rolls with **Advantage**.
      * The **Exposed State** (counter loser) rolls normally.
-     * **Winner-Take-All**: Only the winner of the contested roll executes their action; the loser's action is completely interrupted and fails (dealing no damage or secondary effects).
+     * **Winner-Take-All**: Only the winner of the contested roll executes their action; the loser's action is completely interrupted and fails (dealing no damage or secondary effects). *(A **Natural 20** wins its clash automatically—see [The Overkill Rule](#2-inflicting-attribute-damage).)*
      * *Example 1 (Block Stance vs. Strike Stance)*: Block beats Strike. The Blocker rolls with Advantage. If the **Blocker wins**, the strike is interrupted outright for no damage, and the block's own effect triggers (Parry staggers, Dodge repositions). If the **Striker wins**, the strike lands—reduced only by the block's **Mitigation Rating**, which is 2 for a Guard and nothing at all for a failed Dodge or Parry. See [Mitigation](#3-mitigation-blocking--dodging).
      * *Example 2 (Strike Stance vs. Throw Stance)*: Strike beats Throw. The Striker rolls with Advantage. If the **Striker wins**, the strike connects and interrupts the throw. If the **Grappler wins**, the grappler throws the opponent and interrupts the strike.
    * **Matched Stances (Same Stance Rolls)**:
@@ -515,7 +516,7 @@ To resolve a contested roll, combatants calculate their totals using the followi
 *   **Compare Totals**:
     *   **Success**: Have the higher Roll Total.
     *   **Critical Success**: Succeeding by a margin of 5 or more (Winner Total - Loser Total $\ge 5$) activates secondary weapon/style/critical effects, and increases incoming damage by $+1$ attribute damage.
-    *   **The Overkill Rule (Natural 20)**: Rolling double 10s on your action dice is a **Natural 20 (Overkill)**. It guarantees an automatic Critical Hit ($+1$ damage and critical secondary effects) regardless of scores, and grants a **Momentum Surge** (instantly restoring $+1$ Stamina or Cool to the attacker—ordinary damage only, never a Wound).
+    *   **The Overkill Rule (Natural 20)**: Rolling double 10s on your action dice is a **Natural 20 (Overkill)**. It **wins the clash outright** and lands an automatic Critical Hit ($+1$ damage and critical secondary effects), and grants a **Momentum Surge** (instantly restoring $+1$ Stamina or Cool to the attacker—ordinary damage only, never a Wound). If both fighters roll one, see [The Overkill Rule](#2-inflicting-attribute-damage).
 
 ### 5. Ties and Clashes (Identical Roll Totals)
 If both combatants calculate the exact same Roll Total, the round is resolved as follows based on the action matchup:
@@ -582,7 +583,16 @@ Fighters with grappling in their style can close and seize control in a single m
 *   **Dodge / Evasion**: Styles that possess Dodge may retreat one range step as part of a successful Dodge—evading the strike and creating distance in the same action.
 *   *Note: If the check fails, the attacker keeps you trapped at the closer range.*
 
-#### D. Forcing Distance (Pushing Back)
+#### D. Breaking Off (Leaving a Fight Entirely)
+Not every brawl is worth finishing. A patrol that has misjudged a block, a fighter carrying three Wounds, a crew hearing sirens—all of them need a way out.
+
+*   **Get to Outside Range first**: You cannot sprint out of a clinch or off your back. Open the distance with **Footwork** or a **Push Kick**, and stand up first if you are **Prone** or **Pinned**.
+*   **Declare Break Off**: At Outside Range, declare **Break Off** as a **Block Stance (White)** action governed by **Agility**. On a **win or tie** you are out of the fight and gone down the block. On a **loss** you are still in it, and your opponent's action resolves against you normally.
+*   **More Than One Pursuer**: Compare your total against the **highest** roll among everyone still engaged with you. Slipping a crowd is harder than slipping a man.
+*   **Leaving Your Crew**: A fighter who breaks off is out of the exchange entirely, and everyone still swinging is that much more outnumbered—**Flanking** applies against them. Abandoning a crewmate mid-ambush is the Buyoff for the *Key of the Patrol Captain*.
+*   **The Block Stays Uncleared**: Breaking off means the encounter was not won. No Danger Rank reduction, no *Key of Turf Loyalty* XP, and whatever was on that corner is still there tomorrow night.
+
+#### E. Forcing Distance (Pushing Back)
 To actively push an opponent away, perform a specialized **Strike Stance (Red)** action:
 *   **Push Kick (Teep)**: A successful hit pushes the opponent back one range step (e.g., Grapple Range $\rightarrow$ Striking Range).
 *   *At Outside Range*: There is no further step to give. The Teep deals its damage normally but does not move the target.
@@ -621,12 +631,20 @@ Fighters are **Staggered** temporarily when their attack is successfully parried
 *   **Effect**: You roll with **Disadvantage** (roll 3d10, keep the two lowest dice) on your next Action Roll.
 
 ### 4. Stunned (Dazed)
-Fighters are **Stunned** when hit by a high-impact head blow (like a Critical High Kick) or projected hard (like a Judo Hip Throw).
+Fighters are **Stunned** by exactly two attacks—the blows that rattle the skull or slam a body flat:
+*   **High Kick**, on a **Critical Hit** only. A clean head kick that merely lands hurts; one that lands *flush* scrambles the wits.
+*   **Hip / Shoulder Throw**, on **any successful throw**. Being picked up and driven into the asphalt dazes you whether or not it was pretty.
+
+Nothing else stuns. An ordinary, non-critical High Kick deals its damage and leaves the target's wits intact.
+
+> [!NOTE]
+> **Why the two triggers differ.** A Critical Hit adds $+1$, so a critical High Impact attack deals **4 damage—exactly the Attribute Cap**. Strikes can be blunted (a guard that loses still absorbs 2), so a critical High Kick can leave a guarding fighter alive and reeling. Throws cannot be blunted at all: mitigation never applies to them, so a *critical* Hip Throw always drives the attribute to 0 and the target is knocked out rather than stunned. Gating the throw behind a crit would make the condition unreachable, which is why the projection dazes on any success.
 *   **Duration**: Lasts for 1 Round (until the end of the next round).
 *   **Action Limitation**: You are dazed and cannot choose **Strike Stance (Red)** or **Throw Stance (Black)** actions. You can only cover up with a **Block Stance (White)** action, using any block your style allows at its normal **Mitigation Rating**.
 *   **Instinctive Guard (Neutral Roll)**: Covering up is a **standard 2d10 check** (it does NOT suffer Disadvantage), so your block still functions and absorbs damage normally if it is beaten.
 *   **Too Rattled for Finesse**: While Stunned you cannot take any **free follow-up**—no Disarm attempt, no Perk Reaction—even off a block that wins its clash. You may cover up, and nothing more.
 *   **No Walking It Off**: **Footwork** is a Block Stance action, but a dazed fighter cannot use it to change range. You are covering up, not moving.
+*   **Standing Up Is Allowed**: A fighter who is both **Prone** and **Stunned** may still declare **Stand Up**—getting off the ground is instinct, not tactics. Without this a single critical Hip Throw would lock a fighter down for two full rounds.
 
 ### 5. Shaken (Cool 0)
 Fighters are **Shaken** when their Cool attribute is reduced to 0. Cool is lost by **Burning Cool** to cover an expense (see [The Cool Economy](#the-cool-economy-favors-face--money))—far and away the most common route—by losing a contested **Cool** check (e.g. from street encounters/gambling), or by being hit by a **Taunt** combat action.
@@ -722,6 +740,7 @@ Rather than flat combat XP, **Saturday Night Street Fight** uses **XP Keys**. Ke
 *   **Available XP (Bank)**: The unspent XP sitting in your pool ready to spend on technique masteries, attribute conditioning, or cross-training.
     *   **Instant On-The-Fly Spending**: Available XP can be spent **INSTANTLY AT ANY TIME**—in the middle of a duel, between rounds, during street exploration, or while resting on Home Turf.
         *   **Attribute Conditioning Boost (10 XP)**: Instantly increases both your **Current Score** and your **Maximum Score** by $+1$ (providing an immediate 1-point heal that can save a fighter from TKO!). This can never carry a Maximum Score above your **Attribute Cap of 4**—see [Attribute Scores, Maximums & The Cap](#2-attribute-scores-maximums--the-cap). A fighter already at Cap cannot buy their way out of a knockout.
+            *   **Spending It to Stay Up**: The Boost may be declared **the instant damage is applied, before the TKO resolves**—the classic last-gasp save, bought at the exact moment the blow lands. Once a fighter is genuinely down, it is too late. XP buys conditioning, not consciousness, and a fighter at 0 needs a hospital.
         *   **Technique Training (3 XP / 6 XP)**: Instantly unlocks or upgrades a move mastery, applying its $+3$ (Trained) or $+5$ (Mastered) bonus to your very next exchange.
         *   **Instant Cross-Training (15 XP)**: Instantly unlocks a Secondary Style and 1 Secondary Perk mid-fight or mid-crawl.
     *   *At Character Creation*: Starting 50 XP budget (e.g., 48–50 XP spent; any unspent XP remains banked in your Available XP pool).

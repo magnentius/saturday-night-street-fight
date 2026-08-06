@@ -73,7 +73,7 @@ To map out a transit line between the players' Home Turf and their target destin
 | :--- | :--- | :--- |
 | **1-4** | **Local Stop** | Standard station. Roll on the *Subway Station Event Table* normally when arriving. |
 | **5-7** | **Transfer Hub** | Large intersecting station. Players can choose to switch to a different line, bypassing the next station on their current route but adding $+1$ station to their total trip. |
-| **8-9** | **Danger Zone** | A gang-controlled choke point. Any rolls on the *Subway Station Event Table* at this stop are made with **Disadvantage** (taking the worse result). |
+| **8-9** | **Danger Zone** | A gang-controlled choke point. Rolls on the *Subway Station Event Table* here are made with **Disadvantage**—roll twice and keep the **more dangerous** result, not the higher number. See [Advantage & Disadvantage on Random Tables](#c-advantage--disadvantage-on-random-tables). |
 | **10** | **Express Line Bypass** | A fast-track tunnel. Allows the train to bypass the next scheduled station entirely, skipping an event roll. |
 
 ### Example Subway Campaign Map
@@ -396,7 +396,18 @@ Four different rules can set the opening distance. **The most specific source wi
 | **3** | The **Disposition result** names one. | *Hostile* forces Grapple Range; *Wary* opens at Outside Range. |
 | **4** | Fall back to the **Environmental Starting Range Table** (1d10). | Nothing above applied—roll for the terrain. |
 
-#### C. Platform Encounters
+#### C. Advantage & Disadvantage on Random Tables
+Several rules bend a table roll—a **Danger Zone** station, an informant's tip, a good stance read. These tables are written for flavour rather than sorted by threat, so **"higher" does not mean "worse"**: on the Subway Station Event Table a **10** is the *safest* result on the list, while **8–9** is the most dangerous.
+
+Resolve them this way: **roll 1d10 twice.** With **Disadvantage**, keep the more dangerous outcome; with **Advantage**, keep the safer one. Where two results are genuinely hard to rank, the GM decides.
+
+For the **Subway Station Event Table**, threat runs in this order, safest first:
+
+> **10** (Safe House) → **1–3** (Clear Platform) → **4–5** (Gang Toll) → **6–7** (Mob Ambush) → **8–9** (Rival Boss)
+
+The **Danger Rank** encounter tables are ordered loosely by threat within each Rank, but they are not strictly sorted either—read the two results and take the one that means more trouble.
+
+#### D. Platform Encounters
 Encounters from the **Subway Station Event Table** use this same sequence, simply beginning at the *"Roll the encounter"* step—there is no block to generate until the crew climbs the stairs to the street.
 
 ### 2. Threat Tier & XP Budget
